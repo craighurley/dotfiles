@@ -29,10 +29,11 @@ git clone https://github.com/mathiasbynens/dotfiles.git ~/.dotfiles
 
 6. Run the following commands to apply settings and install applications
 ```bash
+source ~/.dotfiles/bootstrap.sh
+source ~/.dotfiles/.mkfileandfolders
 source ~/.osx
 source ~/.brew
 source ~/.cask
-source ~/bootstrap.sh
 ```
 
 7. Finally, restart your computer.

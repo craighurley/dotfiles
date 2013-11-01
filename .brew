@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
-
 # Make sure we’re using the latest Homebrew
 brew update
 
