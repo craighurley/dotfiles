@@ -22,7 +22,7 @@ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
 brew install git
 ```
 
-5. Clone this repo and run bootstrap.sh:
+5. Clone this repo:
 ```bash
 git clone https://github.com/mathiasbynens/dotfiles.git ~/.dotfiles 
 ```
