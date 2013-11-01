@@ -36,9 +36,9 @@ killall Terminal
 7. Run the following commands 
 ```bash
 source ~/.dotfiles/.mkfilesandfolders
-source ~/.dotfiles/.osx
 source ~/.dotfiles/.brew
 source ~/.dotfiles/.cask
+source ~/.dotfiles/.osx
 ```
 
 8. Finally, restart your computer.
