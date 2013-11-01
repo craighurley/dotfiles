@@ -31,9 +31,9 @@ git clone https://github.com/mathiasbynens/dotfiles.git ~/.dotfiles
 ```bash
 source ~/.dotfiles/bootstrap.sh
 source ~/.dotfiles/.mkfileandfolders
-source ~/.osx
-source ~/.brew
-source ~/.cask
+source ~/.dotfiles/.osx
+source ~/.dotfiles/.brew
+source ~/.dotfiles/.cask
 ```
 
 7. Finally, restart your computer.
