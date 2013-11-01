@@ -27,16 +27,21 @@ brew install git
 git clone https://github.com/mathiasbynens/dotfiles.git ~/.dotfiles 
 ```
 
-6. Run the following commands to apply settings and install applications
+6. Run the following commands to setup the Terminal
 ```bash
 source ~/.dotfiles/bootstrap.sh
-source ~/.dotfiles/.mkfileandfolders
+killall Terminal
+```
+
+7. Run the following commands 
+```bash
+source ~/.dotfiles/.mkfilesandfolders
 source ~/.dotfiles/.osx
 source ~/.dotfiles/.brew
 source ~/.dotfiles/.cask
 ```
 
-7. Finally, restart your computer.
+8. Finally, restart your computer.
 
 
 ## Update

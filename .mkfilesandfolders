@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+mkdir -p ~/Downloads/_transmission/complete
+mkdir -p ~/Downloads/_transmission/incomplete
+mkdir ~/temp/
