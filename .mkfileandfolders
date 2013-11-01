@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+mkdir -p ~/Downloads/_transmission/complete
+mkdir -p ~/Downloads/_transmission/incomplete
+mkdir ~/temp/
+mkdir ~/.bin/
+mkdir ~/.etc/
+mkdir ~/.pwd/
+
+# ssh
+touch ~/.ssh/id_rsa ~/.ssh/id_rsa.pub
+chmod 600 ~/.ssh/id_rsa
+chmod 644 ~/.ssh/id_rsa.pub
+ln -i -s ~/.ssh/id_rsa ~/.ssh/github_rsa
+ln -i -s ~/.ssh/id_rsa.pub ~/.ssh/github_rsa.pub

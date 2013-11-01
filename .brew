@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+
+# Make sure we’re using the latest Homebrew
+brew update
+
+# Upgrade any already-installed formulae
+brew upgrade
+
+brew install bash-completion
+brew install dnscrypt-proxy
+brew install dnstop
+brew install git
+brew install netcat
+brew install readline
+brew install rename
+brew install tor
+brew install tree
+brew install unbound
+brew install unrar
+brew install watch
+brew install wget
+
+# Remove outdated versions from the cellar
+brew cleanup
