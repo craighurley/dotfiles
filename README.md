@@ -51,7 +51,7 @@ GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 git config --global user.email "$GIT_AUTHOR_EMAIL"
 ```
 
-7. Run the following commands:
+7. Run the following commands to install apps and apply settings:
 ```bash
 source ~/.dotfiles/.brew
 source ~/.dotfiles/.cask
