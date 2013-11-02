@@ -7,6 +7,7 @@ These dotfiles are based on [Mathias Bynens' dotfiles](https://github.com/mathia
 ## Installation
 
 1. Install xcode from the app store.  Open xcode and accept the license agreement.  TODO: find out how to accept the license via command line.
+
 2. Install code command line tools:
 ```bash
 xcode-select --install
@@ -34,13 +35,11 @@ source ~/.dotfiles/bootstrap.sh
 killall Terminal
 ```
 Now add what ever you need to `.path` and `.extra`.
-
 My `.path` looks like:
 ```bash
 PATH="/some/path:$PATH"
 export PATH
 ```
-
 My `.extra` looks like this:
 ```bash
 # Git credentials
