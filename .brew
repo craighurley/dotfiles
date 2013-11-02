@@ -9,7 +9,7 @@ brew upgrade
 brew install bash-completion
 brew install dnscrypt-proxy
 brew install dnstop
-brew install git
+#brew install git
 brew install netcat
 brew install readline
 brew install rename
