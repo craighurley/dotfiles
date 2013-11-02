@@ -6,9 +6,9 @@ function toggleshowhide() {
 	# toggle visibility based on variables value
 	if [ "$isVisible" == "FALSE" ]
 	then
-		defaults write com.apple.finder AppleShowAllFiles TRUE
+		defaults write com.apple.finder AppleShowAllFiles -bool true
 	else
-		defaults write com.apple.finder AppleShowAllFiles FALSE
+		defaults write com.apple.finder AppleShowAllFiles -bool false
 	fi
 
 	# force changes by restarting Finder
