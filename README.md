@@ -17,7 +17,7 @@ xcode-select --install
 ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
 ```
 
-4. Install git
+4. Install git:
 ```bash
 brew install git
 ```
@@ -27,13 +27,13 @@ brew install git
 git clone https://github.com/mathiasbynens/dotfiles.git ~/.dotfiles 
 ```
 
-6. Run the following commands to setup the Terminal
+6. Run the following commands to backup your original dotfiles and symlink to the new dotfiles, then kill your terminal:
 ```bash
 source ~/.dotfiles/bootstrap.sh
 killall Terminal
 ```
 
-7. Run the following commands 
+7. Run the following commands:
 ```bash
 source ~/.dotfiles/.mkfilesandfolders
 source ~/.dotfiles/.brew

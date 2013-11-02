@@ -1,5 +1,14 @@
 #!/usr/bin/env bash
 
-mkdir -p ~/Downloads/_transmission/complete
-mkdir -p ~/Downloads/_transmission/incomplete
-mkdir ~/temp/
+# make other file and folders
+if [ ! -d ~/Downloads/_transmission/complete ]; then
+    mkdir -p ~/Downloads/_transmission/complete
+fi
+
+if [ ! -d ~/Downloads/_transmission/incomplete ]; then
+    mkdir -p ~/Downloads/_transmission/incomplete
+fi
+
+if [ ! -d ~/temp ]; then
+    mkdir -p ~/temp
+fi
