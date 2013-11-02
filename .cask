@@ -14,7 +14,7 @@ brew cask install filezilla
 #brew cask install flash
 brew cask install flickr-uploadr
 brew cask install google-chrome
-brew cask install google-drive
+#brew cask install google-drive
 #brew cask install google-hangouts
 brew cask install gpgtools
 brew cask install harvest
@@ -25,8 +25,7 @@ brew cask install skype
 brew cask install snagit
 brew cask install sourcetree
 brew cask install sublime-text-3
-brew cask install the unarchiver
-#brew cask install textwrangler
+brew cask install the-unarchiver
 brew cask install transmission
 brew cask install true-crypt
 #brew cask install versions
