@@ -624,19 +624,15 @@ defaults write ~/Library/Preferences/org.gpgtools.gpgmail SignNewEmailsByDefault
 ###############################################################################
 
 defaults write org.m0k.transmission AutoImport -bool true
-
 defaults write org.m0k.transmission AutoImportDirectory -string "${HOME}/Downloads"
-
 defaults write org.m0k.transmission BlocklistNew -bool true
 defaults write org.m0k.transmission CheckUpload -bool true
 defaults write org.m0k.transmission DHTGlobal -bool false
 defaults write org.m0k.transmission DeleteOriginalTorrent -bool true
 defaults write org.m0k.transmission DownloadChoice -string "Constant"
 defaults write org.m0k.transmission DownloadFolder -string "${HOME}/Downloads/_transmission/complete"
-
 defaults write org.m0k.transmission IncompleteDownloadFolder -string "${HOME}/Downloads/_transmission/incomplete"
 defaults write org.m0k.transmission PEXGlobal -bool false
-
 defaults write org.m0k.transmission SpeedLimitDownloadLimit -int 50
 defaults write org.m0k.transmission SpeedLimitUploadLimit -int 1
 defaults write org.m0k.transmission UploadLimit -int 5
@@ -676,6 +672,19 @@ defaults write org.m0k.transmission WarningLegal -bool false
 
 # Hide the app in the background if it’s not the front-most window
 #defaults write com.twitter.twitter-mac HideInBackground -bool true
+
+###############################################################################
+# SourceTree
+###############################################################################
+
+defaults write com.torusknot.SourceTreeNotMAS windowRestorationMethod -int 1
+defaults write com.torusknot.SourceTreeNotMAS useFixedWithCommitFont -int 1
+defaults write com.torusknot.SourceTreeNotMAS gitUseStaging -int 0
+defaults write com.torusknot.SourceTreeNotMAS pushWhenCommitting -int 1
+defaults write com.torusknot.SourceTreeNotMAS alwaysDisplayFullOutput -int 1
+
+# In version 1.7.3 this setting seems to have no effect.
+defaults write com.torusknot.SourceTreeNotMAS selectAllFilesOnCommitSelection -int 0
 
 ###############################################################################
 # Firewall
