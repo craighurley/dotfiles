@@ -31,4 +31,3 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
 fi
 
 unset doIt
-exit 0
