@@ -36,7 +36,6 @@ killall Terminal
 
 7. Run the following commands:
 ```bash
-source ~/.dotfiles/.mkfilesandfolders
 source ~/.dotfiles/.brew
 source ~/.dotfiles/.cask
 source ~/.dotfiles/.osx
@@ -47,5 +46,6 @@ source ~/.dotfiles/.osx
 
 ## Update
 ```bash
+cd ~/.dotfiles/
 git pull origin master
 ```

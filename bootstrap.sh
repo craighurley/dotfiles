@@ -12,7 +12,29 @@ function doIt() {
     if [ ! -d $dotfilesbackup ]; then
        mkdir -p $dotfilesbackup
     fi
+
+    # create files that are not in git
+    if [ ! -f $dotfiles/.extra ]; then
+        mkdir -p $dotfiles/.extra
+    fi
     
+    if [ ! -f $dotfiles/.path ]; then
+        mkdir -p $dotfiles/.path
+    fi
+
+    # make other file and folders
+    if [ ! -d ~/Downloads/_transmission/complete ]; then
+        mkdir -p ~/Downloads/_transmission/complete
+    fi
+
+    if [ ! -d ~/Downloads/_transmission/incomplete ]; then
+        mkdir -p ~/Downloads/_transmission/incomplete
+    fi
+
+    if [ ! -d ~/temp ]; then
+        mkdir -p ~/temp
+    fi
+
     # move any existing dotfiles in dotfilesbackup directory, then create symlinks
     for file in ${files[@]}; do
         if [ -f $file ]; then
