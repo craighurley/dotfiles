@@ -15,11 +15,11 @@ function doIt() {
 
     # create files that are not in git
     if [ ! -f $dotfiles/.extra ]; then
-        mkdir -p $dotfiles/.extra
+        touch -p $dotfiles/.extra
     fi
     
     if [ ! -f $dotfiles/.path ]; then
-        mkdir -p $dotfiles/.path
+        touch -p $dotfiles/.path
     fi
 
     # make other file and folders
@@ -33,6 +33,19 @@ function doIt() {
 
     if [ ! -d ~/temp ]; then
         mkdir -p ~/temp
+    fi
+
+    if [ ! -d ~/.bin ]; then
+        mkdir -p ~/.bin
+    fi
+
+    if [ ! -d ~/.etc ]; then
+        mkdir -p ~/.etc
+    fi
+
+    if [ ! -d ~/.pwd ]; then
+        mkdir -p ~/.pwd
+        chmod 700 ~/.pwd
     fi
 
     # move any existing dotfiles in dotfilesbackup directory, then create symlinks

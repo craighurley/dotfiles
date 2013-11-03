@@ -520,12 +520,16 @@ defaults write com.apple.spotlight orderedItems -array \
 	'{ "enabled" = 0; "name" = "MOVIES"; }' \
 	'{ "enabled" = 0; "name" = "FONTS"; }'
 
-# Load new settings before rebuilding the index
-killall mds > /dev/null 2>&1
-# Make sure indexing is enabled for the main volume
-sudo mdutil -i on / > /dev/null
-# Rebuild the index from scratch
-sudo mdutil -E / > /dev/null
+read -p "Rebuild spotlight index? (y/n) " -n 1
+echo
+if [[ $REPLY =~ ^[Yy]$ ]]; then
+    # Load new settings before rebuilding the index
+	killall mds > /dev/null 2>&1
+	# Make sure indexing is enabled for the main volume
+	sudo mdutil -i on / > /dev/null
+	# Rebuild the index from scratch
+	sudo mdutil -E / > /dev/null
+fi
 
 ###############################################################################
 # Terminal                                                                    #
@@ -685,6 +689,47 @@ defaults write com.torusknot.SourceTreeNotMAS alwaysDisplayFullOutput -int 1
 
 # In version 1.7.3 this setting seems to have no effect.
 defaults write com.torusknot.SourceTreeNotMAS selectAllFilesOnCommitSelection -int 0
+
+###############################################################################
+# Skype
+###############################################################################
+
+defaults write com.skype.skype CallsMonitorEnabled -int 0
+defaults write com.skype.skype SKUseAwayInactiveTime -int 0
+defaults write com.skype.skype SKChatReportContactsTyping -int 0
+defaults write com.skype.skype SKChatReportMeTyping -int 0
+defaults write com.skype.skype SKDisableWelcomeTour -int 1
+defaults write com.skype.skype SKEmoticonChatStyle -int 1
+defaults write com.skype.skype SKShowWatermark -int 0
+defaults write com.skype.skype SKUseCompactChatStyle -int 1
+
+###############################################################################
+# Textual
+###############################################################################
+
+#defaults write com.codeux.irc.textual "ApplyCommandToAllConnections -> away" -int 1
+#defaults write com.codeux.irc.textual AutojoinMaximumChannelJoinCount -int 5
+#defaults write com.codeux.irc.textual CommandReturnSendsMessageAsAction -int 0
+#defaults write com.codeux.irc.textual DestinationOfNonserverNotices -int 1
+#defaults write com.codeux.irc.textual "DisplayEventInLogView -> Join, Part, Quit" -int 0
+#defaults write com.codeux.irc.textual FocusSelectionOnMessageCommandExecution -int 0
+#defaults write com.codeux.irc.textual "Keyboard -> Command+W Action" -int 1
+#defaults write com.codeux.irc.textual "Keyboard -> Tab Key Completion Suffix" -string " "
+#defaults write com.codeux.irc.textual MemberListSortFavorsServerStaff -int 1
+#defaults write com.codeux.irc.textual RemoveIRCTextFormatting -int 1
+#defaults write com.codeux.irc.textual ReplyUnignoredExternalCTCPRequests -int 0
+#defaults write com.codeux.irc.textual ServerListDoubleClickConnectServer -int 1
+#defaults write com.codeux.irc.textual ServerListDoubleClickDisconnectServer -int 1
+#defaults write com.codeux.irc.textual ServerListDoubleClickJoinChannel -int 1
+#defaults write com.codeux.irc.textual ServerListDoubleClickLeaveChannel -int 1
+#defaults write com.codeux.irc.textual "System Profiler Extension -> Feature Disabled -> CPU Model" -int 1
+#defaults write com.codeux.irc.textual "System Profiler Extension -> Feature Disabled -> Disk Information" -int 0
+#defaults write com.codeux.irc.textual "System Profiler Extension -> Feature Disabled -> Memory Information" -int 1
+#defaults write com.codeux.irc.textual "System Profiler Extension -> Feature Disabled -> OS Version" -int 1
+#defaults write com.codeux.irc.textual "System Profiler Extension -> Feature Disabled -> Screen Resolution" -int 0
+#defaults write com.codeux.irc.textual "System Profiler Extension -> Feature Disabled -> System Uptime" -int 1
+#defaults write com.codeux.irc.textual "Theme -> Font Name" -string "AndaleMono"
+#defaults write com.codeux.irc.textual "Theme -> Font Size" -int 12
 
 ###############################################################################
 # Firewall
