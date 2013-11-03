@@ -728,6 +728,7 @@ defaults write com.skype.skype SKUseCompactChatStyle -int 1
 #defaults write com.codeux.irc.textual "System Profiler Extension -> Feature Disabled -> OS Version" -int 1
 #defaults write com.codeux.irc.textual "System Profiler Extension -> Feature Disabled -> Screen Resolution" -int 0
 #defaults write com.codeux.irc.textual "System Profiler Extension -> Feature Disabled -> System Uptime" -int 1
+##defaults write com.codeux.irc.textual "Theme -> Font Name" -string "LucidaGrande"
 #defaults write com.codeux.irc.textual "Theme -> Font Name" -string "AndaleMono"
 #defaults write com.codeux.irc.textual "Theme -> Font Size" -int 12
 
