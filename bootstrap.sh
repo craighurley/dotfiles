@@ -31,6 +31,26 @@ function doIt() {
         mkdir -p ~/Downloads/_transmission/incomplete
     fi
 
+    if [ ! -d ~/Documents/installs/osx ]; then
+        mkdir -p ~/Documents/installs/osx
+    fi
+
+    if [ ! -d ~/Documents/installs/linux ]; then
+        mkdir -p ~/Documents/installs/linux
+    fi
+
+    if [ ! -d ~/Documents/installs/windows ]; then
+        mkdir -p ~/Documents/installs/windows
+    fi
+
+    if [ ! -d ~/Projects ]; then
+        mkdir -p ~/Projects
+    fi
+
+    if [ ! -d ~/iso ]; then
+        mkdir -p ~/iso
+    fi
+
     if [ ! -d ~/temp ]; then
         mkdir -p ~/temp
     fi

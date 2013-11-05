@@ -617,7 +617,7 @@ defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
 #defaults write com.google.Chrome.canary ExtensionInstallSources -array "https://*.github.com/*" "http://userscripts.org/*"
 
 ###############################################################################
-# GPGMail 2                                                                   #
+# GPG
 ###############################################################################
 
 # Disable signing emails by default
@@ -731,6 +731,8 @@ defaults write com.skype.skype SKUseCompactChatStyle -int 1
 ##defaults write com.codeux.irc.textual "Theme -> Font Name" -string "LucidaGrande"
 #defaults write com.codeux.irc.textual "Theme -> Font Name" -string "AndaleMono"
 #defaults write com.codeux.irc.textual "Theme -> Font Size" -int 12
+#defaults write com.codeux.irc.textual "Main Input Text Field -> Font Size" -int 2
+#defaults write com.codeux.irc.textual UseLargeFontForSidebars -int 1
 
 ###############################################################################
 # Firewall
