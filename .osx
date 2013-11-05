@@ -719,9 +719,9 @@ defaults write com.skype.skype SKUseCompactChatStyle -int 1
 #defaults write com.codeux.irc.textual RemoveIRCTextFormatting -int 1
 #defaults write com.codeux.irc.textual ReplyUnignoredExternalCTCPRequests -int 0
 #defaults write com.codeux.irc.textual ServerListDoubleClickConnectServer -int 1
-#defaults write com.codeux.irc.textual ServerListDoubleClickDisconnectServer -int 1
+#defaults write com.codeux.irc.textual ServerListDoubleClickDisconnectServer -int 0
 #defaults write com.codeux.irc.textual ServerListDoubleClickJoinChannel -int 1
-#defaults write com.codeux.irc.textual ServerListDoubleClickLeaveChannel -int 1
+#defaults write com.codeux.irc.textual ServerListDoubleClickLeaveChannel -int 0
 #defaults write com.codeux.irc.textual "System Profiler Extension -> Feature Disabled -> CPU Model" -int 1
 #defaults write com.codeux.irc.textual "System Profiler Extension -> Feature Disabled -> Disk Information" -int 0
 #defaults write com.codeux.irc.textual "System Profiler Extension -> Feature Disabled -> Memory Information" -int 1
