@@ -4,7 +4,7 @@ function toggleshowhide() {
 	isVisible=`defaults read com.apple.finder AppleShowAllFiles`
 
 	# toggle visibility based on variables value
-	if [ "$isVisible" == "FALSE" ]
+	if [ "$isVisible" == "0" ]
 	then
 		defaults write com.apple.finder AppleShowAllFiles -bool true
 	else

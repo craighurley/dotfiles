@@ -334,8 +334,9 @@ defaults write com.apple.finder WarnOnEmptyTrash -bool false
 chflags nohidden ~/Library
 
 # Remove Dropbox’s green checkmark icons in Finder
-file=/Applications/Dropbox.app/Contents/Resources/emblem-dropbox-uptodate.icns
-[ -e "${file}" ] && mv -f "${file}" "${file}.bak"
+# Commented out at this causes codesign to fail, which in turns forces OSX to prompt about accepting incoming network connections.
+#file=/Applications/Dropbox.app/Contents/Resources/emblem-dropbox-uptodate.icns
+#[ -e "${file}" ] && mv -f "${file}" "${file}.bak"
 
 ###############################################################################
 # Dock, Dashboard, and hot corners                                            #
@@ -637,9 +638,12 @@ defaults write org.m0k.transmission DownloadChoice -string "Constant"
 defaults write org.m0k.transmission DownloadFolder -string "${HOME}/Downloads/_transmission/complete"
 defaults write org.m0k.transmission IncompleteDownloadFolder -string "${HOME}/Downloads/_transmission/incomplete"
 defaults write org.m0k.transmission PEXGlobal -bool false
+defaults write org.m0k.transmission Queue -int 1
+defaults write org.m0k.transmission QueueDownloadNumber -int 3
 defaults write org.m0k.transmission SpeedLimitDownloadLimit -int 50
 defaults write org.m0k.transmission SpeedLimitUploadLimit -int 1
-defaults write org.m0k.transmission UploadLimit -int 5
+defaults write org.m0k.transmission Sort -string "Name"
+defaults write org.m0k.transmission UploadLimit -int 50
 defaults write org.m0k.transmission UseIncompleteDownloadFolder -bool true
 defaults write org.m0k.transmission PEXGlobal -bool false
 defaults write org.m0k.transmission PEXGlobal -bool false
