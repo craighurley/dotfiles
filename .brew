@@ -10,6 +10,7 @@ brew install bash-completion
 brew install dnscrypt-proxy
 brew install dnstop
 brew install netcat
+brew install nmap
 brew install readline
 brew install rename
 brew install tor
