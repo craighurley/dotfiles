@@ -1,5 +1,9 @@
 # Make vim the default editor
-export EDITOR="nano"
+#export EDITOR="nano"
+
+# First create link to sublime text
+# ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
+export EDITOR="subl -w"
 
 # Larger bash history (allow 32³ entries; default is 500)
 export HISTSIZE=32768
