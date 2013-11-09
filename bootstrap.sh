@@ -3,7 +3,7 @@
 # list of files/folders to symlink in homedir
 files=".aliases .bash_profile .bash_prompt .bashrc .curlrc .exports .extra .functions .gitconfig .gitignore_global .hushlogin .inputrc .path .screenrc .wgetrc"
 # path to where you cloned the dotfile repo
-dotfiles=~/.dotfiles
+dotfiles=~/Projects/dotfiles
 # path to where you want to store a backup of your original dotfiles.
 dotfilesbackup=~/.dotfiles_backup
 
@@ -41,10 +41,6 @@ function doIt() {
 
     if [ ! -d ~/Documents/installs/windows ]; then
         mkdir -p ~/Documents/installs/windows
-    fi
-
-    if [ ! -d ~/Projects ]; then
-        mkdir -p ~/Projects
     fi
 
     if [ ! -d ~/iso ]; then

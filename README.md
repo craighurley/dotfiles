@@ -26,12 +26,13 @@ brew install git
 
 5. Clone this repo:
 ```bash
-git clone https://github.com/craighurley/dotfiles.git ~/.dotfiles 
+mkdir ~/Projects
+git clone https://github.com/craighurley/dotfiles.git ~/Projects/dotfiles 
 ```
 
 6. Run the following commands to backup your original dotfiles and symlink to the new dotfiles, then kill your terminal:
 ```bash
-source ~/.dotfiles/bootstrap.sh
+source ~/Projects/dotfiles/bootstrap.sh
 killall Terminal
 ```
 Now add what ever you need to `.path` and `.extra`.
@@ -53,9 +54,9 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 
 7. Run the following commands to install apps and apply settings:
 ```bash
-source ~/.dotfiles/.brew
-source ~/.dotfiles/.cask
-source ~/.dotfiles/.osx
+source ~/Projects/dotfiles/.brew
+source ~/Projects/dotfiles/.cask
+source ~/Projects/dotfiles/.osx
 ```
 
 8. Finally, restart your computer.
@@ -63,7 +64,7 @@ source ~/.dotfiles/.osx
 
 ## Update
 ```bash
-cd ~/.dotfiles/
+cd ~/Projects/dotfiles/
 git pull origin master
 ```
 
