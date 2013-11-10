@@ -43,6 +43,10 @@ function doIt() {
         mkdir -p ~/Documents/installs/windows
     fi
 
+    if [ ! -d ~/Pictures/Snagit ]; then
+        mkdir -p ~/Pictures/Snagit
+    fi
+
     if [ ! -d ~/iso ]; then
         mkdir -p ~/iso
     fi
