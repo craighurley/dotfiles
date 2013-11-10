@@ -17,7 +17,10 @@ sudo scutil --set LocalHostName "REPLACEME"
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "REPLACEME"
 
 # Disable the sound effects on boot.  To re-enable: sudo nvram -d SystemAudioVolume
+# macbook pro late 2012 + os x 10.9
 sudo nvram SystemAudioVolume="%80"
+# macbook pro late 2011 + os x 10.9
+#sudo nvram SystemAudioVolume=" "
 
 # Enable verbose botting
 sudo nvram boot-args="-v"
@@ -371,6 +374,7 @@ defaults write com.apple.mail DisableInlineAttachmentViewing -bool true
 # Spotlight
 ###############################################################################
 
+# TODO: fix as this doesn't seem to be represented in the GUI
 # Change indexing order and disable some file types
 defaults write com.apple.spotlight orderedItems -array \
 	'{ "enabled" = 1; "name" = "APPLICATIONS"; }' \
