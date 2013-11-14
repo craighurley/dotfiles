@@ -22,3 +22,12 @@ from Foundation import CFPreferencesAppSynchronize
 CFPreferencesAppSynchronize('$1')
 END
 }
+
+# Cleanup 
+function fscleanup() {
+	read -p "Delete all .DS_Stores in this directory and all subdirectories? (y/n) " -n 1
+	echo
+	if [[ $REPLY =~ ^[Yy]$ ]]; then
+	    find . -name '*.DS_Store' -type f -delete
+	fi
+}

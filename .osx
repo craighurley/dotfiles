@@ -244,6 +244,10 @@ chflags nohidden ${HOME}/Library
 # Enable spring loading for all Dock items
 #defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
 
+# Dock: minimise and maximise effect.
+# Possible settings: genie, scale
+defaults write com.apple.dock mineffect -string "scale"
+
 # Show indicator lights for open applications in the Dock
 defaults write com.apple.dock show-process-indicators -bool true
 

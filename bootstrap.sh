@@ -58,6 +58,10 @@ function doIt() {
     if [ ! -d ~/.bin ]; then
         mkdir -p ~/.bin
     fi
+    
+    if [ ! -d ~/.dev ]; then
+        mkdir -p ~/.dev
+    fi
 
     if [ ! -d ~/.etc ]; then
         mkdir -p ~/.etc
