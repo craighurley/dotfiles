@@ -1,14 +1,14 @@
-shell				-$SHELL
-startup_message		off
+shell               -$SHELL
+startup_message     off
 
-screen 				-t "top" 0
+screen              -t "top" 0
 split
-screen 				-t "bottom" 1
-select 				0
+screen              -t "bottom" 1
+select              0
 focus
-select 				1
+select              1
 focus
 
-hardstatus			on
-hardstatus			alwayslastline
-hardstatus			string "%{.kW}%-w%{.rW}%n %t%{-}%+w %=%{..G} %H %{..Y} %Y/%m/%d %c"
+hardstatus          on
+hardstatus          alwayslastline
+hardstatus          string "%{.kW}%-w%{.rW}%n %t%{-}%+w %=%{..G} %H %{..Y} %Y/%m/%d %c"
