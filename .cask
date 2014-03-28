@@ -1,34 +1,36 @@
 # Install native apps
 brew tap phinze/homebrew-cask
+brew tap caskroom/versions
 brew install brew-cask
 
 brew cask install balsamiq-mockups
 brew cask install bettertouchtool
-brew cask install bit-torrent-sync
+#brew cask install bit-torrent-sync
 brew cask install ccleaner
 #brew cask install charles
 brew cask install dropbox
 brew cask install evernote
-brew cask install filezilla
+#brew cask install eclipse
+#brew cask install filezilla
 #brew cask install firefox
 #brew cask install flash
 #brew cask install flickr-uploadr
-brew cask install google-chrome
+#brew cask install google-chrome
 #brew cask install google-drive
 #brew cask install google-hangouts
 brew cask install gpgtools
-brew cask install harvest
+#brew cask install harvest
 brew cask install kaleidoscope
-brew cask install keepass-x
-brew cask install skitch
+brew cask install keepassx0
+#brew cask install skitch
 brew cask install skype
 brew cask install snagit
 brew cask install sourcetree
 brew cask install sublime-text-3
 brew cask install the-unarchiver
 brew cask install transmission
-brew cask install true-crypt
-#brew cask install versions
+brew cask install truecrypt
+brew cask install versions
 brew cask install virtualbox
 brew cask install vlc
 #brew cask install wireshark

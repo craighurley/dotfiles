@@ -9,13 +9,17 @@ brew upgrade
 brew install bash-completion
 brew install dnscrypt-proxy
 brew install dnstop
+# git is installed before this point
+#brew install git
 brew install netcat
 brew install nmap
+brew install openssl
+#brew install rbenv
 brew install readline
 brew install rename
-brew install tor
+#brew install tor
 brew install tree
-brew install unbound
+#brew install unbound
 brew install unrar
 brew install watch
 brew install wget
