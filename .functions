@@ -31,3 +31,8 @@ function fscleanup() {
 	    find . -name '*.DS_Store' -type f -delete
 	fi
 }
+
+# Convert whiteboard images to something a little cleaner
+function image_whiteboard() {
+	convert "$1" -morphology Convolve DoG:15,100,0 -negate -normalize -despeckle -unsharp 5 -monochrome "$2"
+}

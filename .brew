@@ -14,6 +14,7 @@ brew install dnstop
 # git is installed before this point
 #brew install git
 brew install gpg2
+brew install imagemagick
 brew install netcat
 brew install nmap
 brew install openssl
