@@ -34,5 +34,7 @@ function fscleanup() {
 
 # Convert whiteboard images to something a little cleaner
 function image_whiteboard() {
-	convert "$1" -morphology Convolve DoG:15,100,0 -negate -normalize -despeckle -unsharp 5 -monochrome "$2"
+	#convert "$1" -morphology Convolve DoG:15,100,0 -negate -normalize -despeckle -unsharp 5 -channel RBG -level 60%,91%,0.1 "$2"
+	#convert "$1" -morphology Convolve DoG:15,100,0 -negate -normalize -despeckle -unsharp 5 -monochrome "$2"
+	convert "$1" -morphology Convolve DoG:15,100,0 -negate -normalize -despeckle -unsharp 5 "$2"
 }
