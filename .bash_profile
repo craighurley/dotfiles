@@ -31,8 +31,9 @@ shopt -s cdspell
 # You could just use `-g` instead, but I like being explicit
 #complete -W "NSGlobalDomain" defaults
 
-# Add `killall` tab completion for common apps
+# Add tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall
+complete -o "nospace" -W "cert config decrypt encrypt help id join keygen list-tracking login logout pull push prove reset revoke revoke-proof search sign status switch track untrack update verify version" keybase
 
 # If possible, add tab completion for many more commands
 if [ -f $(brew --prefix)/etc/bash_completion ]; then

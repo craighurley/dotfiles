@@ -23,17 +23,17 @@ CFPreferencesAppSynchronize('$1')
 END
 }
 
-# Cleanup 
-function fscleanup() {
+# Cleanup
+function cleanup() {
 	read -p "Delete all .DS_Stores in this directory and all subdirectories? (y/n) " -n 1
 	echo
 	if [[ $REPLY =~ ^[Yy]$ ]]; then
-	    find . -name '*.DS_Store' -type f -delete
+	    find . -type f -name '*.DS_Store' -ls -delete
 	fi
 }
 
 # Convert whiteboard images to something a little cleaner
-function image_whiteboard() {
+function whiteboard() {
 	#convert "$1" -morphology Convolve DoG:15,100,0 -negate -normalize -despeckle -unsharp 5 -channel RBG -level 60%,91%,0.1 "$2"
 	#convert "$1" -morphology Convolve DoG:15,100,0 -negate -normalize -despeckle -unsharp 5 -monochrome "$2"
 	convert "$1" -morphology Convolve DoG:15,100,0 -negate -normalize -despeckle -unsharp 5 "$2"

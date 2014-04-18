@@ -51,9 +51,6 @@ alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/La
 # OS X has no `sha1sum`, so use `shasum` as a fallback
 #command -v sha1sum > /dev/null || alias sha1sum="shasum"
 
-# Recursively delete `.DS_Store` files
-alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
-
 # URL-encode strings
 alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
 
