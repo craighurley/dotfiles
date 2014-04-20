@@ -30,9 +30,6 @@ export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40
 #export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 #export LSCOLORS=ExFxCxDxBxegedabagacad
 
-# Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-#alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; sudo gem update'
-
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias ips="ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)\|[a-fA-F0-9:]\+\)' | sed -e 's/inet6* //'"
@@ -45,18 +42,11 @@ alias dns="scutil --dns"
 # Clean up LaunchServices to remove duplicates in the “Open With” menu
 alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
 
-# OS X has no `md5sum`, so use `md5` as a fallback
-#command -v md5sum > /dev/null || alias md5sum="md5"
-
-# OS X has no `sha1sum`, so use `shasum` as a fallback
-#command -v sha1sum > /dev/null || alias sha1sum="shasum"
-
 # URL-encode strings
 alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
 
-# Merge PDF files
-# Usage: `mergepdf -o output.pdf input{1,2,3}.pdf`
-#alias mergepdf='/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Resources/join.py'
-
 # PlistBuddy alias, because sometimes `defaults` just doesn’t cut it
 alias plistbuddy="/usr/libexec/PlistBuddy"
+
+# Decrypt pkcs8 private key and add to ssh-add (Mavericks is dumb in this regard)
+alias ssh-add-pkcs8="openssl pkcs8 -in ~/.ssh/id_rsa | ssh-add -"
