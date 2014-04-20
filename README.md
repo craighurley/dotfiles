@@ -7,31 +7,31 @@ These dotfiles are based on [Mathias Bynens' dotfiles](https://github.com/mathia
 
 ## Installation
 
-1. Install xcode from the app store.  Open xcode and accept the license agreement.  TODO: find out how to accept the license via command line.
+1 Install xcode from the app store.  Open xcode and accept the license agreement.  TODO: find out how to accept the license via command line.
 
-2. Install code command line tools:
+2 Install code command line tools:
 ```bash
 xcode-select --install
 ```
 
-3. Install homebrew and check that it's ready to go:
+3 Install homebrew and check that it's ready to go:
 ```bash
 ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
 brew doctor
 ```
 
-4. Install git:
+4 Install git:
 ```bash
 brew install git
 ```
 
-5. Clone this repo:
+5 Clone this repo:
 ```bash
 mkdir ~/Projects
 git clone https://github.com/craighurley/dotfiles.git ~/Projects/dotfiles
 ```
 
-6. Run the following commands to backup your original dotfiles and symlink to the new dotfiles, then kill your terminal:
+6 Run the following commands to backup your original dotfiles and symlink to the new dotfiles, then kill your terminal:
 ```bash
 source ~/Projects/dotfiles/bootstrap.sh
 killall Terminal
@@ -48,14 +48,14 @@ GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 git config --global user.email "$GIT_AUTHOR_EMAIL"
 ```
 
-7. Run the following commands to install apps and apply settings:
+7 Run the following commands to install apps and apply settings:
 ```bash
 source ~/Projects/dotfiles/.brew
 source ~/Projects/dotfiles/.cask
 source ~/Projects/dotfiles/.osx
 ```
 
-8. Finally, restart your computer.
+8 Finally, restart your computer.
 
 
 ## Update
