@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
 # list of files/folders to symlink in homedir
-files=".aliases .bash_profile .bash_prompt .bashrc .curlrc .exports .extra .functions .gitconfig .gitignore_global .hushlogin .inputrc .path .screenrc .wgetrc"
+files=".aliases .bash_profile .bash_prompt .bashrc .curlrc .exports .extra .functions .gitignore_global .hushlogin .inputrc .path .screenrc .wgetrc"
 # path to where you cloned the dotfile repo
 dotfiles=~/Projects/dotfiles
 # path to where you want to store a backup of your original dotfiles.
-dotfilesbackup=~/.dotfiles_backup
+dotfilesbackup=~/Projects/.dotfiles_backup
 
 function doIt() {
     # make the dofiles backup directory
