@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # list of files/folders to symlink in homedir
-files=".aliases .bash_profile .bash_prompt .bashrc .curlrc .exports .extra .functions .gitignore_global .hushlogin .inputrc .path .screenrc .wgetrc"
+files=".aliases .bash_profile .bash_prompt .bashrc .curlrc .exports .functions .gitignore_global .hushlogin .inputrc .path .screenrc .wgetrc"
 # path to where you cloned the dotfile repo
 dotfiles=~/Projects/dotfiles
 # path to where you want to store a backup of your original dotfiles.
@@ -14,15 +14,16 @@ function doIt() {
     fi
 
     # create files that are not in git
-    if [ ! -f $dotfiles/.extra ]; then
-        touch -p $dotfiles/.extra
+    if [ ! -f ~/.extra ]; then
+        touch -p ~/.extra
     fi
     
-    if [ ! -f $dotfiles/.path ]; then
-        touch -p $dotfiles/.path
+    # copy .gitconfig.template to ~/.gitconfig
+    if [ ! -f ~/.gitconfig ]; then
+        cp $dotfiles/.gitconfig.template ~/.gitconfig
     fi
 
-    # make other file and folders
+    # make other files and folders
     if [ ! -d ~/Downloads/_transmission/complete ]; then
         mkdir -p ~/Downloads/_transmission/complete
     fi
@@ -63,10 +64,6 @@ function doIt() {
         mkdir -p ~/.dev
     fi
 
-    if [ ! -d ~/.etc ]; then
-        mkdir -p ~/.etc
-    fi
-
     if [ ! -d ~/.pwd ]; then
         mkdir -p ~/.pwd
         chmod 700 ~/.pwd
@@ -80,7 +77,7 @@ function doIt() {
         fi
         echo "Creating symlink ~/$file to $dotfiles/$file"
         ln -s $dotfiles/$file ~/$file
-    done
+    done    
 }
 
 read -p "This script will backup your current dotfiles and symlink to a new set of dotfiles. Are you sure? (y/n) " -n 1
