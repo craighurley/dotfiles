@@ -1,7 +1,8 @@
 # Craigs dotfiles
 
+
 ## Introduction
-These dotfiles are based on [Mathias Bynens' dotfiles](https://github.com/mathiasbynens/dotfiles) and [this](http://blog.smalleycreative.com/tutorials/using-git-and-github-to-manage-your-dotfiles/) post on smalleycreative.com. 
+These dotfiles are based on [Mathias Bynens' dotfiles](https://github.com/mathiasbynens/dotfiles) and [this](http://blog.smalleycreative.com/tutorials/using-git-and-github-to-manage-your-dotfiles/) post on smalleycreative.com.
 
 
 ## Installation
@@ -27,7 +28,7 @@ brew install git
 5. Clone this repo:
 ```bash
 mkdir ~/Projects
-git clone https://github.com/craighurley/dotfiles.git ~/Projects/dotfiles 
+git clone https://github.com/craighurley/dotfiles.git ~/Projects/dotfiles
 ```
 
 6. Run the following commands to backup your original dotfiles and symlink to the new dotfiles, then kill your terminal:
@@ -35,19 +36,14 @@ git clone https://github.com/craighurley/dotfiles.git ~/Projects/dotfiles
 source ~/Projects/dotfiles/bootstrap.sh
 killall Terminal
 ```
-Now add what ever you need to `.path` and `.extra`.
-My `.path` looks like:
-```bash
-PATH="/some/path:$PATH"
-export PATH
-```
+Now add what ever you need to `.extra`.
 My `.extra` looks like this:
 ```bash
 # Git credentials
 GIT_AUTHOR_NAME="First Last"
 GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
 git config --global user.name "$GIT_AUTHOR_NAME"
-GIT_AUTHOR_EMAIL="firs.last@email.com"
+GIT_AUTHOR_EMAIL="first.last@email.com"
 GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 git config --global user.email "$GIT_AUTHOR_EMAIL"
 ```
@@ -70,7 +66,6 @@ git pull origin master
 
 
 ## Feedback
-
 Suggestions/improvements [welcome](https://github.com/craighurley/dotfiles/issues)!
 
 
