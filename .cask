@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Install native apps
 brew tap phinze/homebrew-cask
 brew tap caskroom/versions

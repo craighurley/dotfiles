@@ -381,34 +381,34 @@ defaults write com.apple.mail DisableInlineAttachmentViewing -bool true
 
 # TODO: fix as this doesn't seem to be represented in the GUI
 # Change indexing order and disable some file types
-defaults write com.apple.spotlight orderedItems -array \
-	'{ "enabled" = 1; "name" = "APPLICATIONS"; }' \
-	'{ "enabled" = 1; "name" = "SYSTEM_PREFS"; }' \
-	'{ "enabled" = 1; "name" = "DIRECTORIES"; }' \
-	'{ "enabled" = 1; "name" = "PDF"; }' \
-	'{ "enabled" = 1; "name" = "DOCUMENTS"; }' \
-	'{ "enabled" = 1; "name" = "SPREADSHEETS"; }' \
-	'{ "enabled" = 1; "name" = "PRESENTATIONS"; }' \
-	'{ "enabled" = 0; "name" = "SOURCE"; }' \
-	'{ "enabled" = 0; "name" = "MESSAGES"; }' \
-	'{ "enabled" = 0; "name" = "CONTACT"; }' \
-	'{ "enabled" = 0; "name" = "EVENT_TODO"; }' \
-	'{ "enabled" = 0; "name" = "IMAGES"; }' \
-	'{ "enabled" = 0; "name" = "BOOKMARKS"; }' \
-	'{ "enabled" = 0; "name" = "MUSIC"; }' \
-	'{ "enabled" = 0; "name" = "MOVIES"; }' \
-	'{ "enabled" = 0; "name" = "FONTS"; }'
-
-read -p "Rebuild spotlight index? (y/n) " -n 1
-echo
-if [[ $REPLY =~ ^[Yy]$ ]]; then
-    # Load new settings before rebuilding the index
-	killall mds > /dev/null 2>&1
-	# Make sure indexing is enabled for the main volume
-	sudo mdutil -i on / > /dev/null
-	# Rebuild the index from scratch
-	sudo mdutil -E / > /dev/null
-fi
+#defaults write com.apple.spotlight orderedItems -array \
+#	'{ "enabled" = 1; "name" = "APPLICATIONS"; }' \
+#	'{ "enabled" = 1; "name" = "SYSTEM_PREFS"; }' \
+#	'{ "enabled" = 1; "name" = "DIRECTORIES"; }' \
+#	'{ "enabled" = 1; "name" = "PDF"; }' \
+#	'{ "enabled" = 1; "name" = "DOCUMENTS"; }' \
+#	'{ "enabled" = 1; "name" = "SPREADSHEETS"; }' \
+#	'{ "enabled" = 1; "name" = "PRESENTATIONS"; }' \
+#	'{ "enabled" = 0; "name" = "SOURCE"; }' \
+#	'{ "enabled" = 0; "name" = "MESSAGES"; }' \
+#	'{ "enabled" = 0; "name" = "CONTACT"; }' \
+#	'{ "enabled" = 0; "name" = "EVENT_TODO"; }' \
+#	'{ "enabled" = 0; "name" = "IMAGES"; }' \
+#	'{ "enabled" = 0; "name" = "BOOKMARKS"; }' \
+#	'{ "enabled" = 0; "name" = "MUSIC"; }' \
+#	'{ "enabled" = 0; "name" = "MOVIES"; }' \
+#	'{ "enabled" = 0; "name" = "FONTS"; }'
+#
+#read -p "Rebuild spotlight index? (y/n) " -n 1
+#echo
+#if [[ $REPLY =~ ^[Yy]$ ]]; then
+#    # Load new settings before rebuilding the index
+#	killall mds > /dev/null 2>&1
+#	# Make sure indexing is enabled for the main volume
+#	sudo mdutil -i on / > /dev/null
+#	# Rebuild the index from scratch
+#	sudo mdutil -E / > /dev/null
+#fi
 
 ###############################################################################
 # Terminal
@@ -484,7 +484,7 @@ defaults write com.torusknot.SourceTreeNotMAS pushWhenCommitting -int 1
 #defaults write com.torusknot.SourceTreeNotMAS alwaysDisplayFullOutput -int 1
 
 # In version 1.7.4.1 this setting seems to have no effect.
-defaults write com.torusknot.SourceTreeNotMAS selectAllFilesOnCommitSelection -int 0
+#defaults write com.torusknot.SourceTreeNotMAS selectAllFilesOnCommitSelection -int 0
 
 ###############################################################################
 # Skype

@@ -1,6 +1,7 @@
-# Make vim the default editor
+# Make nano the default editor
 #export EDITOR="nano"
 
+# Make sublime the default editor
 # First create link to sublime text
 # ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
 export EDITOR="subl -w"
