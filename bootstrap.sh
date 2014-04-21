@@ -17,7 +17,7 @@ function doIt() {
     if [ ! -f ~/.extra ]; then
         touch -p ~/.extra
     fi
-    
+
     # copy .gitconfig.template to ~/.gitconfig
     if [ ! -f ~/.gitconfig ]; then
         cp $dotfiles/.gitconfig.template ~/.gitconfig
@@ -44,6 +44,10 @@ function doIt() {
         mkdir -p ~/Documents/installs/windows
     fi
 
+    if [ ! -d ~/Projects/gists ]; then
+        mkdir -p ~/Projects/gists
+    fi
+
     if [ ! -d ~/Pictures/Snagit ]; then
         mkdir -p ~/Pictures/Snagit
     fi
@@ -59,7 +63,7 @@ function doIt() {
     if [ ! -d ~/.bin ]; then
         mkdir -p ~/.bin
     fi
-    
+
     if [ ! -d ~/.dev ]; then
         mkdir -p ~/.dev
     fi
