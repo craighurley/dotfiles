@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-# list of files/folders to symlink in homedir
-files=".aliases .bash_profile .bash_prompt .bashrc .curlrc .exports .functions .gitignore_global .hushlogin .inputrc .path .screenrc .wgetrc"
+# list of files/folders to symlink in ~ to dotfiles
+files=".aliases .bash_profile .bash_prompt .bashrc .curlrc .exports .functions .gitignore_global .hushlogin .inputrc .screenrc .wgetrc"
 # path to where you cloned the dotfile repo
 dotfiles=~/Projects/dotfiles
 # path to where you want to store a backup of your original dotfiles.
@@ -9,71 +9,27 @@ dotfilesbackup=~/Projects/.dotfiles_backup
 
 function doIt() {
     # make the dofiles backup directory
-    if [ ! -d $dotfilesbackup ]; then
-       mkdir -p $dotfilesbackup
-    fi
+    [ ! -d $dotfilesbackup ] && mkdir -p $dotfilesbackup
 
-    # create files that are not in git
-    if [ ! -f ~/.extra ]; then
-        touch -p ~/.extra
-    fi
+    # copy templates to ~
+    [ ! -f ~/.extra ] && cp $dotfiles/.extra.template ~/.extra
+    [ ! -f ~/.path ] && cp $dotfiles/.path.template ~/.path
+    [ ! -f ~/.gitconfig ] && cp $dotfiles/.gitconfig.template ~/.gitconfig
 
-    # copy .gitconfig.template to ~/.gitconfig
-    if [ ! -f ~/.gitconfig ]; then
-        cp $dotfiles/.gitconfig.template ~/.gitconfig
-    fi
+    # make other folders
+    [ ! -d ~/Downloads/_transmission/complete ] && mkdir -p ~/Downloads/_transmission/complete
+    [ ! -d ~/Downloads/_transmission/incomplete ] && mkdir -p ~/Downloads/_transmission/incomplete
+    [ ! -d ~/Documents/installs/osx ] && mkdir -p ~/Documents/installs/osx
+    [ ! -d ~/Documents/installs/linux ] && mkdir -p ~/Documents/installs/linux
+    [ ! -d ~/Documents/installs/windows ] && mkdir -p ~/Documents/installs/windows
+    [ ! -d ~/Documents/iso ] && mkdir -p ~/Documents/iso
+    [ ! -d ~/Projects/gists ] && mkdir -p ~/Projects/gists
+    [ ! -d ~/Pictures/Snagit ] && mkdir -p ~/Pictures/Snagit
+    [ ! -d ~/temp ] && mkdir -p ~/temp
+    [ ! -d ~/.dev ] && mkdir -p ~/.dev
+    [ ! -d ~/.pwd ] && mkdir -p ~/.pwd && chmod 700 ~/.pwd
 
-    # make other files and folders
-    if [ ! -d ~/Downloads/_transmission/complete ]; then
-        mkdir -p ~/Downloads/_transmission/complete
-    fi
-
-    if [ ! -d ~/Downloads/_transmission/incomplete ]; then
-        mkdir -p ~/Downloads/_transmission/incomplete
-    fi
-
-    if [ ! -d ~/Documents/installs/osx ]; then
-        mkdir -p ~/Documents/installs/osx
-    fi
-
-    if [ ! -d ~/Documents/installs/linux ]; then
-        mkdir -p ~/Documents/installs/linux
-    fi
-
-    if [ ! -d ~/Documents/installs/windows ]; then
-        mkdir -p ~/Documents/installs/windows
-    fi
-
-    if [ ! -d ~/Projects/gists ]; then
-        mkdir -p ~/Projects/gists
-    fi
-
-    if [ ! -d ~/Pictures/Snagit ]; then
-        mkdir -p ~/Pictures/Snagit
-    fi
-
-    if [ ! -d ~/iso ]; then
-        mkdir -p ~/iso
-    fi
-
-    if [ ! -d ~/temp ]; then
-        mkdir -p ~/temp
-    fi
-
-    if [ ! -d ~/.bin ]; then
-        mkdir -p ~/.bin
-    fi
-
-    if [ ! -d ~/.dev ]; then
-        mkdir -p ~/.dev
-    fi
-
-    if [ ! -d ~/.pwd ]; then
-        mkdir -p ~/.pwd
-        chmod 700 ~/.pwd
-    fi
-
-    # move any existing dotfiles in dotfilesbackup directory, then create symlinks
+    # move any existing dotfiles to dotfilesbackup, then create symlinks from dotfiles to ~
     for file in ${files[@]}; do
         if [ -f $file ]; then
             echo "Moving ~/$file from ~ to $dotfilesbackup"
