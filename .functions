@@ -1,18 +1,18 @@
 # Toggle show/hide files
 function toggleshowhide() {
-	# check if hidden files are visible and store result in a variable
-	isVisible=`defaults read com.apple.finder AppleShowAllFiles`
+    # check if hidden files are visible and store result in a variable
+    isVisible=`defaults read com.apple.finder AppleShowAllFiles`
 
-	# toggle visibility based on variables value
-	if [ "$isVisible" == "0" ]
-	then
-		defaults write com.apple.finder AppleShowAllFiles -bool true
-	else
-		defaults write com.apple.finder AppleShowAllFiles -bool false
-	fi
+    # toggle visibility based on variables value
+    if [ "$isVisible" == "0" ]
+    then
+    	defaults write com.apple.finder AppleShowAllFiles -bool true
+    else
+    	defaults write com.apple.finder AppleShowAllFiles -bool false
+    fi
 
-	# force changes by restarting Finder
-	killall Finder
+    # force changes by restarting Finder
+    killall Finder
 }
 
 # Write preferences to permanent storage
@@ -25,15 +25,20 @@ END
 
 # Cleanup
 function dsclean() {
-	read -p "Delete all .DS_Stores in this directory and all subdirectories? (y/n) " -n 1
-	echo
-	if [[ $REPLY =~ ^[Yy]$ ]]; then
-	    find . -type f -name '.DS_Store' -ls -delete
-	fi
+    read -p "Delete all .DS_Stores in this directory and all subdirectories? (y/n) " -n 1
+    echo
+    if [[ $REPLY =~ ^[Yy]$ ]]; then
+        find . -type f -name '.DS_Store' -ls -delete
+    fi
 }
 
 # Convert whiteboard images to something a little cleaner
 function whiteboard() {
-	#convert "$1" -morphology Convolve DoG:15,100,0 -negate -normalize -despeckle -unsharp 5 -channel RBG -level 60%,91%,0.1 "$2"
-	convert "$1" -morphology Convolve DoG:15,100,0 -negate -normalize -despeckle -unsharp 5 "$2"
+    #convert "$1" -morphology Convolve DoG:15,100,0 -negate -normalize -despeckle -unsharp 5 -channel RBG -level 60%,91%,0.1 "$2"
+    convert "$1" -morphology Convolve DoG:15,100,0 -negate -normalize -despeckle -unsharp 5 "$2"
+}
+
+# Decode base64
+function decode() {
+    echo "$1" | base64 --decode ; echo
 }
