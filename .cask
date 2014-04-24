@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-# Install native apps
-brew tap phinze/homebrew-cask
+# install cask
+brew tap phinze/cask
 brew tap caskroom/versions
 brew install brew-cask
 
@@ -31,6 +31,7 @@ brew cask install snagit
 brew cask install sourcetree
 brew cask install sublime-text3
 brew cask install the-unarchiver
+#brew cask install things
 brew cask install transmission
 brew cask install truecrypt
 brew cask install versions
