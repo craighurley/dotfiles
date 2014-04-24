@@ -6,6 +6,8 @@ brew update
 # Upgrade any already-installed formulae
 brew upgrade
 
+brew install ant
+brew install ant-contrib
 brew install bash-completion
 #brew install boot2docker
 #brew install docker
@@ -16,6 +18,7 @@ brew install dnstop
 brew install gist
 brew install gpg2
 brew install imagemagick
+#brew install irssi
 brew install netcat
 brew install nmap
 brew install openssl

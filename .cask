@@ -13,7 +13,7 @@ brew cask install ccleaner
 brew cask install dropbox
 brew cask install dnscrypt
 brew cask install evernote
-#brew cask install eclipse
+#brew cask install eclipse-jee
 #brew cask install filezilla
 brew cask install firefox
 #brew cask install flash
@@ -23,8 +23,10 @@ brew cask install firefox
 #brew cask install google-hangouts
 brew cask install gpgtools
 #brew cask install harvest
+brew cask install java
 brew cask install kaleidoscope
 brew cask install keepassx0
+#brew cask install pycharm-ce
 #brew cask install skitch
 brew cask install skype
 brew cask install snagit
