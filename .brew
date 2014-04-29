@@ -25,6 +25,7 @@ brew install openssl
 #brew install rbenv
 brew install readline
 brew install rename
+#brew install sshfs
 #brew install tor
 brew install tree
 #brew install unbound
