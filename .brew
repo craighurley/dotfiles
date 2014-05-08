@@ -6,6 +6,7 @@ brew update
 # Upgrade any already-installed formulae
 brew upgrade
 
+brew install ack
 brew install ant
 brew install ant-contrib
 brew install bash-completion
@@ -33,5 +34,5 @@ brew install unrar
 brew install watch
 brew install wget
 
-# Remove outdated versions from the cellar
+# cleanup unneeded files
 brew cleanup

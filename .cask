@@ -1,10 +1,14 @@
 #!/usr/bin/env bash
 
-# install cask
+# setup taps
 brew tap phinze/cask
 brew tap caskroom/versions
+brew tap caskroom/fonts
+
+# install cask
 brew install brew-cask
 
+# install applications
 brew cask install balsamiq-mockups
 brew cask install bettertouchtool
 #brew cask install bittorrent-sync
@@ -42,3 +46,9 @@ brew cask install virtualbox
 brew cask install vlc
 #brew cask install wireshark
 brew cask install xmind
+
+# install fonts
+brew cask install font-source-code-pro
+
+# cleanup unneeded files
+brew cleanup
