@@ -24,7 +24,7 @@ export LC_ALL="en_NZ.UTF-8"
 export MANPAGER="less -X"
 
 # Always enable colored `grep` output
-export GREP_OPTIONS="--color=auto"
+export GREP_OPTIONS="--color=auto -I --exclude-dir=.git --exclude-dir=test"
 
 # Link Homebrew casks in `/Applications` rather than `~/Applications`
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
