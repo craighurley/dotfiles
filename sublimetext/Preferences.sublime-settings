@@ -1,14 +1,11 @@
 {
     // appearance
-    "color_scheme": "Packages/User/Monokai Bright (SL).tmTheme",
+    "color_scheme": "Packages/Color Scheme - Default/Monokai Bright.tmTheme",
     "highlight_line": true,
     "highlight_modified_tabs": true,
     "open_files_in_new_window": false,
     "remember_open_files": false,
-    "rulers":
-    [
-        120
-    ],
+    "rulers":[],
 
     // title and status bar
     "show_full_path": true,
