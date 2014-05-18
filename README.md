@@ -55,7 +55,12 @@ source ~/Projects/dotfiles/.cask
 source ~/Projects/dotfiles/.osx
 ```
 
-8 Finally, restart your computer.
+8. Link sublime text settings by running this command:
+```bash
+ln -s ~/Projects/dotfiles/sublimetext/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
+```
+
+9. Finally, restart your computer.
 
 
 ## Update
