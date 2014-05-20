@@ -33,6 +33,7 @@
         ".DS_Store",
         "Desktop.ini",
         "*.pyc",
+        ".project",
         "._*",
         "Thumbs.db",
         ".Trashes"
