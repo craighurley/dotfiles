@@ -524,7 +524,7 @@ defaults write com.codeux.irc.textual "System Profiler Extension -> Feature Disa
 defaults write com.codeux.irc.textual "System Profiler Extension -> Feature Disabled -> OS Version" -int 1
 defaults write com.codeux.irc.textual "System Profiler Extension -> Feature Disabled -> Screen Resolution" -int 0
 defaults write com.codeux.irc.textual "System Profiler Extension -> Feature Disabled -> System Uptime" -int 1
-defaults write com.codeux.irc.textual "Theme -> Font Name" -string "Menlo-Regular"
+defaults write com.codeux.irc.textual "Theme -> Font Name" -string "SourceCodePro-Regular"
 defaults write com.codeux.irc.textual "Theme -> Font Size" -int 12
 defaults write com.codeux.irc.textual "Main Input Text Field -> Font Size" -int 2
 defaults write com.codeux.irc.textual LogHighlights -int 0
