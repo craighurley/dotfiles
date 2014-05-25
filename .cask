@@ -49,6 +49,7 @@ brew cask install xmind
 
 # install fonts
 brew cask install font-source-code-pro
+brew cask install font-fira-sans
 
 # cleanup unneeded files
 brew cleanup
