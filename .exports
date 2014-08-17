@@ -4,7 +4,7 @@ export EDITOR="nano"
 # Larger bash history (allow 32³ entries; default is 500)
 export HISTSIZE=32768
 export HISTFILESIZE=$HISTSIZE
-export HISTCONTROL=ignoredups:erasedups
+export HISTCONTROL=ignoreboth:erasedups
 # Make some commands not show up in history
 export HISTIGNORE="pwd:exit:man *:date:* --help"
 
