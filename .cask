@@ -14,6 +14,7 @@ brew cask install bettertouchtool
 #brew cask install bittorrent-sync
 brew cask install ccleaner
 #brew cask install charles
+brew cask install dash
 brew cask install dropbox
 #brew cask install dropletmanager
 brew cask install dnscrypt
@@ -35,6 +36,8 @@ brew cask install skype
 brew cask install snagit
 brew cask install sonos
 brew cask install sourcetree
+#brew cask install sqlite-database-browser
+brew cask install spideroak
 brew cask install sublime-text3
 brew cask install the-unarchiver
 brew cask install transmission

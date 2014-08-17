@@ -18,6 +18,7 @@ brew install dnstop
 brew install gist
 brew install gpg2
 #brew install irssi
+brew install jq
 brew install netcat
 brew install nmap
 brew install openssl

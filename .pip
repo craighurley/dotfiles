@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+# Ask for the administrator password upfront
+sudo -v
+
+# install pip
+sudo easy_install pip
+
+# install pip modules
+sudo pip install -U virtualenv
+sudo pip install -U pylint
+sudo pip install -U httpie
+#sudo pip install -U mitmproxy
