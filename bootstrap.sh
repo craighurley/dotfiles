@@ -26,7 +26,7 @@ function doIt() {
     [ ! -d ~/Projects/gists ] && mkdir -p ~/Projects/gists
     [ ! -d ~/Pictures/Snagit ] && mkdir -p ~/Pictures/Snagit
     [ ! -d ~/temp ] && mkdir -p ~/temp
-    [ ! -d ~/.dev ] && mkdir -p ~/.dev
+    [ ! -d ~/dev ] && mkdir -p ~/dev
     [ ! -d ~/.pwd ] && mkdir -p ~/.pwd && chmod 700 ~/.pwd
 
     # move any existing dotfiles to dotfilesbackup, then create symlinks from dotfiles to ~
@@ -37,7 +37,7 @@ function doIt() {
         fi
         echo "Creating symlink ~/$file to $dotfiles/$file"
         ln -s $dotfiles/$file ~/$file
-    done    
+    done
 }
 
 read -p "This script will backup your current dotfiles and symlink to a new set of dotfiles. Are you sure? (y/n) " -n 1

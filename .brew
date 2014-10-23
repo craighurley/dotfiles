@@ -6,18 +6,16 @@ brew update
 # Upgrade any already-installed formulae
 brew upgrade
 
-brew install ant
-brew install ant-contrib
+#brew install ant
+#brew install ant-contrib
 brew install bash-completion
 #brew install boot2docker
 #brew install docker
-brew install dnscrypt-proxy
+#brew install dnscrypt-proxy
 brew install dnstop
-# git is installed before this point
-#brew install git
-brew install gist
-brew install gpg2
-brew install jq
+#brew install gist
+#brew install gpg2
+#brew install jq
 brew install netcat
 brew install nmap
 brew install openssl

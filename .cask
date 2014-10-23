@@ -9,15 +9,16 @@ brew tap caskroom/fonts
 brew install brew-cask
 
 # install applications
+brew cask install alfred
 brew cask install balsamiq-mockups
 brew cask install bettertouchtool
 #brew cask install bittorrent-sync
 brew cask install ccleaner
-#brew cask install charles
+brew cask install charles
 brew cask install dash
 brew cask install dropbox
 #brew cask install dropletmanager
-brew cask install dnscrypt
+#brew cask install dnscrypt
 brew cask install evernote
 #brew cask install eclipse-jee
 brew cask install filezilla
@@ -26,8 +27,8 @@ brew cask install flash
 #brew cask install google-chrome
 #brew cask install google-drive
 #brew cask install google-hangouts
-brew cask install gpgtools
-brew cask install java
+#brew cask install gpgtools
+#brew cask install java
 brew cask install kaleidoscope
 brew cask install keepassx0
 #brew cask install pycharm-ce
@@ -37,6 +38,7 @@ brew cask install snagit
 brew cask install sonos
 brew cask install sourcetree
 #brew cask install sqlite-database-browser
+brew cask install stay
 brew cask install spideroak
 brew cask install sublime-text3
 brew cask install the-unarchiver
@@ -45,7 +47,7 @@ brew cask install versions
 brew cask install virtualbox
 brew cask install vlc
 #brew cask install wireshark
-brew cask install xmind
+#brew cask install xmind
 
 # install fonts
 brew cask install font-source-code-pro
