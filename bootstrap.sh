@@ -24,10 +24,10 @@ function doIt() {
     [ ! -d ~/Documents/installs/windows ] && mkdir -p ~/Documents/installs/windows
     [ ! -d ~/Documents/iso ] && mkdir -p ~/Documents/iso
     [ ! -d ~/Projects/gists ] && mkdir -p ~/Projects/gists
+    [ ! -d ~/Projects/workspace ] && mkdir -p ~/Projects/workspace
     [ ! -d ~/Pictures/Snagit ] && mkdir -p ~/Pictures/Snagit
     [ ! -d ~/temp ] && mkdir -p ~/temp
     [ ! -d ~/dev ] && mkdir -p ~/dev
-    [ ! -d ~/.pwd ] && mkdir -p ~/.pwd && chmod 700 ~/.pwd
 
     # move any existing dotfiles to dotfilesbackup, then create symlinks from dotfiles to ~
     for file in ${files[@]}; do

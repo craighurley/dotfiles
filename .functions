@@ -15,14 +15,6 @@ function toggleshowhide() {
     killall Finder
 }
 
-# Write preferences to permanent storage
-function CFPreferencesAppSynchronize() {
-    python - <<END
-from Foundation import CFPreferencesAppSynchronize
-CFPreferencesAppSynchronize('$1')
-END
-}
-
 # Cleanup
 function dsclean() {
     read -p "Delete all .DS_Stores in this directory and all subdirectories? (y/n) " -n 1
@@ -30,12 +22,6 @@ function dsclean() {
     if [[ $REPLY =~ ^[Yy]$ ]]; then
         find . -type f -name '.DS_Store' -ls -delete
     fi
-}
-
-# Convert whiteboard images to something a little cleaner
-function whiteboard() {
-    #convert "$1" -morphology Convolve DoG:15,100,0 -negate -normalize -despeckle -unsharp 5 -channel RBG -level 60%,91%,0.1 "$2"
-    convert "$1" -morphology Convolve DoG:15,100,0 -negate -normalize -despeckle -unsharp 5 "$2"
 }
 
 # Decode base64
