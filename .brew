@@ -1,34 +1,36 @@
 #!/usr/bin/env bash
 
+# Ask for the administrator password upfront
+sudo -v
+
 # Make sure we’re using the latest Homebrew
 brew update
 
 # Upgrade any already-installed formulae
 brew upgrade
 
-#brew install ant
-#brew install ant-contrib
+# install applications
 brew install bash-completion
-#brew install boot2docker
-#brew install docker
-#brew install dnscrypt-proxy
 brew install dnstop
-#brew install gist
 #brew install gpg2
-#brew install jq
 brew install netcat
 brew install nmap
-brew install openssl
-#brew install rbenv
 brew install readline
 brew install rename
-#brew install sshfs
-#brew install tor
 brew install tree
-#brew install unbound
 brew install unrar
 brew install watch
 brew install wget
+
+# optional applications
+#brew install ant
+#brew install ant-contrib
+#brew install boot2docker
+#brew install docker
+#brew install dnscrypt-proxy
+#brew install jq
+#brew install tor
+#brew install unbound
 
 # cleanup unneeded files
 brew cleanup

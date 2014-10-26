@@ -7,60 +7,57 @@ These dotfiles are based on [Mathias Bynens' dotfiles](https://github.com/mathia
 
 ## Installation
 
-1 Install xcode from the app store.  Open xcode and accept the license agreement.  TODO: find out how to accept the license via command line.
+1.1 Install xcode from the app store.
+1.2 Open xcode and accept the license agreement.
 
-2 Install code command line tools:
+2. Install code command line tools:
 ```bash
 xcode-select --install
 ```
 
-3 Install homebrew and check that it's ready to go:
+3. Install homebrew and check that it's ready to go:
 ```bash
-ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew doctor
 ```
 
-4 Install git:
-```bash
-brew install git
-```
-
-5 Clone this repo:
+4. Clone this repo by running the following commands:
 ```bash
 mkdir ~/Projects
 git clone https://github.com/craighurley/dotfiles.git ~/Projects/dotfiles
 ```
 
-6 Run the following commands to backup your original dotfiles and symlink to the new dotfiles, then kill your terminal:
+5. Run the following command to backup your original dotfiles and symlink to the new dotfiles, install brew and cask applications and finally make changes to some basic settings:
 ```bash
 source ~/Projects/dotfiles/bootstrap.sh
-killall Terminal
-```
-Now add what ever you need to `.extra`.
-My `.extra` looks like this:
-```bash
-# Git credentials
-GIT_AUTHOR_NAME="First Last"
-GIT_AUTHOR_EMAIL="first.last@email.com"
-GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
-GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
-git config --global user.name "$GIT_AUTHOR_NAME"
-git config --global user.email "$GIT_AUTHOR_EMAIL"s
 ```
 
-7 Run the following commands to install apps and apply settings:
+Essentially, after setting up a basic folder structure, this step runs the following commands:
 ```bash
 source ~/Projects/dotfiles/.brew
 source ~/Projects/dotfiles/.cask
 source ~/Projects/dotfiles/.osx
 ```
 
-8. Link sublime text settings by running this command:
+6. Link sublime text settings by running this command:
 ```bash
 ln -s ~/Projects/dotfiles/sublimetext/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
 ```
 
-9. Finally, restart your computer.
+7. Restart your computer.
+
+8. Make suitable manual changes in the following areas:
+- System Preferences > Trackpad
+- System Preferences > Spotlight
+- System Preferences > Desktop & Screen Saver
+- System Preferences > Dock
+- System Preferences > Users & Groups
+- Terminal
+
+9. Open and configure the following applications:
+- SpiderOak
+- Stay
+- BetterTouchTool
 
 
 ## Update

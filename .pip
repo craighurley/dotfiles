@@ -6,8 +6,10 @@ sudo -v
 # install pip
 sudo easy_install pip
 
-# install pip modules
+# install modules
 sudo pip install -U virtualenv
 sudo pip install -U pylint
 sudo pip install -U httpie
+
+# optional modules
 #sudo pip install -U mitmproxy
