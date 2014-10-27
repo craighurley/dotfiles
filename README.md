@@ -55,7 +55,7 @@ ln -s ~/Projects/dotfiles/sublimetext/Preferences.sublime-settings ~/Library/App
 - System Preferences > Users & Groups
 - Terminal
 
-9 Manually configure applications (starting with SpiderOak).
+10 Manually configure applications (starting with SpiderOak).
 
 
 ## Update
