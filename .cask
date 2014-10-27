@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-# Ask for the administrator password upfront
-sudo -v
+# Link Homebrew casks in `/Applications` rather than `~/Applications`
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # setup taps
 brew tap phinze/cask

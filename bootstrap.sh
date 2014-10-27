@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 
+# Ask for the administrator password upfront
+sudo -v
+
 # list of files/folders to symlink in ~ to dotfiles
-files=".aliases .bash_profile .bash_prompt .bashrc .curlrc .exports .functions .gitignore_global .hushlogin .inputrc .mackup.cfg .screenrc .wgetrc"
+files=".aliases .bash_profile .bash_prompt .bashrc .exports .functions .gitignore_global .hushlogin .inputrc .mackup.cfg .screenrc .wgetrc"
 # path to where you cloned the dotfile repo
 dotfiles=~/Projects/dotfiles
 # path to where you want to store a backup of your original dotfiles.
@@ -17,12 +20,11 @@ function doIt() {
     [ ! -f ~/.gitconfig ] && cp $dotfiles/.gitconfig.template ~/.gitconfig
 
     # make other folders
-    [ ! -d ~/Downloads/_transmission/complete ] && mkdir -p ~/Downloads/_transmission/complete
-    [ ! -d ~/Downloads/_transmission/incomplete ] && mkdir -p ~/Downloads/_transmission/incomplete
-    [ ! -d ~/Documents/installs/osx ] && mkdir -p ~/Documents/installs/osx
-    [ ! -d ~/Documents/installs/linux ] && mkdir -p ~/Documents/installs/linux
-    [ ! -d ~/Documents/installs/windows ] && mkdir -p ~/Documents/installs/windows
-    [ ! -d ~/Documents/iso ] && mkdir -p ~/Documents/iso
+    [ ! -d ~/Downloads/.transmission/incomplete ] && mkdir -p ~/Downloads/.transmission/incomplete
+    [ ! -d ~/installs/osx ] && mkdir -p ~/installs/osx
+    [ ! -d ~/installs/linux ] && mkdir -p ~/installs/linux
+    [ ! -d ~/installs/windows ] && mkdir -p ~/installs/windows
+    [ ! -d ~/iso ] && mkdir -p ~/iso
     [ ! -d ~/Projects/workspace ] && mkdir -p ~/Projects/workspace
     [ ! -d ~/Pictures/Snagit ] && mkdir -p ~/Pictures/Snagit
     [ ! -d ~/temp ] && mkdir -p ~/temp
@@ -41,6 +43,9 @@ function doIt() {
         echo "Creating symlink ~/$file to $dotfiles/$file"
         ln -s $dotfiles/$file ~/$file
     done
+
+    # create a symlink to the scripts folder:
+    ln -s ~/Projects/dotfiles/scripts ~/.scripts
 
     # install brew/cask apps
     source $dotfiles/.brew

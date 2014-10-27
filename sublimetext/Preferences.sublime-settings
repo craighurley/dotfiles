@@ -7,6 +7,10 @@
     "remember_open_files": false,
     "rulers":[],
 
+    // minimap
+    "draw_minimap_border": true,
+    "always_show_minimap_viewport": true,
+
     // title and status bar
     "show_full_path": true,
     "show_encoding": true,

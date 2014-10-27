@@ -55,10 +55,7 @@ ln -s ~/Projects/dotfiles/sublimetext/Preferences.sublime-settings ~/Library/App
 - System Preferences > Users & Groups
 - Terminal
 
-10 Open and configure the following applications:
-- SpiderOak
-- Stay
-- BetterTouchTool
+9 Manually configure applications (starting with SpiderOak).
 
 
 ## Update

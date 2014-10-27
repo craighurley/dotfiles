@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-# Ask for the administrator password upfront
-sudo -v
-
 # Make sure we’re using the latest Homebrew
 brew update
 
@@ -12,7 +9,6 @@ brew upgrade
 # install applications
 brew install bash-completion
 brew install dnstop
-#brew install gpg2
 brew install netcat
 brew install nmap
 brew install readline
@@ -29,6 +25,7 @@ brew install wget
 #brew install docker
 #brew install dnscrypt-proxy
 #brew install jq
+#brew install gpg2
 #brew install tor
 #brew install unbound
 
