@@ -2,7 +2,7 @@
 
 
 ## Introduction
-These dotfiles are based on [Mathias Bynens' dotfiles](https://github.com/mathiasbynens/dotfiles) and [this](http://blog.smalleycreative.com/tutorials/using-git-and-github-to-manage-your-dotfiles/) post on smalleycreative.com.
+A collection of scripts to bootstrap a clean install of OS X.
 
 
 ## Installation
@@ -28,34 +28,39 @@ mkdir ~/Projects
 git clone https://github.com/craighurley/dotfiles.git ~/Projects/dotfiles
 ```
 
-6 Run the following command to backup your original dotfiles and symlink to the new dotfiles, install brew and cask applications and finally make changes to some basic settings:
+6 Run the following command to do everything.  _Note: you will be prompted for your password a number of times during script execution._
 ```bash
-source ~/Projects/dotfiles/bootstrap.sh
+~/Projects/dotfiles/bootstrap.sh
 ```
 
-Essentially, after setting up a basic folder structure, this step runs the following commands:
+Essentially, `bootstrap.sh` executes the following commands:
 ```bash
-source ~/Projects/dotfiles/.brew
-source ~/Projects/dotfiles/.cask
-source ~/Projects/dotfiles/.osx
+# Create some useful directories.
+./~Projects/dotfiles/.directories
+
+# Backup existing dotfiles and symlink to the dotfiles in this project.
+./~Projects/dotfiles/.dotfiles
+
+# Copy some templates to ~.  These files don't really belong in version control.
+./~Projects/dotfiles/.templates
+
+# Configure some sensible defaults in OS X.
+./~Projects/dotfiles/.osx
+
+# Install command line tools.
+./~Projects/dotfiles/.brew
+
+# Install applictions.
+./~Projects/dotfiles/.cask
+
+# Install useful python modules.
+./~Projects/dotfiles/.pip
+
+# Apply preferences to applications.
+./~Projects/dotfiles/.preferences
 ```
 
-7 Link sublime text settings by running this command:
-```bash
-ln -s ~/Projects/dotfiles/sublimetext/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
-```
-
-8 Restart your computer.
-
-9 Make suitable manual changes in the following areas:
-- System Preferences > Trackpad
-- System Preferences > Spotlight
-- System Preferences > Desktop & Screen Saver
-- System Preferences > Dock
-- System Preferences > Users & Groups
-- Terminal
-
-10 Manually configure applications (starting with SpiderOak).
+7 Restart your computer.
 
 
 ## Update
