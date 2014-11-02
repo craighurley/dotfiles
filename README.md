@@ -36,28 +36,28 @@ git clone https://github.com/craighurley/dotfiles.git ~/Projects/dotfiles
 Essentially, `bootstrap.sh` executes the following commands:
 ```bash
 # Create some useful directories.
-./~Projects/dotfiles/.directories
+~/Projects/dotfiles/.directories
 
 # Backup existing dotfiles and symlink to the dotfiles in this project.
-./~Projects/dotfiles/.dotfiles
+~/Projects/dotfiles/.dotfiles
 
 # Copy some templates to ~.  These files don't really belong in version control.
-./~Projects/dotfiles/.templates
+~/Projects/dotfiles/.templates
 
 # Configure some sensible defaults in OS X.
-./~Projects/dotfiles/.osx
+~/Projects/dotfiles/.osx
 
 # Install command line tools.
-./~Projects/dotfiles/.brew
+~/Projects/dotfiles/.brew
 
 # Install applictions.
-./~Projects/dotfiles/.cask
+~/Projects/dotfiles/.cask
 
 # Install useful python modules.
-./~Projects/dotfiles/.pip
+~/Projects/dotfiles/.pip
 
 # Apply preferences to applications.
-./~Projects/dotfiles/.preferences
+~/Projects/dotfiles/.preferences
 ```
 
 7 Restart your computer.
