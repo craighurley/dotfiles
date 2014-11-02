@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Start
+echo "`basename $0` starting."
+
 # Ask for the administrator password upfront
 sudo -v
 
@@ -13,3 +16,6 @@ sudo pip install -U httpie
 
 # optional modules
 #sudo pip install -U mitmproxy
+
+# Finished
+echo "`basename $0` complete."

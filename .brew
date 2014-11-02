@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+# Start
+echo "`basename $0` starting."
+
+# Ask for the administrator password upfront
+sudo -v
+
 # Make sure we’re using the latest Homebrew
 brew update
 
@@ -25,9 +31,13 @@ brew install wget
 #brew install docker
 #brew install dnscrypt-proxy
 #brew install jq
+#brew install keybase
 #brew install gpg2
 #brew install tor
 #brew install unbound
 
 # cleanup unneeded files
 brew cleanup
+
+# Finished
+echo "`basename $0` complete."

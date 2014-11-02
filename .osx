@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Start
+echo "`basename $0` starting."
+
 # Ask for the administrator password upfront
 sudo -v
 
@@ -7,14 +10,15 @@ sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 ###############################################################################
-# General UI/UX                                                               #
+# General System
 ###############################################################################
-
 # Set computer name (as done via System Preferences → Sharing)
-sudo scutil --set ComputerName "REPLACEME"
-sudo scutil --set HostName "REPLACEME"
-sudo scutil --set LocalHostName "REPLACEME"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "REPLACEME"
+read -p "Enter new hostname: " _hn
+
+sudo scutil --set ComputerName "$_hn"
+sudo scutil --set HostName "$_hn"
+sudo scutil --set LocalHostName "$_hn"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$_hn"
 
 # Disable the sound effects on boot.  To re-enable: sudo nvram -d SystemAudioVolume
 # macbook pro late 2012 + os x 10.9
@@ -22,6 +26,10 @@ sudo nvram SystemAudioVolume="%80"
 
 # Enable verbose booting.  To reset to default: sudo nvram boot-args="" ; sudo nvram -d boot-args
 #sudo nvram boot-args="-v"
+
+###############################################################################
+# General UI/UX
+###############################################################################
 
 # Menu bar: show remaining battery as a percentage
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
@@ -40,7 +48,7 @@ defaults write com.apple.menuextra.clock IsAnalog -bool false
 defaults write com.apple.menuextra.clock DateFormat -string "EEE d MMM  HH:mm"
 
 ###############################################################################
-# Screen                                                                      #
+# Screen
 ###############################################################################
 
 # Require password 5 seconds after sleep or screen saver begins
@@ -57,7 +65,7 @@ defaults write com.apple.screencapture type -string "png"
 defaults write com.apple.screencapture disable-shadow -bool true
 
 ###############################################################################
-# Finder                                                                      #
+# Finder
 ###############################################################################
 
 # Icons for hard drives, servers, and removable media on the desktop
@@ -137,81 +145,9 @@ defaults write com.apple.dock autohide -bool true
 # Minimise applications to their icon
 defaults write com.apple.dock "minimize-to-application" -bool true
 
-# Hot corners
-# Possible values:
-#  0: no-op
-#  2: Mission Control
-#  3: Show application windows
-#  4: Desktop
-#  5: Start screen saver
-#  6: Disable screen saver
-#  7: Dashboard
-# 10: Put display to sleep
-# 11: Launchpad
-# 12: Notification Center
-# Top left screen corner → Mission Control
-#defaults write com.apple.dock wvous-tl-corner -int 2
-#defaults write com.apple.dock wvous-tl-modifier -int 0
-# Top right screen corner → Desktop
-#defaults write com.apple.dock wvous-tr-corner -int 4
-#defaults write com.apple.dock wvous-tr-modifier -int 0
-# Bottom left screen corner → Start screen saver
-#defaults write com.apple.dock wvous-bl-corner -int 5
-#defaults write com.apple.dock wvous-bl-modifier -int 0
-# Bottom right screen corner → Start screen saver
+# Hot corners: bottom right screen corner = start screen saver
 defaults write com.apple.dock wvous-br-corner -int 5
 defaults write com.apple.dock wvous-br-modifier -int 0
-
-###############################################################################
-# Safari & WebKit
-###############################################################################
-
-# Set Safari’s home page to `about:blank` for faster loading
-defaults write com.apple.Safari HomePage -string "about:blank"
-defaults write com.apple.Safari NewTabBehavior -int 0
-defaults write com.apple.Safari NewWindowBehavior -int 0
-
-# Prevent Safari from opening ‘safe’ files automatically after downloading
-defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
-
-# Allow hitting the Backspace key to go to the previous page in history
-defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2BackspaceKeyNavigationEnabled -bool true
-
-# Hide Safari’s bookmarks bar by default
-defaults write com.apple.Safari ShowFavoritesBar -bool false
-
-# Disable Safari’s thumbnail cache for History and Top Sites
-defaults write com.apple.Safari DebugSnapshotsUpdatePolicy -int 2
-
-# Enable Safari’s debug menu
-#defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
-
-# Make Safari’s search banners default to Contains instead of Starts With
-defaults write com.apple.Safari FindOnPageMatchesWordStartsOnly -bool false
-
-###############################################################################
-# Mail
-###############################################################################
-
-# Disable send and reply animations in Mail.app
-defaults write com.apple.mail DisableReplyAnimations -bool true
-defaults write com.apple.mail DisableSendAnimations -bool true
-
-# Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app
-defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
-
-# Display emails in threaded mode, sorted by date (oldest at the top)
-defaults write com.apple.mail DraftsViewerAttributes -dict-add "DisplayInThreadedMode" -string "yes"
-defaults write com.apple.mail DraftsViewerAttributes -dict-add "SortedDescending" -string "yes"
-defaults write com.apple.mail DraftsViewerAttributes -dict-add "SortOrder" -string "received-date"
-
-###############################################################################
-# Terminal
-###############################################################################
-
-# Only use UTF-8 in Terminal.app
-defaults write com.apple.terminal StringEncodings -array 4
-
 
 ###############################################################################
 # Energy preferences
@@ -234,8 +170,5 @@ sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setglobalstate on
 # Enable stealth mode
 sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setstealthmode on
 
-###############################################################################
-# Fin
-###############################################################################
-
-echo "Done. Please restart."
+# Finished
+echo "`basename $0` complete."
