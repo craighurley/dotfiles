@@ -1,0 +1,8 @@
+###############################################################################
+# SourceTree
+###############################################################################
+
+defaults write com.torusknot.SourceTreeNotMAS windowRestorationMethod -int 1
+defaults write com.torusknot.SourceTreeNotMAS useFixedWithCommitFont -int 1
+defaults write com.torusknot.SourceTreeNotMAS pushWhenCommitting -int 1
+defaults write com.torusknot.SourceTreeNotMAS alwaysDisplayFullOutput -int 1
