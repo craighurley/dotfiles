@@ -7,28 +7,28 @@ A collection of scripts to bootstrap a clean install of OS X.
 
 ## Installation
 
-1. Install xcode from the app store.
+1 Install xcode from the app store.
 
-2. Open xcode and accept the license agreement.
+2 Open xcode and accept the license agreement.
 
-3. Install code command line tools:
+3 Install code command line tools:
 ```bash
 xcode-select --install
 ```
 
-4. Install homebrew and check that it's ready to go:
+4 Install homebrew and check that it's ready to go:
 ```bash
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew doctor
 ```
 
-5. Clone this repo by running the following commands:
+5 Clone this repo by running the following commands:
 ```bash
 mkdir ~/Projects
 git clone https://github.com/craighurley/dotfiles.git ~/Projects/dotfiles
 ```
 
-6. Run the following command to do everything.  _Note: you will be prompted for your password a number of times during script execution._
+6 Run the following command to do everything.  _Note: you will be prompted for your password a number of times during script execution._
 ```bash
 ~/Projects/dotfiles/bootstrap.sh
 ```
@@ -60,7 +60,7 @@ Essentially, `bootstrap.sh` executes the following commands:
 ./~Projects/dotfiles/.preferences
 ```
 
-7. Restart your computer.
+7 Restart your computer.
 
 
 ## Update
