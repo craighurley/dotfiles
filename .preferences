@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# Start
+echo "`basename $0` starting."
+
+directory=~/Projects/dotfiles/preferences
+files=`find $directory -iname ".*" -maxdepth 1 -type f`
+
+for file in ${files[@]}; do
+    [ -f $file ] && source $file
+done
+
+# Finished
+echo "`basename $0` complete."
