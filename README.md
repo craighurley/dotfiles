@@ -41,19 +41,19 @@ Essentially, `bootstrap.sh` executes the following commands:
 # Backup existing dotfiles and symlink to the dotfiles in this project.
 ~/Projects/dotfiles/.dotfiles
 
-# Copy some templates to ~.  These files don't really belong in version control.
+# Copy some templates to ~.  These files don't really belong in version control, hence they are not symlinked.
 ~/Projects/dotfiles/.templates
 
 # Configure some sensible defaults in OS X.
 ~/Projects/dotfiles/.osx
 
-# Install command line tools.
+# Install command line package manager and additional command line tools.
 ~/Projects/dotfiles/.brew
 
-# Install applictions.
+# Install command line package manager and additional applictions.
 ~/Projects/dotfiles/.cask
 
-# Install useful python modules.
+# Install additional python modules.
 ~/Projects/dotfiles/.pip
 
 # Apply preferences to applications.
