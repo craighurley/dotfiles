@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+###############################################################################
+# ANT
+###############################################################################
+
+_antcontrib=/usr/local/Cellar/ant-contrib/1.0b3/libexec/ant-contrib-1.0b3.jar
+
+# check for ant
+if [ -f $(echo $(type -P ant)) ]; then
+    # check if antcontrib exists
+    if [ -f $_antcontrib ]; then
+        # get the ant lib dir
+        _x=$(ant -diagnostics | grep -i "ant.library.dir")
+        _lib=${_x##*:}
+        # create a symlink for antcontrib
+        ln -f -s $_antcontrib $_lib/ant-contrib.jar
+    else
+        echo "Error: $_antcontrib does not exist"
+    fi
+fi
