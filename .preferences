@@ -7,7 +7,7 @@ directory=~/Projects/dotfiles/preferences
 files=`find $directory -iname ".*" -maxdepth 1 -type f`
 
 for file in ${files[@]}; do
-    [ -f $file ] && source $file
+    [[ -f "$file" ]] && source "$file"
 done
 
 # Finished
