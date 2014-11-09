@@ -27,7 +27,6 @@
     // packages
     "ignored_packages":
     [
-        "BracketHighlighter",
         "Vintage"
     ],
 

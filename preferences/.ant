@@ -18,4 +18,6 @@ if [ -f $(echo $(type -P ant)) ]; then
     else
         echo "Error: $_antcontrib does not exist"
     fi
+else
+    echo "Error: ant does not exist"
 fi

@@ -35,16 +35,16 @@ A collection of scripts to bootstrap a clean install of OS X.
 
     Essentially, `bootstrap.sh` executes the following commands:
     ```bash
-    # Create some useful directories.
+    # Create useful directories.
     ~/Projects/dotfiles/.directories
 
     # Backup existing dotfiles and symlink to the dotfiles in this project.
     ~/Projects/dotfiles/.dotfiles
 
-    # Copy some templates to ~.  These files don't really belong in version control, hence they are not symlinked.
+    # Copy templates to ~.  These files don't really belong in version control, hence they are not symlinked.
     ~/Projects/dotfiles/.templates
 
-    # Configure some sensible defaults in OS X.
+    # Configure sensible defaults in OS X.
     ~/Projects/dotfiles/.osx
 
     # Install command line package manager and additional command line tools.
