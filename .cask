@@ -40,6 +40,7 @@ brew cask install the-unarchiver
 brew cask install transmission
 brew cask install versions
 brew cask install virtualbox
+brew cask install zeroxed
 
 # optional applications
 #brew cask install balsamiq-mockups
