@@ -1,0 +1,6 @@
+###############################################################################
+# SnagIt
+###############################################################################
+
+# Disable send activation (hack)
+defaults read com.TechSmith.Snagit "activationSendAttempts" 9999

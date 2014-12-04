@@ -58,6 +58,7 @@ brew cask install zeroxed
 #brew cask install pycharm-ce
 #brew cask install skitch
 #brew cask install sqlite-database-browser
+#brew cask install vagrant
 #brew cask install vlc
 #brew cask install wireshark
 #brew cask install xmind
