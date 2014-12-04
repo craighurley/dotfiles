@@ -19,3 +19,6 @@ defaults write com.apple.mail InboxViewerAttributes -dict-add "SortedDescending"
 
 # Disable inline attachments (just show the icons)
 defaults write com.apple.mail DisableInlineAttachmentViewing -bool true
+
+# Insert attachments at end of message (stops exchange servers adding ATT00001.htm etc. to your emails)
+defaults write com.apple.mail AttachAtEnd -bool true
