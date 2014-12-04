@@ -4,22 +4,22 @@
 echo "`basename $0` starting."
 
 # create folders
-[[ ! -d "~/Downloads/.transmission/incomplete" ]] && mkdir -p "~/Downloads/.transmission/incomplete"
-[[ ! -d "~/Pictures/Snagit" ]] && mkdir -p "~/Pictures/Snagit"
-[[ ! -d "~/Projects/workspace" ]] && mkdir -p "~/Projects/workspace"
-[[ ! -d "~/dev" ]] && mkdir -p "~/dev"
-[[ ! -d "~/installs/osx" ]] && mkdir -p "~/installs/osx"
-[[ ! -d "~/installs/linux" ]] && mkdir -p "~/installs/linux"
-[[ ! -d "~/installs/windows" ]] && mkdir -p "~/installs/windows"
-[[ ! -d "~/iso" ]] && mkdir -p "~/iso"
-[[ ! -d "~/temp" ]] && mkdir -p "~/temp"
+[[ ! -d ~/Downloads/.transmission/incomplete ]] && mkdir -p ~/Downloads/.transmission/incomplete
+[[ ! -d ~/Pictures/Snagit ]] && mkdir -p ~/Pictures/Snagit
+[[ ! -d ~/Projects/workspace ]] && mkdir -p ~/Projects/workspace
+[[ ! -d ~/dev ]] && mkdir -p ~/dev
+[[ ! -d ~/installs/osx ]] && mkdir -p ~/installs/osx
+[[ ! -d ~/installs/linux ]] && mkdir -p ~/installs/linux
+[[ ! -d ~/installs/windows ]] && mkdir -p ~/installs/windows
+[[ ! -d ~/iso ]] && mkdir -p ~/iso
+[[ ! -d ~/temp ]] && mkdir -p ~/temp
 
 # ssh
-[[ ! -d "~/.ssh" ]] && mkdir -p "~/.ssh"
-chmod 700 "~/.ssh"
+[[ ! -d ~/.ssh ]] && mkdir -p ~/.ssh
+chmod 700 ~/.ssh
 
 # create a symlink to the scripts folder:
-ln -s "~/Projects/scripts" "~/.scripts"
+ln -s ~/Projects/scripts ~/.scripts
 
 # Finished
 echo "`basename $0` complete."
