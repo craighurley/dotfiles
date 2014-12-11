@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+isWorkMachine=false
+
 # Start
 echo "`basename $0` starting."
 
@@ -38,27 +40,30 @@ brew cask install spideroak
 brew cask install sublime-text3
 brew cask install the-unarchiver
 brew cask install transmission
-brew cask install versions
 brew cask install virtualbox
 brew cask install zeroxed
 
+# if this is a work machine
+if [[ $isWorkMachine == true ]]; then
+    brew cask install balsamiq-mockups
+    brew cask install eclipse-jee
+    brew cask install filezilla
+    brew cask install java
+    brew cask install joinme
+    brew cask install vagrant
+    brew cask install versions
+fi
+
 # optional applications
-#brew cask install balsamiq-mockups
 #brew cask install bittorrent-sync
 #brew cask install dropbox
 #brew cask install dropletmanager
 #brew cask install dnscrypt
-#brew cask install eclipse-jee
-#brew cask install filezilla
-#brew cask install google-chrome
 #brew cask install google-drive
-#brew cask install google-hangouts
 #brew cask install gpgtools
-#brew cask install java
 #brew cask install pycharm-ce
 #brew cask install skitch
 #brew cask install sqlite-database-browser
-#brew cask install vagrant
 #brew cask install vlc
 #brew cask install wireshark
 #brew cask install xmind
