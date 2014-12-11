@@ -24,3 +24,6 @@ defaults write com.apple.Safari DebugSnapshotsUpdatePolicy -int 2
 
 # Make Safari’s search banners default to Contains instead of Starts With
 defaults write com.apple.Safari FindOnPageMatchesWordStartsOnly -bool false
+
+# Stop Safari sending searches to Apple
+defaults write com.apple.Safari UniversalSearchEnabled -bool false

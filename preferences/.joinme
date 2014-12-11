@@ -1,6 +1,5 @@
 ###############################################################################
-# SnagIt
+# join.me
 ###############################################################################
 
-# Disable send activation (hack)
-defaults write com.TechSmith.Snagit "activationSendAttempts" 9999
+defaults write com.logmein.join.me DefaultConferenceCountry -string "New Zealand - Auckland"
