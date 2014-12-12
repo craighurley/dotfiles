@@ -6,6 +6,7 @@ alias h="history"
 alias j="jobs"
 alias c="clear"
 alias e="exit"
+alias t="tmux"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -23,6 +24,9 @@ alias la="ls -lAhF ${colorflag}"
 
 # List only directories
 alias lsd='ls -lF ${colorflag} | grep "^d"'
+
+# List tmux windows
+alias lst='tmux ls'
 
 # Always use color output for `ls`
 alias ls="command ls -h ${colorflag}"
@@ -51,6 +55,3 @@ alias plistbuddy="/usr/libexec/PlistBuddy"
 
 # tcpdump aliases
 alias tcpdump-http="sudo tcpdump -nn -A -s0 -q 'tcp port 80 and (((ip[2:2] - ((ip[0]&0xf)<<2)) - ((tcp[12]&0xf0)>>2)) != 0)'"
-
-# Decrypt pkcs8 private key and add to ssh-add (Mavericks is dumb in this regard)
-alias ssh-add-pkcs8="openssl pkcs8 -in ~/.ssh/id_rsa | ssh-add -"

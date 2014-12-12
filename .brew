@@ -20,6 +20,7 @@ brew install netcat
 brew install nmap
 brew install readline
 brew install rename
+brew install tmux
 brew install tree
 brew install unrar
 brew install watch
@@ -29,6 +30,10 @@ brew install wget
 if [[ $isWorkMachine == true ]]; then
     brew install ant
     brew install ant-contrib
+
+    # install additional completion files
+    brew tap homebrew/completions
+    brew install vagrant-completion
 fi
 
 # optional applications
