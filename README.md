@@ -11,7 +11,7 @@ A collection of scripts to bootstrap a clean install of OS X.
 
 2. Open xcode and accept the license agreement.
 
-3. Install code command line tools:
+3. Install xcode command line tools:
     ```bash
     xcode-select --install
     ```
