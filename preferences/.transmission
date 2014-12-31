@@ -6,11 +6,11 @@ defaults write org.m0k.transmission AutoImport -bool true
 defaults write org.m0k.transmission AutoImportDirectory -string "${HOME}/Downloads"
 defaults write org.m0k.transmission BlocklistNew -bool true
 defaults write org.m0k.transmission CheckUpload -bool true
-defaults write org.m0k.transmission DHTGlobal -bool false
+defaults write org.m0k.transmission DHTGlobal -bool true
 defaults write org.m0k.transmission DeleteOriginalTorrent -bool true
 defaults write org.m0k.transmission DownloadLocationConstant -bool true
 defaults write org.m0k.transmission IncompleteDownloadFolder -string "${HOME}/Downloads/.transmission/incomplete"
-defaults write org.m0k.transmission PEXGlobal -bool false
+defaults write org.m0k.transmission PEXGlobal -bool true
 defaults write org.m0k.transmission SpeedLimitDownloadLimit -int 50
 defaults write org.m0k.transmission SpeedLimitUploadLimit -int 1
 defaults write org.m0k.transmission UploadLimit -int 50

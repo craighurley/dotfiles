@@ -45,7 +45,7 @@ brew cask install sublime-text3
 brew cask install the-unarchiver
 brew cask install transmission
 brew cask install virtualbox
-brew cask install zeroxed
+brew cask install 0xed
 
 # if this is not a work machine
 if [[ $isWorkMachine == false ]]; then
