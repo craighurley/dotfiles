@@ -9,5 +9,9 @@ git clone https://github.com/craighurley/sublime-insert-date-time.git ~/Library/
 git clone https://github.com/craighurley/sublime-xml-lint.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/sublime-xml-lint
 git clone git@bitbucket.org:craighurley/scripts.git ~/Projects/scripts
 
+# web sites
+git clone https://github.com/craighurley/thehurley.com.git ~/Projects/thehurley.com
+git clone https://github.com/craighurley/craighurley.github.io.git ~/Projects/craighurley.me
+
 # Finished
 echo "`basename $0` complete."
