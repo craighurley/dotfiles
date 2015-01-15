@@ -28,7 +28,6 @@ brew install brew-cask
 # install applications
 brew cask install bettertouchtool
 brew cask install ccleaner
-brew cask install carbon-copy-cloner
 brew cask install dash
 brew cask install evernote
 brew cask install firefox
