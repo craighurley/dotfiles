@@ -1,6 +1,9 @@
 {
     // appearance
-    "color_scheme": "Packages/Color Scheme - Default/Monokai Bright.tmTheme",
+    //"color_scheme": "Packages/Color Scheme - Default/Monokai Bright.tmTheme",
+    "color_scheme": "Packages/Theme - Afterglow/Afterglow-monokai.tmTheme",
+    "theme": "Afterglow.sublime-theme",
+    "tabs_small": true,
     "highlight_line": true,
     "highlight_modified_tabs": true,
     "open_files_in_new_window": false,

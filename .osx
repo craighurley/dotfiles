@@ -208,5 +208,12 @@ sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setglobalstate on
 # Enable stealth mode
 sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setstealthmode on
 
+###############################################################################
+# SSD settings
+###############################################################################
+
+# Disable local Time Machine snapshots
+#sudo tmutil disablelocal
+
 # Finished
 echo "`basename $0` complete."
