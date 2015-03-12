@@ -213,7 +213,7 @@ sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setstealthmode on
 ###############################################################################
 
 # Disable local Time Machine snapshots
-sudo tmutil disablelocal
+#sudo tmutil disablelocal
 
 # Finished
 echo "`basename $0` complete."

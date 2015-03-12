@@ -3,10 +3,14 @@
 # Start
 echo "`basename $0` starting."
 
+# sublime text
 git clone https://github.com/craighurley/sublime-generate-uuid.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/sublime-generate-uuid
 git clone https://github.com/craighurley/sublime-hl7-syntax.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/sublime-hl7-syntax
 git clone https://github.com/craighurley/sublime-insert-date-time.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/sublime-insert-date-time
 git clone https://github.com/craighurley/sublime-xml-lint.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/sublime-xml-lint
+git clone https://github.com/Yabatadesign/afterglow-theme/ ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/afterglow
+
+# scripts
 git clone git@bitbucket.org:craighurley/scripts.git ~/Projects/scripts
 
 # web sites
