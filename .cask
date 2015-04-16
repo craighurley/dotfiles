@@ -18,12 +18,11 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 sudo -v
 
 # setup taps
-brew tap phinze/cask
 brew tap caskroom/versions
 brew tap caskroom/fonts
 
 # install cask
-brew install brew-cask
+brew install caskroom/cask/brew-cask
 
 # install applications
 brew cask install bettertouchtool
