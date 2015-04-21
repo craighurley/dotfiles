@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+###############################################################################
+# Firefox
+###############################################################################
+
+# TODO: parse profiles.ini to find the default profile, then copy user.js to that location.
+#[ -f ~/Projects/dotfiles/applications/firefox/user.js ] && ln -f -s ~/Projects/dotfiles/applications/firefox/user.js ~/Library/Application\ Support/firefox/Profiles/[TODO: replace with default profile]/Preferences.sublime-settings
