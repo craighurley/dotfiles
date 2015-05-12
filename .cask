@@ -42,6 +42,7 @@ brew cask install spideroak
 brew cask install sublime-text3
 brew cask install the-unarchiver
 brew cask install transmission
+brew cask install vagrant
 brew cask install virtualbox
 
 # if this is not a work machine
@@ -59,22 +60,8 @@ if [[ $isWorkMachine == true ]]; then
     brew cask install filezilla
     brew cask install java
     brew cask install joinme
-    brew cask install vagrant
     brew cask install versions
 fi
-
-# optional applications
-#brew cask install alfred
-#brew cask install bittorrent-sync
-#brew cask install dropletmanager
-#brew cask install dnscrypt
-#brew cask install google-drive
-#brew cask install gpgtools
-#brew cask install pycharm-ce
-#brew cask install skitch
-#brew cask install sqlite-database-browser
-#brew cask install wireshark
-#brew cask install xmind
 
 # install fonts
 brew cask install font-source-code-pro

@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+###############################################################################
+# jsc
+###############################################################################
+
+[ -f /System/Library/Frameworks/JavaScriptCore.framework/Resources/jsc ] && ln -s /System/Library/Frameworks/JavaScriptCore.framework/Resources/jsc /usr/local/bin/

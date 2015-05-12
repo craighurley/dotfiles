@@ -21,6 +21,7 @@ brew update
 brew upgrade
 
 # install applications
+brew install ansible
 brew install bash-completion
 brew install git
 brew install netcat
@@ -37,22 +38,11 @@ brew install wget
 if [[ $isWorkMachine == true ]]; then
     brew install ant
     brew install ant-contrib
-
-    # install additional completion files
-    brew tap homebrew/completions
-    brew install vagrant-completion
 fi
 
-# optional applications
-#brew install boot2docker
-#brew install docker
-#brew install dnscrypt-proxy
-#brew install dnstop
-#brew install jq
-#brew install keybase
-#brew install gpg2
-#brew install tor
-#brew install unbound
+# install additional completion files
+brew tap homebrew/completions
+brew install vagrant-completion
 
 # cleanup unneeded files
 brew cleanup
