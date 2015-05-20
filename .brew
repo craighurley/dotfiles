@@ -5,11 +5,11 @@ isWorkMachine=false
 # Start
 echo "`basename $0` starting."
 
-read -p "Is this a work machine? (y/n) " -n 1
-echo
-if [[ $REPLY =~ ^[Yy]$ ]]; then
-    isWorkMachine=true
-fi
+#read -p "Is this a work machine? (y/n) " -n 1
+#echo
+#if [[ $REPLY =~ ^[Yy]$ ]]; then
+#    isWorkMachine=true
+#fi
 
 # Ask for the administrator password upfront
 sudo -v
@@ -21,6 +21,8 @@ brew update
 brew upgrade
 
 # install applications
+brew install ant
+brew install ant-contrib
 brew install ansible
 brew install bash-completion
 brew install git
@@ -35,10 +37,9 @@ brew install watch
 brew install wget
 
 # if this is a work machine
-if [[ $isWorkMachine == true ]]; then
-    brew install ant
-    brew install ant-contrib
-fi
+#if [[ $isWorkMachine == true ]]; then
+#
+#fi
 
 # install additional completion files
 brew tap homebrew/completions

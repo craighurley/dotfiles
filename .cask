@@ -25,12 +25,16 @@ brew tap caskroom/fonts
 brew install caskroom/cask/brew-cask
 
 # install applications
+brew cask install balsamiq-mockups
 brew cask install bettertouchtool
 brew cask install ccleaner
 brew cask install dash
+brew cask install eclipse-jee
 brew cask install evernote
+brew cask install filezilla
 brew cask install firefox
 brew cask install flash
+brew cask install java
 brew cask install kaleidoscope
 brew cask install keepassx0
 brew cask install skype
@@ -41,6 +45,7 @@ brew cask install stay
 brew cask install spideroak
 brew cask install sublime-text3
 brew cask install the-unarchiver
+brew cask install totalspaces
 brew cask install transmission
 brew cask install vagrant
 brew cask install virtualbox
@@ -54,11 +59,7 @@ fi
 
 # if this is a work machine
 if [[ $isWorkMachine == true ]]; then
-    brew cask install balsamiq-mockups
     brew cask install charles
-    brew cask install eclipse-jee
-    brew cask install filezilla
-    brew cask install java
     brew cask install joinme
     brew cask install versions
 fi
