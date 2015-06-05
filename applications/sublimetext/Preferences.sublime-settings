@@ -2,7 +2,7 @@
     // appearance
     //"color_scheme": "Packages/Color Scheme - Default/Monokai Bright.tmTheme",
     "color_scheme": "Packages/Theme - Afterglow/Afterglow-monokai.tmTheme",
-    "theme": "Afterglow-blue.sublime-theme",
+    "theme": "Afterglow.sublime-theme",
     "folder_no_icon": true,
     "tabs_small": true,
     "highlight_line": true,
