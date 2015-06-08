@@ -31,7 +31,6 @@ brew cask install ccleaner
 brew cask install dash
 brew cask install eclipse-jee
 brew cask install evernote
-brew cask install filezilla
 brew cask install firefox
 brew cask install flash
 brew cask install java
