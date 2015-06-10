@@ -26,6 +26,7 @@ brew install ant-contrib
 brew install ansible
 brew install bash-completion
 brew install git
+brew install httpie
 brew install netcat
 brew install nmap
 brew install readline
