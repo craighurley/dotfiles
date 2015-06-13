@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+###############################################################################
+# vagrant
+###############################################################################
+
+if [[ -f "/usr/bin/vagrant" ]]; then
+    /usr/bin/vagrant plugin install vagrant-digitalocean
+    /usr/bin/vagrant plugin install vagrant-hostmanager
+fi
