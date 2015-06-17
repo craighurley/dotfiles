@@ -10,5 +10,7 @@ git clone https://github.com/craighurley/sublime-generate-uuid.git ~/Library/App
 git clone https://github.com/craighurley/sublime-hl7-syntax.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/sublime-hl7-syntax
 git clone https://github.com/craighurley/sublime-insert-date-time.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/sublime-insert-date-time
 git clone https://github.com/craighurley/sublime-xml-lint.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/sublime-xml-lint
-git clone https://github.com/Yabatadesign/afterglow-theme/ ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/Theme\ -\ Afterglow
-git clone git://github.com/jisaacks/GitGutter.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/GitGutter
+git clone https://github.com/Yabatadesign/afterglow-theme/ ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/afterglow-theme
+git clone https://github.com/jisaacks/GitGutter.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/GitGutter
+git clone https://github.com/jonschlinkert/sublime-markdown-extended.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/sublime-markdown-extended
+git clone https://github.com/facelessuser/BracketHighlighter.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/BracketHighlighter
