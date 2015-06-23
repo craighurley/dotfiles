@@ -20,3 +20,8 @@ export GREP_OPTIONS="--color=auto -I --exclude-dir=.git --exclude-dir=.svn --exc
 
 # Link Homebrew casks in `/Applications` rather than `~/Applications`
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
+# Add required exports for boot2docker to work
+if [[ -f "$(type -P boot2docker)" ]]; then
+    eval "$(boot2docker shellinit)"
+fi

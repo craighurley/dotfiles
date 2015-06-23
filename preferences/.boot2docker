@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+###############################################################################
+# boot2docker & docker
+###############################################################################
+
+_boot2docker=$(type -P boot2docker)
+_docker=$(type -P docker)
+
+# download boot2docker ISO image
+if [[ -f "$_boot2docker" ]]; then
+    $_boot2docker init
+else
+    echo "Error: boot2docker does not exist"
+fi
+
+# download docker images
+if [[ -f "$_docker" ]]; then
+    $_docker pull centos
+else
+    echo "Error: docker does not exist"
+fi
