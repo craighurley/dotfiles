@@ -24,7 +24,9 @@ brew upgrade
 brew install ant
 brew install ant-contrib
 brew install ansible
+brew install boot2docker
 brew install bash-completion
+brew install docker
 brew install git
 brew install httpie
 brew install netcat
