@@ -22,6 +22,6 @@ export GREP_OPTIONS="--color=auto -I --exclude-dir=.git --exclude-dir=.svn --exc
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # Add required exports for boot2docker to work
-if [[ -f "$(type -P boot2docker)" ]]; then
-    eval "$(boot2docker shellinit)"
-fi
+export DOCKER_HOST=tcp://$(boot2docker ip):2376
+export DOCKER_CERT_PATH=~/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
