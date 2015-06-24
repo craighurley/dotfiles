@@ -1,12 +1,15 @@
 
 alias ..="cd .."
 
+alias b="boot2docker"
+alias c="clear"
+alias d="docker"
+alias e="exit"
 alias g="git"
 alias h="history"
 alias j="jobs"
-alias c="clear"
-alias e="exit"
 alias t="tmux"
+alias v="vagrant"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
