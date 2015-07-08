@@ -6,7 +6,7 @@ export HISTSIZE=32768
 export HISTFILESIZE=$HISTSIZE
 export HISTCONTROL=ignoreboth:erasedups
 # Make some commands not show up in history
-export HISTIGNORE="pwd:exit:man *:date:* --help"
+export HISTIGNORE="pwd:exit:man *"
 
 # Use UTF-8
 export LANG="en_NZ"

@@ -6,12 +6,12 @@ echo "`basename $0` starting."
 # create folders
 [[ ! -d ~/Downloads/.transmission/incomplete ]] && mkdir -p ~/Downloads/.transmission/incomplete
 [[ ! -d ~/Pictures/Snagit ]] && mkdir -p ~/Pictures/Snagit
-[[ ! -d ~/Projects/workspace ]] && mkdir -p ~/Projects/workspace
-[[ ! -d ~/dev ]] && mkdir -p ~/dev
-[[ ! -d ~/installs/osx ]] && mkdir -p ~/installs/osx
-[[ ! -d ~/installs/linux ]] && mkdir -p ~/installs/linux
-[[ ! -d ~/installs/windows ]] && mkdir -p ~/installs/windows
-[[ ! -d ~/iso ]] && mkdir -p ~/iso
+[[ ! -d ~/Projects/eclipse_workspace ]] && mkdir -p ~/Projects/eclipse_workspace
+[[ ! -d ~/Documents/dev ]] && mkdir -p ~/Documents/dev
+[[ ! -d ~/Documents/installs/osx ]] && mkdir -p ~/Documents/installs/osx
+[[ ! -d ~/Documents/installs/linux ]] && mkdir -p ~/Documents/installs/linux
+[[ ! -d ~/Documents/installs/windows ]] && mkdir -p ~/Documents/installs/windows
+[[ ! -d ~/Documents/iso ]] && mkdir -p ~/Documents/iso
 [[ ! -d ~/temp ]] && mkdir -p ~/temp
 
 # ssh
