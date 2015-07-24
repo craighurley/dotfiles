@@ -23,6 +23,7 @@ if [[ -f "$_vbox" ]] ; then
                 $_vbox modifyvm $_boot2dockervm --cpus $_cpucount
                 $_vbox modifyvm $_boot2dockervm --cpuexecutioncap $_cpucap
                 $_vbox modifyvm $_boot2dockervm --memory $_memory
+                $_vbox modifyvm $_boot2dockervm --groups "/docker"
             else
                 echo "Error: $_boot2dockervm was powered on so no changes were applied."
             fi

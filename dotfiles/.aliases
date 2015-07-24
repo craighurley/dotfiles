@@ -11,6 +11,9 @@ alias j="jobs"
 alias t="tmux"
 alias v="vagrant"
 
+# mkpasswd clone using python. ensure passlib is installed (pip install passlib)
+alias mkpasswd="python -c 'from passlib.hash import sha512_crypt; import getpass; print sha512_crypt.encrypt(getpass.getpass())'"
+
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
 	colorflag="--color"

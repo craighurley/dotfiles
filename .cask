@@ -32,10 +32,9 @@ brew cask install dash
 brew cask install eclipse-jee
 brew cask install evernote
 brew cask install firefox
-brew cask install flash
 brew cask install java
 brew cask install kaleidoscope
-brew cask install keepassx0
+#brew cask install keepassx0
 brew cask install skype
 brew cask install snagit
 brew cask install sonos

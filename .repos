@@ -11,7 +11,7 @@ git clone https://github.com/craighurley/thehurley.com.git ~/Projects/thehurley.
 git clone https://github.com/craighurley/craighurley.github.io.git ~/Projects/craighurley.me
 
 # vps
-git clone https://github.com/craighurley/vagrant-ansible-vps.git ~/Projects/vagrant-ansible-vps
+git clone https://github.com/craighurley/pesonal-vps.git ~/Projects/personal-vps
 
 # Finished
 echo "`basename $0` complete."

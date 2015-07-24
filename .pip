@@ -13,6 +13,7 @@ sudo easy_install pip
 sudo pip install -U passlib
 sudo pip install -U pylint
 sudo pip install -U virtualenv
+sudo pip install -U tabulate
 
 # Finished
 echo "`basename $0` complete."
