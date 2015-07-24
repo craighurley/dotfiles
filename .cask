@@ -34,7 +34,7 @@ brew cask install evernote
 brew cask install firefox
 brew cask install java
 brew cask install kaleidoscope
-brew cask install keepassx0
+#brew cask install keepassx0
 brew cask install skype
 brew cask install snagit
 brew cask install sonos
