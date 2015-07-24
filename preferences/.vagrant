@@ -8,5 +8,4 @@ if [[ -f "/usr/bin/vagrant" ]]; then
     /usr/bin/vagrant plugin install vagrant-hostmanager
     /usr/bin/vagrant plugin install vagrant-digitalocean
     /usr/bin/vagrant plugin install vagrant-aws
-    /usr/bin/vagrant box add puppetlabs/centos-7.0-64-puppet --provider virtualbox
 fi
