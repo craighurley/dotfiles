@@ -14,6 +14,7 @@ sudo pip install -U passlib
 sudo pip install -U pylint
 sudo pip install -U virtualenv
 sudo pip install -U tabulate
+sudo pip install -U dopy
 
 # Finished
 echo "`basename $0` complete."

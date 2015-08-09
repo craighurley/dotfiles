@@ -28,3 +28,17 @@ function dsclean() {
 function decode() {
     echo "$1" | base64 --decode ; echo
 }
+
+# Generate a random set of words for use in a password
+function mkpassphrase() {
+    p=$(gshuf -n${1-3} /usr/share/dict/words | tr '\n' ' ' | tr '[:upper:]' '[:lower:]' | sed 's/[[:space:]]$//')
+    echo -n $p | pbcopy
+}
+
+function mkpassphrases() {
+    for i in {1..10}
+    do
+        p=$(gshuf -n${1-3} /usr/share/dict/words | tr '\n' ' ' | tr '[:upper:]' '[:lower:]' | sed 's/[[:space:]]$//')
+        echo $p
+    done
+}
