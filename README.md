@@ -63,6 +63,7 @@ A collection of scripts to bootstrap a clean install of OS X.
 
 
 ## Update
+
     ```bash
     cd ~/Projects/dotfiles/
     git pull origin master
