@@ -25,7 +25,7 @@ brew tap caskroom/fonts
 brew install caskroom/cask/brew-cask
 
 # install applications
-brew cask install balsamiq-mockups
+#brew cask install balsamiq-mockups
 brew cask install bettertouchtool
 brew cask install ccleaner
 brew cask install dash
@@ -37,10 +37,9 @@ brew cask install kaleidoscope
 #brew cask install keepassx0
 brew cask install skype
 brew cask install snagit
-brew cask install sonos
 brew cask install sourcetree
-brew cask install stay
-brew cask install spideroak
+#brew cask install stay
+brew cask install spideroakone
 brew cask install sublime-text3
 brew cask install the-unarchiver
 brew cask install totalspaces
