@@ -32,6 +32,7 @@ brew cask install dash
 brew cask install eclipse-jee
 brew cask install evernote
 brew cask install firefox
+brew cask install flux
 brew cask install java
 brew cask install kaleidoscope
 #brew cask install keepassx0
