@@ -16,5 +16,8 @@ export GIT_PS1_SHOWUNTRACKEDFILES=1
 export GIT_PS1_SHOWUPSTREAM=auto
 export GIT_PS1_SHOWCOLORHINTS=1
 
+#export PS1='\n\u@\h: \w\n\$ '
 export PS1='\n\[$(tput setaf 6)\]\u\[$(tput sgr0)\] on \[$(tput setaf 3)\]\h\[$(tput sgr0)\] in \[$(tput setaf 5)\]\w\[$(tput sgr0)\]\n\$ '
-PROMPT_COMMAND='__git_ps1 "\n\[$(tput setaf 6)\]\u\[$(tput sgr0)\] on \[$(tput setaf 3)\]\h\[$(tput sgr0)\] in \[$(tput setaf 5)\]\w\[$(tput sgr0)\]" "\\n\\\$ "'
+
+#PROMPT_COMMAND='__git_ps1 "\n\u@\h: \w" "\n\$ "'
+PROMPT_COMMAND='__git_ps1 "\n\[$(tput setaf 6)\]\u\[$(tput sgr0)\] on \[$(tput setaf 3)\]\h\[$(tput sgr0)\] in \[$(tput setaf 5)\]\w\[$(tput sgr0)\]" "\n\$ "'
