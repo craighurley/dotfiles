@@ -25,3 +25,6 @@ stty -ixon
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
     source $(brew --prefix)/etc/bash_completion
 fi
+
+# ruby
+eval "$(rbenv init -)"

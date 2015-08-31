@@ -29,11 +29,16 @@ brew install bash-completion
 brew install coreutils
 brew install docker
 brew install git
-brew install httpie
+#brew install httpie
+brew install ipcalc
 brew install netcat
 brew install nmap
+brew install python
+brew install python3
 brew install readline
 brew install rename
+brew install ruby-build
+brew install rbenv-bundler
 brew install tmux
 brew install tree
 brew install unrar

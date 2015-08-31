@@ -5,7 +5,7 @@
 ###############################################################################
 
 _ant=$(type -P ant)
-_antcontrib=/usr/local/Cellar/ant-contrib/1.0b3/libexec/ant-contrib-1.0b3.jar
+_antcontrib=/usr/local/Cellar/ant-contrib/1.0b3/share/ant/ant-contrib-1.0b3.jar
 
 # check for ant
 if [[ -f "$_ant" ]]; then

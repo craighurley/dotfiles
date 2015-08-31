@@ -1,0 +1,3 @@
+PATH="~/.scripts:$PATH"
+PATH="$HOME/.rbenv/bin:$PATH"
+export PATH
