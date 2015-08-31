@@ -1,8 +1,13 @@
-# coloured prompt
-# red: 1
-# yellow: 3
-# green: 2
-#export PS1="\[$(tput setaf [COLOUR])\]\n\u@\h: \w\n\\$ \[$(tput sgr0)\]"
+# red:          $(tput setaf 1)
+# green:        $(tput setaf 2)
+# yellow:       $(tput setaf 3)
+# blue:         $(tput setaf 4)
+# magenta:      $(tput setaf 5)
+# cyan:         $(tput setaf 6)
+# white:        $(tput setaf 7)
+# bold:         $(tput bold)
+# underline:    $(tput sgr 0 1)
+# reset:        $(tput sgr0)
 
 # for information on the git prompt, see: https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 export GIT_PS1_SHOWDIRTYSTATE=1
@@ -12,4 +17,7 @@ export GIT_PS1_SHOWUPSTREAM=auto
 export GIT_PS1_SHOWCOLORHINTS=1
 
 export PS1='\n\u@\h: \w\n\$ '
-PROMPT_COMMAND='__git_ps1 "\n\u@\h: \w" "\\n\\\$ "'
+#export PS1='\n\[$(tput setaf 6)\]\u\[$(tput sgr0)\] on \[$(tput setaf 3)\]\h\[$(tput sgr0)\] in \[$(tput setaf 5)\]\w\[$(tput sgr0)\]\n\$ '
+
+PROMPT_COMMAND='__git_ps1 "\n\u@\h: \w" "\n\\\$ "'
+#PROMPT_COMMAND='__git_ps1 "\n\[$(tput setaf 6)\]\u\[$(tput sgr0)\] on \[$(tput setaf 3)\]\h\[$(tput sgr0)\] in \[$(tput setaf 5)\]\w\[$(tput sgr0)\]" "\n\\\$ "'
