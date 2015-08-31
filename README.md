@@ -63,11 +63,11 @@ A collection of scripts to bootstrap a clean install of OS X.
 
 
 ## Update
-
-    ```bash
-    cd ~/Projects/dotfiles/
-    git pull origin master
-    ```
+Run the following commands to get the latest version of this project:
+```bash
+cd ~/Projects/dotfiles/
+git pull origin master
+```
 
 
 ## Feedback
