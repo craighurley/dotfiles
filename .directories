@@ -18,6 +18,10 @@ echo "`basename $0` starting."
 [[ ! -d ~/.ssh ]] && mkdir -p ~/.ssh
 chmod 700 ~/.ssh
 
+# bash history
+[[ ! -d ~/.history ]] && mkdir -p ~/.history
+chmod 700 ~/.history
+
 # create a symlink to the scripts folder:
 ln -s ~/Projects/scripts ~/.scripts
 

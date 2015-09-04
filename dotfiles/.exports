@@ -1,12 +1,12 @@
 # Make nano the default editor
 export EDITOR="nano"
 
-# Larger bash history (allow 32³ entries; default is 500)
+# bash history
 export HISTSIZE=32768
 export HISTFILESIZE=$HISTSIZE
 export HISTCONTROL=ignoreboth:erasedups
-# Make some commands not show up in history
 export HISTIGNORE="pwd:exit:man *"
+export HISTFILE="${HOME}/.history/$(date -u +%Y%m%d)_$$_${HOSTNAME}"
 
 # Use UTF-8
 export LANG="en_NZ"
