@@ -6,7 +6,6 @@ export HISTSIZE=32768
 export HISTFILESIZE=$HISTSIZE
 export HISTCONTROL=ignoreboth:erasedups
 export HISTIGNORE="pwd:exit:man *"
-export HISTFILE="${HOME}/.history/$(date -u +%Y%m%d)_$$_${HOSTNAME}"
 
 # Use UTF-8
 export LANG="en_NZ"
