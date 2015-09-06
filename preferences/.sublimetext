@@ -2,15 +2,27 @@
 
 ###############################################################################
 # Sublime Text
+# TODO
 ###############################################################################
 
-[ -f ~/Projects/dotfiles/applications/sublimetext/Preferences.sublime-settings ] && ln -f -s ~/Projects/dotfiles/applications/sublimetext/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
+echo "Install package control from here: https://packagecontrol.io/installation"
+echo "Run the following [ -f ~/Projects/dotfiles/applications/sublimetext/Preferences.sublime-settings ] && ln -f -s ~/Projects/dotfiles/applications/sublimetext/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings"
 
-git clone https://github.com/craighurley/sublime-generate-uuid.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/sublime-generate-uuid
-git clone https://github.com/craighurley/sublime-hl7-syntax.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/sublime-hl7-syntax
-git clone https://github.com/craighurley/sublime-insert-date-time.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/sublime-insert-date-time
-git clone https://github.com/craighurley/sublime-xml-lint.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/sublime-xml-lint
-git clone https://github.com/Yabatadesign/afterglow-theme/ ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/afterglow-theme
-git clone https://github.com/jisaacks/GitGutter.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/GitGutter
-git clone https://github.com/jonschlinkert/sublime-markdown-extended.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/sublime-markdown-extended
-git clone https://github.com/facelessuser/BracketHighlighter.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/BracketHighlighter
+#git clone https://github.com/craighurley/sublime-insert-date-time.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/sublime-insert-date-time
+#git clone https://github.com/craighurley/sublime-xml-lint.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/sublime-xml-lint
+
+# Bracket Highlighter
+# #git clone https://github.com/facelessuser/BracketHighlighter.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/BracketHighlighter
+# sublime-hl7-syntax
+# GitGutter
+# #git clone https://github.com/jisaacks/GitGutter.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/GitGutter
+# GenerateUUID
+# Open Finder
+# SyncedSidebar
+# Theme - Afterglow
+# Sublime Linter
+# Sublime Linter Rubocop
+# Evernote
+# #git clone https://github.com/Yabatadesign/afterglow-theme/ ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/afterglow-theme
+# Markdown Extended
+# #git clone https://github.com/jonschlinkert/sublime-markdown-extended.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/sublime-markdown-extended
