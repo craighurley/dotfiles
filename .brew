@@ -37,6 +37,7 @@ brew install python
 brew install python3
 brew install readline
 brew install rename
+brew install rbenv
 brew install ruby-build
 brew install rbenv-bundler
 brew install tmux
@@ -52,6 +53,9 @@ brew install wget
 
 # install additional completion files
 brew tap homebrew/completions
+brew install bundler-completion
+brew install gem-completion
+brew install ruby-completion
 brew install vagrant-completion
 
 # cleanup unneeded files
