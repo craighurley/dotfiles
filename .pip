@@ -10,10 +10,7 @@ sudo -v
 sudo easy_install pip
 
 # install modules
-sudo pip install -U passlib
-sudo pip install -U pylint
-sudo pip install -U virtualenv
-sudo pip install -U dopy
+sudo pip install -U pep8
 
 # Finished
 echo "`basename $0` complete."
