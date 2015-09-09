@@ -27,10 +27,11 @@ set sidescrolloff=5     " always show at least 5 characters left/right of the cu
 
 " Status line
 set laststatus=2
+set statusline=
 set statusline=%F                                   " filename
 set statusline+=\ [%{strlen(&fenc)?&fenc:'none'}    " file encoding
-set statusline+=\ %{&ff}]                           " file format
-set statusline+=\ %y                                " filetype
+set statusline+=\ %{&ff}                            " file format
+set statusline+=\ %{strlen(&ft)?&ft:'none'}]        " filetype
 set statusline+=%=                                  " left/right separator
 set statusline+=\ C:%c                              " cursor column
 set statusline+=\ L:%l/%L                           " cursor line/total lines
