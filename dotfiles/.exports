@@ -1,5 +1,5 @@
 # Make nano the default editor
-export EDITOR="nano"
+export EDITOR="vim"
 
 # bash history
 export HISTSIZE=32768

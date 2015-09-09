@@ -21,6 +21,20 @@ set showcmd             " show command in bottom bar
 set cursorline          " highlight current line
 set wildmenu
 set showmatch           " higlight matching parenthesis
+set scrolloff=5         " always show at least 5 lines above/below the cursor
+set sidescrolloff=5     " always show at least 5 characters left/right of the cursor
+"set colorcolumn=80
+
+" Status line
+set laststatus=2
+set statusline=%F                                   " filename
+set statusline+=\ [%{strlen(&fenc)?&fenc:'none'}    " file encoding
+set statusline+=\ %{&ff}]                           " file format
+set statusline+=\ %y                                " filetype
+set statusline+=%=                                  " left/right separator
+set statusline+=\ C:%c                              " cursor column
+set statusline+=\ L:%l/%L                           " cursor line/total lines
+set statusline+=\ %P                                " percent through file
 
 " Searching
 set ignorecase          " ignore case when searching
@@ -37,10 +51,6 @@ nnoremap <space> za
 " Line Shortcuts
 nnoremap j gj
 nnoremap k gk
-nnoremap B ^
-nnoremap E $
-nnoremap $ <nop>
-nnoremap ^ <nop>
 
 " AutoGroups
 augroup configgroup

@@ -9,7 +9,7 @@ alias g="git"
 alias h="history"
 alias j="jobs"
 alias t="tmux"
-alias v="vagrant"
+alias v="vim"
 alias vi="vim"
 
 # mkpasswd clone using python. ensure passlib is installed (pip install passlib)
