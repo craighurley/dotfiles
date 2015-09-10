@@ -69,6 +69,16 @@ augroup configgroup
     autocmd BufRead,BufNewFile *.md set spell spelllang=en_gb
 augroup END
 
+" Plugins
+set nocompatible                    " be iMproved, required
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim   " set the runtime path to include Vundle and initialize
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'       " let Vundle manage Vundle
+Plugin 'airblade/vim-gitgutter'     " gitgutter
+call vundle#end()
+filetype plugin indent on
+
 " Functions
 " strips trailing whitespace at the end of files. this
 " is called on buffer write in the autogroup above.
