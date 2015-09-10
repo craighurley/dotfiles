@@ -1,6 +1,14 @@
 " Colors
 syntax enable           " enable syntax processing
-colorscheme monokai
+let g:solarized_termcolors=256
+set background=dark
+colorscheme solarized
+
+" Powerline
+let g:airline_powerline_fonts=1
+let g:airline_section_c='%<%F%m %#__accent_red#%{airline#util#wrap(airline#parts#readonly(),0)}%#__restore__#'
+let g:airline_solarized_bg='dark'
+let g:airline_theme='solarized'
 
 " Misc
 set ttyfast             " faster redraw
@@ -24,13 +32,6 @@ set showmatch           " higlight matching parenthesis
 set scrolloff=3         " always show at least 5 lines above/below the cursor
 set sidescrolloff=3     " always show at least 5 characters left/right of the cursor
 set colorcolumn=80
-
-" Powerline
-let g:airline_powerline_fonts=1
-let g:airline_section_c='%<%F%m %#__accent_red#%{airline#util#wrap(airline#parts#readonly(),0)}%#__restore__#'
-let g:airline_solarized_bg='dark'
-let g:solarized_termcolors=256
-let g:airline_theme='solarized'
 
 " Status line
 set laststatus=2
