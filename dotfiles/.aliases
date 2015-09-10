@@ -12,6 +12,10 @@ alias t="tmux"
 alias v="vim"
 alias vi="vim"
 
+# git
+alias gl='git log --pretty=format:'\''%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'\'' --abbrev-commit'
+alias gs='git status --short'
+
 # mkpasswd clone using python. ensure passlib is installed (pip install passlib)
 alias mkpasswd="python -c 'from passlib.hash import sha512_crypt; import getpass; print sha512_crypt.encrypt(getpass.getpass())'"
 
