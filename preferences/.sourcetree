@@ -2,7 +2,9 @@
 # SourceTree
 ###############################################################################
 
-defaults write com.torusknot.SourceTreeNotMAS windowRestorationMethod -int 1
-defaults write com.torusknot.SourceTreeNotMAS useFixedWithCommitFont -int 1
+defaults write com.torusknot.SourceTreeNotMAS allowForcePush -int 1
+defaults write com.torusknot.SourceTreeNotMAS alwaysDisplayFullOutput -int 0
+defaults write com.torusknot.SourceTreeNotMAS analyticsHasAgreed -int 0
 defaults write com.torusknot.SourceTreeNotMAS pushWhenCommitting -int 1
-defaults write com.torusknot.SourceTreeNotMAS alwaysDisplayFullOutput -int 1
+defaults write com.torusknot.SourceTreeNotMAS useFixedWithCommitFont -int 1
+defaults write com.torusknot.SourceTreeNotMAS windowRestorationMethod -int 1
