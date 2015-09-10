@@ -21,8 +21,8 @@ set showcmd             " show command in bottom bar
 set cursorline          " highlight current line
 set wildmenu
 set showmatch           " higlight matching parenthesis
-set scrolloff=5         " always show at least 5 lines above/below the cursor
-set sidescrolloff=5     " always show at least 5 characters left/right of the cursor
+set scrolloff=3         " always show at least 5 lines above/below the cursor
+set sidescrolloff=3     " always show at least 5 characters left/right of the cursor
 set colorcolumn=80
 
 " Status line
@@ -67,6 +67,7 @@ augroup configgroup
     autocmd BufEnter *.sh setlocal shiftwidth=2
     autocmd BufEnter *.sh setlocal softtabstop=2
     autocmd BufRead,BufNewFile *.md set spell spelllang=en_gb
+    autocmd BufNewFile,BufRead Vagrantfile,Gemfile* set filetype=ruby
 augroup END
 
 " Plugins
