@@ -1,6 +1,6 @@
 " Colors
 syntax enable           " enable syntax processing
-colorscheme molokai
+colorscheme monokai
 
 " Misc
 set ttyfast             " faster redraw
@@ -23,7 +23,7 @@ set wildmenu
 set showmatch           " higlight matching parenthesis
 set scrolloff=5         " always show at least 5 lines above/below the cursor
 set sidescrolloff=5     " always show at least 5 characters left/right of the cursor
-"set colorcolumn=80
+set colorcolumn=80
 
 " Status line
 set laststatus=2
