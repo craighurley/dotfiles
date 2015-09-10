@@ -25,6 +25,13 @@ set scrolloff=3         " always show at least 5 lines above/below the cursor
 set sidescrolloff=3     " always show at least 5 characters left/right of the cursor
 set colorcolumn=80
 
+" Powerline
+let g:airline_powerline_fonts=1
+let g:airline_section_c='%<%F%m %#__accent_red#%{airline#util#wrap(airline#parts#readonly(),0)}%#__restore__#'
+let g:airline_solarized_bg='dark'
+let g:solarized_termcolors=256
+let g:airline_theme='solarized'
+
 " Status line
 set laststatus=2
 set statusline=
@@ -76,7 +83,9 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim   " set the runtime path to include Vundle and initialize
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'       " let Vundle manage Vundle
-Plugin 'airblade/vim-gitgutter'     " gitgutter
+Plugin 'airblade/vim-gitgutter'
+Plugin 'bling/vim-airline'
+Plugin 'tpope/vim-fugitive'
 call vundle#end()
 filetype plugin indent on
 
