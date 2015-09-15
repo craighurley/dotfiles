@@ -21,6 +21,7 @@ brew update
 brew upgrade
 
 # install applications
+brew install ack
 brew install ant
 brew install ant-contrib
 brew install ansible
@@ -40,9 +41,11 @@ brew install rename
 brew install rbenv
 brew install ruby-build
 brew install rbenv-bundler
+brew install rpm
 brew install tmux
 brew install tree
 brew install unrar
+brew install vim
 brew install watch
 brew install wget
 
