@@ -13,6 +13,7 @@ let g:airline_theme='solarized'
 " Misc
 set ttyfast             " faster redraw
 set backspace=indent,eol,start
+set clipboard=unnamed   " enable copying to system clipboard
 
 " Spaces & Tabs
 set tabstop=4           " 4 space tab
@@ -60,6 +61,9 @@ nnoremap <space> za
 " Line Shortcuts
 nnoremap j gj
 nnoremap k gk
+
+" bindings
+set pastetoggle=<F2>                                " turn off autoindent when pasting
 
 " AutoGroups
 augroup configgroup
