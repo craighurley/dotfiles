@@ -32,8 +32,10 @@ brew install docker
 brew install git
 #brew install httpie
 brew install ipcalc
+brew install jq
 brew install netcat
 brew install nmap
+brew install pstree
 brew install python
 brew install python3
 brew install readline

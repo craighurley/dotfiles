@@ -11,7 +11,7 @@ let g:airline_solarized_bg='dark'
 let g:airline_theme='solarized'
 
 " NerdTree
-"let NERDTreeIgnore=['\.pyc$']
+let NERDTreeIgnore=['\.DS_Store','\~$']
 let NERDTreeShowHidden=1
 
 " Misc
