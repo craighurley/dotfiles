@@ -1,3 +1,12 @@
+# custom scripts
 PATH="~/.scripts:$PATH"
+
+# ruby
 PATH="$HOME/.rbenv/bin:$PATH"
+
+# oracle sqlplus
+if [[ -d "/Library/Oracle/instantclient" ]]; then
+    PATH="/Library/Oracle/instantclient:$PATH"
+else
+
 export PATH
