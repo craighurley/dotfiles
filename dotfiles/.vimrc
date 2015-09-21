@@ -10,10 +10,23 @@ let g:airline_section_c='%<%F%m %#__accent_red#%{airline#util#wrap(airline#parts
 let g:airline_solarized_bg='dark'
 let g:airline_theme='solarized'
 
+" NerdTree
+"let NERDTreeIgnore=['\.pyc$']
+let NERDTreeShowHidden=1
+
 " Misc
 set ttyfast             " faster redraw
 set backspace=indent,eol,start
 set clipboard=unnamed   " enable copying to system clipboard
+
+" Time out on key codes but not mappings.
+set notimeout
+set ttimeout
+set ttimeoutlen=10
+
+" Backup and swap files
+set nobackup
+set noswapfile
 
 " Spaces & Tabs
 set tabstop=4           " 4 space tab
@@ -64,6 +77,7 @@ nnoremap k gk
 
 " bindings
 set pastetoggle=<F2>                                " turn off autoindent when pasting
+map <C-n> :NERDTreeToggle<CR>
 
 " AutoGroups
 augroup configgroup
@@ -80,10 +94,13 @@ augroup configgroup
     autocmd BufEnter *.sh setlocal softtabstop=2
     autocmd BufRead,BufNewFile *.md set spell spelllang=en_gb
     autocmd BufNewFile,BufRead Vagrantfile,Gemfile* set filetype=ruby
+    autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 augroup END
 
 " Plugins
 set nocompatible                    " be iMproved, required
+set noshowmode                      " airline is installed, disable the default mode indicator
+set shortmess+=I                    " remove startup message when no file is selected
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim   " set the runtime path to include Vundle and initialize
 call vundle#begin()
@@ -91,6 +108,8 @@ Plugin 'VundleVim/Vundle.vim'       " let Vundle manage Vundle
 Plugin 'airblade/vim-gitgutter'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 call vundle#end()
 filetype plugin indent on
 
