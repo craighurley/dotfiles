@@ -16,6 +16,7 @@ alias vi="vim"
 alias g="git"
 alias gl='git log --pretty=format:'\''%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'\'' --abbrev-commit'
 alias gs='git status --short'
+alias gd='git diff'
 
 # ls
 # Detect which `ls` flavor is in use
@@ -47,6 +48,9 @@ alias lsof='lsof -n -P'
 # nmap
 alias nmap='nmap -n -Pn'
 
+# pstree
+alias pstree='pstree -g 2'
+
 # mkpasswd clone using python. ensure passlib is installed (pip install passlib)
 alias mkpasswd="python -c 'from passlib.hash import sha512_crypt; import getpass; print sha512_crypt.encrypt(getpass.getpass())'"
 
@@ -70,3 +74,6 @@ alias plistbuddy="/usr/libexec/PlistBuddy"
 
 # tcpdump aliases
 alias tcpdump-http="sudo tcpdump -nn -A -s0 -q 'tcp port 80 and (((ip[2:2] - ((ip[0]&0xf)<<2)) - ((tcp[12]&0xf0)>>2)) != 0)'"
+
+# aws
+alias aws-regions="aws ec2 describe-regions --output json | jq '.Regions[]'"
