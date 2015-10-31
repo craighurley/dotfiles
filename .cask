@@ -33,17 +33,19 @@ brew cask install eclipse-jee
 brew cask install evernote
 brew cask install firefox
 brew cask install flux
-brew cask install hyperswitch
+# broken in OS X 10.11
+#brew cask install hyperswitch
 brew cask install java
 brew cask install kaleidoscope
-#brew cask install keepassx0
+brew cask install keepassx0
 brew cask install skype
 brew cask install snagit
 brew cask install sourcetree
 brew cask install spideroakone
 brew cask install sublime-text3
 brew cask install the-unarchiver
-brew cask install totalspaces
+# broken in OS X 10.11
+#brew cask install totalspaces
 brew cask install transmission
 brew cask install vagrant
 brew cask install virtualbox
