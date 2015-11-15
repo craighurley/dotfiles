@@ -69,7 +69,6 @@ set nofoldenable        " don't fold files by default on open
 set foldmethod=indent   " fold based on indent level
 set foldlevelstart=1    " start with fold level of 1
 set foldnestmax=10      " max 10 depth
-nnoremap <space> za
 
 " Line Shortcuts
 nnoremap j gj
