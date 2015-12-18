@@ -63,6 +63,7 @@ set statusline+=\ %P                                " percent through file
 set ignorecase          " ignore case when searching
 set incsearch           " search as characters are entered
 set hlsearch            " highlight all matches
+set nowrapscan          " do not wrap around
 
 " Folding
 set nofoldenable        " don't fold files by default on open
@@ -73,10 +74,6 @@ set foldnestmax=10      " max 10 depth
 " Line Shortcuts
 nnoremap j gj
 nnoremap k gk
-
-" bindings
-set pastetoggle=<F2>                                " turn off autoindent when pasting
-map <C-n> :NERDTreeToggle<CR>
 
 " AutoGroups
 augroup configgroup
@@ -124,3 +121,19 @@ function! <SID>StripTrailingWhitespaces()
     let @/=_s
     call cursor(l, c)
 endfunction
+
+" Map key to toggle opt
+function MapToggle(key, opt)
+  let cmd = ':set '.a:opt.'! \| set '.a:opt."?\<CR>"
+  exec 'nnoremap '.a:key.' '.cmd
+  exec 'inoremap '.a:key." \<C-O>".cmd
+endfunction
+command -nargs=+ MapToggle call MapToggle(<f-args>)
+
+" bindings
+map <C-n> :NERDTreeToggle<CR>
+
+set pastetoggle=<F1>                                " turn off autoindent when pasting
+MapToggle <F2> wrap
+MapToggle <F3> number
+MapToggle <F4> hlsearch
