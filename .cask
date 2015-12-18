@@ -22,7 +22,7 @@ brew tap caskroom/versions
 brew tap caskroom/fonts
 
 # install cask
-brew install caskroom/cask/brew-cask
+brew tap caskroom/cask
 
 # install applications
 #brew cask install balsamiq-mockups
