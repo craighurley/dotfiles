@@ -1,5 +1,5 @@
 # custom scripts
-PATH="~/.scripts:$PATH"
+PATH="$PATH:~/.scripts:~/Projects/rgrav"
 
 # ruby
 PATH="$HOME/.rbenv/bin:$PATH"
