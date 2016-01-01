@@ -4,13 +4,14 @@
 echo "`basename $0` starting."
 
 # Ask for the administrator password upfront
-sudo -v
+#sudo -v
 
 # install pip
-sudo easy_install pip
+easy_install pip
 
 # install modules
-sudo pip install -U pep8
+pip install -U pep8
+pip install -U troposphere
 
 # Finished
 echo "`basename $0` complete."
