@@ -15,8 +15,10 @@ alias vi="vim"
 # git
 alias g="git"
 alias gl='git log --pretty=format:'\''%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'\'' --abbrev-commit'
-alias gs='git status --short'
+alias gs='git status'
+alias gss='git status --short'
 alias gd='git diff'
+alias gp='git pull'
 
 # ls
 # Detect which `ls` flavor is in use
