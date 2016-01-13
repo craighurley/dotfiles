@@ -47,3 +47,8 @@ function colours() {
         printf "\x1b[38;5;${i}mcolour${i}\n"
     done
 }
+
+# rename tabs, useful for iterm2 and tmux
+function rt {
+    echo -ne "\033]0;"$@"\007"
+}
