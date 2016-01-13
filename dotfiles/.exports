@@ -5,7 +5,7 @@ export EDITOR="vim"
 export HISTSIZE=32768
 export HISTFILESIZE=$HISTSIZE
 export HISTCONTROL=ignoreboth:erasedups
-export HISTIGNORE="pwd:exit:man *"
+export HISTIGNORE="exit:c"
 
 # Use UTF-8
 export LANG="en_NZ"
