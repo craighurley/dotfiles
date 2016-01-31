@@ -5,11 +5,11 @@
 	],
 	"always_show_minimap_viewport": true,
 	"color_scheme": "Packages/User/SublimeLinter/Afterglow-monokai (SL).tmTheme",
-	"detect_indentation": false,
+	"detect_indentation": true,
 	"dictionary": "Packages/Language - English/en_GB.dic",
 	"draw_minimap_border": true,
 	"draw_white_space": "all",
-	"ensure_newline_at_eof_on_save": true,
+	"ensure_newline_at_eof_on_save": false,
 	"file_exclude_patterns":
 	[
 		".DS_Store",
@@ -33,7 +33,8 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"Vintage"
+		"Vintage",
+		"Markdown"
 	],
 	"open_files_in_new_window": false,
 	"remember_open_files": false,
@@ -48,7 +49,7 @@
 	"tab_size": 4,
 	"tabs_small": true,
 	"theme": "Afterglow.sublime-theme",
-	"translate_tabs_to_spaces": true,
+	"translate_tabs_to_spaces": false,
 	"trim_automatic_white_space": true,
 	"trim_trailing_white_space_on_save": true,
 	"word_wrap": "false"
