@@ -23,10 +23,5 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 # don't display homebrew emoji
 export HOMEBREW_NO_EMOJI=1
 
-# Add required exports for boot2docker to work
-export DOCKER_HOST=tcp://192.168.59.103:2376
-export DOCKER_CERT_PATH=~/.boot2docker/certs/boot2docker-vm
-export DOCKER_TLS_VERIFY=1
-
 # sqldeveloper
 export DYLD_LIBRARY_PATH=/Library/Oracle/instantclient

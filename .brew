@@ -26,10 +26,11 @@ brew install ant
 brew install ant-contrib
 brew install ansible
 brew install awscli
-brew install boot2docker
 brew install bash-completion
 brew install coreutils
 brew install docker
+brew install docker-machine
+brew install docker-compose
 brew install git
 brew install ipcalc
 brew install jq
