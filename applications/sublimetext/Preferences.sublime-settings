@@ -33,8 +33,8 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"Vintage",
-		"Markdown"
+		"Markdown",
+		"Vintage"
 	],
 	"open_files_in_new_window": false,
 	"remember_open_files": false,
