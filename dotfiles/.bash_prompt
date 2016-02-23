@@ -16,7 +16,7 @@ export GIT_PS1_SHOWUNTRACKEDFILES=1
 export GIT_PS1_SHOWUPSTREAM=auto
 export GIT_PS1_SHOWCOLORHINTS=1
 
-#export PS1='\n\[$(tput setaf 4)\]localhost\[$(tput sgr0)\] \[$(tput setaf 3)\]\t\[$(tput sgr0)\]: \w\n\[$(tput setaf 1)\]\$\[$(tput sgr0)\] '
-export PS1='\n\[$(tput setaf 6)\]\u\[$(tput setaf 7)\]@\[$(tput setaf 5)\]\h\[$(tput sgr0)\]: \[$(tput setaf 3)\]\t\[$(tput sgr0)\] \w\n\[$(tput setaf 1)\]\$\[$(tput sgr0)\] '
-#PROMPT_COMMAND='__git_ps1 "\n\[$(tput setaf 4)\]localhost\[$(tput sgr0)\]: \w" "\n\[$(tput setaf 1)\]\$\[$(tput sgr0)\] "'
-PROMPT_COMMAND='__git_ps1 "\n\[$(tput setaf 6)\]\u\[$(tput setaf 7)\]@\[$(tput setaf 4)\]\h\[$(tput sgr0)\]: \[$(tput setaf 3)\]\t\[$(tput sgr0)\] \w" "\n\[$(tput setaf 1)\]\$\[$(tput sgr0)\] "'
+#export PS1='\n\[$(tput setaf 4)\]localhost\[$(tput sgr0)\] \[$(tput setaf 3)\]\t\[$(tput sgr0)\]: \w\n\$ '
+export PS1='\n\[$(tput setaf 6)\]\u\[$(tput setaf 7)\]@\[$(tput setaf 5)\]\h\[$(tput sgr0)\]: \w\n\$ '
+#PROMPT_COMMAND='__git_ps1 "\n\[$(tput setaf 4)\]localhost\[$(tput sgr0)\]: \w" "\n\$ "'
+PROMPT_COMMAND='__git_ps1 "\n\[$(tput setaf 6)\]\u\[$(tput setaf 7)\]@\[$(tput setaf 4)\]\h\[$(tput sgr0)\]: \w" "\n\$ "'
