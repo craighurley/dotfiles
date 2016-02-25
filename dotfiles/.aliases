@@ -22,6 +22,7 @@ alias gs='git status'
 alias gss='git status --short'
 alias gd='git diff'
 alias gp='git pull'
+alias gf='git fetch'
 
 # ls
 # Detect which `ls` flavor is in use
