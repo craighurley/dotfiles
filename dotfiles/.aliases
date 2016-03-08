@@ -17,7 +17,7 @@ alias vi="vim"
 
 # git
 alias g="git"
-alias gl='git log --pretty=format:'\''%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'\'' --abbrev-commit'
+alias gl='git log --pretty=format:'\''%Cred%h %Cgreen%ad%Creset -%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset'\'' --abbrev-commit --date=short'
 alias gs='git status'
 alias gss='git status --short'
 alias gd='git diff'
