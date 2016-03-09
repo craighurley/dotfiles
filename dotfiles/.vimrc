@@ -1,19 +1,43 @@
-" Colors
-syntax enable           " enable syntax processing
-let g:solarized_termcolors=256
-set background=dark
-colorscheme solarized
+" -----------------------------------------------------------------------------
+" plugins
+" -----------------------------------------------------------------------------
+set nocompatible                    " be iMproved, required
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim   " set the runtime path to include Vundle and initialize
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'       " let Vundle manage Vundle
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-fugitive'
+Plugin 'scwood/vim-hybrid'
+call vundle#end()
+filetype plugin indent on
 
-" Powerline
+" -----------------------------------------------------------------------------
+" plugin specific settings
+" -----------------------------------------------------------------------------
 let g:airline_powerline_fonts=1
 let g:airline_section_c='%<%F%m %#__accent_red#%{airline#util#wrap(airline#parts#readonly(),0)}%#__restore__#'
 let g:airline_solarized_bg='dark'
 let g:airline_theme='solarized'
+let g:solarized_termcolors=256
+let g:hybrid_custom_term_colors=1
+set noshowmode                      " airline is installed, disable the default mode indicator
+
+" -----------------------------------------------------------------------------
+" general settings
+" -----------------------------------------------------------------------------
+" Colors
+syntax on                       " enable syntax processing
+set background=dark
+colorscheme hybrid
 
 " Misc
-set ttyfast             " faster redraw
+set ttyfast                     " faster redraw
 set backspace=indent,eol,start
-set clipboard=unnamed   " enable copying to system clipboard
+set clipboard=unnamed           " enable copying to system clipboard
+set shortmess+=I                " remove startup message when no file is selected
 
 " Time out on key codes but not mappings.
 set notimeout
@@ -47,10 +71,11 @@ set colorcolumn=80
 set laststatus=2
 set statusline=
 set statusline=%F                                   " filename
+set statusline+=\ [%{fugitive#head()}]              " git status
+set statusline+=%=                                  " left/right separator
 set statusline+=\ [%{strlen(&fenc)?&fenc:'none'}    " file encoding
 set statusline+=\ %{&ff}                            " file format
 set statusline+=\ %{strlen(&ft)?&ft:'none'}]        " filetype
-set statusline+=%=                                  " left/right separator
 set statusline+=\ %c                                " cursor column
 set statusline+=\ %l/%L                             " cursor line/total lines
 set statusline+=\ %P                                " percent through file
@@ -85,24 +110,9 @@ augroup configgroup
     autocmd BufEnter *.sh setlocal tabstop=2
     autocmd BufEnter *.sh setlocal shiftwidth=2
     autocmd BufEnter *.sh setlocal softtabstop=2
-    autocmd BufRead,BufNewFile *.md set spell spelllang=en_gb
+    autocmd BufNewFile,BufRead *.md set spell spelllang=en_gb
     autocmd BufNewFile,BufRead Vagrantfile,Gemfile* set filetype=ruby
 augroup END
-
-" Plugins
-set nocompatible                    " be iMproved, required
-set noshowmode                      " airline is installed, disable the default mode indicator
-set shortmess+=I                    " remove startup message when no file is selected
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim   " set the runtime path to include Vundle and initialize
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'       " let Vundle manage Vundle
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'tpope/vim-fugitive'
-call vundle#end()
-filetype plugin indent on
 
 " Functions
 " strips trailing whitespace at the end of files. this
