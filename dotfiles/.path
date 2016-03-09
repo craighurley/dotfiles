@@ -1,12 +1,13 @@
 # custom scripts
-PATH="$PATH:~/.scripts:~/Projects/rgrav"
+[[ -d "$HOME/.scripts" ]] && PATH="$PATH:$HOME/.scripts"
+
+# rgrav
+[[ -d "$HOME/Projects/rgrav" ]] && PATH="$PATH:$HOME/Projects/rgrav"
 
 # ruby
-PATH="$HOME/.rbenv/bin:$PATH"
+[[ -d "$HOME/.rbenv/bin" ]] && PATH="$HOME/.rbenv/bin:$PATH"
 
 # oracle sqlplus
-if [[ -d "/Library/Oracle/instantclient" ]]; then
-    PATH="/Library/Oracle/instantclient:$PATH"
-fi
+[[ -d "/Library/Oracle/instantclient" ]] && PATH="/Library/Oracle/instantclient:$PATH"
 
 export PATH
