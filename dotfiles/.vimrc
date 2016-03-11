@@ -100,7 +100,6 @@ nnoremap k gk
 augroup configgroup
     autocmd!
     autocmd VimEnter * highlight clear SignColumn
-    autocmd BufWritePre *.php,*.py,*.js,*.txt,*.hs,*.java,*.md,*.rb :call <SID>StripTrailingWhitespaces()
     autocmd filetype crontab setlocal nobackup nowritebackup
     autocmd FileType ruby setlocal tabstop=2
     autocmd FileType ruby setlocal shiftwidth=2
@@ -137,6 +136,7 @@ command -nargs=+ MapToggle call MapToggle(<f-args>)
 
 " bindings
 set pastetoggle=<F1>                                " turn off autoindent when pasting
-MapToggle <F2> wrap
-MapToggle <F3> number
-MapToggle <F4> hlsearch
+MapToggle <F2> hlsearch
+MapToggle <F3> wrap
+MapToggle <F4> number
+map <F5> :GitGutterToggle<CR>
