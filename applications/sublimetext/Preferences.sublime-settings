@@ -49,7 +49,7 @@
 	"tab_size": 4,
 	"tabs_small": true,
 	"theme": "Afterglow.sublime-theme",
-	"translate_tabs_to_spaces": false,
+	"translate_tabs_to_spaces": true,
 	"trim_automatic_white_space": true,
 	"trim_trailing_white_space_on_save": false,
 	"word_wrap": "false"
