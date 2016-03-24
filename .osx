@@ -86,6 +86,9 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 2
 # Keyboard: enable function keys
 defaults write NSGlobalDomain com.apple.keyboard.fnState -int 1
 
+# Keyboard: enable repeating alpha/num keys
+defaults write -g ApplePressAndHoldEnabled -bool false
+
 ###############################################################################
 # Screen
 ###############################################################################
