@@ -1,7 +1,10 @@
 {
 	"added_words":
 	[
-		"artifacts"
+		"artifacts",
+		"backends",
+		"Codeset",
+		"Codesets"
 	],
 	"always_show_minimap_viewport": true,
 	"color_scheme": "Packages/User/SublimeLinter/Afterglow-monokai (SL).tmTheme",
