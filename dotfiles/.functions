@@ -19,7 +19,7 @@ function toggleshowhide() {
 function dsclean() {
     read -p "Delete all .DS_Stores in this directory and all subdirectories? (y/n) " -n 1
     echo
-    if [[ $REPLY =~ ^[Yy]$ ]]; then
+    if [[ $REPLY =~ ^[Yy]$ ]] ; then
         find . -type f -name '.DS_Store' -ls -delete
     fi
 }

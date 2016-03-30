@@ -8,9 +8,9 @@ _ant=$(type -P ant)
 _antcontrib=/usr/local/Cellar/ant-contrib/1.0b3/share/ant/ant-contrib-1.0b3.jar
 
 # check for ant
-if [[ -f "$_ant" ]]; then
+if [[ -f "$_ant" ]] ; then
     # check if antcontrib exists
-    if [[ -f "$_antcontrib" ]]; then
+    if [[ -f "$_antcontrib" ]] ; then
         # get the ant lib dir
         _x=$(ant -diagnostics | grep -i "ant.library.dir")
         _lib=${_x##*:}
