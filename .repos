@@ -13,9 +13,5 @@ git clone https://github.com/craighurley/craighurley.github.io.git ~/Projects/cr
 # vps
 git clone https://github.com/craighurley/pesonal-vps.git ~/Projects/personal-vps
 
-# ruby
-git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
-git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
-
 # Finished
 echo "`basename $0` complete."
