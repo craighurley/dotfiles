@@ -13,7 +13,7 @@ function doIt() {
 
     # move existing dotfiles to backup, then create symlinks from directory to ~
     for file in ${files[@]}; do
-        if [[ -f ~/$(basename $file) ]]; then
+        if [[ -f ~/$(basename $file) ]] ; then
             echo "Moving ~/$(basename $file) to $backup"
             mv -n ~/$(basename $file) $backup/
         fi
@@ -24,7 +24,7 @@ function doIt() {
 
 read -p "This script will backup your current dotfiles and symlink to a new set of dotfiles. Are you sure? (y/n) " -n 1
 echo
-if [[ $REPLY =~ ^[Yy]$ ]]; then
+if [[ $REPLY =~ ^[Yy]$ ]] ; then
     doIt
 fi
 

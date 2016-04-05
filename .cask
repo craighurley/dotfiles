@@ -7,7 +7,7 @@ echo "`basename $0` starting."
 
 read -p "Is this a work machine? (y/n) " -n 1
 echo
-if [[ $REPLY =~ ^[Yy]$ ]]; then
+if [[ $REPLY =~ ^[Yy]$ ]] ; then
     isWorkMachine=true
 fi
 
@@ -22,7 +22,7 @@ brew tap caskroom/versions
 brew tap caskroom/fonts
 
 # install cask
-brew install caskroom/cask/brew-cask
+brew tap caskroom/cask
 
 # install applications
 #brew cask install balsamiq-mockups
@@ -33,30 +33,28 @@ brew cask install eclipse-jee
 brew cask install evernote
 brew cask install firefox
 brew cask install flux
-brew cask install hyperswitch
 brew cask install java
 brew cask install kaleidoscope
-#brew cask install keepassx0
+brew cask install keepassx0
 brew cask install skype
 brew cask install snagit
 brew cask install sourcetree
 brew cask install spideroakone
 brew cask install sublime-text3
 brew cask install the-unarchiver
-brew cask install totalspaces
 brew cask install transmission
 brew cask install vagrant
 brew cask install virtualbox
 
 # if this is not a work machine
-if [[ $isWorkMachine == false ]]; then
+if [[ $isWorkMachine == false ]] ; then
     brew cask install adobe-photoshop-lightroom
     brew cask install dropbox
     brew cask install vlc
 fi
 
 # if this is a work machine
-if [[ $isWorkMachine == true ]]; then
+if [[ $isWorkMachine == true ]] ; then
     brew cask install charles
     brew cask install hipchat
     brew cask install joinme

@@ -8,7 +8,6 @@ $directory/.templates
 $directory/.osx
 $directory/.brew
 $directory/.cask
-#$directory/.pip
 $directory/.preferences
 
 # Finished

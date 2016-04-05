@@ -1,12 +1,15 @@
 
 alias ..="cd .."
 
-alias b="boot2docker"
 alias c="clear"
-alias d="docker"
 alias e="exit"
 alias h="history"
 alias j="jobs"
+
+# docker
+alias d='docker'
+alias de='docker-machine env docker-host'
+alias ede='eval "$(docker-machine env docker-host)"'
 
 # vim
 alias v="vim"
@@ -14,8 +17,12 @@ alias vi="vim"
 
 # git
 alias g="git"
-alias gl='git log --pretty=format:'\''%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'\'' --abbrev-commit'
+alias gl='git log --pretty=format:'\''%Cred%h %Cgreen%ad%Creset -%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset'\'' --abbrev-commit --date=short'
 alias gs='git status --short'
+alias gsl='git status'
+alias gd='git diff'
+alias gp='git pull'
+alias gf='git fetch'
 
 # ls
 # Detect which `ls` flavor is in use
@@ -47,6 +54,9 @@ alias lsof='lsof -n -P'
 # nmap
 alias nmap='nmap -n -Pn'
 
+# pstree
+alias pstree='pstree -g 2'
+
 # mkpasswd clone using python. ensure passlib is installed (pip install passlib)
 alias mkpasswd="python -c 'from passlib.hash import sha512_crypt; import getpass; print sha512_crypt.encrypt(getpass.getpass())'"
 
@@ -69,4 +79,8 @@ alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.ar
 alias plistbuddy="/usr/libexec/PlistBuddy"
 
 # tcpdump aliases
+alias tcpdump="tcpdump -nn"
 alias tcpdump-http="sudo tcpdump -nn -A -s0 -q 'tcp port 80 and (((ip[2:2] - ((ip[0]&0xf)<<2)) - ((tcp[12]&0xf0)>>2)) != 0)'"
+
+# aws
+alias aws-regions="aws ec2 describe-regions --output json | jq '.Regions[]'"

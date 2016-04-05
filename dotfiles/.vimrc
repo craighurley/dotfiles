@@ -1,23 +1,43 @@
-" Colors
-syntax enable           " enable syntax processing
-let g:solarized_termcolors=256
-set background=dark
-colorscheme solarized
+" -----------------------------------------------------------------------------
+" plugins
+" -----------------------------------------------------------------------------
+set nocompatible                    " be iMproved, required
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim   " set the runtime path to include Vundle and initialize
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'       " let Vundle manage Vundle
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-fugitive'
+Plugin 'scwood/vim-hybrid'
+call vundle#end()
+filetype plugin indent on
 
-" Powerline
+" -----------------------------------------------------------------------------
+" plugin specific settings
+" -----------------------------------------------------------------------------
 let g:airline_powerline_fonts=1
 let g:airline_section_c='%<%F%m %#__accent_red#%{airline#util#wrap(airline#parts#readonly(),0)}%#__restore__#'
 let g:airline_solarized_bg='dark'
 let g:airline_theme='solarized'
+let g:solarized_termcolors=256
+let g:hybrid_custom_term_colors=1
+set noshowmode                      " airline is installed, disable the default mode indicator
 
-" NerdTree
-let NERDTreeIgnore=['\.DS_Store','\~$']
-let NERDTreeShowHidden=1
+" -----------------------------------------------------------------------------
+" general settings
+" -----------------------------------------------------------------------------
+" Colors
+syntax on                       " enable syntax processing
+set background=dark
+colorscheme hybrid
 
 " Misc
-set ttyfast             " faster redraw
+set ttyfast                     " faster redraw
 set backspace=indent,eol,start
-set clipboard=unnamed   " enable copying to system clipboard
+set clipboard=unnamed           " enable copying to system clipboard
+set shortmess+=I                " remove startup message when no file is selected
 
 " Time out on key codes but not mappings.
 set notimeout
@@ -51,10 +71,11 @@ set colorcolumn=80
 set laststatus=2
 set statusline=
 set statusline=%F                                   " filename
+set statusline+=\ [%{fugitive#head()}]              " git status
+set statusline+=%=                                  " left/right separator
 set statusline+=\ [%{strlen(&fenc)?&fenc:'none'}    " file encoding
 set statusline+=\ %{&ff}                            " file format
 set statusline+=\ %{strlen(&ft)?&ft:'none'}]        " filetype
-set statusline+=%=                                  " left/right separator
 set statusline+=\ %c                                " cursor column
 set statusline+=\ %l/%L                             " cursor line/total lines
 set statusline+=\ %P                                " percent through file
@@ -63,27 +84,23 @@ set statusline+=\ %P                                " percent through file
 set ignorecase          " ignore case when searching
 set incsearch           " search as characters are entered
 set hlsearch            " highlight all matches
+set nowrapscan          " do not wrap around
 
 " Folding
 set nofoldenable        " don't fold files by default on open
 set foldmethod=indent   " fold based on indent level
 set foldlevelstart=1    " start with fold level of 1
 set foldnestmax=10      " max 10 depth
-nnoremap <space> za
 
 " Line Shortcuts
 nnoremap j gj
 nnoremap k gk
 
-" bindings
-set pastetoggle=<F2>                                " turn off autoindent when pasting
-map <C-n> :NERDTreeToggle<CR>
-
 " AutoGroups
 augroup configgroup
     autocmd!
     autocmd VimEnter * highlight clear SignColumn
-    autocmd BufWritePre *.php,*.py,*.js,*.txt,*.hs,*.java,*.md,*.rb :call <SID>StripTrailingWhitespaces()
+    autocmd filetype crontab setlocal nobackup nowritebackup
     autocmd FileType ruby setlocal tabstop=2
     autocmd FileType ruby setlocal shiftwidth=2
     autocmd FileType ruby setlocal softtabstop=2
@@ -92,26 +109,9 @@ augroup configgroup
     autocmd BufEnter *.sh setlocal tabstop=2
     autocmd BufEnter *.sh setlocal shiftwidth=2
     autocmd BufEnter *.sh setlocal softtabstop=2
-    autocmd BufRead,BufNewFile *.md set spell spelllang=en_gb
+    autocmd BufNewFile,BufRead *.md set spell spelllang=en_gb
     autocmd BufNewFile,BufRead Vagrantfile,Gemfile* set filetype=ruby
-    autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 augroup END
-
-" Plugins
-set nocompatible                    " be iMproved, required
-set noshowmode                      " airline is installed, disable the default mode indicator
-set shortmess+=I                    " remove startup message when no file is selected
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim   " set the runtime path to include Vundle and initialize
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'       " let Vundle manage Vundle
-Plugin 'airblade/vim-gitgutter'
-Plugin 'bling/vim-airline'
-Plugin 'tpope/vim-fugitive'
-Plugin 'scrooloose/nerdtree'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
-call vundle#end()
-filetype plugin indent on
 
 " Functions
 " strips trailing whitespace at the end of files. this
@@ -125,3 +125,18 @@ function! <SID>StripTrailingWhitespaces()
     let @/=_s
     call cursor(l, c)
 endfunction
+
+" Map key to toggle opt
+function MapToggle(key, opt)
+  let cmd = ':set '.a:opt.'! \| set '.a:opt."?\<CR>"
+  exec 'nnoremap '.a:key.' '.cmd
+  exec 'inoremap '.a:key." \<C-O>".cmd
+endfunction
+command -nargs=+ MapToggle call MapToggle(<f-args>)
+
+" bindings
+set pastetoggle=<F1>                                " turn off autoindent when pasting
+MapToggle <F2> hlsearch
+MapToggle <F3> wrap
+MapToggle <F4> number
+map <F5> :GitGutterToggle<CR>
