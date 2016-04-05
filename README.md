@@ -52,9 +52,6 @@ A collection of scripts to bootstrap a clean install of OS X.
     # Install command line package manager and additional applictions.
     ~/Projects/dotfiles/.cask
 
-    # Install additional python modules.
-    ~/Projects/dotfiles/.pip
-
     # Apply preferences to applications.
     ~/Projects/dotfiles/.preferences
     ```
