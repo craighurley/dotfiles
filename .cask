@@ -35,7 +35,7 @@ brew cask install firefox
 brew cask install flux
 brew cask install java
 brew cask install kaleidoscope
-brew cask install keepassx0
+brew cask install keepassx
 brew cask install skype
 brew cask install snagit
 brew cask install sourcetree
@@ -58,12 +58,11 @@ if [[ $isWorkMachine == true ]] ; then
     brew cask install charles
     brew cask install hipchat
     brew cask install joinme
-    brew cask install versions
 fi
 
 # install fonts
 brew cask install font-source-code-pro
-brew cask install font-source-code-pro-for-powerline
+brew cask install font-sauce-code-powerline
 brew cask install font-fira-sans
 
 # cleanup unneeded files
