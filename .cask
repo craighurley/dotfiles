@@ -30,7 +30,6 @@ brew cask install bettertouchtool
 brew cask install ccleaner
 brew cask install dash
 brew cask install eclipse-jee
-brew cask install evernote
 brew cask install firefox
 brew cask install flux
 brew cask install iterm2-beta
