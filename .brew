@@ -25,6 +25,7 @@ brew install docker-machine
 brew install docker-compose
 brew install git
 brew install ipcalc
+brew install iproute2mac
 brew install jq
 brew install netcat
 brew install nmap
