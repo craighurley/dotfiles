@@ -12,7 +12,7 @@ echo "`basename $0` starting."
 [[ ! -d ~/Documents/installs/linux ]] && mkdir -p ~/Documents/installs/linux
 [[ ! -d ~/Documents/installs/windows ]] && mkdir -p ~/Documents/installs/windows
 [[ ! -d ~/Documents/iso ]] && mkdir -p ~/Documents/iso
-[[ ! -d ~/temp ]] && mkdir -p ~/temp
+[[ ! -d ~/tmp ]] && mkdir -p ~/tmp
 
 # ssh
 [[ ! -d ~/.ssh ]] && mkdir -p ~/.ssh
