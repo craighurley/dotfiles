@@ -20,9 +20,6 @@ brew install ansible
 brew install awscli
 brew install bash-completion
 brew install coreutils
-brew install docker
-brew install docker-machine
-brew install docker-compose
 brew install git
 brew install ipcalc
 brew install iproute2mac
@@ -50,6 +47,8 @@ brew install wget
 # install additional completion files
 brew tap homebrew/completions
 brew install bundler-completion
+brew install docker-completion
+brew install docker-compose-completion
 brew install gem-completion
 brew install pip-completion
 brew install ruby-completion
