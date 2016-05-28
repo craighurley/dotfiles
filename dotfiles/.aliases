@@ -1,4 +1,3 @@
-
 alias ..="cd .."
 
 alias c="clear"
@@ -8,8 +7,6 @@ alias j="jobs"
 
 # docker
 alias d='docker'
-alias de='docker-machine env docker-host'
-alias ede='eval "$(docker-machine env docker-host)"'
 
 # vim
 alias v="vim"
