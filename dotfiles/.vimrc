@@ -135,8 +135,9 @@ endfunction
 command -nargs=+ MapToggle call MapToggle(<f-args>)
 
 " bindings
-set pastetoggle=<F1>                                " turn off autoindent when pasting
-MapToggle <F2> hlsearch
-MapToggle <F3> wrap
-MapToggle <F4> number
-map <F5> :GitGutterToggle<CR>
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+MapToggle <F3> number
+MapToggle <F4> wrap
+MapToggle <F5> hlsearch
+map <F6> :GitGutterToggle<CR>
