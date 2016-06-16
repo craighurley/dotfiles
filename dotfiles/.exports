@@ -4,12 +4,14 @@ export EDITOR="vim"
 # bash history
 export HISTSIZE=32768
 export HISTFILESIZE=$HISTSIZE
+export HISTTIMEFORMAT="%Y/%m/%d %T "
 export HISTCONTROL=ignoreboth:erasedups
-export HISTIGNORE="exit:c"
+export HISTIGNORE="c:clear:e:exit"
+
 
 # Use UTF-8
-export LANG="en_NZ"
-export LC_ALL="en_NZ.UTF-8"
+#export LANG="en_NZ"
+#export LC_ALL="en_NZ.UTF-8"
 
 # Don’t clear the screen after quitting a manual page
 export MANPAGER="less -X"
