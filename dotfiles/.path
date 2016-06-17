@@ -7,4 +7,11 @@
 # oracle sqlplus
 [[ -d "/Library/Oracle/instantclient" ]] && PATH="/Library/Oracle/instantclient:$PATH"
 
+# Path to git diff utility.  Add the following to ~/.gitconfig
+# [pager]
+#     log = diff-highlight | less
+#     show = diff-highlight | less
+#     diff = diff-highlight | less
+[[ -d /usr/local/opt/git/share/git-core/contrib/diff-highlight ]] && PATH="/usr/local/opt/git/share/git-core/contrib/diff-highlight:$PATH"
+
 export PATH
