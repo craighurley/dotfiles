@@ -23,6 +23,7 @@ brew install coreutils
 brew install git
 brew install ipcalc
 brew install iproute2mac
+brew install irssi
 brew install jq
 brew install netcat
 brew install nmap

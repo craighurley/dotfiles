@@ -2,7 +2,7 @@
 export EDITOR="vim"
 
 # bash history
-export HISTSIZE=32768
+export HISTSIZE=10000
 export HISTFILESIZE=$HISTSIZE
 export HISTTIMEFORMAT="%Y/%m/%d %T "
 export HISTCONTROL=ignoreboth:erasedups
@@ -18,9 +18,6 @@ export MANPAGER="less -X"
 
 # grep defaults
 export GREP_OPTIONS="--color=auto -I --exclude-dir=.git --exclude-dir=.svn --exclude-dir=.metadata --exclude=.DS_Store"
-
-# Link Homebrew casks in `/Applications` rather than `~/Applications`
-export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # don't display homebrew emoji
 export HOMEBREW_NO_EMOJI=1
