@@ -137,7 +137,7 @@ command -nargs=+ MapToggle call MapToggle(<f-args>)
 " bindings
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
-MapToggle <F3> number
+MapToggle <F3> hlsearch
 MapToggle <F4> wrap
-MapToggle <F5> hlsearch
+MapToggle <F5> number
 map <F6> :GitGutterToggle<CR>
