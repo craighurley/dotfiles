@@ -21,6 +21,9 @@ alias gd='git diff'
 alias gp='git pull'
 alias gf='git fetch'
 
+# grep/ack
+alias ack='ack --no-group'
+
 # ls
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
