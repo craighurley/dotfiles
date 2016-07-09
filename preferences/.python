@@ -12,7 +12,7 @@ if [[ -f /usr/local/bin/pyenv ]] ; then
     pyenv install 3.5.2
 
     # set the global version
-    pyenv global 3.5.2
+    pyenv global 2.7.12
 
     pyenv exec pip install --upgrade pip
     pyenv exec pip install --upgrade boto
