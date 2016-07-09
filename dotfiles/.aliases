@@ -20,9 +20,11 @@ alias gsl='git status'
 alias gd='git diff'
 alias gp='git pull'
 alias gf='git fetch'
+alias gg='git grep -In'
 
 # grep/ack
-alias ack='ack --no-group'
+alias grep='grep -In'
+alias ack='ack --no-group --color-match=on_red'
 
 # ls
 # Detect which `ls` flavor is in use
@@ -37,8 +39,6 @@ alias l="ls -lhF ${colorflag}"
 
 # List all files colorized in long format, including dot files
 alias ll="ls -lAhF ${colorflag}"
-alias la="ls -lAhF ${colorflag}"
-
 
 # Always use color output for `ls`
 alias ls="command ls -h ${colorflag}"
