@@ -86,6 +86,13 @@ set incsearch           " search as characters are entered
 set hlsearch            " highlight all matches
 set nowrapscan          " do not wrap around
 
+" Explorer
+let g:netrw_liststyle=1
+
+" Splits
+set splitbelow
+set splitright
+
 " Folding
 set nofoldenable        " don't fold files by default on open
 set foldmethod=indent   " fold based on indent level
