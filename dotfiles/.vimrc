@@ -21,6 +21,8 @@ let g:airline_powerline_fonts=1
 let g:airline_section_c='%<%F%m %#__accent_red#%{airline#util#wrap(airline#parts#readonly(),0)}%#__restore__#'
 let g:airline_solarized_bg='dark'
 let g:airline_theme='solarized'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
 let g:solarized_termcolors=256
 let g:hybrid_custom_term_colors=1
 set noshowmode                      " airline is installed, disable the default mode indicator
@@ -65,7 +67,7 @@ set wildmenu
 set showmatch           " higlight matching parenthesis
 set scrolloff=3         " always show at least 5 lines above/below the cursor
 set sidescrolloff=3     " always show at least 5 characters left/right of the cursor
-set colorcolumn=80
+"set colorcolumn=80
 
 " Status line
 set laststatus=2
