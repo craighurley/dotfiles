@@ -42,7 +42,6 @@ brew cask install sourcetree
 brew cask install spideroakone
 brew cask install sublime-text
 brew cask install the-unarchiver
-brew cask install transmission
 brew cask install vagrant
 brew cask install virtualbox
 
