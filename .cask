@@ -32,6 +32,7 @@ brew cask install dash
 brew cask install eclipse-jee
 brew cask install firefox
 brew cask install flux
+brew cask install hyperswitch
 brew cask install iterm2-beta
 brew cask install java
 brew cask install kaleidoscope
@@ -41,6 +42,7 @@ brew cask install snagit
 brew cask install sourcetree
 brew cask install spideroakone
 brew cask install sublime-text
+brew cask install totalspaces
 brew cask install the-unarchiver
 brew cask install vagrant
 brew cask install virtualbox
