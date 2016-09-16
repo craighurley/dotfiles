@@ -33,7 +33,7 @@ brew cask install eclipse-jee
 brew cask install firefox
 brew cask install flux
 brew cask install hyperswitch
-brew cask install iterm2-beta
+brew cask install iterm2
 brew cask install java
 brew cask install kaleidoscope
 brew cask install keepassx
@@ -46,6 +46,7 @@ brew cask install totalspaces
 brew cask install the-unarchiver
 brew cask install vagrant
 brew cask install virtualbox
+brew cask install virtualbox-extension-pack
 
 # if this is not a work machine
 if [[ $isWorkMachine == false ]] ; then
