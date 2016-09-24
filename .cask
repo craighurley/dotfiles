@@ -12,7 +12,7 @@ if [[ $REPLY =~ ^[Yy]$ ]] ; then
 fi
 
 # Link Homebrew casks in `/Applications` rather than `~/Applications`
-export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+export HOMEBREW_CASK_OPTS="--appdir=/Applications --require-sha"
 
 # Ask for the administrator password upfront
 sudo -v

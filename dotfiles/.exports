@@ -19,7 +19,8 @@ export MANPAGER="less -X"
 # grep defaults
 export GREP_OPTIONS="--color=auto -I --exclude-dir=.git --exclude-dir=.svn --exclude-dir=.metadata --exclude=.DS_Store"
 
-# don't display homebrew emoji
+# homebrew options
+export HOMEBREW_CASK_OPTS="--appdir=/Applications --require-sha"
 export HOMEBREW_NO_EMOJI=1
 
 # sqldeveloper
