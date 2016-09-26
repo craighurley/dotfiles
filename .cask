@@ -11,8 +11,8 @@ if [[ $REPLY =~ ^[Yy]$ ]] ; then
     isWorkMachine=true
 fi
 
-# Link Homebrew casks in `/Applications` rather than `~/Applications`
-export HOMEBREW_CASK_OPTS="--appdir=/Applications --require-sha"
+# homebrew options
+export HOMEBREW_CASK_OPTS=""
 
 # Ask for the administrator password upfront
 sudo -v
@@ -25,47 +25,46 @@ brew tap caskroom/fonts
 brew tap caskroom/cask
 
 # install applications
-#brew cask install balsamiq-mockups
-brew cask install bettertouchtool
-brew cask install ccleaner
-brew cask install dash
-brew cask install eclipse-jee
-brew cask install firefox
-brew cask install flux
-brew cask install hyperswitch
-brew cask install iterm2
-brew cask install java
-brew cask install kaleidoscope
-brew cask install keepassx
-brew cask install skype
-brew cask install snagit
-brew cask install sourcetree
-brew cask install spideroakone
-brew cask install sublime-text
-brew cask install totalspaces
-brew cask install the-unarchiver
-brew cask install vagrant
-brew cask install virtualbox
-brew cask install virtualbox-extension-pack
+#brew cask install --require-sha balsamiq-mockups
+brew cask install --require-sha bettertouchtool
+brew cask install --require-sha ccleaner
+brew cask install --require-sha dash
+brew cask install --require-sha eclipse-jee
+brew cask install --require-sha firefox
+brew cask install --require-sha flux
+brew cask install --require-sha hyperswitch
+brew cask install --require-sha iterm2
+brew cask install --require-sha java
+brew cask install --require-sha kaleidoscope
+brew cask install --require-sha keepassx
+brew cask install --require-sha skype
+brew cask install --require-sha snagit
+brew cask install --require-sha sourcetree
+brew cask install --require-sha spideroakone
+brew cask install --require-sha sublime-text
+brew cask install --require-sha totalspaces
+brew cask install --require-sha the-unarchiver
+brew cask install --require-sha vagrant
+brew cask install --require-sha virtualbox
+brew cask install --require-sha virtualbox-extension-pack
 
 # if this is not a work machine
 if [[ $isWorkMachine == false ]] ; then
-    brew cask install adobe-photoshop-lightroom
-    brew cask install dropbox
-    brew cask install vlc
+    brew cask install --require-sha adobe-photoshop-lightroom
+    brew cask install --require-sha dropbox
+    brew cask install --require-sha vlc
 fi
 
 # if this is a work machine
 if [[ $isWorkMachine == true ]] ; then
-    brew cask install charles
-    brew cask install hipchat
-    brew cask install joinme
+    brew cask install --require-sha charles
+    brew cask install --require-sha hipchat
+    brew cask install --require-sha joinme
 fi
 
 # install fonts
-brew cask install font-source-code-pro
-brew cask install font-sauce-code-powerline
-brew cask install font-fira-sans
+brew cask install --require-sha font-source-code-pro
+brew cask install --require-sha font-sauce-code-powerline
 
 # cleanup unneeded files
 brew cleanup

@@ -20,7 +20,7 @@ export MANPAGER="less -X"
 export GREP_OPTIONS="--color=auto -I --exclude-dir=.git --exclude-dir=.svn --exclude-dir=.metadata --exclude=.DS_Store"
 
 # homebrew options
-export HOMEBREW_CASK_OPTS="--appdir=/Applications --require-sha"
+export HOMEBREW_CASK_OPTS=""
 export HOMEBREW_NO_EMOJI=1
 
 # sqldeveloper
