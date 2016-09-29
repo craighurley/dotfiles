@@ -9,7 +9,6 @@ if [[ -f "/usr/local/bin/rbenv" ]] ; then
 
     # install ruby versions
     rbenv install 2.0.0-p598
-    rbenv install 2.2.3
 
     # set the global version
     rbenv global 2.0.0-p598
@@ -17,7 +16,7 @@ if [[ -f "/usr/local/bin/rbenv" ]] ; then
     # install gems
     rbenv exec gem install bundler
     rbenv exec gem install rubocop
-    
+
     rbenv rehash
 else
     echo "ERROR: rbenv is not available."
