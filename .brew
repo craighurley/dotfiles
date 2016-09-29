@@ -31,7 +31,6 @@ brew install openssl
 brew install parallel
 brew install pstree
 brew install pyenv
-brew install readline
 brew install rename
 brew install rbenv
 brew install ruby-build
