@@ -29,6 +29,7 @@ brew tap caskroom/cask
 brew cask install --require-sha bettertouchtool
 brew cask install --require-sha ccleaner
 brew cask install --require-sha dash
+brew cask install --require-sha docker
 brew cask install --require-sha eclipse-jee
 brew cask install --require-sha firefox
 brew cask install --require-sha flux
