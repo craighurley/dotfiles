@@ -33,12 +33,17 @@ if [[ -f /usr/local/bin/rbenv ]] ; then
 fi
 
 # python env
-if [[ -f /usr/local/bin/pyenv ]] ; then 
+if [[ -f /usr/local/bin/pyenv ]] ; then
     eval "$(pyenv init -)"
 fi
 
 # python virtualenvwrapper
-if [[ -f /usr/local/bin/virtualenvwrapper.sh ]] ; then 
+if [[ -f /usr/local/bin/virtualenvwrapper.sh ]] ; then
     export PROJECT_HOME=$HOME/Projects
     source /usr/local/bin/virtualenvwrapper.sh
+fi
+
+# aws tab completion
+if [[ -f $(which aws_completer) ]] ; then
+   complete -C $(which aws_completer) aws
 fi

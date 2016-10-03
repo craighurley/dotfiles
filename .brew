@@ -18,7 +18,6 @@ brew install ant
 brew install ant-contrib
 brew install ansible
 brew install aspell --with-lang-en
-brew install awscli
 brew install bash
 brew install bash-completion
 brew install git
