@@ -12,16 +12,6 @@ alias d='docker'
 alias v="vim"
 alias vi="vim"
 
-# git
-alias g="git"
-alias gl='git --no-pager log --reverse --pretty=format:'\''%Cred%h %Cgreen%ad%Creset%C(yellow)%d%Creset %s %C(bold blue)%an <%ae>%Creset'\'' --abbrev-commit --date=short'
-alias gs='git status --short'
-alias gsl='git status'
-alias gd='git diff'
-alias gp='git pull'
-alias gf='git fetch'
-alias gg='git grep -In'
-
 # grep/ack
 alias grep='grep -I'
 alias ack='ack --no-group --color-match=on_red'

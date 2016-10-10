@@ -1,0 +1,86 @@
+[core]
+    editor = /usr/local/bin/vim
+    excludesfile = /Users/craigh/.gitignore_global
+    attributesfile = ~/.gitattributes
+    pager = cat
+
+[user]
+    #name = set GIT_COMMITTER_NAME and GIT_AUTHOR_NAME in ~/.extra
+    #email = set EMAIL in ~/.extra
+
+[commit]
+    template = /Users/craigh/.gitcommitmessage
+
+[pager]
+    log = diff-highlight | less
+    show = diff-highlight | less
+    diff = diff-highlight | less
+
+[color]
+    ui = auto
+
+[color "branch"]
+    current = red reverse
+    local = yellow
+    remote = green
+
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+
+[push]
+    default = simple
+
+[apply]
+    whitespace = nowarn
+
+[merge]
+    log = true
+
+[filter "lfs"]
+    clean = git-lfs clean %f
+    smudge = git-lfs smudge %f
+    required = true
+
+[alias]
+    # log commands
+    ls = log --pretty=format:"%Cred%h\\ %Cgreen%ad%Creset%C(yellow)%d%Creset\\ %s\\ %C(bold\\ blue)%an\\ <%ae>%Creset" --abbrev-commit --date=relative
+    ll = log --pretty=format:"%Cred%h\\ %Cgreen%ad%Creset%C(yellow)%d%Creset\\ %s\\ %C(bold\\ blue)%an\\ <%ae>%Creset" --abbrev-commit --date=relative --decorate --numstat
+
+    # Show the diff between the latest commit and the current state
+    d = !"git diff-index --quiet HEAD -- || clear; git diff --patch-with-stat"
+    # `git di $number` shows the diff between the state `$number` revisions ago and the current state
+    di = !"f() { git diff --patch-with-stat HEAD~$1; }; git diff-index --quiet HEAD -- || clear; f"
+    dc = "!f() { git diff HEAD~$1; }; f"
+    dl = "!f() { git diff --name-only HEAD~$1; }; f"
+
+    # searching
+    g = grep -I
+
+    # View the current working tree status using the short format
+    s = status -s
+    tagged = tag --list --points-at HEAD
+
+    # show verbose output about tags, branches or remotes
+    tags = tag -l
+    branches = branch -a
+    remotes = remote -v
+
+    # conflicts/merges
+    ours = "!f() { git checkout --ours $@ && git add $@; }; f"
+    theirs = "!f() { git checkout --theirs $@ && git add $@; }; f"
+
+    # rebase
+    rc = "!f() { git rebase -i HEAD~$1; }; f"
+
+    # commit all changes
+    #ca = !git add -A && git commit -av
+    # credit an author on the latest commit
+    #credit = "!f() { git commit --amend --author \"$1 <$2>\" -C HEAD; }; f"
