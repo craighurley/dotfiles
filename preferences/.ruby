@@ -15,6 +15,7 @@ if [[ -f "/usr/local/bin/rbenv" ]] ; then
 
     # install gems
     rbenv exec gem install bundler
+    rbenv exec gem install mdl
     rbenv exec gem install rubocop
 
     rbenv rehash
