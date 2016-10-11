@@ -1,6 +1,6 @@
 [core]
     editor = /usr/local/bin/vim
-    excludesfile = /Users/craigh/.gitignore_global
+    excludesfile = ~/.gitignore_global
     attributesfile = ~/.gitattributes
     pager = cat
 
@@ -9,7 +9,7 @@
     #email = set EMAIL in ~/.extra
 
 [commit]
-    template = /Users/craigh/.gitcommitmessage
+    template = ~/.gitcommitmessage
 
 [pager]
     log = diff-highlight | less
