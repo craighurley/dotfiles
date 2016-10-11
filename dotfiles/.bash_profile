@@ -45,5 +45,5 @@ fi
 
 # aws tab completion
 if [[ -f $(which aws_completer) ]] ; then
-   complete -C $(which aws_completer) aws
+    complete -C $(which aws_completer) aws
 fi
