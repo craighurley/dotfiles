@@ -58,6 +58,8 @@ set shiftwidth=4
 set modelines=1
 set autoindent
 set nowrap
+set listchars=eol:¬,tab:→·,space:·,trail:·,extends:→,precedes:←
+set list
 
 " UI Layout
 set number              " show line numbers
