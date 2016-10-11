@@ -50,16 +50,13 @@
     required = true
 
 [alias]
-    # log commands
-    ls = log --pretty=format:"%Cred%h\\ %Cgreen%ad%Creset%C(yellow)%d%Creset\\ %s\\ %C(bold\\ blue)%an\\ <%ae>%Creset" --abbrev-commit --date=relative
+    # logging
+    l = log --pretty=format:"%Cred%h\\ %Cgreen%ad%Creset%C(yellow)%d%Creset\\ %s\\ %C(bold\\ blue)%an\\ <%ae>%Creset" --abbrev-commit --date=relative
     ll = log --pretty=format:"%Cred%h\\ %Cgreen%ad%Creset%C(yellow)%d%Creset\\ %s\\ %C(bold\\ blue)%an\\ <%ae>%Creset" --abbrev-commit --date=relative --decorate --numstat
 
-    # Show the diff between the latest commit and the current state
-    d = !"git diff-index --quiet HEAD -- || clear; git diff --patch-with-stat"
-    # `git di $number` shows the diff between the state `$number` revisions ago and the current state
-    di = !"f() { git diff --patch-with-stat HEAD~$1; }; git diff-index --quiet HEAD -- || clear; f"
-    dc = "!f() { git diff HEAD~$1; }; f"
-    dl = "!f() { git diff --name-only HEAD~$1; }; f"
+    # diffing
+    d = "!f() { git diff --patch-with-stat HEAD~${1:-0}; }; f"
+    dl = "!f() { git diff --stat HEAD~${1:-0}; }; f"
 
     # searching
     g = grep -I
@@ -72,6 +69,8 @@
     tags = tag -l
     branches = branch -a
     remotes = remote -v
+
+    p = pull
 
     # conflicts/merges
     ours = "!f() { git checkout --ours $@ && git add $@; }; f"
