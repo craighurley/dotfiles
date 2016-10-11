@@ -59,7 +59,7 @@ set modelines=1
 set autoindent
 set nowrap
 set listchars=eol:¬,tab:→·,space:·,trail:·,extends:→,precedes:←
-set list
+set nolist
 
 " UI Layout
 set number              " show line numbers
@@ -111,7 +111,7 @@ nnoremap k gk
 augroup configgroup
     autocmd!
     autocmd VimEnter * highlight clear SignColumn
-    autocmd filetype crontab setlocal nobackup nowritebackup
+    autocmd Filetype crontab setlocal nobackup nowritebackup
     autocmd FileType ruby setlocal tabstop=2
     autocmd FileType ruby setlocal shiftwidth=2
     autocmd FileType ruby setlocal softtabstop=2
@@ -152,3 +152,4 @@ MapToggle <F3> hlsearch
 MapToggle <F4> wrap
 MapToggle <F5> number
 map <F6> :GitGutterToggle<CR>
+MapToggle <F7> list
