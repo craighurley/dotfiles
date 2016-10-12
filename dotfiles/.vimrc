@@ -89,6 +89,7 @@ set ignorecase          " ignore case when searching
 set incsearch           " search as characters are entered
 set hlsearch            " highlight all matches
 set nowrapscan          " do not wrap around
+highlight Search ctermbg=black ctermfg=red cterm=underline
 
 " Explorer
 let g:netrw_liststyle=1
