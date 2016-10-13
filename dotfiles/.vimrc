@@ -123,20 +123,10 @@ augroup configgroup
     autocmd BufEnter *.sh setlocal softtabstop=2
     autocmd BufNewFile,BufRead *.md set spell spelllang=en_gb
     autocmd BufNewFile,BufRead Vagrantfile,Gemfile* set filetype=ruby
+    autocmd BufWritePre *.md,*.txt %s/\s\+$//e
 augroup END
 
 " Functions
-" strips trailing whitespace at the end of files. this
-" is called on buffer write in the autogroup above.
-function! <SID>StripTrailingWhitespaces()
-    " save last search & cursor position
-    let _s=@/
-    let l = line(".")
-    let c = col(".")
-    %s/\s\+$//e
-    let @/=_s
-    call cursor(l, c)
-endfunction
 
 " Map key to toggle opt
 function MapToggle(key, opt)
