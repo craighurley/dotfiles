@@ -81,7 +81,5 @@
     # rebase
     rc = "!f() { git rebase -i HEAD~$1; }; f"
 
-    # commit all changes
-    #ca = !git add -A && git commit -av
-    # credit an author on the latest commit
-    #credit = "!f() { git commit --amend --author \"$1 <$2>\" -C HEAD; }; f"
+    # committing
+    cnm = commit -m 'no message'
