@@ -60,6 +60,8 @@
 
     # searching
     g = grep -I
+    # search in file name
+    gf = "!git ls-files | grep -i"
 
     # View the current working tree status using the short format
     s = status -s
