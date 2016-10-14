@@ -47,6 +47,7 @@ brew install wget
 
 # gnu
 brew install coreutils
+brew install gnu-sed --with-default-names
 brew install gnu-tar --with-default-names
 
 # install additional completion files
