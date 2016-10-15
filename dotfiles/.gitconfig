@@ -61,7 +61,7 @@
     # searching
     g = grep -I
     # search in file name
-    gf = "!git ls-files | grep -i"
+    gf = ! git ls-files | grep -i
     # search and replace using gnu-sed
     sed = ! git grep -Izl '.' | xargs -0 sed -i -e
 
