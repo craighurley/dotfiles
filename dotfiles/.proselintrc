@@ -1,0 +1,7 @@
+{
+    "max_errors": 1000,
+    "checks": {
+        "annotations.misc": false,
+        "typography.symbols": false
+    }
+}
