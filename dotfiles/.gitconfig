@@ -1,5 +1,5 @@
 [core]
-    editor = /usr/local/bin/vim
+    editor = vim
     excludesfile = ~/.gitignore_global
     attributesfile = ~/.gitattributes
     pager = cat
@@ -51,12 +51,15 @@
 
 [alias]
     # logging
-    l = log --pretty=format:"%Cred%h\\ %Cgreen%ad%Creset%C(yellow)%d%Creset\\ %s\\ %C(bold\\ blue)%an\\ <%ae>%Creset" --abbrev-commit --date=relative
-    ll = log --pretty=format:"%Cred%h\\ %Cgreen%ad%Creset%C(yellow)%d%Creset\\ %s\\ %C(bold\\ blue)%an\\ <%ae>%Creset" --abbrev-commit --date=relative --decorate --numstat
+    l = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%Creset%C(yellow)%d%Creset %s %C(bold blue)%an <%ae>%Creset\" --abbrev-commit --date=relative -${1:-1000}; }; f"
+    lf = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%Creset%C(yellow)%d%Creset %s %C(bold blue)%an <%ae>%Creset\" --abbrev-commit --date=relative -${1:-1000}  --decorate --numstat; }; f"
+
+    # list all files
+    ls = ls-files
 
     # diffing
     d = "!f() { git diff --patch-with-stat HEAD~${1:-0}; }; f"
-    dl = "!f() { git diff --stat HEAD~${1:-0}; }; f"
+    df = "!f() { git diff --stat HEAD~${1:-0}; }; f"
 
     # searching
     g = grep -I
@@ -71,7 +74,7 @@
 
     # show verbose output about tags, branches or remotes
     tags = tag -l
-    branches = branch -a
+    branches = branch -a -v
     remotes = remote -v
 
     p = pull
@@ -81,7 +84,7 @@
     theirs = "!f() { git checkout --theirs $@ && git add $@; }; f"
 
     # rebase
-    rc = "!f() { git rebase -i HEAD~$1; }; f"
+    r = "!f() { git rebase -i HEAD~${1:-1}; }; f"
 
     # committing
     cnm = commit -m 'no message'
