@@ -30,11 +30,12 @@ brew install openssl
 brew install parallel
 brew install pstree
 brew install pyenv
-brew install rename
 brew install rbenv
-brew install ruby-build
 brew install rbenv-bundler
+brew install rename
 brew install rpm
+brew install ruby-build
+brew install shellcheck
 brew install tcptraceroute
 brew install terminal-notifier
 brew install tmux
