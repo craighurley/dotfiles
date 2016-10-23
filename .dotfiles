@@ -12,7 +12,7 @@ function doIt() {
     [[ ! -d $backup ]] && mkdir -p $backup
 
     # move existing dotfiles to backup, then create symlinks from directory to ~
-    for file in ${files[@]}; do
+    for file in "${files[@]}" ; do
         if [[ -f "$HOME/$(basename "$file")" ]] ; then
             echo "Moving $HOME/$(basename "$file") to $backup"
             mv -n ~/$(basename "$file") $backup/

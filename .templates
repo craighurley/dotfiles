@@ -6,7 +6,7 @@ echo "$(basename "$0") starting."
 directory=~/Projects/dotfiles/templates
 files=`find $directory -iname ".*" -maxdepth 1 -type f`
 
-for file in ${files[@]}; do
+for file in "${files[@]}" ; do
     [[ ! -f "$HOME/$(basename "$file")" ]] && cp "$file" ~/
 done
 
