@@ -1,39 +1,45 @@
-# Craigs dotfiles
+# dotfiles
 
+[![Build Status](https://travis-ci.org/craighurley/dotfiles.svg?branch=master)](https://travis-ci.org/craighurley/dotfiles)
 
 ## Introduction
-A collection of scripts to bootstrap a clean install of OS X.
 
+A collection of scripts to bootstrap a clean install of OS X.
 
 ## Installation
 
 1. Install xcode from the app store.
 
-2. Open xcode and accept the license agreement.
+1. Open xcode and accept the license agreement.
 
-3. Install xcode command line tools:
-    ```bash
+1. Install xcode command line tools:
+
+    ```sh
     xcode-select --install
     ```
 
-4. Clone this repo by running the following commands:
-    ```bash
+1. Clone this repo by running the following commands:
+
+    ```sh
     mkdir ~/Projects
     git clone https://github.com/craighurley/dotfiles.git ~/Projects/dotfiles
     ```
 
-5. Install homebrew and check by running the following command:
-    ```bash
+1. Install homebrew by running the following command:
+
+    ```sh
     ~/Projects/dotfiles/.brew_install
     ```
 
-6. Run the following command to do everything.  _Note: you will be prompted for your password a number of times during script execution._
-    ```bash
+1. Run the following command to do everything.  _Note: you will be prompted for your password a number of times during script execution._
+
+    ```sh
     ~/Projects/dotfiles/bootstrap.sh
     ```
 
     Essentially, `bootstrap.sh` executes the following commands:
-    ```bash
+
+    ```sh
     # Create useful directories.
     ~/Projects/dotfiles/.directories
 
@@ -56,20 +62,21 @@ A collection of scripts to bootstrap a clean install of OS X.
     ~/Projects/dotfiles/.preferences
     ```
 
-7. Restart your computer.
-
+1. Restart your computer.
 
 ## Update
+
 Run the following commands to get the latest version of this project:
-```bash
+
+```sh
 cd ~/Projects/dotfiles/
 git pull origin master
 ```
 
-
 ## Feedback
+
 Suggestions/improvements [welcome](https://github.com/craighurley/dotfiles/issues)!
 
-
 ## Acknowedgements
+
 * [Mathias Bynens](https://github.com/mathiasbynens)
