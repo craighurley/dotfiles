@@ -17,14 +17,15 @@ filetype plugin indent on
 " -----------------------------------------------------------------------------
 " plugin specific settings
 " -----------------------------------------------------------------------------
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline_powerline_fonts=1
 let g:airline_section_c='%<%F%m %#__accent_red#%{airline#util#wrap(airline#parts#readonly(),0)}%#__restore__#'
 let g:airline_solarized_bg='dark'
 let g:airline_theme='solarized'
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#fnamemod = ':t'
-let g:solarized_termcolors=256
+let g:gitgutter_sign_column_always = 1
 let g:hybrid_custom_term_colors=1
+let g:solarized_termcolors=256
 set noshowmode                      " airline is installed, disable the default mode indicator
 
 " -----------------------------------------------------------------------------
@@ -136,11 +137,16 @@ function MapToggle(key, opt)
 endfunction
 command -nargs=+ MapToggle call MapToggle(<f-args>)
 
+" Toggle the gutter, which includes gitgutter indicators and line numbers
+function! GutterToggle()
+    set number!
+    GitGutterToggle
+endfunction
+
 " bindings
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 MapToggle <F3> hlsearch
 MapToggle <F4> wrap
-MapToggle <F5> number
-map <F6> :GitGutterToggle<CR>
-MapToggle <F7> list
+nnoremap <F5> :call GutterToggle()<CR>
+MapToggle <F6> list
