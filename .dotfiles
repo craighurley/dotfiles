@@ -5,7 +5,7 @@ echo "$(basename "$0") starting."
 
 directory=~/Projects/dotfiles/dotfiles
 backup=~/.dotfiles_backup
-files=`find $directory -iname ".*" -maxdepth 1 -type f`
+files=$(find $directory -iname ".*" -maxdepth 1 -type f)
 
 function doIt() {
     # make the backup directory
