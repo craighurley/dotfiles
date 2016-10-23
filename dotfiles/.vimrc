@@ -38,6 +38,7 @@ colorscheme hybrid
 
 " Misc
 set ttyfast                     " faster redraw
+set updatetime=500              " increase the response time
 set backspace=indent,eol,start
 set clipboard=unnamed           " enable copying to system clipboard
 set shortmess+=I                " remove startup message when no file is selected
