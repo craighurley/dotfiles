@@ -1,9 +1,11 @@
 ---
+sudo: required
+
 language: sh
 
 before_install:
-  - apt-get -qq update
-  - apt-get install -qq -y shellcheck
+  - sudo apt-get -qq update
+  - sudo apt-get install -qq -y shellcheck
 
 script:
   - ./test.sh
