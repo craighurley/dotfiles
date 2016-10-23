@@ -3,9 +3,9 @@
 isWorkMachine=false
 
 # Start
-echo "`basename $0` starting."
+echo "$(basename "$0") starting."
 
-read -p "Is this a work machine? (y/n) " -n 1
+read -r -p "Is this a work machine? (y/n) " -n 1
 echo
 if [[ $REPLY =~ ^[Yy]$ ]] ; then
     isWorkMachine=true
@@ -71,4 +71,4 @@ brew cask install --require-sha font-sauce-code-powerline
 brew cleanup
 
 # Finished
-echo "`basename $0` complete."
+echo "$(basename "$0") complete."

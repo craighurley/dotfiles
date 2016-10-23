@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
 # Start
-echo "`basename $0` starting."
+echo "$(basename "$0") starting."
 
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew doctor
 
 # Finished
-echo "`basename $0` complete."
+echo "$(basename "$0") complete."

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Start
-echo "`basename $0` starting."
+echo "$(basename "$0") starting."
 
 # Ask for the administrator password upfront
 sudo -v
@@ -13,7 +13,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # General System
 ###############################################################################
 # Set computer name (as done via System Preferences → Sharing)
-read -p "Enter new hostname: " _hn
+read -r -p "Enter new hostname: " _hn
 
 sudo scutil --set ComputerName "$_hn"
 sudo scutil --set HostName "$_hn"
@@ -228,4 +228,4 @@ sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setstealthmode on
 #sudo tmutil disablelocal
 
 # Finished
-echo "`basename $0` complete."
+echo "$(basename "$0") complete."

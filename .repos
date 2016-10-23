@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Start
-echo "`basename $0` starting."
+echo "$(basename "$0") starting."
 
 # scripts
 git clone git@bitbucket.org:craighurley/scripts.git ~/Projects/scripts
@@ -14,4 +14,4 @@ git clone https://github.com/craighurley/craighurley.github.io.git ~/Projects/cr
 git clone https://github.com/craighurley/pesonal-vps.git ~/Projects/personal-vps
 
 # Finished
-echo "`basename $0` complete."
+echo "$(basename "$0") complete."

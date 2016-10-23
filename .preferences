@@ -1,14 +1,17 @@
 #!/usr/bin/env bash
 
 # Start
-echo "`basename $0` starting."
+echo "$(basename "$0") starting."
 
 directory=~/Projects/dotfiles/preferences
 files=`find $directory -iname ".*" -maxdepth 1 -type f`
 
 for file in ${files[@]}; do
-    [[ -f "$file" ]] && source "$file"
+    if [[ -f "$file" ]] ; then
+        # shellcheck disable=SC1090
+        source "$file"
+    fi
 done
 
 # Finished
-echo "`basename $0` complete."
+echo "$(basename "$0") complete."

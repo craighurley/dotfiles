@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Start
-echo "`basename $0` starting."
+echo "$(basename "$0") starting."
 
 directory=~/Projects/dotfiles/dotfiles
 backup=~/.dotfiles_backup
@@ -22,7 +22,7 @@ function doIt() {
     done
 }
 
-read -p "This script will backup your current dotfiles and symlink to a new set of dotfiles. Are you sure? (y/n) " -n 1
+read -r -p "This script will backup your current dotfiles and symlink to a new set of dotfiles. Are you sure? (y/n) " -n 1
 echo
 if [[ $REPLY =~ ^[Yy]$ ]] ; then
     doIt
@@ -31,4 +31,4 @@ fi
 unset doIt
 
 # Finished
-echo "`basename $0` complete."
+echo "$(basename "$0") complete."

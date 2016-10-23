@@ -11,4 +11,4 @@ $directory/.cask
 $directory/.preferences
 
 # Finished
-echo "`basename $0` complete."
+echo "$(basename "$0") complete."
