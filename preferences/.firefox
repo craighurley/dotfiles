@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
 
+set -x
 ###############################################################################
 # Firefox
 ###############################################################################
 
 # Parse profiles.ini to find the default profile directory, then sym link user.js to that location.
-[ -f ~/Projects/dotfiles/applications/firefox/user.js ] && ln -f -s ~/Projects/dotfiles/applications/firefox/user.js ~/Library/Application\ Support/Firefox/Profiles/$(awk -v lines=2 '/Name=default/ {for(i=lines;i;--i)getline; print}' ~/Library/Application\ Support/Firefox/profiles.ini | sed 's/Path=Profiles\///g')/user.js
+if [[ -f "$HOME/Projects/dotfiles/applications/firefox/user.js" ]] ; then
+    ln -f -s "$HOME/Projects/dotfiles/applications/firefox/user.js" "$HOME/Library/Application Support/Firefox/Profiles/$(awk -v lines=2 '/Name=default/ {for(i=lines;i;--i)getline; print}' "$HOME/Library/Application Support/Firefox/profiles.ini" | sed 's/Path=Profiles\///g')/user.js"
+fi

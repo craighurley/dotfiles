@@ -5,17 +5,17 @@ echo "$(basename "$0") starting."
 
 directory=~/Projects/dotfiles/dotfiles
 backup=~/.dotfiles_backup
-files=$(find $directory -iname ".*" -maxdepth 1 -type f)
+files=$(find "$directory" -iname ".*" -maxdepth 1 -type f)
 
 function doIt() {
     # make the backup directory
-    [[ ! -d $backup ]] && mkdir -p $backup
+    [[ ! -d "$backup" ]] && mkdir -p "$backup"
 
     # move existing dotfiles to backup, then create symlinks from directory to ~
     for file in "${files[@]}" ; do
         if [[ -f "$HOME/$(basename "$file")" ]] ; then
             echo "Moving $HOME/$(basename "$file") to $backup"
-            mv -n ~/$(basename "$file") $backup/
+            mv -n "$HOME/$(basename "$file")" "$backup"/
         fi
         echo "Symlinking $file to $HOME/$(basename "$file")"
         ln -f -s "$file" "$HOME/$(basename "$file")"
