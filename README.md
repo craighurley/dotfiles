@@ -46,7 +46,7 @@ A collection of scripts to bootstrap a clean install of OS X.
     # Backup existing dotfiles and symlink to the dotfiles in this project.
     ~/Projects/dotfiles/.dotfiles
 
-    # Copy templates to ~.  These files don't really belong in version control, hence they are not symlinked.
+    # Copy templates to ~. These files don't really belong in version control, hence they are not symlinked.
     ~/Projects/dotfiles/.templates
 
     # Configure sensible defaults in OS X.
@@ -55,7 +55,7 @@ A collection of scripts to bootstrap a clean install of OS X.
     # Install command line package manager and additional command line tools.
     ~/Projects/dotfiles/.brew
 
-    # Install command line package manager and additional applictions.
+    # Install command line package manager and additional applications.
     ~/Projects/dotfiles/.cask
 
     # Apply preferences to applications.
