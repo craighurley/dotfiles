@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -e
+set -ex
 set -o pipefail
 
 [[ -f "$(which mdl)" ]] && mdl=true || mdl=false
@@ -20,13 +20,8 @@ fi
 # lint all shell scripts
 if [[ "$shellcheck" = true ]] ; then
     for f in $(find . -type f -not -iwholename '*.git*' | sort -u) ; do
-        file "$f"
-        file "$f" | grep -i "shell" && true
-        if file "$f" | grep -i --quiet "shell" ; then
+        if file "$f" | grep -i --quiet "\(bash\|shell\) script" ; then
             shellcheck "$f"
         fi
     done
 fi
-
-# I want shell linting to fail here
-echo `basename $0` complete.
