@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -ex
+set -e
 set -o pipefail
 
 [[ -f "$(which mdl)" ]] && mdl=true || mdl=false
