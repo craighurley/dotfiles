@@ -13,12 +13,12 @@ function doIt() {
 
     # move existing dotfiles to backup, then create symlinks from directory to ~
     for file in ${files[@]}; do
-        if [[ -f ~/$(basename $file) ]] ; then
-            echo "Moving ~/$(basename $file) to $backup"
-            mv -n ~/$(basename $file) $backup/
+        if [[ -f "$HOME/$(basename "$file")" ]] ; then
+            echo "Moving $HOME/$(basename "$file") to $backup"
+            mv -n ~/$(basename "$file") $backup/
         fi
-        echo "Symlinking $file to ~/$(basename $file)"
-        ln -f -s $file ~/$(basename $file)
+        echo "Symlinking $file to $HOME/$(basename "$file")"
+        ln -f -s "$file" "$HOME/$(basename "$file")"
     done
 }
 
