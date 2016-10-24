@@ -1,12 +1,14 @@
 ---
-sudo: required
 dist: trusty
-
-language: sh
+sudo: required
+language: ruby
 
 before_install:
   - sudo apt-get -qq update
   - sudo apt-get install -qq -y shellcheck
+
+install:
+  - gem install mdl
 
 script:
   - ./test.sh
