@@ -10,9 +10,11 @@ set -o pipefail
 if [[ "$mdl" = true ]] ; then
 
     # create a list of rules to ignore
+    if [[ ! -f ~/.mdlrc ]] ; then
     cat << EOF > ~/.mdlrc
 rules "~MD013","~MD014","~MD033"
 EOF
+    fi
 
     # find and lint markdown files
     for f in $(find . -type f -name "*.md" -not -iwholename '*.git*' | sort -u) ; do
