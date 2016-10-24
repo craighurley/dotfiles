@@ -2,33 +2,24 @@
 
 set -e
 set -o pipefail
+IFS=$'\n'
 
-[[ -f "$(which mdl)" ]] && mdl=true || mdl=false
-[[ -f "$(which shellcheck)" ]] && shellcheck=true || shellcheck=false
-
-# lint all markdown files
-if [[ "$mdl" = true ]] ; then
-
-    # create a list of rules to ignore
-    if [[ ! -f ~/.mdlrc ]] ; then
+# create a list of mdl rules to ignore
+if [[ ! -f ~/.mdlrc ]] ; then
     cat << EOF > ~/.mdlrc
 rules "~MD013","~MD014","~MD033"
 EOF
+fi
+
+# find and lint files
+for f in $(find . -type f -not \( -iwholename '*.git*' -o -iwholename '*.tmp*'  \) | sort -u) ; do
+    if file "$f" | grep -i --quiet "\(bash\|shell\) script" ; then
+        shellcheck "$f"
+    elif file "$f" | grep -i --quiet "text" ; then
+        if [[ "$f" = *.md ]]; then
+            mdl "$f"
+        elif [[ "$f" = *.yaml || "$f" = *.yml ]]; then
+            yaml-lint -i -q "$f"
+        fi
     fi
-
-    # find and lint markdown files
-    for f in $(find . -type f -name "*.md" -not -iwholename '*.git*' | sort -u) ; do
-        if file "$f" | grep -i --quiet "text" ; then
-            [[ "$mdl" = true ]] && mdl "$f"
-        fi
-    done
-fi
-
-# lint all shell scripts
-if [[ "$shellcheck" = true ]] ; then
-    for f in $(find . -type f -not -iwholename '*.git*' | sort -u) ; do
-        if file "$f" | grep -i --quiet "\(bash\|shell\) script" ; then
-            shellcheck "$f"
-        fi
-    done
-fi
+done

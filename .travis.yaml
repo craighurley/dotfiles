@@ -9,6 +9,7 @@ before_install:
 
 install:
   - gem install mdl
+  - gem install yaml-lint
 
 script:
   - ./test.sh
