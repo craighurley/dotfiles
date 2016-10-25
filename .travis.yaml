@@ -1,15 +1,14 @@
 ---
-dist: trusty
 sudo: required
-language: ruby
+dist: trusty
+
+language: python
+
+python: "2.7"
 
 before_install:
   - sudo apt-get -qq update
   - sudo apt-get install -qq -y shellcheck
-
-install:
-  - gem install mdl
-  - gem install yaml-lint
 
 script:
   - ./test.sh
