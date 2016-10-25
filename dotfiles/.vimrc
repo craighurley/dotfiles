@@ -6,11 +6,11 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim   " set the runtime path to include Vundle and initialize
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'       " let Vundle manage Vundle
+Plugin 'airblade/vim-gitgutter'
+Plugin 'scwood/vim-hybrid'
+Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'tpope/vim-fugitive'
-Plugin 'scwood/vim-hybrid'
 call vundle#end()
 filetype plugin indent on
 
