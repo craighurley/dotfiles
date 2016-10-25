@@ -17,6 +17,7 @@ if [[ -f "/usr/local/bin/rbenv" ]] ; then
     rbenv exec gem install bundler
     rbenv exec gem install mdl
     rbenv exec gem install rubocop
+    rbenv exec gem install yaml-lint
 
     rbenv rehash
 else

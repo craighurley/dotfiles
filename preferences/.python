@@ -21,6 +21,7 @@ if [[ -f /usr/local/bin/pyenv ]] ; then
     pyenv exec pip install --upgrade proselint
     pyenv exec pip install --upgrade virtualenv
     pyenv exec pip install --upgrade virtualenvwrapper
+    pyenv exec pip install --upgrade yamllint
 
     pyenv rehash
 else
