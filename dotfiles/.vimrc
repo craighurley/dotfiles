@@ -106,10 +106,6 @@ set foldmethod=indent   " fold based on indent level
 set foldlevelstart=1    " start with fold level of 1
 set foldnestmax=10      " max 10 depth
 
-" Line Shortcuts
-nnoremap j gj
-nnoremap k gk
-
 " AutoGroups
 augroup configgroup
     autocmd!
@@ -150,3 +146,8 @@ MapToggle <F3> hlsearch
 MapToggle <F4> wrap
 nnoremap <F5> :call GutterToggle()<CR>
 MapToggle <F6> list
+
+nnoremap j gj
+nnoremap k gk
+nnoremap <C-n> :bnext<CR>
+nnoremap <C-p> :bprevious<CR>
