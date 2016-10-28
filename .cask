@@ -65,7 +65,7 @@ fi
 
 # install fonts
 brew cask install --require-sha font-source-code-pro
-brew cask install --require-sha font-sauce-code-powerline
+brew cask install --require-sha font-source-code-pro-for-powerline
 
 # cleanup unneeded files
 brew cleanup
