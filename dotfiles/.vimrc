@@ -145,8 +145,7 @@ function! GutterToggle()
 endfunction
 
 " bindings
-nnoremap <F2> :set invpaste paste?<CR>
-set pastetoggle=<F2>
+MapToggle <F2> paste
 MapToggle <F3> hlsearch
 MapToggle <F4> wrap
 nnoremap <F5> :call GutterToggle()<CR>
