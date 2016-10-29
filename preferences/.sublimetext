@@ -10,9 +10,15 @@ preferencesTarget=$HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/U
 packageControlSource=$HOME/Projects/dotfiles/applications/sublimetext/Package\ Control.sublime-settings
 packageControlTarget=$HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Package\ Control.sublime-settings
 
-[[ ! -d "$sublimeDir" ]] && mkdir -p "$sublimeDir"
-[[ -f "$preferencesSource" ]] && ln -f -s "$preferencesSource" "$preferencesTarget"
-[[ -f "$packageControlSource" ]] && ln -f -s "$packageControlSource" "$packageControlTarget"
+read -r -p "Have you installed package control in Sublime Text? (y/n) " -n 1
+if [[ $REPLY =~ ^[Yy]$ ]] ; then
+    [[ ! -d "$sublimeDir" ]] && mkdir -p "$sublimeDir"
+    [[ -f "$preferencesSource" ]] && ln -f -s "$preferencesSource" "$preferencesTarget"
+    [[ -f "$packageControlSource" ]] && ln -f -s "$packageControlSource" "$packageControlTarget"
+    echo "Done; note you may have to temporarily remove 'color_scheme' from the preferences file while package are auto installed."
+else
+    echo "Skipped."
+fi
 
 #TODO
 #git clone https://github.com/craighurley/sublime-insert-date-time.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/sublime-insert-date-time
