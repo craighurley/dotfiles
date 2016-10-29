@@ -1,0 +1,32 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Ansible",
+		"BracketHighlighter",
+		"GenerateUUID",
+		"GitGutter",
+		"HL7",
+		"LiveReload",
+		"LogView",
+		"Markdown Preview",
+		"MarkdownEditing",
+		"Open Folder",
+		"Package Control",
+		"SublimeLinter",
+		"SublimeLinter-annotations",
+		"SublimeLinter-contrib-proselint",
+		"SublimeLinter-json",
+		"SublimeLinter-pep8",
+		"SublimeLinter-pylint",
+		"SublimeLinter-rubocop",
+		"SublimeLinter-shellcheck",
+		"SublimeLinter-xmllint",
+		"SyncedSideBar",
+		"Theme - Afterglow"
+	]
+}
+

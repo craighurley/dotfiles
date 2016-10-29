@@ -2,34 +2,18 @@
 
 ###############################################################################
 # Sublime Text
-# TODO
 ###############################################################################
 
-echo "Install package control from here: https://packagecontrol.io/installation"
-echo "Run the following [ -f ~/Projects/dotfiles/applications/sublimetext/Preferences.sublime-settings ] && ln -f -s ~/Projects/dotfiles/applications/sublimetext/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings"
+sublimeDir=$HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
+preferencesSource=$HOME/Projects/dotfiles/applications/sublimetext/Preferences.sublime-settings
+preferencesTarget=$HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
+packageControlSource=$HOME/Projects/dotfiles/applications/sublimetext/Package\ Control.sublime-settings
+packageControlTarget=$HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Package\ Control.sublime-settings
 
+[[ ! -d "$sublimeDir" ]] && mkdir -p "$sublimeDir"
+[[ -f "$preferencesSource" ]] && ln -f -s "$preferencesSource" "$preferencesTarget"
+[[ -f "$packageControlSource" ]] && ln -f -s "$packageControlSource" "$packageControlTarget"
+
+#TODO
 #git clone https://github.com/craighurley/sublime-insert-date-time.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/sublime-insert-date-time
 #git clone https://github.com/craighurley/sublime-xml-lint.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/sublime-xml-lint
-
-# Ansible syntax
-# Bracket Highlighter
-# #git clone https://github.com/facelessuser/BracketHighlighter.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/BracketHighlighter
-# sublime-hl7-syntax
-# GitGutter
-# #git clone https://github.com/jisaacks/GitGutter.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/GitGutter
-# GenerateUUID
-# Open Finder
-# SyncedSidebar
-# Theme - Afterglow
-# Sublime Linter
-# Sublime Linter annotation
-# Sublime Linter json
-# Sublime Linter pep8
-# Sublime Linter pylint
-# Sublime Linter rubocop
-# Sublime Linter ruby
-# Sublime Linter xmllint
-# Evernote
-# #git clone https://github.com/Yabatadesign/afterglow-theme/ ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/afterglow-theme
-# Markdown Extended
-# #git clone https://github.com/jonschlinkert/sublime-markdown-extended.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/sublime-markdown-extended

@@ -4,7 +4,8 @@
 		"artifacts",
 		"backends",
 		"Codeset",
-		"Codesets"
+		"Codesets",
+		"namespace"
 	],
 	"always_show_minimap_viewport": true,
 	"color_scheme": "Packages/User/SublimeLinter/Afterglow-monokai (SL).tmTheme",
@@ -12,7 +13,7 @@
 	"dictionary": "Packages/Language - English/en_GB.dic",
 	"draw_minimap_border": true,
 	"draw_white_space": "all",
-	"ensure_newline_at_eof_on_save": false,
+	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
 	[
 		".DS_Store",
@@ -36,14 +37,13 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"Markdown",
 		"Vintage"
 	],
 	"open_files_in_new_window": false,
 	"remember_open_files": false,
 	"rulers":
 	[
-		80
+		120
 	],
 	"show_encoding": true,
 	"show_full_path": true,
