@@ -54,7 +54,6 @@ brew install gnu-tar --with-default-names
 # install additional completion files
 brew tap homebrew/completions
 brew install bundler-completion
-brew install docker-completion
 brew install docker-compose-completion
 brew install gem-completion
 brew install pip-completion
