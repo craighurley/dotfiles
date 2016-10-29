@@ -18,10 +18,7 @@ export HOMEBREW_CASK_OPTS=""
 sudo -v
 
 # setup taps
-brew tap caskroom/versions
 brew tap caskroom/fonts
-
-# install cask
 brew tap caskroom/cask
 
 # install applications
@@ -37,7 +34,6 @@ brew cask install --require-sha hyperswitch
 brew cask install --require-sha iterm2
 brew cask install --require-sha java
 brew cask install --require-sha kaleidoscope
-brew cask install --require-sha keepassx
 brew cask install --require-sha skype
 brew cask install --require-sha snagit
 brew cask install --require-sha sourcetree
