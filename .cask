@@ -36,7 +36,6 @@ brew cask install --require-sha java
 brew cask install --require-sha kaleidoscope
 brew cask install --require-sha skype
 brew cask install --require-sha snagit
-brew cask install --require-sha sourcetree
 brew cask install --require-sha spideroakone
 brew cask install --require-sha sublime-text
 brew cask install --require-sha totalspaces
