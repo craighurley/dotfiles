@@ -4,4 +4,6 @@
 # jsc
 ###############################################################################
 
-[ -f /System/Library/Frameworks/JavaScriptCore.framework/Resources/jsc ] && ln -s /System/Library/Frameworks/JavaScriptCore.framework/Resources/jsc /usr/local/bin/
+if [[ -f /System/Library/Frameworks/JavaScriptCore.framework/Resources/jsc ]] ; then
+    ln -s /System/Library/Frameworks/JavaScriptCore.framework/Resources/jsc /usr/local/bin/
+fi
