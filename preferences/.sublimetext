@@ -31,7 +31,7 @@ fi
 if [[ -f "$preferencesSource" ]] ; then
     # Hack: temporarily removing 'color_scheme' from the preferences file until Sublime-Linter is auto installed
     # -- use git checkout to restore the line.
-    sed -i '' '/color_scheme/d' "$preferencesSource"
+    sed -i.backup '/color_scheme/d' "$preferencesSource"
     ln -f -s "$preferencesSource" "$preferencesTarget"
 fi
 
