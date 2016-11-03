@@ -9,7 +9,7 @@
     #email = set EMAIL in ~/.extra
 
 [commit]
-    template = ~/.gitcommitmessage
+    template = ~/.gitmessage
 
 [pager]
     log = diff-highlight | less
