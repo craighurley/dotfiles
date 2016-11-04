@@ -3,15 +3,17 @@
 # Start
 echo "$(basename "$0") starting."
 
-# scripts
-git clone git@bitbucket.org:craighurley/scripts.git ~/Projects/scripts
-
-# web sites
-git clone https://github.com/craighurley/thehurley.com.git ~/Projects/thehurley.com
+# github
+git clone https://github.com/craighurley/ansible-roles.git ~/Projects/ansible-roles
 git clone https://github.com/craighurley/craighurley.github.io.git ~/Projects/craighurley.me
+git clone https://github.com/craighurley/personal-vps.git ~/Projects/personal-vps
+git clone https://github.com/craighurley/thehurley.com.git ~/Projects/thehurley.com
+git clone https://github.com/craighurley/vagrant-cloud-init.git ~/Projects/vagrant-cloud-init
+git clone https://github.com/craighurley/weechat.git ~/.weechat
 
-# vps
-git clone https://github.com/craighurley/pesonal-vps.git ~/Projects/personal-vps
+# gitlab
+git clone git@gitlab.com:craighurley/notes.git  ~/Projects/notes
+git clone git@gitlab.com:craighurley/scripts.git ~/Projects/scripts
 
 # Finished
 echo "$(basename "$0") complete."
