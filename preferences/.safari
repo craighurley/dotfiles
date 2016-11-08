@@ -27,3 +27,7 @@ defaults write com.apple.Safari FindOnPageMatchesWordStartsOnly -bool false
 
 # Stop Safari sending searches to Apple
 defaults write com.apple.Safari UniversalSearchEnabled -bool false
+
+# Disable java
+defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2JavaEnabled -bool false
+defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2JavaEnabledForLocalFiles -bool false
