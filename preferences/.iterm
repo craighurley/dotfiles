@@ -1,0 +1,11 @@
+###############################################################################
+# iTerm
+# com.googlecode.iterm2
+###############################################################################
+
+# Fonts
+/usr/libexec/PlistBuddy -c 'Set :"New Bookmarks":0:"Normal Font" SourceCodePro-Regular 12' ~/Library/Preferences/com.googlecode.iterm2.plist
+/usr/libexec/PlistBuddy -c 'Set :"New Bookmarks":0:"Non Ascii Font" SourceCodePro-Regular 14' ~/Library/Preferences/com.googlecode.iterm2.plist
+
+# Keys
+/usr/libexec/PlistBuddy -c 'Set :"New Bookmarks":0:"Option Key Sends" 2' ~/Library/Preferences/com.googlecode.iterm2.plist
