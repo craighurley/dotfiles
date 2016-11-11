@@ -4,7 +4,7 @@
 
 ## Introduction
 
-A collection of scripts to bootstrap a clean install of OS X.
+A collection of scripts to bootstrap a clean install of macOS.
 
 ## Installation
 
@@ -49,8 +49,8 @@ A collection of scripts to bootstrap a clean install of OS X.
     # Copy templates to ~. These files don't really belong in version control, hence they are not symlinked.
     ~/Projects/dotfiles/.templates
 
-    # Configure sensible defaults in OS X.
-    ~/Projects/dotfiles/.osx
+    # Configure sensible defaults in macOS.
+    ~/Projects/dotfiles/.macos
 
     # Install command line package manager and additional command line tools.
     ~/Projects/dotfiles/.brew
