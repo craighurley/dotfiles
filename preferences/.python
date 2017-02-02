@@ -18,6 +18,7 @@ if [[ -f /usr/local/bin/pyenv ]] ; then
     pyenv exec pip install --upgrade awscli
     pyenv exec pip install --upgrade boto
     pyenv exec pip install --upgrade pep8
+    pyenv exec pip install --upgrade pylint
     pyenv exec pip install --upgrade proselint
     pyenv exec pip install --upgrade virtualenv
     pyenv exec pip install --upgrade virtualenvwrapper
