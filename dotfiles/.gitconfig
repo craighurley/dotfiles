@@ -52,16 +52,19 @@
 [alias]
     # logging
     l = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%Creset%C(yellow)%d%Creset %s %C(bold blue)%an\" --date=relative -${1:-15}; }; f"
-    lf = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%Creset%C(yellow)%d%Creset %s %C(bold blue)%an\" --date=relative --decorate --numstat -${1:-15}; }; f"
+    lf = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%Creset%C(yellow)%d%Creset %s %C(bold blue)%an\" --date=relative --no-merges --decorate --numstat -${1:-15}; }; f"
     lg = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%Creset%C(yellow)%d%Creset %s %C(bold blue)%an\" --date=relative --graph -${1:-15}; }; f"
     lga = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%Creset%C(yellow)%d%Creset %s %C(bold blue)%an\" --date=relative --graph --all --topo-order -${1:-15}; }; f"
+    lw = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%Creset%C(yellow)%d%Creset %s %C(bold blue)%an\" --date=relative --author=${1:-Craig}; }; f"
+    sl = "!f() { git shortlog --no-merges -${1:-15}; }; f"
 
     # list all files
     ls = ls-files
 
     # diffing
     d = "!f() { git diff --patch-with-stat HEAD~${1:-0}; }; f"
-    df = "!f() { git diff --stat HEAD~${1:-0}; }; f"
+    dlf = "!f() { git diff --stat HEAD~${1:-0}; }; f"
+    df = "!f() { git log -p --no-merges ${1}; }; f"
 
     # searching
     g = grep -I
