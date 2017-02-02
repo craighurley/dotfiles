@@ -5,7 +5,7 @@
 [[ -d "$HOME/Projects/orion-utilities/rgrav" ]] && PATH="$PATH:$HOME/Projects/orion-utilities/rgrav"
 
 # oracle sqlplus
-[[ -d "/Library/Oracle/instantclient" ]] && PATH="/Library/Oracle/instantclient:$PATH"
+[[ -d "$HOME/Applications/Oracle/instaclient" ]] && PATH="$HOME/Applications/Oracle/instaclient:$PATH"
 
 # Path to git diff utility.  Add the following to ~/.gitconfig
 # [pager]

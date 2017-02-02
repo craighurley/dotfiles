@@ -24,4 +24,4 @@ export HOMEBREW_CASK_OPTS=""
 export HOMEBREW_NO_EMOJI=1
 
 # sqldeveloper
-export DYLD_LIBRARY_PATH=/Library/Oracle/instantclient
+export DYLD_LIBRARY_PATH=~/Applications/Oracle/instaclient
