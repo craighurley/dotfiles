@@ -52,3 +52,15 @@ function colours() {
 function rt {
     echo -ne "\033]0;"$@"\007"
 }
+
+# display all files in the user dir open by a given app
+function lsof-ls() {
+    if [[ ! -z "$1" ]] ; then
+        p=$(lsof -t -c "$1")
+        if [[ ! -z "$p" ]] ; then
+            lsof -p "$p"
+        else
+            echo Could not find a process id for "$1"
+        fi
+    fi
+}
