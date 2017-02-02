@@ -42,6 +42,7 @@ set updatetime=500              " increase the response time
 set backspace=indent,eol,start
 set clipboard=unnamed           " enable copying to system clipboard
 set shortmess+=I                " remove startup message when no file is selected
+set mouse=n
 
 " Time out on key codes but not mappings.
 set notimeout
