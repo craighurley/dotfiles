@@ -1,20 +1,3 @@
-# Toggle show/hide files
-function toggleshowhide() {
-    # check if hidden files are visible and store result in a variable
-    isVisible=`defaults read com.apple.finder AppleShowAllFiles`
-
-    # toggle visibility based on variables value
-    if [ "$isVisible" == "0" ]
-    then
-    	defaults write com.apple.finder AppleShowAllFiles -bool true
-    else
-    	defaults write com.apple.finder AppleShowAllFiles -bool false
-    fi
-
-    # force changes by restarting Finder
-    killall Finder
-}
-
 # Cleanup
 function dsclean() {
     read -r -p "Delete all .DS_Stores in this directory and all subdirectories? (y/n) " -n 1
