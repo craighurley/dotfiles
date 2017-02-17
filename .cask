@@ -34,6 +34,7 @@ brew cask reinstall --require-sha hyperswitch
 brew cask reinstall --require-sha iterm2
 brew cask reinstall --require-sha java
 brew cask reinstall --require-sha kaleidoscope
+brew cask reinstall --require-sha keepassxc
 brew cask reinstall --require-sha skype
 brew cask reinstall --require-sha snagit
 brew cask reinstall --require-sha spideroakone
