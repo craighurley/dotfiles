@@ -64,6 +64,12 @@ set nowrap
 set listchars=eol:¬,tab:→·,space:·,trail:·,extends:→,precedes:←
 set nolist
 
+" Diff
+"set diffopt+=iwhite
+set noro
+nnoremap ] ]c
+nnoremap [ [c
+
 " UI Layout
 set number              " show line numbers
 set showcmd             " show command in bottom bar
