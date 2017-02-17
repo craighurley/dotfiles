@@ -5,6 +5,7 @@ user_pref("browser.pocket.enabled", false);
 user_pref("browser.tabs.tabClipWidth", 1);
 user_pref("datareporting.healthreport.service.enabled", false);
 user_pref("datareporting.healthreport.uploadEnabled", false);
+user_pref("devtools.webconsole.persistlog", true);
 user_pref("general.useragent.locale", "en-GB");
 user_pref("layout.spellcheckDefault", 2);
 user_pref("loop.enabled", false);
