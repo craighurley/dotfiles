@@ -42,7 +42,7 @@ set updatetime=500              " increase the response time
 set backspace=indent,eol,start
 set clipboard=unnamed           " enable copying to system clipboard
 set shortmess+=I                " remove startup message when no file is selected
-set mouse=n
+set mouse=v
 
 " Time out on key codes but not mappings.
 set notimeout
@@ -63,12 +63,6 @@ set autoindent
 set nowrap
 set listchars=eol:¬,tab:→·,space:·,trail:·,extends:→,precedes:←
 set nolist
-
-" Diff
-"set diffopt+=iwhite
-set noro
-nnoremap ] ]c
-nnoremap [ [c
 
 " UI Layout
 set number              " show line numbers
@@ -131,8 +125,9 @@ augroup configgroup
     autocmd BufWritePre *.md,*.txt %s/\s\+$//e
 augroup END
 
+" -----------------------------------------------------------------------------
 " Functions
-
+" -----------------------------------------------------------------------------
 " Map key to toggle opt
 function MapToggle(key, opt)
   let cmd = ':set '.a:opt.'! \| set '.a:opt."?\<CR>"
@@ -147,7 +142,9 @@ function! GutterToggle()
     GitGutterToggle
 endfunction
 
-" bindings
+" -----------------------------------------------------------------------------
+" Bindings
+" -----------------------------------------------------------------------------
 MapToggle <F2> paste
 MapToggle <F3> hlsearch
 MapToggle <F4> wrap
@@ -158,3 +155,23 @@ nnoremap j gj
 nnoremap k gk
 nnoremap <C-n> :bnext<CR>
 nnoremap <C-p> :bprevious<CR>
+
+" -----------------------------------------------------------------------------
+" Diff settings
+" -----------------------------------------------------------------------------
+if &diff
+    " set diffopt+=iwhite
+    set noro
+    " Turn off cursorline effect, except for line number highlighting
+    highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE
+    syntax off
+    " Remap keys for managing diffs
+    nnoremap j ]c
+    nnoremap k [c
+    nnoremap o do
+    nnoremap p dp
+    nnoremap U :diffupdate<CR>
+    nnoremap 1 :diffg LO<CR>
+    nnoremap 2 :diffg BA<CR>
+    nnoremap 3 :diffg RE<CR>
+endif
