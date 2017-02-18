@@ -41,7 +41,13 @@
 [apply]
     whitespace = nowarn
 
+[mergetool "vimdiff"]
+    trustExitCode = false
+
 [difftool]
+    prompt = false
+
+[mergetool]
     prompt = false
 
 [diff]
@@ -100,6 +106,10 @@
 
     p = pull
     c = checkout
+
+    # diff/merge tool
+    dt = difftool
+    mt = mergetool
 
     # conflicts/merges
     ours = "!f() { git checkout --ours $@ && git add $@; }; f"
