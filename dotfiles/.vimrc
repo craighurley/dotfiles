@@ -162,6 +162,7 @@ nnoremap <C-p> :bprevious<CR>
 if &diff
     " set diffopt+=iwhite
     set noro
+    set list
     " Turn off cursorline effect, except for line number highlighting
     highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE
     syntax off
