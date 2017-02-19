@@ -82,7 +82,7 @@
     # show diff for given number of commits
     d = "!f() { git diff --patch-with-stat HEAD~${1:-0}; }; f"
     # show all files that changed over the given number of commits
-    ds = "!f() { git diff --stat HEAD~${1:-0}; }; f"
+    df = "!f() { git diff --stat HEAD~${1:-0}; }; f"
     # show log and diff for given number of commits
     dl = "!f() { git log -p --no-merges -${1:-1}; }; f"
 
