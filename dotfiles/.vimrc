@@ -172,7 +172,7 @@ if &diff
     nnoremap o do
     nnoremap p dp
     nnoremap U :diffupdate<CR>
-    nnoremap 1 :diffg LO<CR>
-    nnoremap 2 :diffg BA<CR>
-    nnoremap 3 :diffg RE<CR>
+    nnoremap 1 :diffget LOCAL<CR>
+    nnoremap 2 :diffget BASE<CR>
+    nnoremap 3 :diffget REMOTE<CR>
 endif

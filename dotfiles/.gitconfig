@@ -112,7 +112,9 @@
     mt = mergetool
 
     # conflicts/merges
+    # choose the change(s) from the local
     ours = "!f() { git checkout --ours $@ && git add $@; }; f"
+    # choose the change(s) from the remote
     theirs = "!f() { git checkout --theirs $@ && git add $@; }; f"
 
     # rebase
