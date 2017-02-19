@@ -9,6 +9,7 @@ Plugin 'VundleVim/Vundle.vim'       " let Vundle manage Vundle
 Plugin 'airblade/vim-gitgutter'
 Plugin 'scwood/vim-hybrid'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-unimpaired'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 call vundle#end()
@@ -148,7 +149,7 @@ endfunction
 MapToggle <F2> paste
 MapToggle <F3> hlsearch
 MapToggle <F4> wrap
-nnoremap <F5> :call GutterToggle()<CR>
+nnoremap  <F5> :call GutterToggle()<CR>
 MapToggle <F6> list
 
 nnoremap j gj
@@ -162,13 +163,14 @@ nnoremap <C-p> :bprevious<CR>
 if &diff
     " set diffopt+=iwhite
     set noro
-    set list
     " Turn off cursorline effect, except for line number highlighting
     highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE
     syntax off
     " Remap keys for managing diffs
     nnoremap j ]c
     nnoremap k [c
+    map      h ]n
+    map      l [n
     nnoremap o do
     nnoremap p dp
     nnoremap U :diffupdate<CR>
