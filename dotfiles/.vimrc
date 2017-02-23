@@ -12,6 +12,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'vim-scripts/PreserveNoEOL'
 call vundle#end()
 filetype plugin indent on
 
@@ -27,6 +28,7 @@ let g:airline_theme='solarized'
 let g:gitgutter_sign_column_always = 1
 let g:hybrid_custom_term_colors=1
 let g:solarized_termcolors=256
+let g:PreserveNoEOL=1
 set noshowmode                      " airline is installed, disable the default mode indicator
 
 " -----------------------------------------------------------------------------

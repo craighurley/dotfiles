@@ -105,7 +105,7 @@
     remotes = remote -v
 
     p = pull
-    c = checkout
+    co = checkout
 
     # diff/merge tool
     dt = difftool
