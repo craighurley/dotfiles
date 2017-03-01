@@ -19,13 +19,13 @@ filetype plugin indent on
 " -----------------------------------------------------------------------------
 " plugin specific settings
 " -----------------------------------------------------------------------------
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#fnamemod = ':t'
+let g:airline#extensions#tabline#enabled=1
+let g:airline#extensions#tabline#fnamemod=':t'
 let g:airline_powerline_fonts=1
 let g:airline_section_c='%<%F%m %#__accent_red#%{airline#util#wrap(airline#parts#readonly(),0)}%#__restore__#'
 let g:airline_solarized_bg='dark'
 let g:airline_theme='solarized'
-let g:gitgutter_sign_column_always = 1
+let g:gitgutter_sign_column_always=1
 let g:hybrid_custom_term_colors=1
 let g:solarized_termcolors=256
 let g:PreserveNoEOL=1
