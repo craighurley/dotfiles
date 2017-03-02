@@ -1,7 +1,9 @@
+user_perf("privacy.userContext.enabled", true);
+user_perf("privacy.userContext.ui.enabled", true);
 user_pref("browser.ctrlTab.previews", true);
 user_pref("browser.fixup.alternate.enabled", false);
 user_pref("browser.newtab.url", "https://www.google.co.nz");
-user_pref("browser.pocket.enabled", false);
+user_pref("browser.pocket.enabled", true);
 user_pref("browser.tabs.tabClipWidth", 1);
 user_pref("datareporting.healthreport.service.enabled", false);
 user_pref("datareporting.healthreport.uploadEnabled", false);
