@@ -64,15 +64,15 @@
 
 [alias]
     # logging
-    l = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%Creset%C(yellow)%d%Creset %s %C(bold blue)%an\" --date=relative -${1:-15}; }; f"
+    l = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%Creset%C(yellow)%d%Creset %s %C(bold blue)%an <%ae>\" --date=relative -${1:-15}; }; f"
     # what files changed
-    lf = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%Creset%C(yellow)%d%Creset %s %C(bold blue)%an\" --date=relative --no-merges --decorate --numstat -${1:-15}; }; f"
+    lf = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%Creset%C(yellow)%d%Creset %s %C(bold blue)%an <%ae>\" --date=relative --no-merges --decorate --numstat -${1:-15}; }; f"
     # graph everything to the current commit
-    lg = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%Creset%C(yellow)%d%Creset %s %C(bold blue)%an\" --date=relative --graph -${1:-15}; }; f"
+    lg = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%Creset%C(yellow)%d%Creset %s %C(bold blue)%an <%ae>\" --date=relative --graph -${1:-15}; }; f"
     # graph across all branches to the most recent
-    lga = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%Creset%C(yellow)%d%Creset %s %C(bold blue)%an\" --date=relative --graph --all --topo-order -${1:-15}; }; f"
+    lga = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%Creset%C(yellow)%d%Creset %s %C(bold blue)%an <%ae>\" --date=relative --graph --all --topo-order -${1:-15}; }; f"
     # focus log on specific user
-    lw = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%Creset%C(yellow)%d%Creset %s %C(bold blue)%an\" --date=relative --author=${1:-Craig}; }; f"
+    lw = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%Creset%C(yellow)%d%Creset %s %C(bold blue)%an <%ae>\" --date=relative --author=${1:-Craig}; }; f"
     # short log (good for summarising changes)
     sl = "!f() { git shortlog --no-merges -${1:-15}; }; f"
 
