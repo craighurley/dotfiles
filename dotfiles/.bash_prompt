@@ -16,7 +16,7 @@ export GIT_PS1_SHOWUNTRACKEDFILES=1
 export GIT_PS1_SHOWUPSTREAM=auto
 export GIT_PS1_SHOWCOLORHINTS=1
 
-#export PS1='\n\[$blue\]localhost\[$reset\] \[$yellow\]\t\[$reset\]: \w \$ '
-export PS1='\n\[$cyan\]\u\[$white\]\[$reset\]: \w \$ '
-#PROMPT_COMMAND='__git_ps1 "\n\[$blue\]localhost\[$reset\]: \w" " \$ "'
-PROMPT_COMMAND='__git_ps1 "\n\[$cyan\]\u\[$reset\]: \w" " \[$red\]\$\[$reset\] "'
+#export PS1='\n\[$blue\]localhost\[$reset\] \[$yellow\]\t\[$reset\]: \w\n\$ '
+export PS1='\n\[$cyan\]\u\[$white\]\[$reset\]: \w\n\$ '
+#PROMPT_COMMAND='__git_ps1 "\n\[$blue\]localhost\[$reset\]: \w" "\n\$ "'
+PROMPT_COMMAND='__git_ps1 "\n\[$cyan\]\u\[$reset\]: \w" "\n\[$red\]\$\[$reset\] "'
