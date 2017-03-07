@@ -65,6 +65,7 @@
 [alias]
     # logging
     l = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%Creset%C(yellow)%d%Creset %s %C(bold blue)%an\" --date=relative -${1:-15}; }; f"
+    lp = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%Creset %s %C(bold blue)%an\" --date=relative --no-merges -${1:-15}; }; f"
     # what files changed
     lf = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%Creset%C(yellow)%d%Creset %s %C(bold blue)%an\" --date=relative --no-merges --decorate --numstat -${1:-15}; }; f"
     # graph everything to the current commit
