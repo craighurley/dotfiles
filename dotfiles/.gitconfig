@@ -66,6 +66,7 @@
 [alias]
     # logging
     l = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%Creset %s %C(bold blue)%an\" --date=relative --no-merges -${1:-15}; }; f"
+    lm = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%Creset %s %C(bold blue)%an\" --date=relative --merges -${1:-15}; }; f"
     la = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%C(yellow)%d%Creset %s %C(bold blue)%an\" --date=relative -${1:-15}; }; f"
     # what files changed
     lf = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%C(yellow)%d%Creset %s %C(bold blue)%an\" --date=relative --no-merges --decorate --numstat -${1:-15}; }; f"
@@ -77,6 +78,8 @@
     lw = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%C(yellow)%d%Creset %s %C(bold blue)%an\" --date=relative --author=${1:-Craig}; }; f"
     # short log (good for summarising changes)
     sl = "!f() { git shortlog --no-merges -${1:-15}; }; f"
+    # reflog for current branch (useful for getting the parent commit)
+    rl = "!f() { git reflog show $(git rev-parse --abbrev-ref HEAD) --pretty=format:\"%Cred%h %Cgreen%cd%C(yellow)%d%Creset %gs\" --date=relative; }; f"
 
     # list all files
     ls = ls-files
