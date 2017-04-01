@@ -7,6 +7,9 @@
 # oracle sqlplus
 [[ -d "$HOME/Applications/Oracle/instaclient" ]] && PATH="$HOME/Applications/Oracle/instaclient:$PATH"
 
+# jmeter
+[[ -d "$HOME/Applications/apache-jmeter/bin" ]] && PATH="$HOME/Applications/apache-jmeter/bin:$PATH"
+
 # Path to git diff utility.  Add the following to ~/.gitconfig
 # [pager]
 #     log = diff-highlight | less
