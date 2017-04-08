@@ -17,6 +17,9 @@
     show = diff-highlight | less -+S
     diff = diff-highlight | less -+S
 
+[status]
+    showUntrackedFiles = all
+
 [color]
     ui = auto
 
