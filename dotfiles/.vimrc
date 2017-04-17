@@ -120,9 +120,6 @@ augroup configgroup
     autocmd FileType ruby setlocal softtabstop=2
     autocmd FileType ruby setlocal commentstring=#\ %s
     autocmd FileType python setlocal commentstring=#\ %s
-    autocmd BufEnter *.sh setlocal tabstop=2
-    autocmd BufEnter *.sh setlocal shiftwidth=2
-    autocmd BufEnter *.sh setlocal softtabstop=2
     autocmd BufNewFile,BufRead *.md set spell spelllang=en_gb
     autocmd BufNewFile,BufRead Vagrantfile,Gemfile* set filetype=ruby
     autocmd BufWritePre *.md,*.txt %s/\s\+$//e
