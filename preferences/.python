@@ -15,6 +15,7 @@ if [[ -f /usr/local/bin/pyenv ]] ; then
     pyenv global 2.7.12
 
     pyenv exec pip install --upgrade pip
+    pyenv exec pip install --upgrade ansible
     pyenv exec pip install --upgrade awscli
     pyenv exec pip install --upgrade boto
     pyenv exec pip install --upgrade pep8
