@@ -4,6 +4,9 @@
 # vim
 *.swp
 
+# vscode
+.vscode/
+
 .svn
 log/*.log
 tmp/**
