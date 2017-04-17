@@ -2,7 +2,7 @@
 export EDITOR="vim"
 
 # bash history
-export HISTSIZE=10000
+export HISTSIZE=5000
 export HISTFILESIZE=$HISTSIZE
 export HISTTIMEFORMAT="%Y/%m/%d %T "
 export HISTCONTROL=ignoreboth:erasedups
