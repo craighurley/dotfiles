@@ -59,6 +59,7 @@ brew install docker-compose-completion
 brew install gem-completion
 brew install pip-completion
 brew install ruby-completion
+brew install tmuxinator-completion
 brew install vagrant-completion
 
 # cleanup unneeded files
