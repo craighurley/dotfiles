@@ -17,4 +17,7 @@
 #     diff = diff-highlight | less
 [[ -d /usr/local/opt/git/share/git-core/contrib/diff-highlight ]] && PATH="/usr/local/opt/git/share/git-core/contrib/diff-highlight:$PATH"
 
+# openssl
+[[ -d /usr/local/opt/openssl/bin ]] && PATH="/usr/local/opt/openssl/bin:$PATH"
+
 export PATH

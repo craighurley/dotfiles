@@ -24,3 +24,9 @@ export HOMEBREW_NO_EMOJI=1
 
 # sqldeveloper
 export DYLD_LIBRARY_PATH=~/Applications/Oracle/instaclient
+
+# openssl
+if [[ -d /usr/local/opt/openssl/bin ]] ; then
+    export LDFLAGS="-L/usr/local/opt/openssl/lib"
+    export CPPFLAGS="-I/usr/local/opt/openssl/include"
+fi
