@@ -37,13 +37,11 @@ if [[ -f /usr/local/bin/pyenv ]] ; then
     eval "$(pyenv init -)"
 fi
 
-# python virtualenvwrapper
-if [[ -f /usr/local/bin/virtualenvwrapper.sh ]] ; then
-    export PROJECT_HOME=$HOME/Projects
-    source /usr/local/bin/virtualenvwrapper.sh
+if [[ -f $(which -s pyenv-virtualenv-init) ]] ; then
+    eval "$(pyenv virtualenv-init -)"
 fi
 
 # aws tab completion
-if [[ -f $(which aws_completer) ]] ; then
+if [[ -f $(which -s aws_completer) ]] ; then
     complete -C $(which aws_completer) aws
 fi
