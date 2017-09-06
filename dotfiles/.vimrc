@@ -13,6 +13,7 @@ Plugin 'tpope/vim-unimpaired'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-scripts/PreserveNoEOL'
+Plugin 'ConradIrwin/vim-bracketed-paste'
 call vundle#end()
 filetype plugin indent on
 
