@@ -19,6 +19,10 @@ set mark-symlinked-directories on
 "\e[1~": beginning-of-line
 "\e[4~": end-of-line
 
+# Unbind keys that are better used for other purposes
+"\C-n": self-insert
+"\C-p": self-insert
+
 # Do not autocomplete hidden files unless the pattern explicitly begins with a dot
 set match-hidden-files off
 
