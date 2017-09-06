@@ -17,6 +17,6 @@ export GIT_PS1_SHOWUPSTREAM=auto
 export GIT_PS1_SHOWCOLORHINTS=1
 
 #export PS1='\n\[$blue\]localhost\[$reset\] \[$yellow\]\t\[$reset\]: \w\n\$ '
-export PS1='\n\[$cyan\]\u\[$white\]\[$reset\]: \w\n\$ '
+export PS1='\n\[$cyan\]\u $(date +%H:%M:%S)\[$reset\] \w\n\[$red\]\$\[$reset\] '
 #PROMPT_COMMAND='__git_ps1 "\n\[$blue\]localhost\[$reset\]: \w" "\n\$ "'
-PROMPT_COMMAND='__git_ps1 "\n\[$cyan\]\u\[$reset\]: \w" "\n\[$red\]\$\[$reset\] "'
+PROMPT_COMMAND='__git_ps1 "\n\[$cyan\]\u $(date +%H:%M:%S)\[$reset\] \w" "\n\[$red\]\$\[$reset\] "'
