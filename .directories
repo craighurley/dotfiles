@@ -4,15 +4,15 @@
 echo "$(basename "$0") starting."
 
 # create folders
-[[ ! -d ~/Downloads/.transmission/incomplete ]] && mkdir -p ~/Downloads/.transmission/incomplete
 [[ ! -d ~/Pictures/Snagit ]] && mkdir -p ~/Pictures/Snagit
-[[ ! -d ~/Projects/eclipse_workspace ]] && mkdir -p ~/Projects/eclipse_workspace
+[[ ! -d ~/Projects ]] && mkdir -p ~/Projects
 [[ ! -d ~/Documents/dev ]] && mkdir -p ~/Documents/dev
 [[ ! -d ~/Documents/installs/osx ]] && mkdir -p ~/Documents/installs/osx
 [[ ! -d ~/Documents/installs/linux ]] && mkdir -p ~/Documents/installs/linux
 [[ ! -d ~/Documents/installs/windows ]] && mkdir -p ~/Documents/installs/windows
 [[ ! -d ~/Documents/iso ]] && mkdir -p ~/Documents/iso
 [[ ! -d ~/tmp ]] && mkdir -p ~/tmp
+[[ ! -d ~/.config ]] && mkdir -p ~/.config
 
 # ssh
 [[ ! -d ~/.ssh ]] && mkdir -p ~/.ssh
