@@ -18,6 +18,7 @@ if [[ -f /usr/local/bin/pyenv ]] ; then
     pyenv exec pip install --upgrade ansible
     pyenv exec pip install --upgrade awscli
     pyenv exec pip install --upgrade boto
+    pyenv exec pip install --upgrade boto3
     pyenv exec pip install --upgrade jupyter
     pyenv exec pip install --upgrade pep8
     pyenv exec pip install --upgrade pylint
@@ -27,4 +28,11 @@ if [[ -f /usr/local/bin/pyenv ]] ; then
 else
     echo "ERROR: pyenv is not available."
     exit 1
+fi
+
+if [[ ! -f ~/.config/pep8 ]] ; then
+    cat << EOF > ~/.config/pep8
+[pep8]
+ignore = E501
+EOF
 fi
