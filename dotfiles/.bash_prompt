@@ -1,13 +1,15 @@
-red=$(tput setaf 1)
-green=$(tput setaf 2)
-yellow=$(tput setaf 3)
-blue=$(tput setaf 4)
-magenta=$(tput setaf 5)
-cyan=$(tput setaf 6)
-white=$(tput setaf 7)
-bold=$(tput bold)
-underline=$(tput sgr 0 1)
-reset=$(tput sgr0)
+if [[ $- == *i* ]]; then
+    red=$(tput setaf 1)
+    green=$(tput setaf 2)
+    yellow=$(tput setaf 3)
+    blue=$(tput setaf 4)
+    magenta=$(tput setaf 5)
+    cyan=$(tput setaf 6)
+    white=$(tput setaf 7)
+    bold=$(tput bold)
+    underline=$(tput sgr 0 1)
+    reset=$(tput sgr0)
+fi
 
 # for information on the git prompt, see: https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 export GIT_PS1_SHOWDIRTYSTATE=1

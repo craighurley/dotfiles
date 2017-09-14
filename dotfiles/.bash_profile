@@ -20,7 +20,9 @@ complete -o "nospace" -W "cert config decrypt encrypt help id join keygen list-t
 complete -o "nospace" -W "clean conductor config copy deploy help infrastructure invoke package provision resume retrieve-logs rollback slurp-config ssh status suspend test upgrade version" rgrav
 
 # Allow ctrl+s to search forward through history
-stty -ixon
+if [[ $- == *i* ]]; then
+    stty -ixon
+fi
 
 # If possible, add tab completion for many more commands
 if [[ -f $(brew --prefix)/etc/bash_completion ]] ; then
