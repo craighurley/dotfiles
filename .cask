@@ -28,7 +28,7 @@ brew cask reinstall --require-sha ccleaner
 brew cask reinstall --require-sha dash
 brew cask reinstall --require-sha docker
 brew cask reinstall --require-sha eclipse-jee
-brew cask reinstall --require-sha firefox
+brew cask reinstall --require-sha firefox-beta
 brew cask reinstall --require-sha flux
 brew cask reinstall --require-sha hyperswitch
 brew cask reinstall --require-sha iterm2
