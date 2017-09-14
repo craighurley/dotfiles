@@ -7,6 +7,7 @@
 	[
 		"Ansible",
 		"BracketHighlighter",
+		"EditorConfig",
 		"GenerateUUID",
 		"GitGutter",
 		"HL7",
