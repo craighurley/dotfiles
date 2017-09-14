@@ -27,6 +27,7 @@
 		"SublimeLinter-shellcheck",
 		"SublimeLinter-xmllint",
 		"SyncedSideBar",
-		"Theme - Afterglow"
+		"Theme - Afterglow",
+		"TodoReview"
 	]
 }
