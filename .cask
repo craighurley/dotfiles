@@ -53,13 +53,6 @@ if [[ $isWorkMachine == false ]] ; then
     brew cask reinstall --require-sha vlc
 fi
 
-# if this is a work machine
-if [[ $isWorkMachine == true ]] ; then
-    brew cask reinstall --require-sha charles
-    brew cask reinstall --require-sha hipchat
-    brew cask reinstall --require-sha joinme
-fi
-
 # install fonts
 brew cask reinstall --require-sha font-hasklig
 brew cask reinstall --require-sha font-source-code-pro
