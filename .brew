@@ -21,6 +21,7 @@ brew install bash
 brew install bash-completion
 brew install git
 brew install github-markdown-toc
+brew install gradle
 brew install ipcalc
 brew install iperf3
 brew install iproute2mac
@@ -59,6 +60,7 @@ brew tap homebrew/completions
 brew install bundler-completion
 brew install docker-compose-completion
 brew install gem-completion
+brew install gradle-completion
 brew install pip-completion
 brew install ruby-completion
 brew install tmuxinator-completion
