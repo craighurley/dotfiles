@@ -37,6 +37,7 @@ brew cask reinstall --require-sha keepassxc
 brew cask reinstall --require-sha pycharm-ce
 brew cask reinstall --require-sha skype
 brew cask reinstall --require-sha snagit
+brew cask reinstall --require-sha sourcetree
 brew cask reinstall --require-sha spideroakone
 brew cask reinstall --require-sha stay
 brew cask reinstall --require-sha sublime-text
