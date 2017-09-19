@@ -40,7 +40,6 @@ brew cask reinstall --require-sha sourcetree
 brew cask reinstall --require-sha spideroakone
 brew cask reinstall --require-sha stay
 brew cask reinstall --require-sha sublime-text
-brew cask reinstall --require-sha the-unarchiver
 brew cask reinstall --require-sha totalspaces
 brew cask reinstall --require-sha vagrant
 brew cask reinstall --require-sha virtualbox
