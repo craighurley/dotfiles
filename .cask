@@ -24,7 +24,6 @@ brew tap caskroom/cask
 # install applications
 #brew cask reinstall --require-sha balsamiq-mockups
 brew cask reinstall --require-sha appcleaner
-brew cask reinstall --require-sha bettertouchtool
 brew cask reinstall --require-sha dash
 brew cask reinstall --require-sha docker
 brew cask reinstall --require-sha firefox-beta
