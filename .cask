@@ -61,6 +61,7 @@ if [[ $isWorkMachine == true ]] ; then
 fi
 
 # install fonts
+brew cask reinstall --require-sha font-hasklig
 brew cask reinstall --require-sha font-source-code-pro
 brew cask reinstall --require-sha font-source-code-pro-for-powerline
 
