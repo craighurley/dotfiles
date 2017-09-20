@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+
+###############################################################################
+# AWS
+###############################################################################
+
+[[ ! -d ~/.aws ]] && mkdir -p ~/.aws
+chmod 700 ~/.aws
+
+if [[ ! -f ~/.aws/config ]] ; then
+    cat << EOF > ~/.aws/config
+[default]
+output = json
+region = us-west-2
+
+[profile personal]
+output = json
+region = ap-southeast-2
+EOF
+fi
+
+if [[ ! -f ~/.aws/credentials ]] ; then
+    cat << EOF > ~/.aws/credentials
+[default]
+aws_access_key_id = TODO
+aws_secret_access_key = TODO
+
+[personal]
+aws_access_key_id = TODO
+aws_secret_access_key = TODO
+EOF
+fi
+
+chmod 600 ~/.aws/*
