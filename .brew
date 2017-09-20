@@ -36,6 +36,7 @@ brew install pyenv
 brew install pyenv-virtualenv
 brew install rbenv
 brew install rbenv-bundler
+brew install readline
 brew install rename
 brew install rpm
 brew install ruby-build
@@ -49,6 +50,7 @@ brew install vim --with-custom-python
 brew install watch
 brew install weechat --with-python --with-perl --with-aspell
 brew install wget
+brew install xz
 
 # gnu
 brew install coreutils
