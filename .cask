@@ -28,6 +28,7 @@ brew cask install --require-sha dash
 brew cask install --require-sha docker
 brew cask install --require-sha firefox
 brew cask install --require-sha flux
+brew cask install --require-sha google-chrome
 brew cask install --require-sha hyperswitch
 brew cask install --require-sha iterm2
 brew cask install --require-sha java
