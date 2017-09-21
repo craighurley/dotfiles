@@ -5,7 +5,11 @@ echo "$(basename "$0") starting."
 
 # create folders
 [[ ! -d ~/Pictures/Snagit ]] && mkdir -p ~/Pictures/Snagit
-[[ ! -d ~/Projects ]] && mkdir -p ~/Projects
+[[ ! -d ~/Projects/ansible ]] && mkdir -p ~/Projects/ansible
+[[ ! -d ~/Projects/docker ]] && mkdir -p ~/Projects/docker
+[[ ! -d ~/Projects/sublime ]] && mkdir -p ~/Projects/sublime
+[[ ! -d ~/Projects/vagrant ]] && mkdir -p ~/Projects/vagrant
+[[ ! -d ~/Projects/websites ]] && mkdir -p ~/Projects/websites
 [[ ! -d ~/Documents/dev ]] && mkdir -p ~/Documents/dev
 [[ ! -d ~/Documents/installs/osx ]] && mkdir -p ~/Documents/installs/osx
 [[ ! -d ~/Documents/installs/linux ]] && mkdir -p ~/Documents/installs/linux
