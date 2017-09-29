@@ -23,41 +23,41 @@ brew tap caskroom/cask
 
 # install applications
 #brew cask install --require-sha balsamiq-mockups
-brew cask install --require-sha appcleaner
-brew cask install --require-sha dash
-brew cask install --require-sha docker
-brew cask install --require-sha firefox
-brew cask install --require-sha flux
-brew cask install --require-sha google-chrome
-brew cask install --require-sha hyperswitch
-brew cask install --require-sha iterm2
-brew cask install --require-sha java
-brew cask install --require-sha kaleidoscope
-brew cask install --require-sha keepassxc
-brew cask install --require-sha pycharm-ce
-brew cask install --require-sha skype
-brew cask install --require-sha snagit
-brew cask install --require-sha sourcetree
-brew cask install --require-sha spideroakone
-brew cask install --require-sha stay
-brew cask install --require-sha sublime-text
-brew cask install --require-sha totalspaces
-brew cask install --require-sha vagrant
-brew cask install --require-sha virtualbox
-brew cask install --require-sha virtualbox-extension-pack
-brew cask install --require-sha wireshark
+brew cask install appcleaner
+brew cask install dash
+brew cask install docker
+brew cask install firefox
+brew cask install flux
+brew cask install google-chrome
+brew cask install hyperswitch
+brew cask install iterm2
+brew cask install java
+brew cask install kaleidoscope
+brew cask install keepassxc
+brew cask install pycharm-ce
+brew cask install skype
+brew cask install snagit
+brew cask install sourcetree
+brew cask install spideroakone
+brew cask install stay
+brew cask install sublime-text
+brew cask install totalspaces
+brew cask install vagrant
+brew cask install virtualbox
+brew cask install virtualbox-extension-pack
+brew cask install wireshark
 
 # if this is not a work machine
 if [[ $isWorkMachine == false ]] ; then
-    brew cask install --require-sha adobe-photoshop-lightroom
-    brew cask install --require-sha dropbox
-    brew cask install --require-sha vlc
+    brew cask install adobe-photoshop-lightroom
+    brew cask install dropbox
+    brew cask install vlc
 fi
 
 # install fonts
-brew cask install --require-sha font-hasklig
-brew cask install --require-sha font-source-code-pro
-brew cask install --require-sha font-source-code-pro-for-powerline
+brew cask install font-hasklig
+brew cask install font-source-code-pro
+brew cask install font-source-code-pro-for-powerline
 
 # cleanup unneeded files
 brew cleanup

@@ -1,7 +1,7 @@
 # git
-#GIT_AUTHOR_NAME="First Last"
-#GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
+#export GIT_AUTHOR_NAME="First Last"
+#export GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
 #export EMAIL="firstlast@example.com"
 
 # homebrew
-export HOMEBREW_CASK_OPTS="--require-sha"
+#export HOMEBREW_GITHUB_API_TOKEN=
