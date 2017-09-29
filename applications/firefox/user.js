@@ -11,6 +11,7 @@ user_pref("extensions.pocket.enabled", false);
 user_pref("general.useragent.locale", "en-GB");
 user_pref("layout.spellcheckDefault", 2);
 user_pref("loop.enabled", false);
+user_pref("media.block-autoplay-until-in-foreground", true);
 user_pref("plugins.click_to_play", true);
 user_pref("spellchecker.dictionary", "en-GB");
 user_pref("toolkit.telemetry.enabled", false);
