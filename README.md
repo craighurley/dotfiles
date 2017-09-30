@@ -18,7 +18,7 @@ A collection of scripts to bootstrap a clean install of macOS.
     xcode-select --install
     ```
 
-1. Clone this repo by running the following commands:
+1. Clone this repository by running the following commands:
 
     ```sh
     mkdir ~/Projects
@@ -77,6 +77,6 @@ git pull origin master
 
 Suggestions/improvements [welcome](https://github.com/craighurley/dotfiles/issues)!
 
-## Acknowedgements
+## Acknowledgements
 
 * [Mathias Bynens](https://github.com/mathiasbynens)

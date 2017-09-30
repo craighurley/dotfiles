@@ -5,7 +5,9 @@
 		"backends",
 		"Codeset",
 		"Codesets",
-		"namespace"
+		"namespace",
+		"xcode",
+		"homebrew"
 	],
 	"always_show_minimap_viewport": true,
 	"color_scheme": "Packages/User/SublimeLinter/Afterglow-monokai (SL).tmTheme",
