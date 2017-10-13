@@ -71,7 +71,7 @@
 
 [alias]
     # logging
-    l = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%Creset %s %C(bold blue)%an %Creset%Cred%G? %GK\" --date=relative --no-merges -${1:-15}; }; f"
+    l = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%Creset %s %C(bold blue)%an <%ae> %Creset%Cred%G? %GK\" --date=relative --no-merges -${1:-15}; }; f"
     lm = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%Creset %s %C(bold blue)%an %Creset%Cred%G? %GK\" --date=relative --merges -${1:-15}; }; f"
     la = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%C(yellow)%d%Creset %s %C(bold blue)%an <%ae> %Creset%Cred%G? %GK\" --date=relative -${1:-15}; }; f"
     # what files changed
