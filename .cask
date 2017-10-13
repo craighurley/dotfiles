@@ -22,7 +22,7 @@ brew tap caskroom/fonts
 brew tap caskroom/cask
 
 # install applications
-#brew cask install --require-sha balsamiq-mockups
+#brew cask install balsamiq-mockups
 brew cask install appcleaner
 brew cask install dash
 brew cask install docker
@@ -47,6 +47,11 @@ brew cask install visual-studio-code
 brew cask install virtualbox
 brew cask install virtualbox-extension-pack
 brew cask install wireshark
+
+# if this is a work machine
+if [[ $isWorkMachine == true ]] ; then
+    brew cask install gpgtools
+fi
 
 # if this is not a work machine
 if [[ $isWorkMachine == false ]] ; then
