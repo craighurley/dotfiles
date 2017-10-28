@@ -6,13 +6,16 @@ echo "$(basename "$0") starting."
 # github
 git clone git@github.com:craighurley/ansible-personal-vps.git ~/Projects/ansible/ansible-personal-vps
 git clone git@github.com:craighurley/ansible-roles.git ~/Projects/ansible/ansible-roles
-git clone git@github.com:craighurley/sublime-hl7-syntax.git ~/Projects/sublime/sublime-hl7-syntax
 git clone git@github.com:craighurley/craighurley.github.io.git ~/Projects/websites/craighurley.me
+git clone git@github.com:craighurley/sublime-hl7-syntax.git ~/Projects/sublime/sublime-hl7-syntax
 git clone git@github.com:craighurley/thehurley.com.git ~/Projects/websites/thehurley.com
 git clone git@github.com:craighurley/vagrant-cloud-init.git ~/Projects/vagrant/vagrant-cloud-init
 git clone git@github.com:craighurley/weechat.git ~/Projects/weechat
 
 # gitlab
+git clone git@gitlab.com:craighurley/aws.git ~/Projects/aws
+git clone git@gitlab.com:craighurley/jupyter.git ~/Projects/jupyter
+git clone git@gitlab.com:craighurley/notes.git ~/Projects/notes
 git clone git@gitlab.com:craighurley/scripts.git ~/Projects/scripts
 
 # Finished

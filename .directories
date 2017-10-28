@@ -4,19 +4,17 @@
 echo "$(basename "$0") starting."
 
 # create folders
-[[ ! -d ~/Pictures/Snagit ]] && mkdir -p ~/Pictures/Snagit
+[[ ! -d ~/.config ]] && mkdir -p ~/.config
+[[ ! -d ~/installs/linux ]] && mkdir -p ~/installs/linux
+[[ ! -d ~/installs/osx ]] && mkdir -p ~/installs/osx
+[[ ! -d ~/installs/windows ]] && mkdir -p ~/installs/windows
+[[ ! -d ~/iso ]] && mkdir -p ~/iso
 [[ ! -d ~/Projects/ansible ]] && mkdir -p ~/Projects/ansible
 [[ ! -d ~/Projects/docker ]] && mkdir -p ~/Projects/docker
 [[ ! -d ~/Projects/sublime ]] && mkdir -p ~/Projects/sublime
 [[ ! -d ~/Projects/vagrant ]] && mkdir -p ~/Projects/vagrant
 [[ ! -d ~/Projects/websites ]] && mkdir -p ~/Projects/websites
-[[ ! -d ~/Documents/dev ]] && mkdir -p ~/Documents/dev
-[[ ! -d ~/installs/osx ]] && mkdir -p ~/installs/osx
-[[ ! -d ~/installs/linux ]] && mkdir -p ~/installs/linux
-[[ ! -d ~/installs/windows ]] && mkdir -p ~/installs/windows
-[[ ! -d ~/iso ]] && mkdir -p ~/iso
 [[ ! -d ~/tmp ]] && mkdir -p ~/tmp
-[[ ! -d ~/.config ]] && mkdir -p ~/.config
 
 # ssh
 [[ ! -d ~/.ssh ]] && mkdir -p ~/.ssh
