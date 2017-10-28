@@ -31,12 +31,12 @@ brew cask install flux
 brew cask install google-chrome
 brew cask install hyperswitch
 brew cask install iterm2
-brew cask install java
+#brew cask install java
 brew cask install kaleidoscope
 brew cask install keepassxc
 brew cask install pycharm-ce
 brew cask install skype
-brew cask install snagit
+#brew cask install snagit
 brew cask install sourcetree
 brew cask install spideroakone
 brew cask install stay

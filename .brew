@@ -13,15 +13,15 @@ brew update
 brew upgrade
 
 # install applications
-brew install ack
-brew install ant
-brew install ant-contrib
+#brew install ack
+#brew install ant
+#brew install ant-contrib
 brew install aspell --with-lang-en
 brew install bash
 brew install bash-completion
 brew install git
 brew install github-markdown-toc
-brew install gradle
+#brew install gradle
 brew install ipcalc
 brew install iperf3
 brew install iproute2mac
