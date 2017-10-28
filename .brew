@@ -21,6 +21,7 @@ brew install bash
 brew install bash-completion
 brew install git
 brew install github-markdown-toc
+brew install gpg
 #brew install gradle
 brew install ipcalc
 brew install iperf3

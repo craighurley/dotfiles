@@ -48,11 +48,6 @@ brew cask install virtualbox
 brew cask install virtualbox-extension-pack
 brew cask install wireshark
 
-# if this is a work machine
-if [[ $isWorkMachine == true ]] ; then
-    brew cask install gpgtools
-fi
-
 # if this is not a work machine
 if [[ $isWorkMachine == false ]] ; then
     brew cask install adobe-photoshop-lightroom
