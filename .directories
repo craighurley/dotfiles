@@ -5,6 +5,7 @@ echo "$(basename "$0") starting."
 
 # create folders
 [[ ! -d ~/.config ]] && mkdir -p ~/.config
+[[ ! -d ~/bin ]] && mkdir -p ~/bin
 [[ ! -d ~/installs/linux ]] && mkdir -p ~/installs/linux
 [[ ! -d ~/installs/osx ]] && mkdir -p ~/installs/osx
 [[ ! -d ~/installs/windows ]] && mkdir -p ~/installs/windows
