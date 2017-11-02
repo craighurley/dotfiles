@@ -22,43 +22,48 @@ brew tap caskroom/fonts
 brew tap caskroom/cask
 
 # install applications
-#brew cask install balsamiq-mockups
 brew cask install appcleaner
 brew cask install dash
 brew cask install docker
 brew cask install firefox
 brew cask install flux
-brew cask install google-chrome
 brew cask install hyperswitch
 brew cask install iterm2
-#brew cask install java
 brew cask install kaleidoscope
 brew cask install keepassxc
-brew cask install pycharm-ce
-brew cask install skype
-#brew cask install snagit
 brew cask install sourcetree
-brew cask install spideroakone
 brew cask install stay
 brew cask install sublime-text
-#brew cask install totalspaces
 brew cask install vagrant
 brew cask install visual-studio-code
 brew cask install virtualbox
 brew cask install virtualbox-extension-pack
-brew cask install wireshark
 
 # if this is not a work machine
 if [[ $isWorkMachine == false ]] ; then
     brew cask install adobe-photoshop-lightroom
-    brew cask install dropbox
-    brew cask install vlc
 fi
+
+# applications that have been known to not have a SHA checksum
+#brew cask install google-chrome
+
+# applications that are not immediately needed
+#brew cask install balsamiq-mockups
+#brew cask install dropbox
+#brew cask install java
+#brew cask install pycharm-ce
+#brew cask install skype
+#brew cask install snagit
+#brew cask install spideroakone
+#brew cask install totalspaces
+#brew cask install vlc
+#brew cask install wireshark
 
 # install fonts
 brew cask install font-hasklig
 brew cask install font-source-code-pro
-brew cask install font-source-code-pro-for-powerline
+# fonts that have been known to not have a SHA checksum
+#brew cask install font-source-code-pro-for-powerline
 
 # cleanup unneeded files
 brew cleanup

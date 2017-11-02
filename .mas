@@ -18,7 +18,6 @@ APPS=(
     904280696   # Things3
     1278508951  # Trello
     409789998   # Twitter
-    425424353   # The Unarchiver
 )
 
 # Install applications
