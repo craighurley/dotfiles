@@ -15,5 +15,5 @@ trim_trailing_whitespace = false
 [*.{yaml,yml}]
 indent_size = 2
 
-[*.rb]
+[{*.rb,Vagrantfile}]
 indent_size = 2
