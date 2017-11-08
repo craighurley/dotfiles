@@ -8,11 +8,11 @@ if [[ -f /usr/local/bin/pyenv ]] ; then
     eval "$(pyenv init -)"
 
     # install python versions
-    pyenv install 2.7.13
-    pyenv install 3.6.2
+    pyenv install 2.7.14
+    pyenv install 3.6.3
 
     # set the global version
-    pyenv global 2.7.13
+    pyenv global 2.7.14
 
     pyenv exec pip install --upgrade pip
     pyenv exec pip install --upgrade pep8
