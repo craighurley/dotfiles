@@ -39,11 +39,11 @@ if [[ -f /usr/local/bin/pyenv ]] ; then
     eval "$(pyenv init -)"
 fi
 
-if [[ -f $(which -s pyenv-virtualenv-init) ]] ; then
+if [[ $(which -s pyenv-virtualenv-init) -eq 0 ]] ; then
     eval "$(pyenv virtualenv-init -)"
 fi
 
 # aws tab completion
-if [[ -f $(which -s aws_completer) ]] ; then
-    complete -C $(which aws_completer) aws
+if [[ $(which -s aws_completer) -eq 0 ]] ; then
+    complete -C "$(which aws_completer)" aws
 fi
