@@ -8,16 +8,40 @@ sudo -v
 
 # Applications
 APPS=(
-    824171161   # Affinity Designer
-    824183456   # Affinity Photo
-    411643860   # DaisyDisk
-    865500966   # feedly
-    775737590   # iA Writer
-    441258766   # Magnet
-    872515009   # Pomodoro Timer
-    904280696   # Things3
-    1278508951  # Trello
-    409789998   # Twitter
+    443987910 	# 1Password (6.8.4)
+    477670270 	# 2Do (2.3.971)
+    408981426 	# Aperture (3.6)
+    1037126344 	# Apple Configurator 2 (2.5)
+    961632517 	# Be Focused Pro (1.6.2)
+    425264550 	# Blackmagic Disk Speed Test (3.1)
+    1035237815 	# Commander One PRO (1.7.3)
+    1056077392 	# DxOOpticsProForPhotos (1.4.3)
+    406056744 	# Evernote (6.13)
+    1083965373 	# Filters for Photos (1.0.0)
+    1103915944 	# Greenshot (1.2.6)
+    967004861 	# HP Easy Scan (1.9.1)
+    453114608 	# JSON Helper (1.07)
+    1208561404 	# Kaspersky Secure Connection (1.1.3)
+    409183694 	# Keynote (7.3.1)
+    405399194 	# Kindle (1.21.1)
+    488536386 	# Location Helper (1.02)
+    715768417 	# Microsoft Remote Desktop (8.0.27325)
+    969978718 	# Noiseless (1.3.2)
+    409203825 	# Numbers (4.3.1)
+    409201541 	# Pages (6.3.1)
+    592704001 	# Photos Duplicate Cleaner (1.8)
+    409907375 	# Remote Desktop (3.9)
+    803453959 	# Slack (2.9.0)
+    404010395 	# TextWrangler (5.5.2)
+    654667344 	# The Duplicate Finder (2.0)
+    582635628 	# Toolbox for Keynote -Templates (3.5)
+    409789998 	# Twitter (4.3.2)
+    497799835 	# Xcode (9.1)
+    639764244 	# Xee³ (3.5.3)
+    865500966 	# feedly (1.1)
+    1149778308 	# iCompta (6.0.13)
+    408981381 	# iPhoto (9.6.1)
+    446366603 	# ifolor Designer (3.3.1
 )
 
 # Install applications

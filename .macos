@@ -148,7 +148,7 @@ defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
 # Empty Trash securely by default
-#defaults write com.apple.finder EmptyTrashSecurely -bool true
+defaults write com.apple.finder EmptyTrashSecurely -bool true
 
 # Finder: show all filename extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
@@ -225,7 +225,7 @@ sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setstealthmode on
 ###############################################################################
 
 # Disable local Time Machine snapshots
-#sudo tmutil disablelocal
+sudo tmutil disablelocal
 
 # Finished
 echo "$(basename "$0") complete."
