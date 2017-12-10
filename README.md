@@ -4,7 +4,7 @@
 
 ## Introduction
 
-A collection of scripts to bootstrap a clean install of macOS. Largely inspired from https://github.com/craighurley/dotfiles
+A collection of scripts to bootstrap a clean install of macOS. Largely inspired from <https://github.com/craighurley/dotfiles>
 
 ## Installation
 
@@ -78,9 +78,9 @@ git pull origin master
 
 ## Feedback
 
-Suggestions/improvements [welcome](https://github.com/fjacquet/dotfiles/issues)!
+Suggestions/improvements [welcome](<https://github.com/fjacquet/dotfiles/issues>)!
 
 ## Acknowledgements
 
-* [Mathias Bynens](https://github.com/mathiasbynens)
-* [Craig Hurley](https://github.com/craighurley)
+* [Mathias Bynens](<https://github.com/mathiasbynens>)
+* [Craig Hurley](<https://github.com/craighurley>)
