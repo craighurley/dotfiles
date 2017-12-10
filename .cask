@@ -22,10 +22,9 @@ brew tap caskroom/fonts
 brew tap caskroom/cask
 
 # install applications
-# install applications
-for i in $(cat applications/cask/apps.txt)
+grep -v '^ *#' < applications/cask/apps.txt | while IFS= read -r line
 do
-    brew cask install "$i"
+    brew cask install "$line"
 done
 
 # if this is not a work machine

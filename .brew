@@ -13,9 +13,9 @@ brew update
 brew upgrade
 
 # install applications
-for i in $(cat applications/brew/apps.txt)
+grep -v '^ *#' < applications/brew/apps.txt | while IFS= read -r line
 do
-    brew install "$i"
+    brew install "$line"
 done
 
 
@@ -30,11 +30,10 @@ brew install gnu-tar --with-default-names
 
 # install additional completion files
 brew tap homebrew/completions
-for i in $(cat applications/brew/completions.txt)
+grep -v '^ *#' < applications/brew/completions.txt | while IFS= read -r line
 do
-    brew install "$i"
+    brew install "$line"
 done
-
 
 # applications that are not immediately needed
 #brew install ant
