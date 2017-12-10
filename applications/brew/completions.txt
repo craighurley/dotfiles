@@ -1,0 +1,11 @@
+bundler-completion
+docker-completion
+docker-compose-completion
+docker-machine-completion
+gem-completion
+maven-completion
+packer-completion
+pip-completion
+ruby-completion
+tmuxinator-completion
+vagrant-completion

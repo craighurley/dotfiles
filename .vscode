@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #set -x 
-for i in `cat applications/vscode/extensions.txt`
+for i in $(cat applications/vscode/extensions.txt)
 do
-    code --install-extension $i
+    code --install-extension "$i"
 done

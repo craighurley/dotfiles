@@ -22,32 +22,11 @@ brew tap caskroom/fonts
 brew tap caskroom/cask
 
 # install applications
-brew cask install autopano-giga
-brew cask install ccleaner
-brew cask install citrix-receiver
-brew cask install crashplan
-brew cask install docker
-brew cask install dropbox
-brew cask install firefox
-brew cask install google-nik-collection
-brew cask install gpg-suite
-brew cask install hugin
-brew cask install icompta
-brew cask install java
-brew cask install kitematic
-brew cask install libreoffice
-brew cask install libreoffice-language-pack
-brew cask install skypewebplugin
-brew cask install teamviewer
-brew cask install vagrant
-brew cask install vagrant-manager
-brew cask install visual-studio-code
-brew cask install virtualbox
-brew cask install virtualbox-extension-pack
-brew cask install vlc
-brew cask install vmware-remote-console
-brew cask install vnc-viewer
-brew cask install xquartz
+# install applications
+for i in $(cat applications/cask/apps.txt)
+do
+    brew cask install "$i"
+done
 
 # if this is not a work machine
 if [[ $isWorkMachine == false ]] ; then
