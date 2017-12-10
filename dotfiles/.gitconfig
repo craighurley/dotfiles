@@ -11,7 +11,7 @@
 
 [commit]
     template = ~/.gitmessage
-    gpgsign = true
+    gpgsign = false
 
 [pager]
     log = diff-highlight | less -+S
@@ -137,3 +137,6 @@
 
     # committing
     cnm = commit -m 'no message'
+[user]
+	email = fred@ljf.ch
+	name = Fred Jacquet
