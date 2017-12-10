@@ -39,6 +39,9 @@ brew install cvs2svn
 brew install docker
 brew install docker-clean
 brew install docker-compose
+brew install docker-completion
+brew install docker-compose-completion
+brew install docker-machine-completion
 brew install docker-machine
 brew install docker-machine-nfs
 brew install docker-swarm
