@@ -43,6 +43,7 @@ gettext
 git
 git-crypt
 git-flow
+git-lfs
 glib
 gmp
 gnutls
