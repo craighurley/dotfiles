@@ -1,7 +1,8 @@
 #!/bin/bash
 
 #set -x 
-for i in $(cat applications/vscode/extensions.txt)
+
+grep -v '^ *#' <  applications/vscode/extensions.txt | while IFS= read -r line
 do
-    code --install-extension "$i"
+    code --install-extension "$line"
 done
