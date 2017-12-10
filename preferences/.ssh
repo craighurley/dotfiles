@@ -28,7 +28,7 @@ Host gitlab.com
     Port                    443
     User                    git
 
-Host 192.168.*.* *.local localhost
+Host 172.16..** *.local localhost
     LogLevel                ERROR
     StrictHostKeyChecking   no
     UserKnownHostsFile      /dev/null

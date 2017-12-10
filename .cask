@@ -22,51 +22,29 @@ brew tap caskroom/fonts
 brew tap caskroom/cask
 
 # install applications
-brew cask install apache-directory-studio
 brew cask install autopano-giga
-brew cask install appcleaner
 brew cask install ccleaner
-brew cask install cisco-spark
 brew cask install citrix-receiver
 brew cask install crashplan
-brew cask install dash
 brew cask install docker
 brew cask install dropbox
 brew cask install firefox
-brew cask install flux
-brew cask install google-chrome
 brew cask install google-nik-collection
-brew cask install kaleidoscope
-brew cask install keepassxc
-brew cask install keybase
-brew cask install hyperswitch
 brew cask install hugin
 brew cask install icompta
-brew cask install iterm2
 brew cask install java
-brew cask install mactex
-brew cask install musicbrainz-picard
-brew cask install nomachine
-brew cask install real-vnc
-brew cask install skitch
-brew cask install skype-for-business
+brew cask install libreoffice
+brew cask install libreoffice-language-pack
 brew cask install skypewebplugin
-brew cask install sourcetree
-brew cask install stay
-brew cask install sublime-text
 brew cask install teamviewer
-brew cask install thunderbird
 brew cask install vagrant
 brew cask install vagrant-manager
 brew cask install visual-studio-code
 brew cask install virtualbox
 brew cask install virtualbox-extension-pack
-brew cask install visualvm
 brew cask install vlc
 brew cask install vmware-remote-console
 brew cask install vnc-viewer
-brew cask install wireshark
-brew cask install xld
 brew cask install xquartz
 
 # if this is not a work machine
@@ -75,15 +53,24 @@ if [[ $isWorkMachine == false ]] ; then
 fi
 
 # applications that have been known to not have a SHA checksum
-#brew cask install google-chrome
-
+# brew cask install google-chrome
 # applications that are not immediately needed
-#brew cask install balsamiq-mockups
-#brew cask install pycharm-ce
-#brew cask install snagit
-#brew cask install spideroakone
-#brew cask install totalspaces
-
+# brew cask install apache-directory-studio
+# brew cask install balsamiq-mockups
+# brew cask install iterm2
+# brew cask install mactex
+# brew cask install musicbrainz-picard
+# brew cask install nomachine
+# brew cask install pycharm-ce
+# brew cask install skitch
+# brew cask install skype-for-business
+# brew cask install snagit
+# brew cask install spideroakone
+# brew cask install totalspaces
+# brew cask install visualvm
+# brew cask install wireshark
+# brew cask install xld
+# 
 # install fonts
 brew cask install font-hasklig
 brew cask install font-source-code-pro

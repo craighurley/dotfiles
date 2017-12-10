@@ -2,23 +2,11 @@
 [[ -d "$HOME/.scripts" ]] && PATH="$PATH:$HOME/.scripts"
 [[ -d "$HOME/bin" ]] && PATH="$PATH:$HOME/bin"
 
-# rgrav
-[[ -d "$HOME/Projects/orion-utilities/rgrav" ]] && PATH="$PATH:$HOME/Projects/orion-utilities/rgrav"
 
 # oracle sqlplus
-[[ -d "$HOME/Applications/Oracle/instaclient" ]] && PATH="$HOME/Applications/Oracle/instaclient:$PATH"
+# [[ -d "$HOME/Applications/Oracle/instaclient" ]] && PATH="$HOME/Applications/Oracle/instaclient:$PATH"
 
 # jmeter
-[[ -d "$HOME/Applications/apache-jmeter/bin" ]] && PATH="$HOME/Applications/apache-jmeter/bin:$PATH"
-
-# Path to git diff utility.  Add the following to ~/.gitconfig
-# [pager]
-#     log = diff-highlight | less
-#     show = diff-highlight | less
-#     diff = diff-highlight | less
-[[ -d /usr/local/opt/git/share/git-core/contrib/diff-highlight ]] && PATH="/usr/local/opt/git/share/git-core/contrib/diff-highlight:$PATH"
-
-# openssl
-[[ -d /usr/local/opt/openssl/bin ]] && PATH="/usr/local/opt/openssl/bin:$PATH"
+# [[ -d "$HOME/Applications/apache-jmeter/bin" ]] && PATH="$HOME/Applications/apache-jmeter/bin:$PATH"
 
 export PATH

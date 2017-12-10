@@ -20,16 +20,8 @@ export GREP_OPTIONS="--color=auto -I --exclude-dir=.git --exclude-dir=.svn --exc
 
 # homebrew options
 export HOMEBREW_CASK_OPTS="--require-sha"
-export HOMEBREW_NO_EMOJI=1
+export HOMEBREW_NO_EMOJI=0
 
-# sqldeveloper
-export DYLD_LIBRARY_PATH=~/Applications/Oracle/instaclient
-
-# openssl
-if [[ -d /usr/local/opt/openssl/bin ]] ; then
-    export LDFLAGS="-L/usr/local/opt/openssl/lib"
-    export CPPFLAGS="-I/usr/local/opt/openssl/include"
-fi
 
 # gpg
 export GPG_TTY=$(tty)

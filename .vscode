@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#set -x 
+for i in `cat applications/vscode/extensions.txt`
+do
+    code --install-extension $i
+done

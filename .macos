@@ -35,7 +35,7 @@ sudo nvram SystemAudioVolume="%80"
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 
 # Scrollbars: Possible values: `WhenScrolling`, `Automatic` and `Always`
-defaults write NSGlobalDomain AppleShowScrollBars -string "WhenScrolling"
+defaults write NSGlobalDomain AppleShowScrollBars -string "Automatic"
 
 # Expand save panel by default
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true

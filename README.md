@@ -1,10 +1,10 @@
 # dotfiles
 
-[![Build Status](https://travis-ci.org/craighurley/dotfiles.svg?branch=master)](https://travis-ci.org/craighurley/dotfiles)
+[![Build Status](https://travis-ci.org/fjacquet/dotfiles.svg?branch=master)](https://travis-ci.org/fjacquet/dotfiles)
 
 ## Introduction
 
-A collection of scripts to bootstrap a clean install of macOS.
+A collection of scripts to bootstrap a clean install of macOS. Largely inspired from https://github.com/craighurley/dotfiles
 
 ## Installation
 
@@ -22,7 +22,7 @@ A collection of scripts to bootstrap a clean install of macOS.
 
     ```sh
     mkdir ~/Projects
-    git clone https://github.com/craighurley/dotfiles.git ~/Projects/dotfiles
+    git clone https://github.com/fjacquet/dotfiles.git ~/Projects/dotfiles
     ```
 
 1. Install homebrew by running the following command:
@@ -58,6 +58,9 @@ A collection of scripts to bootstrap a clean install of macOS.
     # Install command line package manager and additional applications.
     ~/Projects/dotfiles/.cask
 
+    Install appstore managed app using command line package manager.
+    ~/Projects/dotfiles/.mas
+
     # Apply preferences to applications.
     ~/Projects/dotfiles/.preferences
     ```
@@ -75,8 +78,9 @@ git pull origin master
 
 ## Feedback
 
-Suggestions/improvements [welcome](https://github.com/craighurley/dotfiles/issues)!
+Suggestions/improvements [welcome](https://github.com/fjacquet/dotfiles/issues)!
 
 ## Acknowledgements
 
 * [Mathias Bynens](https://github.com/mathiasbynens)
+* [Craig Hurley](https://github.com/craighurley)

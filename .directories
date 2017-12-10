@@ -11,11 +11,9 @@ echo "$(basename "$0") starting."
 [[ ! -d ~/installs/windows ]] && mkdir -p ~/installs/windows
 [[ ! -d ~/iso ]] && mkdir -p ~/iso
 [[ ! -d ~/Pictures/icons ]] && mkdir -p ~/Pictures/icons
-[[ ! -d ~/Projects/ansible ]] && mkdir -p ~/Projects/ansible
 [[ ! -d ~/Projects/docker ]] && mkdir -p ~/Projects/docker
-[[ ! -d ~/Projects/sublime ]] && mkdir -p ~/Projects/sublime
+[[ ! -d ~/Projects/packer ]] && mkdir -p ~/Projects/packer
 [[ ! -d ~/Projects/vagrant ]] && mkdir -p ~/Projects/vagrant
-[[ ! -d ~/Projects/websites ]] && mkdir -p ~/Projects/websites
 [[ ! -d ~/tmp ]] && mkdir -p ~/tmp
 
 # ssh
