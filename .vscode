@@ -1,7 +1,6 @@
 #!/bin/bash
 
 #set -x 
-
 grep -v '^ *#' <  applications/vscode/extensions.txt | while IFS= read -r line
 do
     code --install-extension "$line"

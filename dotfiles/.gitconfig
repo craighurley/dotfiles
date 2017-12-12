@@ -21,24 +21,24 @@
 [status]
     showUntrackedFiles = all
 
-[color]
-    ui = auto
+# [color]
+#     ui = auto
 
-[color "branch"]
-    current = red reverse
-    local = yellow
-    remote = green
+# [color "branch"]
+#     current = red reverse
+#     local = yellow
+#     remote = green
 
-[color "diff"]
-    meta = yellow bold
-    frag = magenta bold
-    old = red bold
-    new = green bold
+# [color "diff"]
+#     meta = yellow bold
+#     frag = magenta bold
+#     old = red bold
+#     new = green bold
 
-[color "status"]
-    added = yellow
-    changed = green
-    untracked = cyan
+# [color "status"]
+#     added = yellow
+#     changed = green
+#     untracked = cyan
 
 [push]
     default = simple
@@ -140,3 +140,4 @@
 [user]
 	email = fred@ljf.ch
 	name = Fred Jacquet
+	signingkey = 214F70C841B0CBB6
