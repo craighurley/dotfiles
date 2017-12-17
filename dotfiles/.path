@@ -2,6 +2,8 @@
 [[ -d "$HOME/.scripts" ]] && PATH="$PATH:$HOME/.scripts"
 [[ -d "$HOME/bin" ]] && PATH="$PATH:$HOME/bin"
 
+# VMware OVF tool
+PATH="/Applications/VMware Fusion.app/Contents/Library/VMware OVF Tool:$PATH"
 
 # oracle sqlplus
 # [[ -d "$HOME/Applications/Oracle/instaclient" ]] && PATH="$HOME/Applications/Oracle/instaclient:$PATH"
@@ -9,4 +11,4 @@
 # jmeter
 # [[ -d "$HOME/Applications/apache-jmeter/bin" ]] && PATH="$HOME/Applications/apache-jmeter/bin:$PATH"
 
-export PATH
+export PATH 
