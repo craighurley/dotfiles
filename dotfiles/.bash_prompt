@@ -5,6 +5,7 @@ if [[ $- == *i* ]]; then
     blue=$(tput setaf 4)
     magenta=$(tput setaf 5)
     cyan=$(tput setaf 6)
+    grey=$(tput setaf 245)
     white=$(tput setaf 7)
     bold=$(tput bold)
     underline=$(tput sgr 0 1)
@@ -19,6 +20,6 @@ export GIT_PS1_SHOWUPSTREAM=auto
 export GIT_PS1_SHOWCOLORHINTS=1
 
 #export PS1='\n\[$blue\]localhost\[$reset\] \[$yellow\]\t\[$reset\]: \w\n\$ '
-export PS1='\n\[$cyan\]\u $(date +%H:%M:%S)\[$reset\] \w\n\[$red\]\$\[$reset\] '
+export PS1='\n\[$grey\]\u $(date +%H:%M:%S)\[$reset\] \w\n\[$red\]\$\[$reset\] '
 #PROMPT_COMMAND='__git_ps1 "\n\[$blue\]localhost\[$reset\]: \w" "\n\$ "'
-PROMPT_COMMAND='__git_ps1 "\n\[$cyan\]\u $(date +%H:%M:%S)\[$reset\] \w" "\n\[$red\]\$\[$reset\] "'
+PROMPT_COMMAND='__git_ps1 "\n\[$grey\]\u $(date +%H:%M:%S)\[$reset\] \w" "\n\[$red\]\$\[$reset\] "'
