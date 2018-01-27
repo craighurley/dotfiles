@@ -9,7 +9,7 @@ if [[ -f /usr/local/bin/pyenv ]] ; then
 
     # install python versions
     pyenv install 2.7.14
-    pyenv install 3.6.3
+    pyenv install 3.6.2
 
     # set the global version
     pyenv global 2.7.14
