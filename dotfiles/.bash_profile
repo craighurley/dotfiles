@@ -47,3 +47,8 @@ fi
 if [[ -f $(which -s aws_completer) ]] ; then
     complete -C $(which aws_completer) aws
 fi
+
+# use Yubikey GPG SSH 
+export GPG_TTY="$(tty)"
+export SSH_AUTH_SOCK="${HOME}/.gnupg/S.gpg-agent.ssh"
+gpgconf --launch gpg-agent

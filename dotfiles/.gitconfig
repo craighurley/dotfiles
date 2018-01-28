@@ -139,5 +139,5 @@
     cnm = commit -m 'no message'
 [user]
 	email = fred@ljf.ch
-	name = Fred Jacquet
-	signingkey = 214F70C841B0CBB6
+	name = Frederic Jacquet
+	signingkey = B189C7150444913BF7B9055C4CA4944269CA70DF
