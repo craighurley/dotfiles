@@ -3,6 +3,7 @@
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
 for file in ~/.{path,bash_prompt,exports,aliases,functions,extra} ; do
+    # shellcheck source=/dev/null
     [ -r "$file" ] && [ -f "$file" ] && source "$file"
 done
 unset file
@@ -27,6 +28,7 @@ fi
 
 # If possible, add tab completion for many more commands
 if [[ -f $(brew --prefix)/etc/bash_completion ]] ; then
+    # shellcheck source=/dev/null
     source "$(brew --prefix)/etc/bash_completion"
 fi
 
