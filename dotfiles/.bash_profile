@@ -27,7 +27,7 @@ fi
 
 # If possible, add tab completion for many more commands
 if [[ -f $(brew --prefix)/etc/bash_completion ]] ; then
-    source $(brew --prefix)/etc/bash_completion
+    source "$(brew --prefix)/etc/bash_completion"
 fi
 
 # ruby env
@@ -46,11 +46,12 @@ fi
 
 # aws tab completion
 if [[ -f $(which -s aws_completer) ]] ; then
-    complete -C $(which aws_completer) aws
+    complete -C "$(which aws_completer)" aws
 fi
 
 
 # use Yubikey GPG SSH 
-export GPG_TTY="$(tty)"
-export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+GPG_TTY="$(tty)"
+SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+export GPG_TTY SSH_AUTH_SOCK
 gpgconf --launch gpg-agent
