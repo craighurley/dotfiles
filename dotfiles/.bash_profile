@@ -1,3 +1,4 @@
+#!/bin/bash
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
@@ -48,7 +49,8 @@ if [[ -f $(which -s aws_completer) ]] ; then
     complete -C $(which aws_completer) aws
 fi
 
+
 # use Yubikey GPG SSH 
 export GPG_TTY="$(tty)"
-export SSH_AUTH_SOCK="${HOME}/.gnupg/S.gpg-agent.ssh"
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 gpgconf --launch gpg-agent

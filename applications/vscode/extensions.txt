@@ -40,3 +40,4 @@ vscjava.vscode-java-pack
 waderyan.gitblame
 xceleration.jira-search
 ziyasal.vscode-open-in-github
+Python
