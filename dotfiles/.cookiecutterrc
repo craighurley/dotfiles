@@ -1,4 +1,5 @@
 default_context:
     full_name: "Craig Hurley"
     github_username: "craighurley"
-cookiecutters_dir: "~/Projects/cookiecutters/"
+abbreviations:
+    ch: https://github.com/craighurley/cookiecutter-{0}.git
