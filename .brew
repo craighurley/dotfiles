@@ -19,6 +19,7 @@ brew install awscli
 brew install bash
 brew install bash-completion
 brew install cookiecutter
+brew install entr
 brew install git
 brew install gpg
 brew install ipcalc
