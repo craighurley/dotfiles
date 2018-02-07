@@ -15,6 +15,7 @@ brew upgrade
 # install applications
 brew install ack
 brew install aspell --with-lang-en
+brew install awscli
 brew install bash
 brew install bash-completion
 brew install cookiecutter
@@ -37,6 +38,7 @@ brew install readline
 brew install rename
 brew install rpm
 brew install ruby-build
+brew install sceptre
 brew install shellcheck
 brew install tcptraceroute
 brew install tmux
