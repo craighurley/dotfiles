@@ -53,6 +53,7 @@ fi
 #brew cask install dropbox
 #brew cask install java
 #brew cask install pycharm-ce
+#brew cask install sequel-pro
 #brew cask install skype
 #brew cask install snagit
 #brew cask install spideroakone
