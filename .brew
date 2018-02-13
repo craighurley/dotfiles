@@ -25,6 +25,7 @@ brew install gpg
 brew install ipcalc
 brew install iperf3
 brew install iproute2mac
+brew install jsonpp
 brew install mas
 brew install netcat
 brew install nmap
