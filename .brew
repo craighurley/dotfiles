@@ -19,6 +19,7 @@ brew install awscli
 brew install bash
 brew install bash-completion
 brew install cookiecutter
+brew install csvkit
 brew install entr
 brew install git
 brew install gpg
@@ -42,6 +43,7 @@ brew install rpm
 brew install ruby-build
 brew install sceptre
 brew install shellcheck
+brew install sqlite3
 brew install tcptraceroute
 brew install tmux
 brew install tree
