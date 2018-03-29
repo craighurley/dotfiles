@@ -1,15 +1,7 @@
 #!/usr/bin/env bash
 
-isWorkMachine=false
-
 # Start
 echo "$(basename "$0") starting."
-
-read -r -p "Is this a work machine? (y/n) " -n 1
-echo
-if [[ $REPLY =~ ^[Yy]$ ]] ; then
-    isWorkMachine=true
-fi
 
 # homebrew options
 export HOMEBREW_CASK_OPTS="--require-sha"
@@ -40,15 +32,11 @@ brew cask install visual-studio-code
 brew cask install virtualbox
 brew cask install virtualbox-extension-pack
 
-# if this is not a work machine
-if [[ $isWorkMachine == false ]] ; then
-    brew cask install adobe-photoshop-lightroom
-fi
-
 # applications that have been known to not have a SHA checksum
 #brew cask install google-chrome
 
 # applications that are not immediately needed
+#brew cask install adobe-photoshop-lightroom
 #brew cask install balsamiq-mockups
 #brew cask install dropbox
 #brew cask install java
