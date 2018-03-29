@@ -25,13 +25,13 @@ brew tap caskroom/cask
 brew cask install appcleaner
 brew cask install dash
 brew cask install docker
+brew cask install etcher
 brew cask install firefox
 brew cask install flux
 brew cask install hyperswitch
 brew cask install iterm2
 brew cask install kaleidoscope
 brew cask install keepassxc
-brew cask install sourcetree
 brew cask install stay
 brew cask install sublime-text
 brew cask install vagrant
@@ -56,6 +56,7 @@ fi
 #brew cask install sequel-pro
 #brew cask install skype
 #brew cask install snagit
+#brew cask install sourcetree
 #brew cask install spideroakone
 #brew cask install totalspaces
 #brew cask install vlc
