@@ -18,5 +18,8 @@ indent_size = 2
 [{*.rb,Vagrantfile}]
 indent_size = 2
 
+[*.ino]
+indent_size = 4
+
 [Makefile]
 indent_style = tab
