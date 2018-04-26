@@ -4,19 +4,30 @@
 # python
 ###############################################################################
 
+v2=2.7.14
+v3=3.6.5
+
 if [[ -f /usr/local/bin/pyenv ]] ; then
     eval "$(pyenv init -)"
 
     # install python versions
-    pyenv install 2.7.14
-    pyenv install 3.6.2
+    pyenv install $v2
+    pyenv install $v3
 
-    # set the global version
-    pyenv global 2.7.14
+    # create a default based on $v and make this system use it
+    pyenv virtualenv $v3 default
+    pyenv global default
 
+    # install common items
     pyenv exec pip install --upgrade pip
     pyenv exec pip install --upgrade pep8
     pyenv exec pip install --upgrade pylint
+    pyenv exec pip install --upgrade ansible
+    pyenv exec pip install --upgrade aws-mfa
+    pyenv exec pip install --upgrade awscli
+    pyenv exec pip install --upgrade awslogs
+    pyenv exec pip install --upgrade cfn-flip
+    pyenv exec pip install --upgrade sceptre
     pyenv exec pip install --upgrade yamllint
 
     pyenv rehash

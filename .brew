@@ -69,10 +69,8 @@ brew install vagrant-completion
 
 # tools directly related to aws
 brew tap peakgames/s5cmd https://github.com/peakgames/s5cmd
-brew install awscli
-brew install awslogs
 brew install s5cmd
-brew install sceptre
+brew install awless
 
 # applications that are not immediately needed
 #brew install ant
