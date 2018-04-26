@@ -1,9 +1,9 @@
+# brew can install to /usr/local/sbin/
+[[ -d /usr/local/sbin ]] && PATH="$PATH:/usr/local/sbin"
+
 # custom scripts and binaries
 [[ -d "$HOME/.scripts" ]] && PATH="$PATH:$HOME/.scripts"
 [[ -d "$HOME/bin" ]] && PATH="$PATH:$HOME/bin"
-
-# rgrav
-[[ -d "$HOME/Projects/orion-utilities/rgrav" ]] && PATH="$PATH:$HOME/Projects/orion-utilities/rgrav"
 
 # oracle sqlplus
 [[ -d "$HOME/Applications/Oracle/instaclient" ]] && PATH="$HOME/Applications/Oracle/instaclient:$PATH"
