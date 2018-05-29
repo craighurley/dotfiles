@@ -62,3 +62,5 @@ alias plistbuddy="/usr/libexec/PlistBuddy"
 # tcpdump aliases
 alias tcpdump="tcpdump -nn"
 alias tcpdump-http="sudo tcpdump -nn -A -s0 -q 'tcp port 80 and (((ip[2:2] - ((ip[0]&0xf)<<2)) - ((tcp[12]&0xf0)>>2)) != 0)'"
+
+alias me="curl ifconfig.co"
