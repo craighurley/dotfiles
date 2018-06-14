@@ -47,3 +47,7 @@ function lsof-ls() {
         fi
     fi
 }
+
+# Work related utility functions
+aws-rw() { saml2aws -d -l $USER -c "${1}" -r bp-saml-rw -m "${2}"; }
+aws-ro() { saml2aws -d -l $USER -c "${1}" -r bp-saml-ro -m "${2}"; }
