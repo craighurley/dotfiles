@@ -29,6 +29,16 @@ if [[ -f $(brew --prefix)/etc/bash_completion ]] ; then
     source $(brew --prefix)/etc/bash_completion
 fi
 
+# aws tab completion
+if [[ -f $(command -v aws_completer) ]] ; then
+    complete -C "$(command -v aws_completer)" aws
+fi
+
+# configure the prompt after other items have been setup, but before pyenv and rbenv.
+if [[ -f ~/.bash_prompt ]] ; then
+    source ~/.bash_prompt
+fi
+
 # ruby env
 if [[ -f /usr/local/bin/rbenv ]] ; then
     eval "$(rbenv init -)"
@@ -41,14 +51,4 @@ fi
 
 if [[ -f $(command -v pyenv-virtualenv-init) ]] ; then
     eval "$(pyenv virtualenv-init -)"
-fi
-
-# aws tab completion
-if [[ -f $(command -v aws_completer) ]] ; then
-    complete -C "$(command -v aws_completer)" aws
-fi
-
-# configure the prompt after other items have been setup.
-if [[ -f ~/.bash_prompt ]] ; then
-    source ~/.bash_prompt
 fi
