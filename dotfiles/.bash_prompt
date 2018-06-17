@@ -42,7 +42,7 @@ function python_virtualenv {
     fi
 }
 
-if [[ -f $(command -v git) ]] ; then
+if [[ $(type -t "__git_ps1") = "function" ]] ; then
     PROMPT_COMMAND='__git_ps1 "\n$(info_date)$(client_profile)$(python_virtualenv)" " $(info_dir)\n$(prompt)"'
 else
     PROMPT_COMMAND='PS1="\n$(info_date)$(client_profile)$(python_virtualenv) $(info_dir)\n$(prompt)"'
