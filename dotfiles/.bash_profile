@@ -39,11 +39,13 @@ if [[ -f /usr/local/bin/pyenv ]] ; then
     eval "$(pyenv init -)"
 fi
 
-if [[ $(which -s pyenv-virtualenv-init) -eq 0 ]] ; then
+if [[ -f $(command -v pyenv-virtualenv-init) ]] ; then
     eval "$(pyenv virtualenv-init -)"
 fi
 
 # aws tab completion
+if [[ -f $(command -v aws_completer) ]] ; then
+    complete -C "$(command -v aws_completer)" aws
 fi
 
 # configure the prompt after other items have been setup.

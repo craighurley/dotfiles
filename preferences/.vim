@@ -4,7 +4,7 @@
 # vim
 ###############################################################################
 
-vim=$(which vim)
+vim=$(command -v vim)
 
 # install plugins
 mkdir -p ~/.vim/bundle/

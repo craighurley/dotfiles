@@ -5,8 +5,8 @@ set -o pipefail
 IFS=$'\n'
 
 # install additional tools
-[[ ! -f "$(which mdl)" ]] && gem install mdl
-[[ ! -f "$(which yaml-lint)" ]] && gem install yaml-lint
+[[ ! -f "$(command -v mdl)" ]] && gem install mdl
+[[ ! -f "$(command -v yaml-lint)" ]] && gem install yaml-lint
 
 # create a list of mdl rules to ignore
 if [[ ! -f ~/.mdlrc ]] ; then
