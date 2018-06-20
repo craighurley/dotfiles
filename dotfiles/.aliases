@@ -28,7 +28,7 @@ fi
 alias l="ls -lhF ${colorflag}"
 
 # List all files colorized in long format, including dot files
-alias ll="ls -lAhF ${colorflag}"
+alias ll="ls -lhFA ${colorflag}"
 
 # Always use color output for `ls`
 alias ls="command ls -h ${colorflag}"
