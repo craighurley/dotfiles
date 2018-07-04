@@ -11,7 +11,7 @@ IFS=$'\n'
 # create a list of mdl rules to ignore
 if [[ ! -f ~/.mdlrc ]] ; then
     cat << EOF > ~/.mdlrc
-rules "~MD013","~MD014","~MD033"
+rules "~MD013","~MD014","~MD033","~MD046"
 EOF
 fi
 
