@@ -27,10 +27,11 @@ brew install iperf3
 brew install iproute2mac
 brew install jsonpp
 brew install mas
-brew install moreutils
+brew install moreutils --without-parallel
 brew install netcat
 brew install nmap
 brew install openssl
+brew install parallel
 brew install pstree
 brew install pyenv
 brew install pyenv-virtualenv
