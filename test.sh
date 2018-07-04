@@ -17,9 +17,9 @@ fi
 
 # find and lint files
 for f in $(find . -type f -not \( -iwholename '*.git*' -o -iwholename '*.tmp*'  \) | sort -u) ; do
-    if file "$f" | grep -i --quiet "\(bash\|shell\) script" ; then
+    if file "$f" | grep -i --quiet '\(bash\|shell\) script' ; then
         shellcheck "$f"
-    elif file "$f" | grep -i --quiet "text" ; then
+    elif file "$f" | grep -i --quiet 'text' ; then
         if [[ "$f" = *.md ]]; then
             mdl "$f"
         elif [[ "$f" = *.yaml || "$f" = *.yml ]]; then
