@@ -178,3 +178,5 @@ if &diff
     nnoremap 2 :diffget BASE<CR>
     nnoremap 3 :diffget REMOTE<CR>
 endif
+Bundle 'chase/vim-ansible-yaml'
+
