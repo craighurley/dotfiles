@@ -1,66 +1,42 @@
+# Detect which `ls` flavor is in use
+if ls --color > /dev/null 2>&1; then
+    # GNU 'ls'
+    colorflag="--color"
+else
+    # macOS 'ls'
+    colorflag="-G"
+fi
+
+# standard commands
+
 alias ..="cd .."
-
+alias ack='ack --no-group --color-match=on_red'
 alias c="clear"
-alias e="exit"
-alias h="history"
-alias j="jobs"
-
-# docker
 alias d='docker'
-
-# vim
+alias e="exit"
+alias grep='grep -I'
+alias h="history"
+alias idle="python -m idlelib.idle"
+alias j="jobs"
+alias l="ls -lhF ${colorflag}"
+alias ll="ls -lhFA ${colorflag}"
+alias ls="command ls -h ${colorflag}"
+alias lsof='lsof -n -P'
+alias nmap='nmap -n -Pn'
+alias plistbuddy="/usr/libexec/PlistBuddy"
+alias pstree='pstree -g 3'
+alias tcpdump-http="sudo tcpdump -nn -A -s0 -q 'tcp port 80 and (((ip[2:2] - ((ip[0]&0xf)<<2)) - ((tcp[12]&0xf0)>>2)) != 0)'"
+alias tcpdump="tcpdump -nn"
 alias v="vim"
 alias vi="vim"
 
-# grep/ack
-alias grep='grep -I'
-alias ack='ack --no-group --color-match=on_red'
+# custom commands
 
-# ls
-# Detect which `ls` flavor is in use
-if ls --color > /dev/null 2>&1; then # GNU `ls`
-	colorflag="--color"
-else # macOS `ls`
-	colorflag="-G"
-fi
-
-# List all files colorized in long format
-alias l="ls -lhF ${colorflag}"
-
-# List all files colorized in long format, including dot files
-alias ll="ls -lhFA ${colorflag}"
-
-# Always use color output for `ls`
-alias ls="command ls -h ${colorflag}"
-
-# lsof
-alias lsof='lsof -n -P'
-
-# nmap
-alias nmap='nmap -n -Pn'
-
-# pstree
-alias pstree='pstree -g 3'
-
+alias dns="scutil --dns"
+alias dnsflush="dscacheutil -flushcache && killall -HUP mDNSResponder"
+# Clean up LaunchServices to remove duplicates in the "Open With" menu
+alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
+alias me="curl ifconfig.co"
 # mkpasswd clone using python. ensure passlib is installed (pip install passlib)
 alias mkpasswd="python -c 'from passlib.hash import sha512_crypt; import getpass; print sha512_crypt.encrypt(getpass.getpass())'"
-
-# DNS
-alias flushdns="dscacheutil -flushcache && killall -HUP mDNSResponder"
-alias dnsflush="dscacheutil -flushcache && killall -HUP mDNSResponder"
-alias dns="scutil --dns"
-
-# Clean up LaunchServices to remove duplicates in the “Open With” menu
-alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
-
-# URL-encode strings
 alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
-
-# PlistBuddy alias, because sometimes `defaults` just doesn’t cut it
-alias plistbuddy="/usr/libexec/PlistBuddy"
-
-# tcpdump aliases
-alias tcpdump="tcpdump -nn"
-alias tcpdump-http="sudo tcpdump -nn -A -s0 -q 'tcp port 80 and (((ip[2:2] - ((ip[0]&0xf)<<2)) - ((tcp[12]&0xf0)>>2)) != 0)'"
-
-alias me="curl ifconfig.co"
