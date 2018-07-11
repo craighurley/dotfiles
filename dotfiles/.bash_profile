@@ -58,4 +58,5 @@ SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 export GPG_TTY SSH_AUTH_SOCK
 gpgconf --launch gpg-agent
 
+# shellcheck source=/dev/null
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
