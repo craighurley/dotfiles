@@ -26,7 +26,7 @@ function info_dir {
 
 function client_profile {
     if [[ -n "$CLIENTID" ]] ; then
-        echo -en " <${RED}$CLIENTID${RESET}>"
+        echo -en "<${RED}$CLIENTID${RESET}> "
     fi
 }
 
@@ -37,15 +37,15 @@ function prompt {
 function python_virtualenv {
     if [[ -n "$VIRTUAL_ENV" ]] ; then
         if [[ $(basename "$VIRTUAL_ENV") != "default" ]] ; then
-            echo -en " [${YELLOW}$(basename "$VIRTUAL_ENV")${RESET}]"
+            echo -en "[${YELLOW}$(basename "$VIRTUAL_ENV")${RESET}] "
         fi
     fi
 }
 
 if [[ $(type -t "__git_ps1") = "function" ]] ; then
-    PROMPT_COMMAND='__git_ps1 "\n$(info_date)$(client_profile)$(python_virtualenv)" " $(info_dir)\n$(prompt)"'
+    PROMPT_COMMAND='__git_ps1 "\n$(info_date)" " $(python_virtualenv)$(client_profile)$(info_dir)\n$(prompt)"'
 else
-    PROMPT_COMMAND='PS1="\n$(info_date)$(client_profile)$(python_virtualenv) $(info_dir)\n$(prompt)"'
+    PROMPT_COMMAND='PS1="\n$(info_date) $(python_virtualenv)$(client_profile)$(info_dir)\n$(prompt)"'
 fi
 
 export PS4='$0.$LINENO: '
