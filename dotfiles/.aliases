@@ -13,7 +13,7 @@ alias ..="cd .."
 alias ack='ack --no-group --color-match=on_red'
 alias c="clear"
 alias d='docker'
-alias did="vim +'normal Go' +'r!date' +'normal o' +star ~/did.txt"
+alias did="vim +'normal Go' +'r!date' +'normal o' ~/did.txt"
 alias e="exit"
 alias grep='grep -I'
 alias h="history"
