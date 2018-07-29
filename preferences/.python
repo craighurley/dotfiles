@@ -27,6 +27,7 @@ if [[ -f /usr/local/bin/pyenv ]] ; then
     pyenv exec pip install --upgrade awscli
     pyenv exec pip install --upgrade awslogs
     pyenv exec pip install --upgrade cfn-flip
+    pyenv exec pip install --upgrade cfn-lint
     pyenv exec pip install --upgrade sceptre
     pyenv exec pip install --upgrade yamllint
 
