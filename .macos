@@ -214,8 +214,9 @@ sudo pmset -c sleep 0 disksleep 0 displaysleep 10 halfdim 1
 # Enable the firewall
 sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setglobalstate on
 
-# Do not auto allow signed apps
-sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setallowsigned off
+# Allow signed apps
+sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setallowsigned on
+sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setallowsignedapp on
 
 # Enable stealth mode
 sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setstealthmode on
