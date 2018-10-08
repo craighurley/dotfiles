@@ -19,7 +19,6 @@ brew cask install dash
 brew cask install docker
 brew cask install etcher
 brew cask install firefox
-brew cask install hyperswitch
 brew cask install iterm2
 brew cask install kaleidoscope
 brew cask install keepassxc
@@ -31,11 +30,13 @@ brew cask install virtualbox-extension-pack
 
 # applications that have been known to not have a SHA checksum
 #brew cask install google-chrome
+#brew cask install google-hangouts
 
 # applications that are not immediately needed
 #brew cask install adobe-photoshop-lightroom
 #brew cask install balsamiq-mockups
 #brew cask install dropbox
+#brew cask install hyperswitch
 #brew cask install java
 #brew cask install pycharm-ce
 #brew cask install sequel-pro

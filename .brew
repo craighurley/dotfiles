@@ -49,7 +49,6 @@ brew install tree
 brew install unrar
 brew install vim --with-custom-python
 brew install watch
-brew install weechat --with-python --with-perl --with-aspell
 brew install wget
 brew install xz
 
@@ -59,7 +58,6 @@ brew install gnu-sed --with-default-names
 brew install gnu-tar --with-default-names
 
 # install additional completion files
-brew tap homebrew/completions
 brew install bundler-completion
 brew install docker-compose-completion
 brew install gem-completion
@@ -69,17 +67,16 @@ brew install tmuxinator-completion
 brew install vagrant-completion
 
 # tools directly related to aws
-brew tap peakgames/s5cmd https://github.com/peakgames/s5cmd
-brew install s5cmd
-brew install awless
+brew tap peakgames/s5cmd https://github.com/peakgames/s5cmd ; brew install s5cmd
+brew tap wallix/awless ; brew install awless
 
 # applications that are not immediately needed
 #brew install ant
 #brew install ant-contrib
-#brew install github-markdown-toc
 #brew install gradle
 #brew install gradle-completion
 #brew install jq
+#brew install weechat --with-python --with-perl --with-aspell
 
 # cleanup unneeded files
 brew cleanup
