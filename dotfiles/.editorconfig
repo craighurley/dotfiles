@@ -15,6 +15,9 @@ trim_trailing_whitespace = false
 [*.{yaml,yml,yaml.j2}]
 indent_size = 2
 
+[*.{json,json.j2}]
+indent_size = 2
+
 [{*.rb,Vagrantfile}]
 indent_size = 2
 
