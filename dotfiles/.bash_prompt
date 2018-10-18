@@ -24,9 +24,9 @@ function info_dir {
     fi
 }
 
-function client_profile {
-    if [[ -n "$CLIENTID" ]] ; then
-        echo -en "<${RED}$CLIENTID${RESET}> "
+function aws_profile {
+    if [[ -n "$AWS_PROFILE" ]] ; then
+        echo -en "<${RED}$AWS_PROFILE${RESET}> "
     fi
 }
 
@@ -43,9 +43,9 @@ function python_virtualenv {
 }
 
 if [[ $(type -t "__git_ps1") = "function" ]] ; then
-    PROMPT_COMMAND='__git_ps1 "\n$(info_date)" " $(python_virtualenv)$(client_profile)$(info_dir)\n$(prompt)"'
+    PROMPT_COMMAND='__git_ps1 "\n$(info_date)" " $(python_virtualenv)$(aws_profile)$(info_dir)\n$(prompt)"'
 else
-    PROMPT_COMMAND='PS1="\n$(info_date) $(python_virtualenv)$(client_profile)$(info_dir)\n$(prompt)"'
+    PROMPT_COMMAND='PS1="\n$(info_date) $(python_virtualenv)$(aws_profile)$(info_dir)\n$(prompt)"'
 fi
 
 export PS4='$0.$LINENO: '

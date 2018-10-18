@@ -48,6 +48,36 @@ function lsof-ls() {
     fi
 }
 
+# aws
+function _aws_profile_list() {
+    credentialFileLocation=${AWS_SHARED_CREDENTIALS_FILE};
+    if [ -z $credentialFileLocation ]; then
+        credentialFileLocation=~/.aws/credentials
+    fi
+
+    while read line; do
+        if [[ $line == "["* ]]; then echo "$line"; fi
+    done < $credentialFileLocation
+};
+
+function _aws_profile_set() {
+    if [ -z $1 ]; then  echo "Usage: aws_profile_set PROFILENAME"; return; fi
+
+    exists="$(aws configure get aws_access_key_id --profile $1)"
+    if [[ -n $exists ]]; then
+        export AWS_PROFILE=$1
+        export AWS_REGION=$(aws configure get region --profile $1)
+        echo "Switched to AWS profile: $1"
+        aws configure list
+    fi
+};
+
+function _aws_profile_unset() {
+    unset AWS_PROFILE
+    unset AWS_REGION
+    echo "Unset AWS profile"
+};
+
 # Work related utility functions
-aws-rw() { saml2aws -d -l $USER -c "${1}" -r bp-saml-rw -m "${2}"; }
-aws-ro() { saml2aws -d -l $USER -c "${1}" -r bp-saml-ro -m "${2}"; }
+#aws-rw() { saml2aws -d -l $USER -c "${1}" -r bp-saml-rw -m "${2}"; }
+#aws-ro() { saml2aws -d -l $USER -c "${1}" -r bp-saml-ro -m "${2}"; }

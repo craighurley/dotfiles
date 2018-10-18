@@ -41,3 +41,9 @@ alias me="curl ifconfig.co"
 # mkpasswd clone using python. ensure passlib is installed (pip install passlib)
 alias mkpasswd="python -c 'from passlib.hash import sha512_crypt; import getpass; print sha512_crypt.encrypt(getpass.getpass())'"
 alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
+
+# aws
+alias aws_profile_list="_aws_profile_list"
+alias aws_profile_set="_aws_profile_set"
+alias aws_profile_unset="_aws_profile_unset"
+alias aws_profile_whoami="aws configure list"
