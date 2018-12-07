@@ -115,12 +115,15 @@
 
     # show verbose output about tags, branches or remotes
     tags = tag -l
-    branches = branch -a -v
+    branches = branch -v
     remotes = remote -v
 
-    f = fetch
+    f = fetch --all
     p = pull
     co = checkout
+
+    # cleaning
+    clean-branches = "!f() { git branch | grep -vE '(master$|^\\*)' | xargs git branch -D; }; f"
 
     # diff/merge tool
     dt = difftool
