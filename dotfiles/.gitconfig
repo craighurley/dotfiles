@@ -123,7 +123,7 @@
     co = checkout
 
     # cleaning
-    clean-branches = "!f() { git branch | grep -vE '(master$|^\\*)' | xargs git branch -D; }; f"
+    clean-branches = "!f() { git branch | grep -vE '(master$|^\\*)' | xargs git branch -D ; git fetch -avp ; }; f"
 
     # diff/merge tool
     dt = difftool
