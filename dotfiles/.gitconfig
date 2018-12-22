@@ -115,7 +115,7 @@
 
     # show verbose output about tags, branches or remotes
     tags = tag -l
-    branches = branch -v
+    branches = branch -av
     remotes = remote -v
 
     f = fetch --all
