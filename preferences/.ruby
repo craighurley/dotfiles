@@ -8,10 +8,10 @@ if [[ -f "/usr/local/bin/rbenv" ]] ; then
     eval "$(rbenv init -)"
 
     # install ruby versions
-    rbenv install 2.4.2
+    rbenv install 2.4.5
 
     # set the global version
-    rbenv global 2.4.2
+    rbenv global 2.4.5
 
     # install gems
     rbenv exec gem install bundler
