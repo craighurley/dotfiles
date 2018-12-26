@@ -16,7 +16,7 @@ brew tap caskroom/cask
 # install applications
 brew cask install appcleaner
 brew cask install docker
-brew cask install firefox
+brew cask install firefox --language=en-GB
 brew cask install iterm2
 brew cask install keepassxc
 brew cask install stay
