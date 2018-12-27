@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+###############################################################################
+# vs code
+###############################################################################
+
+if [[ -f /usr/local/bin/code ]] ; then
+    /usr/local/bin/code --install-extension Shan.code-settings-sync
+fi
