@@ -27,7 +27,7 @@ if [[ -f /usr/local/bin/pyenv ]] ; then
     pyenv exec pip install --upgrade awslogs
     pyenv exec pip install --upgrade cfn-flip
     pyenv exec pip install --upgrade cfn-lint
-    pyenv exec pip install --upgrade pep8
+    pyenv exec pip install --upgrade pycodestyle
     pyenv exec pip install --upgrade pylint
     pyenv exec pip install --upgrade rope
     pyenv exec pip install --upgrade sceptre
@@ -39,9 +39,9 @@ else
     exit 1
 fi
 
-if [[ ! -f ~/.config/pep8 ]] ; then
-    cat << EOF > ~/.config/pep8
-[pep8]
+if [[ ! -f ~/.config/pycodestyle ]] ; then
+    cat << EOF > ~/.config/pycodestyle
+[pycodestyle]
 ignore = E501
 EOF
 fi
