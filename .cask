@@ -28,10 +28,10 @@ brew cask install visual-studio-code
 
 # applications that are not immediately needed
 #brew cask install adobe-photoshop-lightroom
+#brew cask install balenaetcher
 #brew cask install balsamiq-mockups
 #brew cask install dash
 #brew cask install dropbox
-#brew cask install etcher
 #brew cask install hyperswitch
 #brew cask install java
 #brew cask install kaleidoscope
