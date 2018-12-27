@@ -66,6 +66,24 @@ A collection of scripts to bootstrap a clean install of macOS.
 
 1. Restart your computer.
 
+1. If you want to automatically install applications from the _App Store_, open the _App Store_ and sign in, then run the following command:
+
+    ```sh
+    ~/Projects/dotfiles/.mas
+    ```
+
+## Post Install Tasks
+
+1. Import Terminal config.
+1. Import iTerm config.
+1. Import gpg keys.
+1. Import ssh keys.
+1. Update exports in the `~/.extra` file:
+    - github
+    - homebrew
+1. Sign into Firefox account to sync settings.
+1. Download VS Code settings from gist.
+
 ## Update
 
 Run the following commands to get the latest version of this project:
