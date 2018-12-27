@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+
+if [[ ! -f ~/Projects/aws/prowler/.gitignore ]] ; then
+    cat << 'EOF' > ~/Projects/aws/prowler/.gitignore
+.gitignore
+.python-version
+reports/
+requirements.txt
+run.sh
+EOF
+    chmod 644 ~/Projects/aws/prowler/.gitignore
+fi
+
+if [[ ! -f ~/Projects/aws/prowler/requirements.txt ]] ; then
+    cat << 'EOF' > ~/Projects/aws/prowler/requirements.txt
+ansi2html
+aws-mfa
+awscli
+EOF
+    chmod 644 ~/Projects/aws/prowler/requirements.txt
+fi
+
+if [[ ! -f ~/Projects/aws/prowler/run.sh ]] ; then
+    cat << 'EOF' > ~/Projects/aws/prowler/run.sh
+#!/usr/bin/env bash
+
+p=$(dirname "$0")
+
+profiles='PROFILE1 PROFILE2'
+
+[[ ! -d "$p/reports/" ]] && mkdir "$p/reports"
+
+for profile in $profiles
+do
+    [[ -f $(command -v say) ]] && say "Starting $profile"
+    "$p/prowler" -M csv -n -p "$profile" > "$p/reports/$profile.csv"
+done
+
+exit 0
+EOF
+    chmod 744 ~/Projects/aws/prowler/run.sh
+fi
