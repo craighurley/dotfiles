@@ -1,6 +1,6 @@
 # dotfiles
 
-[![Build Status](https://travis-ci.org/craighurley/dotfiles.svg?branch=master)](https://travis-ci.org/craighurley/dotfiles)
+[![Build Status](https://travis-ci.com/craighurley/dotfiles.svg?branch=master)](https://travis-ci.com/craighurley/dotfiles)
 
 ## Introduction
 
