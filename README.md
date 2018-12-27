@@ -8,14 +8,16 @@ A collection of scripts to bootstrap a clean install of macOS.
 
 ## Installation
 
-1. Install xcode from the app store.
-
-1. Open xcode and accept the license agreement.
-
 1. Install xcode command line tools:
 
     ```sh
     xcode-select --install
+    ```
+
+1. Install macOS SDK headers:
+
+    ```sh
+    sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /
     ```
 
 1. Clone this repository by running the following commands:
