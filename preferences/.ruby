@@ -4,14 +4,16 @@
 # ruby
 ###############################################################################
 
+v2=2.4.5
+
 if [[ -f "/usr/local/bin/rbenv" ]] ; then
     eval "$(rbenv init -)"
 
     # install ruby versions
-    rbenv install 2.4.5
+    rbenv install $v2
 
     # set the global version
-    rbenv global 2.4.5
+    rbenv global $v2
 
     # install gems
     rbenv exec gem install bundler
