@@ -78,7 +78,3 @@ git pull origin master
 ## Feedback
 
 Suggestions/improvements [welcome](https://github.com/craighurley/dotfiles/issues)!
-
-## Acknowledgements
-
-* [Mathias Bynens](https://github.com/mathiasbynens)
