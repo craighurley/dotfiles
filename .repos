@@ -12,7 +12,6 @@ git clone git@github.com:craighurley/thehurley.com.git ~/Projects/web/thehurley.
 git clone git@github.com:craighurley/vagrant-cloud-init.git ~/Projects/vagrant/vagrant-cloud-init
 git clone git@github.com:craighurley/weechat.git ~/Projects/weechat
 git clone git@github.com:widdix/aws-cf-templates.git ~/Projects/aws/widdix-aws-cf-templates
-git clone https://github.com/Alfresco/prowler ~/Projects/aws/prowler
 
 # gitlab
 git clone git@gitlab.com:craighurley/jupyter.git ~/Projects/jupyter
