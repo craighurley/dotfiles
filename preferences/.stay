@@ -4,13 +4,8 @@
 # stay
 ###############################################################################
 
-_stayscreenshots=~/Library/Application\ Support/Stay/Screenshots/
+p=~/Library/Application\ Support/Stay/Screenshots/
 
 # check if screen shots dir exists
-if [[ ! -d "$_stayscreenshots" ]] ; then
-    mkdir -p "$_stayscreenshots"
-fi
-
-if [[ -d "$_stayscreenshots" ]] ; then
-    chmod -w "$_stayscreenshots"
-fi
+[[ ! -d "$p" ]] && mkdir -p "$p"
+[[ ! -d "$p" ]] && chmod -w "$p"
