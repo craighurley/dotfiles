@@ -15,6 +15,7 @@ echo "$(basename "$0") starting."
 [[ ! -d ~/Pictures/icons ]] && mkdir -p ~/Pictures/icons
 [[ ! -d ~/Projects/ansible ]] && mkdir -p ~/Projects/ansible
 [[ ! -d ~/Projects/aws ]] && mkdir -p ~/Projects/aws
+[[ ! -d ~/Projects/cookiecutters ]] && mkdir -p ~/Projects/cookiecutters
 [[ ! -d ~/Projects/docker ]] && mkdir -p ~/Projects/docker
 [[ ! -d ~/Projects/migrated ]] && mkdir -p ~/Projects/migrated
 [[ ! -d ~/Projects/sublime ]] && mkdir -p ~/Projects/sublime
