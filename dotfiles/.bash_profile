@@ -51,3 +51,10 @@ fi
 if [[ -f $(command -v pyenv-virtualenv-init) ]] ; then
     eval "$(pyenv virtualenv-init -)"
 fi
+
+# launch or use existing ssh-agent
+check_ssh_agent
+if [ $? -ne 0 ] ; then
+    killall ssh-agent
+    launch_ssh_agent
+fi

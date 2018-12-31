@@ -18,14 +18,14 @@ Host *
 Host github.com
     HostName                ssh.github.com
     IdentitiesOnly          yes
-    IdentityFile            ~/.ssh/id_rsa
+    IdentityFile            ~/.ssh/$USER
     PasswordAuthentication  no
     Port                    443
 
 Host gitlab.com
     HostName                altssh.gitlab.com
     IdentitiesOnly          yes
-    IdentityFile            ~/.ssh/id_rsa
+    IdentityFile            ~/.ssh/$USER
     PasswordAuthentication  no
     Port                    443
     User                    git

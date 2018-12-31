@@ -55,3 +55,26 @@ function backup() {
     echo Backup projects
     tar -zcf ~/backups/$HOSTNAME-projects-$(date +%Y%m%d-%s).tgz --exclude "/Users/$USER/Projects/migrated" /Users/$USER/Projects
 }
+
+# ssh-agent
+function check_ssh_agent() {
+    if [ -f $HOME/.ssh/.ssh-agent ]; then
+        source $HOME/.ssh/.ssh-agent > /dev/null
+    else
+        # no agent file
+        return 1
+    fi
+
+    lsof -p $SSH_AGENT_PID | grep -q ssh-agent
+    return $?
+}
+
+function launch_ssh_agent() {
+    ssh-agent > $HOME/.ssh/.ssh-agent
+    source $HOME/.ssh/.ssh-agent
+    # load public keys
+    for I in $HOME/.ssh/*.pub ; do
+        echo adding ${I/.pub/}
+        ssh-add -K ${I/.pub/}
+    done
+}
