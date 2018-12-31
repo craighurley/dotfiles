@@ -3,6 +3,9 @@
 # Start
 echo "$(basename "$0") starting."
 
+# Ask for the administrator password upfront
+sudo -v
+
 directory=~/Projects/dotfiles/preferences
 files=$(find $directory -iname ".*" -maxdepth 1 -type f)
 
