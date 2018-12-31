@@ -6,12 +6,14 @@ chmod 700 ~/.ssh
 if [[ ! -f ~/.ssh/config ]] ; then
     cat << EOF > ~/.ssh/config
 Host *
+    AddKeysToAgent          yes
     ConnectTimeout          5
     ControlMaster           auto
     ControlPath             ~/.ssh/%C
     ControlPersist          30
     ServerAliveInterval     60
     TCPKeepAlive            yes
+    UseKeychain             yes
 
 Host github.com
     HostName                ssh.github.com
