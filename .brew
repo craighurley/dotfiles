@@ -20,6 +20,7 @@ brew install cookiecutter
 brew install entr
 brew install git
 brew install gpg
+brew install hexyl
 brew install ipcalc
 brew install iproute2mac
 brew install mas
@@ -49,19 +50,25 @@ brew install xz
 brew install zlib
 
 # applications that are not immediately needed
-#brew install ack
-#brew install csvkit
-#brew install iperf3
-#brew install jsonpp
-#brew install rpm
-#brew install sqlite3
+# brew install ack
+# brew install ant
+# brew install ant-contrib
+# brew install csvkit
+# brew install gradle
+# brew install gradle-completion
+# brew install iperf3
+# brew install jq
+# brew install jsonpp
+# brew install rpm
+# brew install sqlite3
+# brew install weechat --with-python --with-perl --with-aspell
 
 # gnu
 brew install coreutils
 brew install gnu-sed --with-default-names
 brew install gnu-tar --with-default-names
 
-# install additional completion files
+# install completion files
 brew install bundler-completion
 brew install docker-compose-completion
 brew install gem-completion
@@ -69,20 +76,12 @@ brew install pip-completion
 brew install ruby-completion
 brew install tmuxinator-completion
 
-# additional completion files not needed immediately
-#brew install vagrant-completion
+# completion files not needed immediately
+# brew install vagrant-completion
 
-# tools directly related to aws
+# tools related to aws
 brew tap peakgames/s5cmd https://github.com/peakgames/s5cmd ; brew install s5cmd
 brew tap wallix/awless ; brew install awless
-
-# applications that are not immediately needed
-#brew install ant
-#brew install ant-contrib
-#brew install gradle
-#brew install gradle-completion
-#brew install jq
-#brew install weechat --with-python --with-perl --with-aspell
 
 # cleanup unneeded files
 brew cleanup

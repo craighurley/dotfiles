@@ -23,37 +23,37 @@ brew cask install stay
 brew cask install visual-studio-code
 
 # applications that have been known to not have a SHA checksum
-#brew cask install google-chrome
-#brew cask install google-hangouts
+# brew cask install google-chrome
+# brew cask install google-hangouts
 
 # applications that are not immediately needed
-#brew cask install adobe-photoshop-lightroom
-#brew cask install balenaetcher
-#brew cask install balsamiq-mockups
-#brew cask install dash
-#brew cask install dropbox
-#brew cask install hyperswitch
-#brew cask install java
-#brew cask install kaleidoscope
-#brew cask install pycharm-ce
-#brew cask install sequel-pro
-#brew cask install skype
-#brew cask install snagit
-#brew cask install sourcetree
-#brew cask install spideroakone
-#brew cask install totalspaces
-#brew cask install vagrant
-#brew cask install virtualbox
-#brew cask install virtualbox-extension-pack
-#brew cask install vienna
-#brew cask install vlc
-#brew cask install wireshark
+# brew cask install adobe-photoshop-lightroom
+# brew cask install balenaetcher
+# brew cask install balsamiq-mockups
+# brew cask install dash
+# brew cask install dropbox
+# brew cask install hyperswitch
+# brew cask install java
+# brew cask install kaleidoscope
+# brew cask install pycharm-ce
+# brew cask install sequel-pro
+# brew cask install skype
+# brew cask install snagit
+# brew cask install sourcetree
+# brew cask install spideroakone
+# brew cask install totalspaces
+# brew cask install vagrant
+# brew cask install virtualbox
+# brew cask install virtualbox-extension-pack
+# brew cask install vienna
+# brew cask install vlc
+# brew cask install wireshark
 
 # install fonts
 brew cask install font-hasklig
 brew cask install font-source-code-pro
 # fonts that have been known to not have a SHA checksum
-#brew cask install font-source-code-pro-for-powerline
+# brew cask install font-source-code-pro-for-powerline
 
 # cleanup unneeded files
 brew cleanup
