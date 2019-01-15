@@ -24,7 +24,9 @@ export HOMEBREW_NO_EMOJI=1
 export HOMEBREW_NO_ANALYTICS=1
 
 # sqldeveloper
-export DYLD_LIBRARY_PATH=~/Applications/Oracle/instaclient
+if [[ -d $HOME/Applications/Oracle/instaclient ]] ; then
+    export DYLD_LIBRARY_PATH=$HOME/Applications/Oracle/instaclient
+fi
 
 # openssl
 if [[ -d /usr/local/opt/openssl/bin ]] ; then
