@@ -14,7 +14,7 @@ git clone git@github.com:craighurley/craighurley.github.io.git ~/Projects/web/cr
 git clone git@github.com:craighurley/sublime-hl7-syntax.git ~/Projects/sublime/sublime-hl7-syntax
 git clone git@github.com:craighurley/thehurley.com.git ~/Projects/web/thehurley.com
 git clone git@github.com:craighurley/vagrant-cloud-init.git ~/Projects/vagrant/vagrant-cloud-init
-git clone git@github.com:craighurley/weechat.git ~/Projects/weechat
+git clone git@github.com:craighurley/weechat.git ~/.weechat
 git clone git@github.com:widdix/aws-cf-templates.git ~/Projects/aws/widdix-aws-cf-templates
 
 # gitlab
