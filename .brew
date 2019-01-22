@@ -15,7 +15,6 @@ brew upgrade
 # install applications
 brew install aspell
 brew install bash
-brew install bash-completion
 brew install cookiecutter
 brew install entr
 brew install git
@@ -69,7 +68,9 @@ brew install gnu-sed --with-default-names
 brew install gnu-tar --with-default-names
 
 # install completion files
+brew install bash-completion
 brew install bundler-completion
+brew install docker-completion
 brew install docker-compose-completion
 brew install gem-completion
 brew install pip-completion
