@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+[[ ! -d ~/.jira.d ]] && mkdir -p ~/.jira.d
+chmod 700 ~/.jira.d
+
+if [[ ! -f ~/.jira.d/config.yml ]] ; then
+    cat << EOF > authentication-method: api-token
+endpoint: https://COMPANY.atlassian.net
+login: EMAIL@COMPANY.TLD
+password-source: keyring
+user: USER
+EOF
+    chmod 644 ~/.jira.d/config.yml
+fi

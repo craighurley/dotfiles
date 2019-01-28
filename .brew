@@ -18,6 +18,7 @@ brew install bash
 brew install cookiecutter
 brew install entr
 brew install git
+brew install go-jira
 brew install gpg
 brew install hexyl
 brew install ipcalc

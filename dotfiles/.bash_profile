@@ -33,6 +33,11 @@ if [[ -f $(command -v aws_completer) ]] ; then
     complete -C "$(command -v aws_completer)" aws
 fi
 
+# jira tab completion
+if [[ -f $(command -v jira) ]] ; then
+    eval "$(jira --completion-script-bash)"
+fi
+
 # configure the prompt after other items have been setup, but before pyenv and rbenv.
 if [[ -f ~/.bash_prompt ]] ; then
     source ~/.bash_prompt
