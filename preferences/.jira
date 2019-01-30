@@ -1,14 +1,190 @@
 #!/usr/bin/env bash
 
-[[ ! -d ~/.jira.d ]] && mkdir -p ~/.jira.d
+[[ ! -d ~/.jira.d/templates ]] && mkdir -p ~/.jira.d/templates
 chmod 700 ~/.jira.d
 
 if [[ ! -f ~/.jira.d/config.yml ]] ; then
-    cat << EOF > authentication-method: api-token
+    cat << EOF > ~/.jira.d/config.yml
+authentication-method: api-token
 endpoint: https://COMPANY.atlassian.net
 login: EMAIL@COMPANY.TLD
 password-source: keyring
 user: USER
+project: DEFAULTPROJECT
+issuetype: Task
+
+custom-commands:
+  - name: all
+    help: display all issues
+    options:
+      - name: project
+        short: p
+        default: $JIRA_PROJECT
+      - name: owner
+        short: o
+        default: ""
+      - name: reportedbyme
+        short: r
+        type: BOOL
+        default: false
+      - name: created
+        short: c
+        type: string
+    script: |-
+      case "{{options.owner}}" in
+        m|me) OWNER="=currentuser()"
+        ;;
+        u|unassigned) OWNER="is empty"
+        ;;
+        "<no value>") OWNER=""
+        ;;
+        *) OWNER="{{options.owner}}"
+      esac
+      if [ -n "$OWNER" ]; then
+        OWNER_QUERY="AND assignee $OWNER"
+      fi
+      {{jira}} list --query "resolution = unresolved AND type != epic AND project={{options.project}} {{if options.reportedbyme}}AND reporter=currentuser(){{end}} {{if options.created}}AND created > {{options.created}}{{end}} $OWNER_QUERY ORDER BY rank asc, created"
+
+  - name: sprint
+    help: display issues for active sprint
+    options:
+      - name: project
+        short: p
+        default: $JIRA_PROJECT
+      - name: status
+        short: s
+        default: ""
+      - name: owner
+        short: o
+        default: ""
+      - name: reportedbyme
+        short: r
+        type: BOOL
+        default: false
+    script: |-
+      case "{{options.status}}" in
+        t|todo) STATUS="to do"
+        ;;
+        i|inprogress) STATUS="in progress"
+        ;;
+        d|done) STATUS="done"
+        ;;
+        "<no value>") STATUS=""
+        ;;
+        *) STATUS="{{options.status}}"
+      esac
+      if [ -n "$STATUS" ]; then
+        STATUS_QUERY="AND status='$STATUS'"
+      fi
+      case "{{options.owner}}" in
+        m|me) OWNER="=currentuser()"
+        ;;
+        u|unassigned) OWNER="is empty"
+        ;;
+        "<no value>") OWNER=""
+        ;;
+        *) OWNER="{{options.owner}}"
+      esac
+      if [ -n "$OWNER" ]; then
+        OWNER_QUERY="AND assignee $OWNER"
+      fi
+      {{jira}} list --query "sprint in openSprints() and project={{options.project}} {{if options.reportedbyme}}AND reporter=currentuser(){{end}} $STATUS_QUERY $OWNER_QUERY ORDER BY rank asc, created"
+
+  - name: sprint-add
+    help: add issue to active sprint for project
+    options:
+      - name: next
+        short: 'n'
+        type: bool
+        help: add issue to next sprint, rather than the active one
+    args:
+      - name: ISSUE
+        required: true
+    script: |
+      state={{if options.next}}future{{else}}active{{end}}
+      board_id=$({{jira}} req "/rest/agile/1.0/board?projectKeyOrId=$JIRA_PROJECT&type=scrum" --gjq values.0.id)
+      sprint_id=$({{jira}} req "/rest/agile/1.0/board/$board_id/sprint?state=$state" --gjq values.0.id)
+      if [ "$sprint_id" = "" ]; then
+        echo "ERROR: No $state sprint" >&2
+        exit 1
+      fi
+      {{jira}} req -M POST "/rest/agile/1.0/sprint/$sprint_id/issue" "{\"issues\":[\"{{args.ISSUE}}\"]}"
+
+  - name: epics
+    help: list epics
+    script: |-
+      {{jira}} list --query "resolution = unresolved AND issuetype = Epic AND project = $JIRA_PROJECT ORDER BY Rank Desc" --queryfields=customfield_12551,issuetype,priority,assignee,status,created,reporter
+
+  - name: view-details
+    help: display details about a ticket and it's subtasks if any
+    args:
+      - name: TICKET
+        required: true
+    script: |-
+      {{jira}} list --query "(issue = {{args.TICKET}}) or (issuetype = Sub-task and parent = {{args.TICKET}}) ORDER BY rank asc"
+
 EOF
     chmod 644 ~/.jira.d/config.yml
+fi
+
+if [[ ! -f ~/.jira.d/templates/view ]] ; then
+    cat << EOF > ~/.jira.d/templates/view
+{{/* view template */ -}}
+issue: {{ .key }}
+{{if .fields.parent -}}
+parent: {{ .fields.parent.key }}
+{{end -}}
+{{if .fields.created -}}
+created: {{ .fields.created | age }} ago
+{{end -}}
+{{if .fields.status -}}
+status: {{ .fields.status.name }}
+{{end -}}
+summary: {{ .fields.summary }}
+project: {{ .fields.project.key }}
+{{if .fields.components -}}
+components: {{ range .fields.components }}{{ .name }} {{end}}
+{{end -}}
+{{if .fields.issuetype -}}
+issuetype: {{ .fields.issuetype.name }}
+{{end -}}
+{{if .fields.assignee -}}
+assignee: {{ .fields.assignee.name }}
+{{end -}}
+reporter: {{ if .fields.reporter }}{{ .fields.reporter.name }}{{end}}
+{{if .fields.customfield_10110 -}}
+watchers: {{ range .fields.customfield_10110 }}{{ .name }} {{end}}
+{{end -}}
+{{if .fields.issuelinks -}}
+blockers: {{ range .fields.issuelinks }}{{if .outwardIssue}}{{ .outwardIssue.key }}[{{.outwardIssue.fields.status.name}}]{{end}}{{end}}
+depends: {{ range .fields.issuelinks }}{{if .inwardIssue}}{{ .inwardIssue.key }}[{{.inwardIssue.fields.status.name}}]{{end}}{{end}}
+{{end -}}
+{{if .fields.priority -}}
+priority: {{ .fields.priority.name }}
+{{end -}}
+{{if .fields.votes -}}
+votes: {{ .fields.votes.votes}}
+{{end -}}
+{{if .fields.labels -}}
+labels: {{ join ", " .fields.labels }}
+{{end -}}
+description: |
+  {{ or .fields.description "" | indent 2 }}
+{{if .fields.comment.comments}}
+comments:
+{{ range .fields.comment.comments }}  - | # {{.author.name}}, {{.created | age}} ago
+    {{ or .body "" | indent 4}}
+{{end}}
+{{end -}}
+
+EOF
+    chmod 644 ~/.jira.d/templates/view
+fi
+
+if [[ ! -f ~/.jira.d/list.yml ]] ; then
+    cat << EOF > ~/.jira.d/list.yml
+template: table
+
+EOF
+    chmod 644 ~/.jira.d/list.yml
 fi
