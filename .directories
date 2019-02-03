@@ -19,6 +19,7 @@ chmod 700 ~/.ssh
 [[ ! -d ~/Pictures/icons ]] && mkdir -p ~/Pictures/icons
 [[ ! -d ~/Pictures/screenshots ]] && mkdir -p ~/Pictures/screenshots
 [[ ! -d ~/Projects/ansible ]] && mkdir -p ~/Projects/ansible
+[[ ! -d ~/Projects/hardware ]] && mkdir -p ~/Projects/hardware
 [[ ! -d ~/Projects/aws ]] && mkdir -p ~/Projects/aws
 [[ ! -d ~/Projects/books ]] && mkdir -p ~/Projects/books
 [[ ! -d ~/Projects/cookiecutters ]] && mkdir -p ~/Projects/cookiecutters

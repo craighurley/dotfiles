@@ -5,25 +5,25 @@ echo "$(basename "$0") starting."
 
 # github
 git clone git@github.com:craighurley/ansible-personal-vps.git ~/Projects/ansible/ansible-personal-vps
+git clone git@github.com:craighurley/ansible-pi.git ~/Projects/ansible/ansible-pi
 git clone git@github.com:craighurley/ansible-roles.git ~/Projects/ansible/ansible-roles
+git clone git@github.com:craighurley/arduino-starter-kit.git ~/Projects/hardware/arduino-starter-kit
 git clone git@github.com:craighurley/cookiecutter-ansible-role.git ~/Projects/cookiecutters/cookiecutter-ansible-role
 git clone git@github.com:craighurley/cookiecutter-ansible.git ~/Projects/cookiecutters/cookiecutter-ansible
 git clone git@github.com:craighurley/cookiecutter-client.git ~/Projects/cookiecutters/cookiecutter-client
 git clone git@github.com:craighurley/cookiecutter-sceptre.git ~/Projects/cookiecutters/cookiecutter-sceptre
 git clone git@github.com:craighurley/craighurley.github.io.git ~/Projects/web/craighurley.me
+git clone git@github.com:craighurley/jupyter.git ~/Projects/jupyter
+git clone git@github.com:craighurley/scripts.git ~/Projects/scripts
+git clone git@github.com:craighurley/stack-examples.git ~/Projects/aws/stack-examples
+git clone git@github.com:craighurley/stack-test.git ~/Projects/aws/stack-test
+git clone git@github.com:craighurley/stack-vps.git ~/Projects/aws/stack-vps
 git clone git@github.com:craighurley/sublime-hl7-syntax.git ~/Projects/sublime/sublime-hl7-syntax
 git clone git@github.com:craighurley/thehurley.com.git ~/Projects/web/thehurley.com
 git clone git@github.com:craighurley/vagrant-cloud-init.git ~/Projects/vagrant/vagrant-cloud-init
+git clone git@github.com:craighurley/web-tests.git ~/Projects/web/web-tests
 git clone git@github.com:craighurley/weechat.git ~/.weechat
 git clone git@github.com:widdix/aws-cf-templates.git ~/Projects/aws/widdix-aws-cf-templates
-
-# gitlab
-git clone git@gitlab.com:craighurley/jupyter.git ~/Projects/jupyter
-git clone git@gitlab.com:craighurley/scripts.git ~/Projects/scripts
-git clone git@gitlab.com:craighurley/stack-examples.git ~/Projects/aws/stack-examples
-git clone git@gitlab.com:craighurley/stack-test.git ~/Projects/aws/stack-test
-git clone git@gitlab.com:craighurley/stack-vps.git ~/Projects/aws/stack-vps
-git clone git@gitlab.com:craighurley/web-tests.git ~/Projects/web/web-tests
 
 # Finished
 echo "$(basename "$0") complete."
