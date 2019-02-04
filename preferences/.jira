@@ -88,7 +88,7 @@ custom-commands:
       if [ -n "$OWNER" ]; then
         OWNER_QUERY="AND assignee $OWNER"
       fi
-      {{jira}} list --query "sprint in openSprints() and project={{options.project}} {{if options.reportedbyme}}AND reporter=currentuser(){{end}} $STATUS_QUERY $OWNER_QUERY ORDER BY rank asc, created"
+      {{jira}} list --query "sprint in openSprints() and project={{options.project}} {{if options.reportedbyme}}AND reporter=currentuser(){{end}} {{if options.status}}$STATUS_QUERY{{else}}and resolution = unresolved{{end}} $OWNER_QUERY ORDER BY rank asc, created"
 
   - name: sprint-add
     help: add issue to active sprint for project
