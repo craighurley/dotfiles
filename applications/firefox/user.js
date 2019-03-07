@@ -1,5 +1,6 @@
 user_perf("privacy.userContext.enabled", true);
 user_perf("privacy.userContext.ui.enabled", true);
+user_pref("browser.backspace_action", 2);
 user_pref("browser.ctrlTab.previews", true);
 user_pref("browser.fixup.alternate.enabled", false);
 user_pref("browser.newtab.url", "https://www.google.com");
