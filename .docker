@@ -4,6 +4,7 @@
 echo "$(basename "$0") starting."
 
 # personal containers
+docker pull craighurley/docker-sceptre
 docker pull craighurley/docker-weechat
 docker pull craighurley/docker-znc
 

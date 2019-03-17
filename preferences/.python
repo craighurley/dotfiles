@@ -30,7 +30,6 @@ if [[ -f /usr/local/bin/pyenv ]] ; then
     pyenv exec pip install --upgrade pycodestyle
     pyenv exec pip install --upgrade pylint
     pyenv exec pip install --upgrade rope
-    pyenv exec pip install --upgrade sceptre
     pyenv exec pip install --upgrade yamllint
 
     pyenv rehash

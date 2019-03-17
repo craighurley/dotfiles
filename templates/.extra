@@ -5,3 +5,6 @@
 
 # homebrew
 #export HOMEBREW_GITHUB_API_TOKEN=
+
+# custom aliases
+#alias sceptre="docker run --rm -it -v $HOME/.aws:/root/.aws:ro -v $(pwd):/workdir:ro sceptre"
