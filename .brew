@@ -24,11 +24,10 @@ brew install hexyl
 brew install ipcalc
 brew install iproute2mac
 brew install mas
-brew install moreutils --without-parallel
+brew install moreutils
 brew install netcat
 brew install nmap
 brew install openssl
-brew install parallel
 brew install pstree
 brew install pyenv
 brew install pyenv-virtualenv
@@ -59,6 +58,7 @@ brew install zlib
 # brew install iperf3
 # brew install jq
 # brew install jsonpp
+# brew install parallel
 # brew install rpm
 # brew install sqlite3
 # brew install weechat --with-python --with-perl --with-aspell
