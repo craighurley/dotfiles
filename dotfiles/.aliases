@@ -12,6 +12,7 @@ fi
 alias ..="cd .."
 alias ack='ack --no-group --color-match=on_red'
 alias c="clear"
+alias cfn-nag="cfn_nag"
 alias d='docker'
 alias did="vim +'normal Go' +'r!date' +'normal o' ~/did.txt"
 alias e="exit"
