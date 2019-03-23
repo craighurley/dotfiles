@@ -16,6 +16,7 @@ brew upgrade
 brew install aspell
 brew install bash
 brew install cookiecutter
+brew install direnv
 brew install entr
 brew install git
 brew install go-jira
