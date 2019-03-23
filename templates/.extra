@@ -5,7 +5,3 @@
 
 # homebrew
 #export HOMEBREW_GITHUB_API_TOKEN=
-
-# custom aliases
-#alias weechat='cd $HOME/.weechat && [[ -f docker-compose.yaml ]] && docker-compose run --rm weechat'
-#alias sceptre='docker run --rm -it -v $HOME/.aws:/root/.aws:ro -v $(pwd):/workdir:ro craighurley/docker-sceptre'
