@@ -20,8 +20,6 @@ fi
 if [[ ! -f $p/requirements.txt ]] ; then
     cat << 'EOF' > $p/requirements.txt
 ansi2html
-aws-mfa
-awscli
 EOF
     chmod 644 $p/requirements.txt
 fi
