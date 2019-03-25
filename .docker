@@ -7,6 +7,7 @@ echo "$(basename "$0") starting."
 docker pull craighurley/docker-aws-mfa
 docker pull craighurley/docker-awscli
 docker pull craighurley/docker-sceptre
+docker pull craighurley/docker-sceptre:1.4.2
 docker pull craighurley/docker-weechat
 docker pull craighurley/docker-znc
 
