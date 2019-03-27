@@ -14,6 +14,11 @@ shopt -s nocaseglob
 # Append to the Bash history file, rather than overwriting it
 shopt -s histappend
 
+# If set, the pattern "**" used in a pathname expansion context will match all files and zero or more directories and subdirectories.
+if shopt | grep -q globstar ; then
+    shopt -s globstar
+fi
+
 # Add tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal" killall
 complete -o "nospace" -W "cert config decrypt encrypt help id join keygen list-tracking login logout pull push prove reset revoke revoke-proof search sign status switch track untrack update verify version" keybase
