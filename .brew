@@ -24,6 +24,7 @@ brew install gpg
 brew install hexyl
 brew install ipcalc
 brew install iproute2mac
+brew install libyaml
 brew install mas
 brew install moreutils
 brew install netcat
