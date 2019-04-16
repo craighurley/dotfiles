@@ -90,3 +90,14 @@ function man() {
         LESS_TERMCAP_us=$(printf "\e[1;32m") \
         man "$@"
 }
+
+function watch-cfn-validate() {
+    p=$(pwd)
+
+    if [[ -f $(command -v watchmedo) ]] ; then
+        # cfn validation
+        watchmedo shell-command --patterns="**/templates/**.yaml" --ignore-directories --recursive --command='aws cloudformation validate-template --template-body file://${watch_src_path} ; echo "${watch_src_path}"' "$p"
+    else
+        echo 'watchmedo does not exist. try: pip install watchdog'
+    fi
+}
