@@ -1,5 +1,3 @@
-user_perf("privacy.userContext.enabled", true);
-user_perf("privacy.userContext.ui.enabled", true);
 user_pref("browser.backspace_action", 2);
 user_pref("browser.ctrlTab.previews", true);
 user_pref("browser.fixup.alternate.enabled", false);
@@ -15,7 +13,10 @@ user_pref("general.useragent.locale", "en-GB");
 user_pref("layout.spellcheckDefault", 2);
 user_pref("loop.enabled", false);
 user_pref("media.block-autoplay-until-in-foreground", true);
+user_pref("network.IDN_show_punycode", true);
 user_pref("plugins.click_to_play", true);
+user_pref("privacy.userContext.enabled", true);
+user_pref("privacy.userContext.ui.enabled", true);
 user_pref("security.webauth.u2f", true);
 user_pref("spellchecker.dictionary", "en-GB");
 user_pref("toolkit.telemetry.enabled", false);
