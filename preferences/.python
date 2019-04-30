@@ -4,18 +4,21 @@
 # python
 ###############################################################################
 
-v2=2.7.15
-v3=3.6.8
+v2=2.7.16
+vlatest=$(pyenv install --list | grep -E "^\s*[0-9]+\.[0-9]+\.[0-9]+\s*$" | tail -1)
 
 if [[ -f /usr/local/bin/pyenv ]] ; then
     eval "$(pyenv init -)"
 
     # install python versions
     pyenv install $v2
-    pyenv install $v3
+    # shellcheck disable=SC2086
+    pyenv install $vlatest
 
-    # create a default based on $v and make this system use it
-    pyenv virtualenv $v3 default
+    # (re)create a default based on the latest version and make this system use it
+    pyenv virtualenv-delete -f default
+    # shellcheck disable=SC2086
+    pyenv virtualenv $vlatest default
     pyenv global default
 
     # install common items

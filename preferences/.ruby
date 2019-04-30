@@ -4,16 +4,16 @@
 # ruby
 ###############################################################################
 
-v2=2.4.5
+vlatest=$(rbenv install -l | grep -E "^\s*[0-9]+\.[0-9]+\.[0-9]+\s*$" | tail -1)
 
 if [[ -f "/usr/local/bin/rbenv" ]] ; then
     eval "$(rbenv init -)"
 
-    # install ruby versions
-    rbenv install $v2
-
-    # set the global version
-    rbenv global $v2
+    # install and set the global ruby version to the latest stable release
+    # shellcheck disable=SC2086
+    rbenv install $vlatest
+    # shellcheck disable=SC2086
+    rbenv global $vlatest
 
     # install gems
     rbenv exec gem install bundler
