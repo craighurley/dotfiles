@@ -11,7 +11,7 @@ if [[ -f "/usr/local/bin/rbenv" ]] ; then
 
     # install and set the global ruby version to the latest stable release
     # shellcheck disable=SC2086
-    rbenv install $vlatest
+    rbenv install -s $vlatest
     # shellcheck disable=SC2086
     rbenv global $vlatest
 

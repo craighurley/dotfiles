@@ -11,9 +11,9 @@ if [[ -f /usr/local/bin/pyenv ]] ; then
     eval "$(pyenv init -)"
 
     # install python versions
-    pyenv install $v2
+    pyenv install -s $v2
     # shellcheck disable=SC2086
-    pyenv install $vlatest
+    pyenv install -s $vlatest
 
     # (re)create a default based on the latest version and make this system use it
     pyenv virtualenv-delete -f default
