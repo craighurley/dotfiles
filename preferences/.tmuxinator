@@ -10,12 +10,12 @@ name: aws
 startup_window: aws
 
 windows:
-  - general:
-  - aws:
-    layout: main-vertical
-    panes:
-      -
-      -
-  - git:
+    - general:
+    - aws:
+        layout: main-vertical
+        panes:
+            -
+            -
+    - git:
 EOF
 fi
