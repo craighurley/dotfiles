@@ -1,11 +1,16 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
-/* to hide the native tabs */
-#TabsToolbar {
-    visibility: collapse;
+/* Hide horizontal tabs at the top of the window */
+#main-window[tabsintitlebar="true"]:not([extradragspace="true"]) #TabsToolbar > .toolbar-items {
+    opacity: 0;
+    pointer-events: none;
 }
 
-/* to hide the sidebar header */
-#sidebar-header {
-    visibility: collapse;
+#main-window:not([tabsintitlebar="true"]) #TabsToolbar {
+    visibility: collapse !important;
+}
+
+/* Hide the "Tree Style Tab" header at the top of the sidebar */
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar-header {
+    display: none;
 }
