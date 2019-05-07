@@ -101,3 +101,39 @@ function watch-cfn-validate() {
         echo 'watchmedo does not exist. try: pip install watchdog'
     fi
 }
+
+function upgrade() {
+    YELLOW='\033[0;33m'
+    RESET='\033[0m'
+
+    if [[ $(command -v brew) ]] ; then
+        echo -e "${YELLOW}>>> Upgrading brew...${RESET}"
+        brew upgrade
+        brew cleanup --prune-prefix
+    fi
+
+    if [[ $(command -v pyenv) ]] ; then
+        echo -e "\n${YELLOW}>>> pyenv versions...${RESET}"
+        pyenv versions
+    fi
+
+    if [[ $(command -v pip) ]] ; then
+        echo -e "\n${YELLOW}>>> Upgrading pip...${RESET}"
+        pip list --outdated | awk 'NR>2' | cut -d' ' -f1 | xargs pip install --upgrade
+    fi
+
+    if [[ $(command -v vagrant) ]] ; then
+        echo -e "\n${YELLOW}>>> Upgrading vagrant plugins...${RESET}"
+        vagrant plugin update
+    fi
+
+    if [[ $(command -v mas) ]] ; then
+        echo -e "\n${YELLOW}>>> Outdated apps from App Store...${RESET}"
+        mas outdated
+    fi
+
+    if [[ $(command -v vim) ]] ; then
+        echo -e "\n${YELLOW}>>> Upgrading vim...${RESET}"
+        vim -c PluginUpdate -c quitall
+    fi
+}
