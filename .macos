@@ -228,5 +228,12 @@ sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setstealthmode on
 # Disable local Time Machine snapshots
 #sudo tmutil disablelocal
 
+###############################################################################
+# Limits
+###############################################################################
+
+# Increase max file handles
+sudo launchctl limit maxfiles unlimited
+
 # Finished
 echo "$(basename "$0") complete."
