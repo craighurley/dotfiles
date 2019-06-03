@@ -15,11 +15,10 @@ brew upgrade
 # install applications
 brew install aspell
 brew install bash
-brew install cookiecutter
 brew install direnv
 brew install entr
 brew install git
-brew install go-jira
+brew install git-secrets
 brew install gpg
 brew install hexyl
 brew install ipcalc
@@ -54,7 +53,9 @@ brew install zlib
 # brew install ack
 # brew install ant
 # brew install ant-contrib
+# brew install cookiecutter
 # brew install csvkit
+# brew install go-jira
 # brew install gradle
 # brew install gradle-completion
 # brew install iperf3
