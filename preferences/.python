@@ -24,6 +24,7 @@ if [[ -f /usr/local/bin/pyenv ]] ; then
     # install common items
     pyenv exec pip install --upgrade pip
     pyenv exec pip install --upgrade ansible
+    pyenv exec pip install --upgrade ansible-lint
     pyenv exec pip install --upgrade autopep8
     pyenv exec pip install --upgrade awslogs
     pyenv exec pip install --upgrade cfn-flip
