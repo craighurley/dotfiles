@@ -8,10 +8,10 @@ sudo -v
 
 # Applications
 APPS=(
+    1333542190  # 1Password 7
     1056643111  # Clocker
     411643860   # DaisyDisk
     865500966   # feedly
-    775737590   # iA Writer
     441258766   # Magnet
     425424353   # The Unarchiver
     904280696   # Things3
@@ -21,6 +21,7 @@ APPS=(
 # Applications not needed immediately
 #824171161   # Affinity Designer
 #824183456   # Affinity Photo
+#775737590   # iA Writer
 #1206278328  # Lighten
 #872515009   # Pomodoro Timer
 #1278508951  # Trello

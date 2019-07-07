@@ -17,14 +17,10 @@ brew tap caskroom/cask
 brew cask install appcleaner
 brew cask install docker
 brew cask install firefox --language=en-GB
+brew cask install google-chrome
 brew cask install iterm2
 brew cask install keepassxc
-brew cask install stay
 brew cask install visual-studio-code
-
-# applications that have been known to not have a SHA checksum
-# brew cask install google-chrome
-# brew cask install google-hangouts
 
 # applications that are not immediately needed
 # brew cask install adobe-photoshop-lightroom
@@ -32,6 +28,7 @@ brew cask install visual-studio-code
 # brew cask install balsamiq-mockups
 # brew cask install dash
 # brew cask install dropbox
+# brew cask install google-hangouts
 # brew cask install hyperswitch
 # brew cask install java
 # brew cask install kaleidoscope
@@ -41,6 +38,7 @@ brew cask install visual-studio-code
 # brew cask install snagit
 # brew cask install sourcetree
 # brew cask install spideroakone
+# brew cask install stay
 # brew cask install totalspaces
 # brew cask install virtualbox
 # brew cask install virtualbox-extension-pack
