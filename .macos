@@ -49,7 +49,7 @@ defaults write com.apple.menuextra.clock DateFormat -string "EEE d MMM  HH:mm"
 defaults write NSGlobalDomain AppleICUForce24HourTime -bool true
 
 # Disable cursor size increase on mouse shake
-defaults write NSGlobalDomain CGDisableCursorLocationMagnification -bool true
+#defaults write NSGlobalDomain CGDisableCursorLocationMagnification -bool true
 
 ###############################################################################
 # Trackpad, keyboard
@@ -64,7 +64,7 @@ defaults -currentHost write NSGlobalDomain "com.apple.trackpad.threeFingerTapGes
 # Trackpad: enable 3 finger drag
 defaults -currentHost write NSGlobalDomain "com.apple.trackpad.threeFingerDragGesture" -int 1
 
-# Disable “natural” scrolling
+# Disable "natural" scrolling
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 
 # Trackpad: disable swipe between pages
