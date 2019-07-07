@@ -8,13 +8,15 @@ A collection of scripts to bootstrap a clean install of macOS.
 
 ## Installation
 
+1. Perform a _Software Update_.
+
 1. Install xcode command line tools:
 
     ```sh
     xcode-select --install
     ```
 
-1. Install macOS SDK headers:
+1. Install macOS SDK headers.  _Note: ensure you use the correct version of headers to match your release of macOS._
 
     ```sh
     sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /
@@ -33,11 +35,16 @@ A collection of scripts to bootstrap a clean install of macOS.
     ~/Projects/dotfiles/.brew_install
     ```
 
-1. Run the following command to do everything.  _Note: you will be prompted for your password a number of times during script execution._
+1. Run the following command to do everything.
 
     ```sh
     ~/Projects/dotfiles/bootstrap.sh
     ```
+
+    Notes:
+
+    - you will be prompted for your password a number of times during script execution.
+    - `pyenv` is _currently_ pinned to version `1.2.11` to workaround [this issue](https://github.com/pyenv/pyenv/issues/1066).
 
     Essentially, `bootstrap.sh` executes the following commands:
 

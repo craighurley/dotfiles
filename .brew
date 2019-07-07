@@ -30,7 +30,8 @@ brew install netcat
 brew install nmap
 brew install openssl
 brew install pstree
-brew install pyenv
+brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/0ba512eac190df769e605cd19cd82a152d589ca1/Formula/pyenv.rb
+brew pin pyenv
 brew install pyenv-virtualenv
 brew install rbenv
 brew install rbenv-bundler
@@ -63,7 +64,6 @@ brew install zlib
 # brew install jsonpp
 # brew install parallel
 # brew install rpm
-# brew install sqlite3
 # brew install weechat --with-python --with-perl --with-aspell
 
 # gnu
@@ -85,8 +85,8 @@ brew install tmuxinator-completion
 # brew install vagrant-completion
 
 # tools related to aws
-brew tap peakgames/s5cmd https://github.com/peakgames/s5cmd ; brew install s5cmd
-brew tap wallix/awless ; brew install awless
+# brew tap peakgames/s5cmd https://github.com/peakgames/s5cmd ; brew install s5cmd
+# brew tap wallix/awless ; brew install awless
 
 # cleanup unneeded files
 brew cleanup
