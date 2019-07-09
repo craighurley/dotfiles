@@ -65,7 +65,7 @@ defaults -currentHost write NSGlobalDomain "com.apple.trackpad.threeFingerTapGes
 defaults -currentHost write NSGlobalDomain "com.apple.trackpad.threeFingerDragGesture" -int 1
 
 # Disable "natural" scrolling
-defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
+defaults write NSGlobalDomain com.apple.swipescrolldirection -bool true
 
 # Trackpad: disable swipe between pages
 defaults write NSGlobalDomain AppleEnableSwipeNavigateWithScrolls -bool false
