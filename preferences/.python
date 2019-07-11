@@ -26,7 +26,6 @@ if [[ -f /usr/local/bin/pyenv ]] ; then
     pyenv exec pip install --upgrade ansible
     pyenv exec pip install --upgrade ansible-lint
     pyenv exec pip install --upgrade autopep8
-    pyenv exec pip install --upgrade awslogs
     pyenv exec pip install --upgrade cfn-flip
     pyenv exec pip install --upgrade cfn-lint
     pyenv exec pip install --upgrade pycodestyle
