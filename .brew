@@ -84,10 +84,6 @@ brew install tmuxinator-completion
 # completion files not needed immediately
 # brew install vagrant-completion
 
-# tools related to aws
-# brew tap peakgames/s5cmd https://github.com/peakgames/s5cmd ; brew install s5cmd
-# brew tap wallix/awless ; brew install awless
-
 # cleanup unneeded files
 brew cleanup
 
