@@ -8,7 +8,6 @@ sudo -v
 
 # Applications
 APPS=(
-    1333542190  # 1Password 7
     1056643111  # Clocker
     411643860   # DaisyDisk
     865500966   # feedly
@@ -19,6 +18,7 @@ APPS=(
 )
 
 # Applications not needed immediately
+#1333542190  # 1Password 7
 #824171161   # Affinity Designer
 #824183456   # Affinity Photo
 #775737590   # iA Writer
