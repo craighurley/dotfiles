@@ -44,7 +44,6 @@ A collection of scripts to bootstrap a clean install of macOS.
     Notes:
 
     - you will be prompted for your password a number of times during script execution.
-    - `pyenv` is _currently_ pinned to version `1.2.11` to workaround [this issue](https://github.com/pyenv/pyenv/issues/1066).
 
     Essentially, `bootstrap.sh` executes the following commands:
 

@@ -12,43 +12,42 @@ brew update
 # Upgrade any already-installed formulae
 brew upgrade
 
-# install applications
-brew install aspell
-brew install bash
-brew install direnv
-brew install entr
-brew install git
-brew install git-secrets
-brew install gpg
-brew install hexyl
-brew install ipcalc
-brew install iproute2mac
-brew install libyaml
-brew install mas
-brew install moreutils
-brew install netcat
-brew install nmap
-brew install openssl
-brew install pstree
-brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/0ba512eac190df769e605cd19cd82a152d589ca1/Formula/pyenv.rb
-brew pin pyenv
-brew install pyenv-virtualenv
-brew install rbenv
-brew install rbenv-bundler
-brew install readline
-brew install rename
-brew install ruby-build
-brew install shellcheck
-brew install sqlite3
-brew install tcptraceroute
-brew install tmux
-brew install tree
-brew install unrar
-brew install vim
-brew install watch
-brew install wget
-brew install xz
-brew install zlib
+# # install applications
+brew install    aspell \
+                bash \
+                direnv \
+                entr \
+                git \
+                git-secrets \
+                gpg \
+                hexyl \
+                ipcalc \
+                iproute2mac \
+                libyaml \
+                mas \
+                moreutils \
+                netcat \
+                nmap \
+                openssl \
+                pstree \
+                pyenv \
+                pyenv-virtualenv \
+                rbenv \
+                rbenv-bundler \
+                readline \
+                rename \
+                ruby-build \
+                shellcheck \
+                sqlite3 \
+                tcptraceroute \
+                tmux \
+                tree \
+                unrar \
+                vim \
+                watch \
+                wget \
+                xz \
+                zlib
 
 # applications that are not immediately needed
 # brew install ack
@@ -67,19 +66,19 @@ brew install zlib
 # brew install weechat --with-python --with-perl --with-aspell
 
 # gnu
-brew install coreutils
-brew install gnu-sed --with-default-names
-brew install gnu-tar --with-default-names
+brew install    coreutils \
+                gnu-sed \
+                gnu-tar
 
 # install completion files
-brew install bash-completion
-brew install bundler-completion
-brew install docker-completion
-brew install docker-compose-completion
-brew install gem-completion
-brew install pip-completion
-brew install ruby-completion
-brew install tmuxinator-completion
+brew install    bash-completion \
+                bundler-completion \
+                docker-completion \
+                docker-compose-completion \
+                gem-completion \
+                pip-completion \
+                ruby-completion \
+                tmuxinator-completion
 
 # completion files not needed immediately
 # brew install vagrant-completion

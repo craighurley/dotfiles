@@ -21,4 +21,8 @@
 # openssl
 [[ -d /usr/local/opt/openssl/bin ]] && PATH="/usr/local/opt/openssl/bin:$PATH"
 
+# gnu
+[[ -d /usr/local/opt/gnu-sed/libexec/gnubin ]] && PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
+[[ -d /usr/local/opt/gnu-tar/libexec/gnubin ]] && PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH"
+
 export PATH
