@@ -52,9 +52,6 @@ A collection of scripts to bootstrap a clean install of macOS.
     # Create useful directories.
     ~/Projects/dotfiles/.directories
 
-    # Backup existing dotfiles and symlink to the dotfiles in this project.
-    ~/Projects/dotfiles/.dotfiles
-
     # Copy templates to ~. These files don't really belong in version control, hence they are not symlinked.
     ~/Projects/dotfiles/.templates
 
@@ -66,6 +63,9 @@ A collection of scripts to bootstrap a clean install of macOS.
 
     # Install command line package manager and additional applications.
     ~/Projects/dotfiles/.cask
+
+    # Backup existing dotfiles and symlink to the dotfiles in this project.
+    ~/Projects/dotfiles/.dotfiles
 
     # Apply preferences to applications.
     ~/Projects/dotfiles/.preferences
