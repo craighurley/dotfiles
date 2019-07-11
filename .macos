@@ -78,7 +78,7 @@ defaults -currentHost write NSGlobalDomain "com.apple.trackpad.fiveFingerPinchSw
 defaults -currentHost write NSGlobalDomain "com.apple.trackpad.fourFingerPinchSwipeGesture" -int 0
 
 # Trackpad: swipe between pages with three fingers
-defaults -currentHost write NSGlobalDomain com.apple.trackpad.threeFingerHorizSwipeGesture -int 1
+defaults -currentHost write NSGlobalDomain com.apple.trackpad.threeFingerHorizSwipeGesture -int 0
 
 # Keyboard: enable full keyboard access for all controls, (e.g. enable Tab in modal dialogs)
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 2
