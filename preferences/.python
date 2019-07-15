@@ -22,16 +22,16 @@ if [[ -f /usr/local/bin/pyenv ]] ; then
     pyenv global default
 
     # install common items
-    pyenv exec pip install --upgrade pip
-    pyenv exec pip install --upgrade ansible
-    pyenv exec pip install --upgrade ansible-lint
-    pyenv exec pip install --upgrade autopep8
-    pyenv exec pip install --upgrade cfn-flip
-    pyenv exec pip install --upgrade cfn-lint
-    pyenv exec pip install --upgrade pycodestyle
-    pyenv exec pip install --upgrade pylint
-    pyenv exec pip install --upgrade rope
-    pyenv exec pip install --upgrade yamllint
+    pyenv exec pip install --upgrade    pip \
+                                        ansible \
+                                        ansible-lint \
+                                        autopep8 \
+                                        cfn-flip \
+                                        cfn-lint \
+                                        pycodestyle \
+                                        pylint \
+                                        rope \
+                                        yamllint
 
     pyenv rehash
 else
