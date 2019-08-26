@@ -16,6 +16,7 @@ alias cfn-nag="cfn_nag"
 alias d='docker'
 alias did="vim +'normal Go' +'r!date' +'normal o' ~/did.txt"
 alias e="exit"
+alias g="git"
 alias grep='grep -I'
 alias h="history"
 alias hex="hexyl"
