@@ -75,6 +75,7 @@
     l = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%Creset %s %C(blue)%an <%ae> %Creset%Cred%G? %GK\" --date=auto:human --no-merges -${1:-15}; }; f"
     lm = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%Creset %s %C(blue)%an %Creset%Cred%G? %GK\" --date=auto:human --merges -${1:-15}; }; f"
     la = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%C(yellow)%d%Creset %s %C(blue)%an <%ae> %Creset%Cred%G? %GK\" --date=auto:human -${1:-15}; }; f"
+    lc = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%C(blue) %an <%ae> %Creset %B\" --date=auto:human --no-merges -${1:-15}; }; f"
     # show with pretty print
     shop = "!f() { git show --pretty=format:\"%Cred%h %Cgreen%ad%Creset %s %C(blue)%an <%ae> %Creset%Cred%G? %GK\" --date=auto:human ${1}; }; f"
     # diff
