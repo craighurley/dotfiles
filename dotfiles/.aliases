@@ -26,6 +26,7 @@ alias l="ls -lhF ${colorflag}"
 alias ll="ls -lhFA ${colorflag}"
 alias ls="command ls -h ${colorflag}"
 alias lsof='lsof -n -P'
+alias nc='nc -vz -w5'
 alias nmap='nmap -n -Pn'
 alias plistbuddy="/usr/libexec/PlistBuddy"
 alias pstree='pstree -g 3'
