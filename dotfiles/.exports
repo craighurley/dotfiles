@@ -8,6 +8,9 @@ export HISTTIMEFORMAT="%Y/%m/%d %T "
 export HISTCONTROL=ignoreboth:erasedups
 export HISTIGNORE="c:clear:e:exit"
 
+# stop catalina notice about zsh being default
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 # Use UTF-8
 #export LANG="en_NZ"
 #export LC_ALL="en_NZ.UTF-8"
