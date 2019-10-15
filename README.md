@@ -16,12 +16,6 @@ A collection of scripts to bootstrap a clean install of macOS.
     xcode-select --install
     ```
 
-1. Install macOS SDK headers.  _Note: ensure you use the correct version of headers to match your release of macOS._
-
-    ```sh
-    sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /
-    ```
-
 1. Clone this repository by running the following commands:
 
     ```sh
