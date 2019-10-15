@@ -16,7 +16,6 @@ brew upgrade
 brew install    aspell \
                 bash \
                 direnv \
-                entr \
                 git \
                 git-secrets \
                 gpg \
@@ -50,20 +49,21 @@ brew install    aspell \
                 zlib
 
 # applications that are not immediately needed
-# brew install ack
-# brew install ant
-# brew install ant-contrib
-# brew install cookiecutter
-# brew install csvkit
-# brew install go-jira
-# brew install gradle
-# brew install gradle-completion
-# brew install iperf3
-# brew install jq
-# brew install jsonpp
-# brew install parallel
-# brew install rpm
-# brew install weechat --with-python --with-perl --with-aspell
+# ack
+# ant
+# ant-contrib
+# cookiecutter
+# csvkit
+# entr
+# go-jira
+# gradle
+# gradle-completion
+# iperf3
+# jq
+# jsonpp
+# parallel
+# rpm
+# weechat --with-python --with-perl --with-aspell
 
 # gnu
 brew install    coreutils \

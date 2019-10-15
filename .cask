@@ -10,8 +10,8 @@ export HOMEBREW_CASK_OPTS="--require-sha"
 sudo -v
 
 # setup taps
-brew tap caskroom/fonts
-brew tap caskroom/cask
+brew tap homebrew/fonts
+brew tap homebrew/cask
 
 # install applications
 brew cask install appcleaner
@@ -50,6 +50,7 @@ brew cask install visual-studio-code
 # install fonts
 brew cask install font-hasklig
 brew cask install font-source-code-pro
+
 # fonts that have been known to not have a SHA checksum
 # brew cask install font-source-code-pro-for-powerline
 
