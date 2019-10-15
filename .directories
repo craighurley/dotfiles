@@ -13,7 +13,7 @@ chmod 700 ~/.ssh
 [[ ! -d ~/bin ]] && mkdir -p ~/bin
 [[ ! -d ~/Documents/migrated ]] && mkdir -p ~/Documents/migrated
 [[ ! -d ~/installs/linux ]] && mkdir -p ~/installs/linux
-[[ ! -d ~/installs/osx ]] && mkdir -p ~/installs/osx
+[[ ! -d ~/installs/macos ]] && mkdir -p ~/installs/macos
 [[ ! -d ~/installs/windows ]] && mkdir -p ~/installs/windows
 [[ ! -d ~/iso ]] && mkdir -p ~/iso
 [[ ! -d ~/Pictures/icons ]] && mkdir -p ~/Pictures/icons
