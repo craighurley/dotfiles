@@ -10,8 +10,7 @@ export HOMEBREW_CASK_OPTS="--require-sha"
 sudo -v
 
 # setup taps
-brew tap homebrew/fonts
-brew tap homebrew/cask
+brew tap homebrew/cask-fonts
 
 # install applications
 brew cask install appcleaner
