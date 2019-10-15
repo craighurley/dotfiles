@@ -4,14 +4,11 @@
 # python
 ###############################################################################
 
-v2=2.7.16
 vlatest=$(pyenv install --list | grep -E "^\s*[0-9]+\.[0-9]+\.[0-9]+\s*$" | tail -1)
 
 if [[ -f /usr/local/bin/pyenv ]] ; then
     eval "$(pyenv init -)"
 
-    # install python versions
-    pyenv install -s $v2
     # shellcheck disable=SC2086
     pyenv install -s $vlatest
 
@@ -31,6 +28,7 @@ if [[ -f /usr/local/bin/pyenv ]] ; then
                                         pycodestyle \
                                         pylint \
                                         rope \
+                                        watchdog \
                                         yamllint
 
     pyenv rehash
