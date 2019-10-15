@@ -14,7 +14,6 @@ APPS=(
     441258766   # Magnet
     425424353   # The Unarchiver
     904280696   # Things3
-    485812721   # TweetDeck
 )
 
 # Applications not needed immediately
@@ -25,6 +24,7 @@ APPS=(
 #1206278328  # Lighten
 #872515009   # Pomodoro Timer
 #1278508951  # Trello
+#485812721   # TweetDeck
 
 # Install applications
 mas install "${APPS[@]}"
