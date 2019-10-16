@@ -55,7 +55,6 @@ brew install    aspell \
 # cookiecutter
 # csvkit
 # entr
-# go-jira
 # gradle
 # gradle-completion
 # iperf3
