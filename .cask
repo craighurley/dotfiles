@@ -32,6 +32,7 @@ brew cask install visual-studio-code
 # brew cask install pycharm-ce
 # brew cask install sequel-pro
 # brew cask install skype
+# brew cask install send-to-kindle
 # brew cask install sourcetree
 # brew cask install stay
 # brew cask install tunnelblick
