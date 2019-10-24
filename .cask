@@ -26,6 +26,7 @@ brew cask install visual-studio-code
 # applications that are not immediately needed
 # brew cask install balenaetcher
 # brew cask install balsamiq-mockups
+# brew cask install chromedriver
 # brew cask install dash
 # brew cask install dropbox
 # brew cask install kaleidoscope
