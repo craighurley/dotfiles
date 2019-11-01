@@ -13,6 +13,7 @@ docker pull craighurley/docker-znc
 
 # public containers
 docker pull flomotlik/awsinfo
+docker pull restic/restic
 
 # Finished
 echo "$(basename "$0") complete."
