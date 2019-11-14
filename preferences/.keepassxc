@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-
-###############################################################################
-# keepassxc
-###############################################################################
-
-# Disable adopting dark theme; see this ticket for more info: https://github.com/keepassxreboot/keepassxc/issues/3193
-defaults write org.keepassx.keepassxc NSRequiresAquaSystemAppearance -bool yes
