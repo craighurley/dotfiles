@@ -22,7 +22,7 @@ fi
 export SHELL=/usr/local/bin/bash
 
 # Add tab completion for common apps
-complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal" killall
+complete -o "nospace" -W "Contacts Calendar Dock Finder Mail NotificationCenter Safari iTunes SystemUIServer Terminal" killall
 complete -o "nospace" -W "cert config decrypt encrypt help id join keygen list-tracking login logout pull push prove reset revoke revoke-proof search sign status switch track untrack update verify version" keybase
 
 # Allow ctrl+s to search forward through history
