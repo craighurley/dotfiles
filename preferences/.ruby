@@ -17,7 +17,6 @@ if [[ -f "/usr/local/bin/rbenv" ]] ; then
 
     # install gems
     rbenv exec gem install  bundler \
-                            cfndsl \
                             cfn-nag \
                             mdl \
                             rubocop \
