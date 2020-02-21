@@ -145,3 +145,5 @@
 
     # committing
     cnm = commit -m 'no message'
+
+    yolo = "!f() { git add . && git commit -m 'no message' && git push; }; f"
