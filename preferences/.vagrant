@@ -6,5 +6,5 @@
 
 if [[ -f /usr/local/bin/vagrant ]] ; then
     # /usr/bin/vagrant plugin install vagrant-hostmanager
-    /usr/bin/vagrant plugin install vagrant-vbguest
+    /usr/local/bin/vagrant plugin install vagrant-vbguest
 fi
