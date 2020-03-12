@@ -3,7 +3,7 @@
     excludesfile = ~/.gitignore_global
     attributesfile = ~/.gitattributes
     pager = cat
-    abbrev = 11
+    abbrev = 7
 
 [user]
     #name = set GIT_COMMITTER_NAME and GIT_AUTHOR_NAME in ~/.extra
@@ -42,6 +42,7 @@
 
 [push]
     default = simple
+    followTags = true
 
 [apply]
     whitespace = nowarn
