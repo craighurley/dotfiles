@@ -127,6 +127,7 @@
     f = fetch --all
     p = pull
     co = checkout
+    unstage = reset
 
     # cleaning
     clean-branches = "!f() { git branch | grep -vE '(master$|^\\*)' | xargs git branch -D ; git fetch -avp ; }; f"
