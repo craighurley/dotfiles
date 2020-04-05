@@ -14,6 +14,9 @@ alias ack='ack --no-group --color-match=on_red'
 alias c="clear"
 alias cfn-nag="cfn_nag"
 alias d='docker'
+alias docker-stop-all='docker stop $(docker ps -a -q)'
+alias docker-rm-all='docker rm $(docker ps -a -q)'
+alias docker-rmi-untagged='docker rmi $(docker images -f "dangling=true" -q)'
 alias did="vim +'normal Go' +'r!date' +'normal o' ~/did.txt"
 alias e="exit"
 alias g="git"
@@ -48,10 +51,13 @@ alias mkpasswd="python -c 'from passlib.hash import sha512_crypt; import getpass
 alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
 
 # docker
+#alias aws='docker run --rm -it -v $HOME/.aws:/root/.aws:ro -v $(pwd):/workdir -e AWS_PROFILE craighurley/docker-awscli:$DOCKER_AWS_CLI_VERSION'
 alias aws-mfa='TZ=UTC date ; docker run --rm -it -v $HOME/.aws:/root/.aws -e AWS_PROFILE craighurley/aws-mfa'
-alias org-formation='docker run --rm -it -v $HOME/.aws:/root/.aws -e AWS_PROFILE craighurley/aws-org-formation'
+#alias cfn-lint='docker run --rm -v $PWD:/workdir:ro craighurley/cfn-lint'
+alias org-formation='docker run --rm -it -v $HOME/.aws:/root/.aws:ro -e AWS_PROFILE craighurley/aws-org-formation'
 alias rsyslog-start='docker run --rm -d -v $PWD/log:/var/log -p 514:514 -p 514:514/udp --name rsyslog craighurley/rsyslog'
 alias rsyslog-stop='docker stop rsyslog'
+alias sceptre='docker run --rm -it -v $HOME/.aws:/root/.aws:ro -v $(pwd):/workdir:ro -e AWS_PROFILE craighurley/sceptre:$DOCKER_SCEPTRE_VERSION'
+alias ssm-run='docker run --rm -it -v $HOME/.aws:/root/.aws:ro -e AWS_PROFILE=$AWS_PROFILE -e AWS_REGION=$AWS_REGION docker.pkg.github.com/disneystreaming/ssm-helpers/ssm-run'
+alias ssm-session='docker run --rm -it --detach-keys 'ctrl-e,e' -v $HOME/.aws:/root/.aws:ro -e AWS_PROFILE=$AWS_PROFILE -e AWS_REGION=$AWS_REGION docker.pkg.github.com/disneystreaming/ssm-helpers/ssm-session'
 alias weechat='docker run --rm -it -v $HOME/.weechat:/home/user/.weechat craighurley/docker-weechat'
-#alias aws='docker run --rm -it -v $HOME/.aws:/root/.aws -v $(pwd):/workdir -e AWS_PROFILE craighurley/docker-awscli:$DOCKER_AWS_CLI_VERSION'
-#alias sceptre='docker run --rm -it -v $HOME/.aws:/root/.aws:ro -v $(pwd):/workdir:ro -e AWS_PROFILE craighurley/docker-sceptre:$DOCKER_SCEPTRE_VERSION'

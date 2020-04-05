@@ -6,11 +6,12 @@ echo "$(basename "$0") starting."
 # personal containers
 docker pull craighurley/aws-mfa
 docker pull craighurley/aws-org-formation
-docker pull craighurley/docker-awscli
-docker pull craighurley/docker-sceptre
-docker pull craighurley/docker-weechat
-docker pull craighurley/docker-znc
+docker pull craighurley/cfn-lint
 docker pull craighurley/rsyslog
+docker pull craighurley/sceptre
+# docker pull craighurley/docker-awscli
+# docker pull craighurley/docker-weechat
+# docker pull craighurley/docker-znc
 
 # public containers
 docker pull alpine:3.11
@@ -19,7 +20,7 @@ docker pull docker.pkg.github.com/disneystreaming/ssm-helpers/ssm-run
 docker pull docker.pkg.github.com/disneystreaming/ssm-helpers/ssm-session
 docker pull node:13-alpine3.11
 docker pull openjdk:13-alpine
-docker pull python:3.7-alpine3.11
+docker pull python:3.8-alpine3.11
 docker pull restic/restic
 
 # Finished
