@@ -11,6 +11,9 @@
 log/*.log
 tmp/**
 
+# direnv
+.envrc
+
 # Folder view configuration files
 Desktop.ini
 .DS_Store
