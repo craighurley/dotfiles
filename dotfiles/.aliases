@@ -51,7 +51,7 @@ alias mkpasswd="python -c 'from passlib.hash import sha512_crypt; import getpass
 alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
 
 # docker
-alias aws='docker run --rm -it -v $HOME/.aws:/root/.aws:ro -v $PWD:/workdir -e AWS_PROFILE craighurley/aws-cli:$DOCKER_AWS_CLI_VERSION'
+alias aws='docker run --rm -it -v $HOME/.aws:/root/.aws -v $PWD:/workdir -e AWS_PROFILE craighurley/aws-cli:$DOCKER_AWS_CLI_VERSION'
 alias aws-mfa='TZ=UTC date ; docker run --rm -it -v $HOME/.aws:/root/.aws -e AWS_PROFILE craighurley/aws-mfa'
 #alias cfn-lint='docker run --rm -v $PWD:/workdir:ro craighurley/cfn-lint'
 alias org-formation='docker run --rm -it -v $HOME/.aws:/root/.aws:ro -e AWS_PROFILE craighurley/aws-org-formation'
