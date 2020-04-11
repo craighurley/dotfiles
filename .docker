@@ -16,6 +16,7 @@ docker pull craighurley/aws-cli:1
 docker pull craighurley/aws-cli:2
 docker pull craighurley/aws-mfa
 docker pull craighurley/aws-org-formation
+docker pull craighurley/cfn-flip
 docker pull craighurley/cfn-lint
 docker pull craighurley/rsyslog
 docker pull craighurley/sceptre
