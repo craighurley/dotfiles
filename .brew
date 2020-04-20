@@ -64,7 +64,6 @@ brew install    aspell \
 # jsonpp
 # parallel
 # rpm
-# weechat --with-python --with-perl --with-aspell
 
 # gnu
 brew install    coreutils \
