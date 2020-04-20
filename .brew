@@ -28,7 +28,6 @@ brew install    aspell \
                 netcat \
                 nmap \
                 openssl \
-                pre-commit \
                 pstree \
                 pyenv \
                 pyenv-virtualenv \
