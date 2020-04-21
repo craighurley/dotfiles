@@ -22,7 +22,7 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.serve
 
 # Disable the sound effects on boot.  To re-enable: sudo nvram -d SystemAudioVolume
 # macbook pro late 2012 + os x 10.9
-sudo nvram SystemAudioVolume="%80"
+sudo nvram SystemAudioVolume=" "
 
 # Enable verbose booting.  To reset to default: sudo nvram boot-args="" ; sudo nvram -d boot-args
 #sudo nvram boot-args="-v"
@@ -89,6 +89,21 @@ defaults write NSGlobalDomain com.apple.keyboard.fnState -int 1
 # Keyboard: enable repeating alpha/num keys
 defaults write -g ApplePressAndHoldEnabled -bool false
 
+# Keyboard: disable automatic capitalization
+defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
+
+# Keyboard: disable smart dashes
+defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
+
+# Keyboard: disable automatic period
+defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
+
+# Keyboard: disable smart quotes
+defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
+
+# Keyboard: disable auto-correc
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+
 ###############################################################################
 # Screen
 ###############################################################################
@@ -133,6 +148,9 @@ defaults write com.apple.finder ShowPathbar -bool true
 
 # Finder: allow text selection in Quick Look
 defaults write com.apple.finder QLEnableTextSelection -bool true
+
+# Finder: allow quitting via ⌘ + Q; doing so will also hide desktop icons
+defaults write com.apple.finder QuitMenuItem -bool true
 
 # When performing a search, search the current folder by default
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
