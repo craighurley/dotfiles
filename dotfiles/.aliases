@@ -40,7 +40,7 @@ alias v="vim"
 alias vi="vim"
 
 # custom commands
-
+alias unquarantine="xattr -r -d com.apple.quarantine"
 alias dns="scutil --dns"
 alias dnsflush="dscacheutil -flushcache && killall -HUP mDNSResponder"
 # Clean up LaunchServices to remove duplicates in the "Open With" menu
