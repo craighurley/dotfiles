@@ -1,6 +1,6 @@
 # dotfiles
 
-[![Build Status](https://travis-ci.com/craighurley/dotfiles.svg?branch=master)](https://travis-ci.com/craighurley/dotfiles)
+![lint](https://github.com/craighurley/dotfiles/workflows/lint/badge.svg)
 
 ## Introduction
 
