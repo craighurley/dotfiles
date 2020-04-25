@@ -1,4 +1,4 @@
-name: Linter
+name: lint
 on: push
 
 jobs:
@@ -12,6 +12,6 @@ jobs:
         run: |
           sudo apt-get -qq update
           sudo apt-get install -qq -y shellcheck yamllint
-      - name: Run tests
+      - name: Run linters
         run: |
           ./lint.sh
