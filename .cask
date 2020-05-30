@@ -24,7 +24,7 @@ brew cask install keepassxc
 brew cask install visual-studio-code
 
 # applications that are not immediately needed
-# brew cask install balenaetcher
+# brew cask install raspberry-pi-imager
 # brew cask install balsamiq-mockups
 # brew cask install chromedriver
 # brew cask install dash
