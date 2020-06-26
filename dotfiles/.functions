@@ -142,3 +142,10 @@ function upgrade() {
         vim -c PluginUpdate -c quitall
     fi
 }
+
+function findpi() {
+    # use arp to find all pi devices
+    arp -na | grep -i "b8:27:eb"
+    # If this doesn't work and you are using the latest Raspberry Pi 4, instead run:
+    arp -na | grep -i "dc:a6:32"
+}
