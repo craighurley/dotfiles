@@ -93,6 +93,7 @@
     sl = "!f() { git shortlog --no-merges -${1:-15}; }; f"
     # reflog for current branch (useful for getting the parent commit)
     rl = "!f() { git reflog show $(git rev-parse --abbrev-ref HEAD) --pretty=format:\"%Cred%h %Cgreen%cd%C(yellow)%d %Creset%gs\" --date=auto:human; }; f"
+    who = blame
 
     # list all files
     ls = ls-files
