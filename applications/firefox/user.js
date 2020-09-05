@@ -23,3 +23,4 @@ user_pref("security.webauth.u2f", true);
 user_pref("spellchecker.dictionary", "en-GB");
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
 user_pref("toolkit.telemetry.enabled", false);
+user_pref("ui.prefersReducedMotion", 0);
