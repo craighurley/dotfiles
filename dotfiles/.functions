@@ -49,11 +49,12 @@ function lsof-ls() {
 }
 
 function backup() {
+    d=$(date +%Y%m%d-%s)
     echo Backup documents
-    tar -zcf ~/backups/$HOSTNAME-documents-$(date +%Y%m%d-%s).tgz --exclude "/Users/$USER/Documents/migrated" /Users/$USER/Documents
+    tar -zcf ~/backups/$HOSTNAME-documents-$d.tgz --exclude "/Users/$USER/Documents/migrated" /Users/$USER/Documents
 
     echo Backup projects
-    tar -zcf ~/backups/$HOSTNAME-projects-$(date +%Y%m%d-%s).tgz --exclude "/Users/$USER/Projects/migrated" /Users/$USER/Projects
+    tar -zcf ~/backups/$HOSTNAME-projects-$d.tgz --exclude "/Users/$USER/Projects/migrated" /Users/$USER/Projects
 }
 
 # ssh-agent
