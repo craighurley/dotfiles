@@ -33,7 +33,6 @@ alias nc='nc -vz -w5'
 alias nmap='nmap -n -Pn'
 alias plistbuddy="/usr/libexec/PlistBuddy"
 alias pstree='pstree -g 3'
-alias ssm='aws ssm start-session --target'
 alias tcpdump-http="sudo tcpdump -nn -A -s0 -q 'tcp port 80 and (((ip[2:2] - ((ip[0]&0xf)<<2)) - ((tcp[12]&0xf0)>>2)) != 0)'"
 alias tcpdump="tcpdump -nn"
 alias v="vim"
@@ -60,6 +59,5 @@ alias org-formation='docker run --rm -it -v $HOME/.aws:/root/.aws:ro -v $PWD:/wo
 alias rsyslog-start='docker run --rm -d -v $PWD/log:/var/log -p 514:514 -p 514:514/udp --name rsyslog craighurley/rsyslog'
 alias rsyslog-stop='docker stop rsyslog'
 alias sceptre='docker run --rm -it -v $HOME/.aws:/root/.aws:ro -v $PWD:/workdir:ro -e AWS_PROFILE craighurley/sceptre:$DOCKER_SCEPTRE_VERSION'
-alias ssm-run='docker run --rm -it -v $HOME/.aws:/root/.aws -e AWS_PROFILE=$AWS_PROFILE -e AWS_REGION=$AWS_REGION docker.pkg.github.com/disneystreaming/ssm-helpers/ssm-run'
-alias ssm-session='docker run --rm -it --detach-keys 'ctrl-e,e' -v $HOME/.aws:/root/.aws -e AWS_PROFILE=$AWS_PROFILE -e AWS_REGION=$AWS_REGION docker.pkg.github.com/disneystreaming/ssm-helpers/ssm-session'
+alias ssm='docker run --rm -it -v $HOME/.aws:/root/.aws -e AWS_PROFILE=$AWS_PROFILE -e AWS_REGION=$AWS_REGION docker.pkg.github.com/disneystreaming/ssm-helpers/ssm'
 alias weechat='docker run --rm -it -v $HOME/.weechat:/home/user/.weechat craighurley/docker-weechat'
