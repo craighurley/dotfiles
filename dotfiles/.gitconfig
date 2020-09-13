@@ -118,7 +118,7 @@
     s = status -s
 
     # what tag(s) point at current commit
-    tagged = tag --list --points-at HEAD
+    tagged = tag -l --points-at HEAD
 
     # show verbose output about tags, branches or remotes
     tags = tag -l
