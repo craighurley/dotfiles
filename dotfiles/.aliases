@@ -55,6 +55,7 @@ alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.ar
 alias aws-mfa='TZ=UTC date ; docker run --rm -it -v $HOME/.aws:/root/.aws -e AWS_PROFILE craighurley/aws-mfa'
 alias cfn-flip='docker run --rm -v $PWD:/workdir craighurley/cfn-flip'
 #alias cfn-lint='docker run --rm -v $PWD:/workdir:ro craighurley/cfn-lint'
+alias diagrams='docker run --rm -it -v $PWD:/workdir craighurley/diagrams'
 alias org-formation='docker run --rm -it -v $HOME/.aws:/root/.aws:ro -v $PWD:/workdir -w /workdir -e AWS_PROFILE craighurley/org-formation-cli'
 alias rsyslog-start='docker run --rm -d -v $PWD/log:/var/log -p 514:514 -p 514:514/udp --name rsyslog craighurley/rsyslog'
 alias rsyslog-stop='docker stop rsyslog'
