@@ -44,6 +44,9 @@
     default = simple
     followTags = true
 
+[pull]
+    rebase = false
+
 [apply]
     whitespace = nowarn
 
