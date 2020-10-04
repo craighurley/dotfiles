@@ -20,13 +20,10 @@ brew install    aspell \
                 git-secrets \
                 gpg \
                 hexyl \
-                ipcalc \
                 iproute2mac \
                 libyaml \
                 mas \
                 moreutils \
-                netcat \
-                nmap \
                 openssl \
                 pstree \
                 pyenv \

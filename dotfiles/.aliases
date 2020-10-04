@@ -13,11 +13,7 @@ alias ..="cd .."
 alias ack='ack --no-group --color-match=on_red'
 alias c="clear"
 alias cfn-nag="cfn_nag"
-alias d='docker'
 alias did="vim +'normal Go' +'r!date' +'normal o' ~/did.txt"
-alias docker-rm-all='docker rm $(docker ps -a -q)'
-alias docker-rmi-untagged='docker rmi $(docker images -f "dangling=true" -q)'
-alias docker-stop-all='docker stop $(docker ps -a -q)'
 alias e="exit"
 alias g="git"
 alias grep='grep -I'
@@ -29,8 +25,6 @@ alias l="ls -lhF ${colorflag}"
 alias ll="ls -lhFA ${colorflag}"
 alias ls="command ls -h ${colorflag}"
 alias lsof='lsof -n -P'
-alias nc='nc -vz -w5'
-alias nmap='nmap -n -Pn'
 alias plistbuddy="/usr/libexec/PlistBuddy"
 alias pstree='pstree -g 3'
 alias tcpdump-http="sudo tcpdump -nn -A -s0 -q 'tcp port 80 and (((ip[2:2] - ((ip[0]&0xf)<<2)) - ((tcp[12]&0xf0)>>2)) != 0)'"
@@ -50,18 +44,27 @@ alias me="curl ifconfig.co"
 alias mkpasswd="python -c 'from passlib.hash import sha512_crypt; import getpass; print sha512_crypt.encrypt(getpass.getpass())'"
 alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
 
-# docker
+# docker commands
+alias d='docker'
+alias docker-rm-all='docker rm $(docker ps -a -q)'
+alias docker-rmi-untagged='docker rmi $(docker images -f "dangling=true" -q)'
+alias docker-stop-all='docker stop $(docker ps -a -q)'
+
+# docker containers
 #alias aws='docker run --rm -it -v $HOME/.aws:/root/.aws -v $PWD:/workdir -e AWS_PROFILE craighurley/aws-cli:$DOCKER_AWS_CLI_VERSION'
-alias aws-mfa='TZ=UTC date ; docker run --rm -it -v $HOME/.aws:/root/.aws -e AWS_PROFILE craighurley/aws-mfa'
-alias cfn-flip='docker run --rm -v $PWD:/workdir craighurley/cfn-flip'
 #alias cfn-lint='docker run --rm -v $PWD:/workdir:ro craighurley/cfn-lint'
-alias diagrams='docker run --rm -it -v $PWD:/workdir craighurley/diagrams diagrams'
 alias actdiag='docker run --rm -it -v $PWD:/workdir craighurley/diagrams actdiag -f /usr/share/fonts/ttf-dejavu/DejaVuSansMono.ttf --no-transparency'
+alias aws-mfa='TZ=UTC date ; docker run --rm -it -v $HOME/.aws:/root/.aws -e AWS_PROFILE craighurley/aws-mfa'
 alias blockdiag='docker run --rm -it -v $PWD:/workdir craighurley/diagrams blockdiag -f /usr/share/fonts/ttf-dejavu/DejaVuSansMono.ttf --no-transparency'
-alias seqdiag='docker run --rm -it -v $PWD:/workdir craighurley/diagrams seqdiag -f /usr/share/fonts/ttf-dejavu/DejaVuSansMono.ttf --no-transparency'
+alias cfn-flip='docker run --rm -v $PWD:/workdir craighurley/cfn-flip'
+alias diagrams='docker run --rm -it -v $PWD:/workdir craighurley/diagrams diagrams'
+alias ipcalc='docker run --rm -it craighurley/ipcalc'
+alias nc='docker run --rm -it craighurley/netcat -vz -w5'
+alias nmap='docker run --rm -it craighurley/nmap -n -Pn'
 alias org-formation='docker run --rm -it -v $HOME/.aws:/root/.aws:ro -v $PWD:/workdir -w /workdir -e AWS_PROFILE craighurley/org-formation-cli'
 alias rsyslog-start='docker run --rm -d -v $PWD/log:/var/log -p 514:514 -p 514:514/udp --name rsyslog craighurley/rsyslog'
 alias rsyslog-stop='docker stop rsyslog'
 alias sceptre='docker run --rm -it -v $HOME/.aws:/root/.aws:ro -v $PWD:/workdir:ro -e AWS_PROFILE craighurley/sceptre:$DOCKER_SCEPTRE_VERSION'
+alias seqdiag='docker run --rm -it -v $PWD:/workdir craighurley/diagrams seqdiag -f /usr/share/fonts/ttf-dejavu/DejaVuSansMono.ttf --no-transparency'
 alias ssm='docker run --rm -it -v $HOME/.aws:/root/.aws -e AWS_PROFILE=$AWS_PROFILE -e AWS_REGION=$AWS_REGION docker.pkg.github.com/disneystreaming/ssm-helpers/ssm'
 alias weechat='docker run --rm -it -v $HOME/.weechat:/home/user/.weechat craighurley/docker-weechat'
