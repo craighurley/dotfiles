@@ -12,7 +12,7 @@ brew update
 # Upgrade any already-installed formulae
 brew upgrade
 
-# # install applications
+# install applications
 brew install    aspell \
                 bash \
                 direnv \
