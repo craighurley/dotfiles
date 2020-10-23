@@ -9,6 +9,7 @@ sudo -v
 # Applications
 APPS=(
     1056643111  # Clocker
+    1289197285  # MindNode
     411643860   # DaisyDisk
     425424353   # The Unarchiver
     441258766   # Magnet
