@@ -51,10 +51,10 @@ alias docker-rmi-untagged='docker rmi $(docker images -f "dangling=true" -q)'
 alias docker-stop-all='docker stop $(docker ps -a -q)'
 
 # docker containers
-#alias aws='docker run --rm -it -v $HOME/.aws:/root/.aws -v $PWD:/workdir -e AWS_PROFILE craighurley/aws-cli:$DOCKER_AWS_CLI_VERSION'
+alias aws='docker run --rm -it -v $HOME/.aws:/root/.aws -v $PWD:/workdir -e AWS_PROFILE amazon/aws-cli:$DOCKER_AWS_CLI_VERSION'
 #alias cfn-lint='docker run --rm -v $PWD:/workdir:ro craighurley/cfn-lint'
 alias actdiag='docker run --rm -it -v $PWD:/workdir craighurley/diagrams actdiag -f /usr/share/fonts/ttf-dejavu/DejaVuSansMono.ttf --no-transparency'
-alias aws-mfa='TZ=UTC date ; docker run --rm -it -v $HOME/.aws:/root/.aws -e AWS_PROFILE craighurley/aws-mfa'
+alias aws-mfa='docker run --rm -it -v $HOME/.aws:/root/.aws -e AWS_PROFILE craighurley/aws-mfa'
 alias blockdiag='docker run --rm -it -v $PWD:/workdir craighurley/diagrams blockdiag -f /usr/share/fonts/ttf-dejavu/DejaVuSansMono.ttf --no-transparency'
 alias cfn-flip='docker run --rm -v $PWD:/workdir craighurley/cfn-flip'
 alias diagrams='docker run --rm -it -v $PWD:/workdir craighurley/diagrams diagrams'
