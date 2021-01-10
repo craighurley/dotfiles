@@ -46,6 +46,6 @@ export DOCKER_AWS_CLI_VERSION=latest
 export DOCKER_SCEPTRE_VERSION=latest
 
 # java
-if [[ -d /usr/local/opt/java ]] ; then
-    export JAVA_HOME="/usr/local/opt/java"
+if [[ -d /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/ ]] ; then
+    export JAVA_HOME="/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/"
 fi
