@@ -6,9 +6,6 @@ echo "$(basename "$0") starting."
 # Ask for the administrator password upfront
 sudo -v
 
-# Make sure we’re using the latest Homebrew
-brew update
-
 # Upgrade any already-installed formulae
 brew upgrade
 
@@ -19,7 +16,6 @@ brew install    aspell \
                 git \
                 git-secrets \
                 gpg \
-                hexyl \
                 libyaml \
                 mas \
                 openssl \
@@ -33,10 +29,8 @@ brew install    aspell \
                 ruby-build \
                 shellcheck \
                 sqlite3 \
-                tcptraceroute \
                 tmux \
                 tree \
-                unrar \
                 vim \
                 watch \
                 wget \
@@ -53,6 +47,7 @@ brew install    aspell \
 # geckodriver
 # gradle
 # gradle-completion
+# hexyl
 # iperf3
 # iproute2mac
 # jq
@@ -60,6 +55,10 @@ brew install    aspell \
 # moreutils
 # parallel
 # rpm
+# tcptraceroute
+
+# issues with installer
+# unrar
 
 # gnu
 brew install    coreutils \
