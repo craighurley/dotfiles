@@ -22,7 +22,7 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.serve
 
 # Disable the sound effects on boot.  To re-enable: sudo nvram -d SystemAudioVolume
 # macbook pro late 2012 + os x 10.9
-sudo nvram SystemAudioVolume=" "
+# sudo nvram SystemAudioVolume=" "
 
 # Enable verbose booting.  To reset to default: sudo nvram boot-args="" ; sudo nvram -d boot-args
 #sudo nvram boot-args="-v"
@@ -220,17 +220,17 @@ defaults write com.apple.dock wvous-br-modifier -int 0
 ###############################################################################
 
 # set banner appearance duration
-defaults write com.apple.notificationcenterui bannerTime -int 7
+#defaults write com.apple.notificationcenterui bannerTime -int 7
 
 ###############################################################################
 # Energy preferences
 ###############################################################################
 
 # battery
-sudo pmset -b sleep 20 disksleep 15 displaysleep 10 halfdim 1
+# sudo pmset -b sleep 20 disksleep 15 displaysleep 10 halfdim 1
 
 # power adapter
-sudo pmset -c sleep 0 disksleep 0 displaysleep 10 halfdim 1
+# sudo pmset -c sleep 0 disksleep 0 displaysleep 10 halfdim 1
 
 ###############################################################################
 # Firewall
