@@ -57,6 +57,8 @@ A collection of scripts to bootstrap a clean install of macOS.
     # Install command line package manager and additional applications.
     ~/Projects/dotfiles/.cask
 
+    # Open Firefox now, to generate the default profile.
+
     # Backup existing dotfiles and symlink to the dotfiles in this project.
     ~/Projects/dotfiles/.dotfiles
 
