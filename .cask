@@ -29,6 +29,7 @@ brew install --cask visual-studio-code
 # brew install --cask docker
 # brew install --cask dropbox
 # brew install --cask kaleidoscope
+# brew install --cask microsoft-teams
 # brew install --cask pycharm-ce
 # brew install --cask raspberry-pi-imager
 # brew install --cask send-to-kindle
