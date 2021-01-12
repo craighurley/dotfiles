@@ -4,7 +4,6 @@
 # vs code
 ###############################################################################
 
-if [[ -f /usr/local/bin/code ]] ; then
-    defaults write com.microsoft.VSCode.helper CGFontRenderingFontSmoothingDisabled -bool NO
-    /usr/local/bin/code --install-extension Shan.code-settings-sync
-fi
+# if [[ -f /usr/local/bin/code ]] ; then
+#     defaults write com.microsoft.VSCode.helper CGFontRenderingFontSmoothingDisabled -bool NO
+# fi
