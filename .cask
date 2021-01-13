@@ -37,6 +37,7 @@ brew install --cask visual-studio-code
 # brew install --cask skype
 # brew install --cask sourcetree
 # brew install --cask stay
+# brew install --cask tableplus
 # brew install --cask tunnelblick
 # brew install --cask vagrant
 # brew install --cask virtualbox
