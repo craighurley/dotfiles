@@ -84,7 +84,18 @@ A collection of scripts to bootstrap a clean install of macOS.
     - github
     - homebrew
 1. Sign into Firefox account to sync settings.
-1. Download VS Code settings from gist.
+1. Sign into GitHub in VS Code to sync settings.
+1. Download binary apps:
+    - https://github.com/awslabs/aws-cloudformation-template-formatter/releases/
+    - https://github.com/cortesi/modd
+    - https://github.com/direnv/direnv/releases
+    - https://github.com/go-task/task/releases
+    - https://github.com/gohugoio/hugo/releases
+    - https://github.com/hashicorp/go-getter/releases/
+    - https://github.com/stedolan/jq/releases
+    - https://github.com/Versent/saml2aws/releases
+    - https://taskfalcon.org/index.html
+    - https://www.terraform.io/downloads.html
 
 ## Update
 
