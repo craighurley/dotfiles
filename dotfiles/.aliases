@@ -51,7 +51,7 @@ alias docker-rmi-untagged='docker rmi $(docker images -f "dangling=true" -q)'
 alias docker-stop-all='docker stop $(docker ps -a -q)'
 
 # docker containers
-alias aws='docker run --rm -it -v $HOME/.aws:/root/.aws -v $PWD:/aws -e AWS_PROFILE amazon/aws-cli:$DOCKER_AWS_CLI_VERSION'
+#alias aws='docker run --rm -it -v $HOME/.aws:/root/.aws -v $PWD:/aws -e AWS_PROFILE amazon/aws-cli:$DOCKER_AWS_CLI_VERSION'
 #alias cfn-lint='docker run --rm -v $PWD:/workdir:ro craighurley/cfn-lint'
 alias actdiag='docker run --rm -it -v $PWD:/workdir craighurley/diagrams actdiag -f /usr/share/fonts/ttf-dejavu/DejaVuSansMono.ttf --no-transparency'
 alias aws-mfa='docker run --rm -it -v $HOME/.aws:/root/.aws -e AWS_PROFILE craighurley/aws-mfa'
@@ -61,6 +61,8 @@ alias diagrams='docker run --rm -it -v $PWD:/workdir craighurley/diagrams diagra
 alias ipcalc='docker run --rm -it craighurley/ipcalc'
 alias nc='docker run --rm -it craighurley/netcat -vz -w5'
 alias nmap='docker run --rm -it craighurley/nmap -n -Pn'
+alias node='docker run --rm -it -v $PWD:/workdir craighurley/node'
+alias npm='docker run --rm -it -v $PWD:/workdir --entrypoint=npm craighurley/node'
 alias org-formation='docker run --rm -it -v $HOME/.aws:/root/.aws:ro -v $PWD:/workdir -w /workdir -e AWS_PROFILE craighurley/org-formation-cli'
 alias rsyslog-start='docker run --rm -d -v $PWD/log:/var/log -p 514:514 -p 514:514/udp --name rsyslog craighurley/rsyslog'
 alias rsyslog-stop='docker stop rsyslog'
