@@ -43,6 +43,7 @@ export GPG_AGENT_INFO=$HOME/.gnupg/S.gpg-agent
 
 # docker images
 export DOCKER_AWS_CLI_VERSION=latest
+export DOCKER_ORG_FORMATION_CLI_VERSION=latest
 export DOCKER_SCEPTRE_VERSION=latest
 
 # java
