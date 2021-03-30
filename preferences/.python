@@ -19,8 +19,8 @@ if [[ -f /usr/local/bin/pyenv ]] ; then
     pyenv global default
 
     # install common items
-    pyenv exec pip install --upgrade    pip \
-                                        ansible \
+    pyenv exec pip install --upgrade    pip
+    pyenv exec pip install --upgrade    ansible \
                                         ansible-lint \
                                         autopep8 \
                                         pycodestyle \
