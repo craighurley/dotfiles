@@ -5,9 +5,8 @@
     pager = cat
     abbrev = 7
 
-[user]
-    #name = set GIT_COMMITTER_NAME and GIT_AUTHOR_NAME in ~/.extra
-    #email = set EMAIL in ~/.extra
+# [user]
+# name and email should be set in ~/.gitconfig.custom
 
 [commit]
     template = ~/.gitmessage
@@ -153,3 +152,6 @@
     c = commit
     cnm = commit -m 'no message'
     yolo = "!f() { git add . && git commit -m 'no message' && git push; }; f"
+
+[include]
+    path = ~/.gitconfig.custom
