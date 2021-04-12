@@ -81,8 +81,8 @@ A collection of scripts to bootstrap a clean install of macOS.
 1. Import gpg keys.
 1. Import ssh keys.
 1. Update exports in the `~/.extra` file:
-    - github
     - homebrew
+1. Update `~/.gitconfig.custom` and any additional custom configurations:
 1. Sign into Firefox account to sync settings.
 1. Sign into GitHub in VS Code to sync settings.
 1. Download binary apps:
