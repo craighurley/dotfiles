@@ -26,7 +26,6 @@ if [[ -f /usr/local/bin/pyenv ]] ; then
                                         pycodestyle \
                                         pylint \
                                         rope \
-                                        watchdog \
                                         yamllint
 
     pyenv rehash
