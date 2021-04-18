@@ -5,7 +5,7 @@ echo "$(basename "$0") starting."
 
 # ssh
 [[ ! -d ~/.ssh ]] && mkdir -p ~/.ssh
-chmod 700 ~/.ssh
+chmod 755 ~/.ssh
 
 # create folders
 [[ ! -d ~/.config ]] && mkdir -p ~/.config
