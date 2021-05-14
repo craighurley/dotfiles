@@ -34,6 +34,7 @@ alias vi="vim"
 alias weather="curl wttr.in"
 
 # custom commands
+alias awswhoami="aws sts get-caller-identity"
 alias unquarantine="xattr -r -d com.apple.quarantine"
 alias dns="scutil --dns"
 alias dnsflush="dscacheutil -flushcache && killall -HUP mDNSResponder"
