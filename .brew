@@ -13,6 +13,7 @@ brew upgrade
 brew install    aspell \
                 bash \
                 cfn-format \
+                confd \
                 direnv \
                 git \
                 git-secrets \
@@ -31,6 +32,7 @@ brew install    aspell \
                 readline \
                 rename \
                 ruby-build \
+                saml2aws \
                 shellcheck \
                 sqlite3 \
                 tmux \
