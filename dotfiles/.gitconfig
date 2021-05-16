@@ -10,7 +10,7 @@
 
 [commit]
     template = ~/.gitmessage
-    gpgsign = true
+    gpgsign = false
 
 [pager]
     log = diff-highlight | less -+S
