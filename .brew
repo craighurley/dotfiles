@@ -12,12 +12,16 @@ brew upgrade
 # install applications
 brew install    aspell \
                 bash \
+                cfn-format \
                 direnv \
                 git \
                 git-secrets \
                 gpg \
+                hugo \
+                jq \
                 libyaml \
                 mas \
+                modd \
                 openssl \
                 pstree \
                 pyenv \
@@ -35,6 +39,7 @@ brew install    aspell \
                 watch \
                 wget \
                 xz \
+                yq \
                 zlib
 
 # applications that are not immediately needed
