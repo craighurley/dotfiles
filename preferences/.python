@@ -23,6 +23,7 @@ if [[ -f /usr/local/bin/pyenv ]] ; then
     pyenv exec pip install --upgrade    ansible \
                                         ansible-lint \
                                         autopep8 \
+                                        pre-commit \
                                         pycodestyle \
                                         pylint \
                                         rope \
