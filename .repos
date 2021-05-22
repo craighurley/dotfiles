@@ -4,7 +4,7 @@
 echo "$(basename "$0") starting."
 
 # github
-git clone git@github.com:craighurley/ansible-aws-credentials-setup.git ~/Projects/ansible/ansible-aws-credentials-setup
+git clone git@github.com:craighurley/ansible-aws-account-setup.git ~/Projects/ansible/ansible-aws-account-setup
 git clone git@github.com:craighurley/ansible-personal-vps.git ~/Projects/ansible/ansible-personal-vps
 git clone git@github.com:craighurley/ansible-pi.git ~/Projects/ansible/ansible-pi
 git clone git@github.com:craighurley/ansible-roles.git ~/Projects/ansible/ansible-roles
