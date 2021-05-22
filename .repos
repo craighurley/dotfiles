@@ -4,6 +4,7 @@
 echo "$(basename "$0") starting."
 
 # github
+git clone git@github.com:craighurley/ansible-aws-credentials-setup.git ~/Projects/ansible/ansible-aws-credentials-setup
 git clone git@github.com:craighurley/ansible-personal-vps.git ~/Projects/ansible/ansible-personal-vps
 git clone git@github.com:craighurley/ansible-pi.git ~/Projects/ansible/ansible-pi
 git clone git@github.com:craighurley/ansible-roles.git ~/Projects/ansible/ansible-roles
@@ -13,8 +14,25 @@ git clone git@github.com:craighurley/cookiecutter-ansible.git ~/Projects/cookiec
 git clone git@github.com:craighurley/cookiecutter-client.git ~/Projects/cookiecutters/cookiecutter-client
 git clone git@github.com:craighurley/cookiecutter-sceptre.git ~/Projects/cookiecutters/cookiecutter-sceptre
 git clone git@github.com:craighurley/craighurley.github.io.git ~/Projects/web/craighurley.me
+git clone git@github.com:craighurley/docker-aws-mfa.git ~/Projects/docker/docker-aws-mfa
+git clone git@github.com:craighurley/docker-diagrams.git ~/Projects/docker/docker-diagrams
+git clone git@github.com:craighurley/docker-ipcalc.git ~/Projects/docker/docker-ipcalc
+git clone git@github.com:craighurley/docker-netcat.git ~/Projects/docker/docker-netcat
+git clone git@github.com:craighurley/docker-nmap.git ~/Projects/docker/docker-nmap
+git clone git@github.com:craighurley/docker-node.git ~/Projects/docker/docker-node
+git clone git@github.com:craighurley/docker-org-formation-cli.git ~/Projects/docker/docker-org-formation-cli
+git clone git@github.com:craighurley/docker-rsyslog.git ~/Projects/docker/docker-rsyslog
+git clone git@github.com:craighurley/docker-sceptre.git ~/Projects/docker/docker-sceptre
+git clone git@github.com:craighurley/docker-test.git ~/Projects/docker/docker-test
+git clone git@github.com:craighurley/docker-weechat.git ~/Projects/docker/docker-weechat
 git clone git@github.com:craighurley/jupyter.git ~/Projects/jupyter
+git clone git@github.com:craighurley/org-formation-cli.git ~/Projects/aws/org-formation-cli
+git clone git@github.com:craighurley/sceptre-myip-resolver.git ~/Projects/sceptre/sceptre-myip-resolver
+git clone git@github.com:craighurley/sceptre-pre-commit-provisioner.git ~/Projects/sceptre/sceptre-pre-commit-provisioner
+git clone git@github.com:craighurley/sceptre.git ~/Projects/sceptre/sceptre
 git clone git@github.com:craighurley/scripts.git ~/Projects/scripts
+git clone git@github.com:craighurley/ssmpm.git ~/Projects/python/ssmpm
+git clone git@github.com:craighurley/stack-aws1.git ~/Projects/aws/stack-aws1
 git clone git@github.com:craighurley/stack-examples.git ~/Projects/aws/stack-examples
 git clone git@github.com:craighurley/stack-test.git ~/Projects/aws/stack-test
 git clone git@github.com:craighurley/stack-vps.git ~/Projects/aws/stack-vps
