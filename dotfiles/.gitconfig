@@ -9,7 +9,7 @@
 # name and email should be set in ~/.gitconfig.custom
 
 [commit]
-    template = ~/.gitmessage
+    # template = ~/.gitmessage
     gpgsign = false
 
 [pager]
