@@ -40,10 +40,10 @@ if [[ -f $(command -v aws_completer) ]] ; then
     complete -C "$(command -v aws_completer)" aws
 fi
 
-# jira tab completion
-if [[ -f $(command -v jira) ]] ; then
-    eval "$(jira --completion-script-bash)"
-fi
+# # jira tab completion
+# if [[ -f $(command -v jira) ]] ; then
+#     eval "$(jira --completion-script-bash)"
+# fi
 
 # configure the prompt after other items have been setup, but before pyenv and rbenv.
 if [[ -f ~/.bash_prompt ]] ; then
@@ -57,6 +57,7 @@ fi
 
 # python env
 if [[ -f /usr/local/bin/pyenv ]] ; then
+    eval "$(pyenv init --path)"
     eval "$(pyenv init -)"
 fi
 
@@ -76,10 +77,10 @@ if [ $? -ne 0 ] ; then
     launch_ssh_agent
 fi
 
-#OktaAWSCLI
-if [[ -f "$HOME/.okta/bash_functions" ]]; then
-    . "$HOME/.okta/bash_functions"
-fi
-if [[ -d "$HOME/.okta/bin" && ":$PATH:" != *":$HOME/.okta/bin:"* ]]; then
-    PATH="$HOME/.okta/bin:$PATH"
-fi
+# #OktaAWSCLI
+# if [[ -f "$HOME/.okta/bash_functions" ]]; then
+#     . "$HOME/.okta/bash_functions"
+# fi
+# if [[ -d "$HOME/.okta/bin" && ":$PATH:" != *":$HOME/.okta/bin:"* ]]; then
+#     PATH="$HOME/.okta/bin:$PATH"
+# fi
