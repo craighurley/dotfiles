@@ -46,7 +46,7 @@ brew install --cask visual-studio-code
 
 # install fonts
 brew install --cask font-hasklig
-# brew install --cask font-source-code-pro
+brew install --cask font-fira-code-nerd-font
 
 # cleanup unneeded files
 brew cleanup
