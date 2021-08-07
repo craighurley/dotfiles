@@ -91,6 +91,9 @@
     lga = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%C(yellow)%d %Creset%s %C(blue)%an %Cred%G? %GK\" --date=auto:human --graph --all --topo-order -${1:-15}; }; f"
     # focus log on specific user
     lw = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%C(yellow)%d %Creset%s %C(blue)%an %Cred%G? %GK\" --date=auto:human --author=${1:-Craig}; }; f"
+    # search history for string
+    searchfor = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%C(yellow)%d %Creset%s %C(blue)%an <%ae> %Cred%G? %GK\" --date=auto:human -p --source --all -S ${1}; }; f"
+    searchforr = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%C(yellow)%d %Creset%s %C(blue)%an <%ae> %Cred%G? %GK\" --date=auto:human --reverse -p --source --all -S ${1}; }; f"
     # short log (good for summarising changes)
     sl = "!f() { git shortlog --no-merges -${1:-15}; }; f"
     # reflog for current branch (useful for getting the parent commit)

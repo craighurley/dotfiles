@@ -52,4 +52,5 @@ if [[ -d /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/ ]]
 fi
 
 # golang
-export GODEBUG=asyncpreemptoff=1
+# avoid issues with m1/rosetta
+#export GODEBUG=asyncpreemptoff=1
