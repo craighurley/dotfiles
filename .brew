@@ -12,7 +12,6 @@ brew upgrade
 # install applications
 brew install    aspell \
                 bash \
-                cfn-format \
                 confd \
                 direnv \
                 git \
