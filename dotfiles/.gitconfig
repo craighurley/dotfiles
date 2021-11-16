@@ -4,6 +4,8 @@
     attributesfile = ~/.gitattributes
     pager = cat
     abbrev = 7
+	quotePath = false
+	commitGraph = true
 
 # [user]
 # name and email should be set in ~/.gitconfig.custom
@@ -158,3 +160,7 @@
 
 [include]
     path = ~/.gitconfig.custom
+[receive]
+	advertisePushOptions = true
+[gc]
+	writeCommitGraph = true
