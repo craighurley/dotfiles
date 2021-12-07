@@ -7,6 +7,7 @@ user_pref("browser.showQuitWarning", true);
 user_pref("browser.tabs.tabClipWidth", 1);
 user_pref("browser.urlbar.openViewOnFocus", false);
 user_pref("browser.warnOnQuit", true);
+user_pref("browser.zoom.siteSpecific", false);
 user_pref("datareporting.healthreport.service.enabled", false);
 user_pref("datareporting.healthreport.uploadEnabled", false);
 user_pref("devtools.webconsole.persistlog", true);
