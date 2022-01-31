@@ -16,6 +16,12 @@ A collection of scripts to bootstrap a clean install of macOS.
     xcode-select --install
     ```
 
+1. If this is an Apple silicon machine, install Rosetta:
+
+    ```sh
+    softwareupdate --install-rosetta
+    ```
+
 1. Clone this repository by running the following commands:
 
     ```sh
