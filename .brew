@@ -13,17 +13,14 @@ brew upgrade
 brew install    age \
                 aspell \
                 bash \
-                confd \
                 dog \
                 direnv \
                 git \
                 git-secrets \
-                gpg \
-                hugo \
                 jq \
-                k6 \
                 libyaml \
                 mas \
+                minisign \
                 modd \
                 openssl \
                 pstree \
@@ -75,8 +72,6 @@ brew install    coreutils \
 # install completion files
 brew install    bash-completion \
                 bundler-completion \
-                docker-completion \
-                docker-compose-completion \
                 gem-completion \
                 pip-completion \
                 ruby-completion \
