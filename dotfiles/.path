@@ -1,6 +1,8 @@
-# brew installs to sbin and bin
-[[ -d $(brew --prefix)/sbin ]] && PATH="$PATH:$(brew --prefix)/sbin"
-[[ -d $(brew --prefix)/bin ]] && PATH="$PATH:$(brew --prefix)/bin"
+# Add brew (new and old) paths
+[[ -d /opt/homebrew/bin ]] && PATH="$PATH:/opt/homebrew/bin"
+[[ -d /opt/homebrew/sbin ]] && PATH="$PATH:/opt/homebrew/sbin"
+[[ -d /usr/local/bin ]] && PATH="$PATH:/usr/local/bin"
+[[ -d /usr/local/sbin ]] && PATH="$PATH:/usr/local/sbin"
 
 # custom scripts and binaries
 [[ -d "$HOME/.scripts" ]] && PATH="$PATH:$HOME/.scripts"
