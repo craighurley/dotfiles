@@ -72,9 +72,6 @@
     smudge = git-lfs smudge %f
     required = true
 
-[gpg]
-    program = /usr/local/bin/gpg
-
 [alias]
     # logging
     l = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad %Creset%s %C(blue)%an <%ae> %Cred%G? %GK\" --date=auto:human --no-merges -${1:-15}; }; f"
