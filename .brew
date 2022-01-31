@@ -29,8 +29,6 @@ brew install    age \
                 pstree \
                 pyenv \
                 pyenv-virtualenv \
-                rbenv \
-                rbenv-bundler \
                 readline \
                 rename \
                 ruby-build \
