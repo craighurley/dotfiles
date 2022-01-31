@@ -1,5 +1,6 @@
-# brew can install to /usr/local/sbin/
-[[ -d /usr/local/sbin ]] && PATH="$PATH:/usr/local/sbin"
+# brew installs to sbin and bin
+[[ -d $(brew --prefix)/sbin ]] && PATH="$PATH:$(brew --prefix)/sbin"
+[[ -d $(brew --prefix)/bin ]] && PATH="$PATH:$(brew --prefix)/bin"
 
 # custom scripts and binaries
 [[ -d "$HOME/.scripts" ]] && PATH="$PATH:$HOME/.scripts"
@@ -11,18 +12,18 @@
 # jmeter
 [[ -d "$HOME/Applications/apache-jmeter/bin" ]] && PATH="$HOME/Applications/apache-jmeter/bin:$PATH"
 
-# Path to git diff utility.  Add the following to ~/.gitconfig
+# Path to git diff utility.  Add the following to ~/.gitconfig - TODO: remove
 # [pager]
 #     log = diff-highlight | less
 #     show = diff-highlight | less
 #     diff = diff-highlight | less
-[[ -d /usr/local/opt/git/share/git-core/contrib/diff-highlight ]] && PATH="/usr/local/opt/git/share/git-core/contrib/diff-highlight:$PATH"
+[[ -d $(brew --prefix)/opt/git/share/git-core/contrib/diff-highlight ]] && PATH="$(brew --prefix)/opt/git/share/git-core/contrib/diff-highlight:$PATH"
 
 # openssl
-[[ -d /usr/local/opt/openssl/bin ]] && PATH="/usr/local/opt/openssl/bin:$PATH"
+[[ -d $(brew --prefix)/opt/openssl/bin ]] && PATH="$(brew --prefix)/opt/openssl/bin:$PATH"
 
 # gnu
-[[ -d /usr/local/opt/gnu-sed/libexec/gnubin ]] && PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
-[[ -d /usr/local/opt/gnu-tar/libexec/gnubin ]] && PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH"
+[[ -d $(brew --prefix)/opt/gnu-sed/libexec/gnubin ]] && PATH="$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$PATH"
+[[ -d $(brew --prefix)/opt/gnu-tar/libexec/gnubin ]] && PATH="$(brew --prefix)/opt/gnu-tar/libexec/gnubin:$PATH"
 
 export PATH

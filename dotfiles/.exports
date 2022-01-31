@@ -32,9 +32,9 @@ if [[ -d $HOME/Applications/Oracle/instaclient ]] ; then
 fi
 
 # openssl
-if [[ -d /usr/local/opt/openssl/bin ]] ; then
-    export LDFLAGS="-L/usr/local/opt/openssl/lib"
-    export CPPFLAGS="-I/usr/local/opt/openssl/include"
+if [[ -d $(brew --prefix)/opt/openssl/bin ]] ; then
+    export LDFLAGS="-L$(brew --prefix)/opt/openssl/lib"
+    export CPPFLAGS="-I$(brew --prefix)/opt/openssl/include"
 fi
 
 # gpg

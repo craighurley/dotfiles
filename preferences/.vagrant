@@ -4,7 +4,7 @@
 # vagrant
 ###############################################################################
 
-if [[ -f /usr/local/bin/vagrant ]] ; then
+if [[ -f "$(brew --prefix)"/bin/vagrant ]] ; then
     # /usr/bin/vagrant plugin install vagrant-hostmanager
-    /usr/local/bin/vagrant plugin install vagrant-vbguest
+    "$(brew --prefix)"/bin/vagrant plugin install vagrant-vbguest
 fi

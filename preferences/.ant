@@ -5,8 +5,8 @@
 ###############################################################################
 
 _ant=$(type -P ant)
-_antcontribpath=/usr/local/opt/ant-contrib/share/ant
-_antcontribjar=$(ls $_antcontribpath)
+_antcontribpath=$(brew --prefix)/opt/ant-contrib/share/ant
+_antcontribjar=$(ls "$_antcontribpath")
 _antcontrib=$_antcontribpath/$_antcontribjar
 
 # check for ant

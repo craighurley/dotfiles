@@ -19,7 +19,7 @@ if shopt | grep -q globstar ; then
     shopt -s globstar
 fi
 
-export SHELL=/usr/local/bin/bash
+export SHELL=$(brew --prefix)/bin/bash
 
 # Add tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail NotificationCenter Safari iTunes SystemUIServer Terminal" killall
@@ -51,12 +51,12 @@ if [[ -f ~/.bash_prompt ]] ; then
 fi
 
 # ruby env
-if [[ -f /usr/local/bin/rbenv ]] ; then
+if [[ -f $(brew --prefix)/bin/rbenv ]] ; then
     eval "$(rbenv init -)"
 fi
 
 # python env
-if [[ -f /usr/local/bin/pyenv ]] ; then
+if [[ -f $(brew --prefix)/bin/pyenv ]] ; then
     eval "$(pyenv init --path)"
     eval "$(pyenv init -)"
 fi
