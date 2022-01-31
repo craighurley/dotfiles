@@ -31,9 +31,6 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.serve
 # General UI/UX
 ###############################################################################
 
-# Menu bar: show remaining battery as a percentage
-defaults write com.apple.menuextra.battery ShowPercent -string "YES"
-
 # Scrollbars: Possible values: `WhenScrolling`, `Automatic` and `Always`
 defaults write NSGlobalDomain AppleShowScrollBars -string "WhenScrolling"
 
