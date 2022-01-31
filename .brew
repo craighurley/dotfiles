@@ -28,7 +28,6 @@ brew install    age \
                 pyenv-virtualenv \
                 readline \
                 rename \
-                ruby-build \
                 saml2aws \
                 shellcheck \
                 sqlite3 \
