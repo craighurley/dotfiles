@@ -76,7 +76,7 @@ function launch_ssh_agent() {
     # load public keys
     for I in $HOME/.ssh/*.pub ; do
         echo adding ${I/.pub/}
-        ssh-add -K ${I/.pub/}
+        ssh-add --apple-use-keychain ${I/.pub/}
     done
 }
 
