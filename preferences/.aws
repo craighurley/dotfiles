@@ -17,6 +17,7 @@ region = eu-west-1
 output = json
 region = eu-west-1
 EOF
+    chmod 600 ~/.aws/config
 fi
 
 if [[ ! -f ~/.aws/credentials ]] ; then
@@ -29,6 +30,10 @@ aws_secret_access_key = TODO
 aws_access_key_id = TODO
 aws_secret_access_key = TODO
 EOF
+    chmod 600 ~/.aws/credentials
 fi
 
-chmod 600 ~/.aws/*
+if [[ ! -f ~/.saml2aws ]] ; then
+    touch ~/.saml2aws
+    chmod 600 ~/.saml2aws
+fi

@@ -84,19 +84,27 @@ A collection of scripts to bootstrap a clean install of macOS.
 
 1. Import Terminal config.
 1. Import iTerm config.
-1. Import gpg keys.
 1. Import ssh keys.
-1. Update exports in the `~/.extra` file:
-    - homebrew
-1. Update `~/.gitconfig.custom` and any additional custom configurations:
+1. Update details:
+    - `~/.ssh/config`.
+    - `~/.ssh/authorized_keys`.
+    - `~/.gitconfig.custom` and any additional custom configurations.
+    - `~/.extra`.
+    - `~/.pypirc`.
+    - `~/.aws/config`.
+    - `~/.aws/credentials`.
+    - `~/.saml2aws`.
 1. Sign into Firefox account to sync settings.
+1. Sign into Chrome account to sync settings.
 1. Sign into GitHub in VS Code to sync settings.
-1. Download binary apps:
-    - https://github.com/awslabs/aws-cloudformation-template-formatter/releases/
+1. Download/install binary apps:
+    - https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+    - https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-working-with-install-plugin.html
+    - https://www.terraform.io/downloads.html
     - https://github.com/go-task/task/releases
+    - https://github.com/awslabs/aws-cloudformation-template-formatter/releases/
     - https://github.com/hashicorp/go-getter/releases/
     - https://taskfalcon.org/index.html
-    - https://www.terraform.io/downloads.html
 
 ## Update
 
