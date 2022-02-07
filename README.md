@@ -26,7 +26,7 @@ A collection of scripts to bootstrap a clean install of macOS.
 
     ```sh
     mkdir ~/Projects
-    git clone https://github.com/craighurley/dotfiles.git ~/Projects/dotfiles
+    git clone git@github.com:craighurley/dotfiles.git ~/Projects/dotfiles
     ```
 
 1. Install homebrew by running the following command:
