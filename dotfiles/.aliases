@@ -60,6 +60,7 @@ alias blockdiag='docker run --rm -it -v $PWD:/workdir craighurley/diagrams block
 #alias cfn-flip='docker run --rm -v $PWD:/workdir craighurley/cfn-flip'
 alias diagrams='docker run --rm -it -v $PWD:/workdir craighurley/diagrams diagrams'
 alias ipcalc='docker run --rm -it craighurley/ipcalc'
+alias mmdc='docker run --rm -it -v $PWD:/workdir minlag/mermaid-cli'
 alias nc='docker run --rm -it craighurley/netcat -vz -w5'
 alias nmap='docker run --rm -it craighurley/nmap -n -Pn'
 alias node='docker run --rm -it -v $PWD:/workdir craighurley/node'

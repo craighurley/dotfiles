@@ -26,6 +26,7 @@ docker pull craighurley/sceptre
 # tools containers
 docker pull docker.pkg.github.com/disneystreaming/ssm-helpers/ssm-run
 docker pull docker.pkg.github.com/disneystreaming/ssm-helpers/ssm-session
+docker pull minlag/mermaid-cli
 docker pull restic/restic
 
 # Finished
