@@ -22,12 +22,14 @@ A collection of scripts to bootstrap a clean install of macOS.
     softwareupdate --install-rosetta
     ```
 
-1. Clone this repository by running the following commands:
+1. Clone this repository by running the following command:
 
     ```sh
     mkdir ~/Projects
-    git clone git@github.com:craighurley/dotfiles.git ~/Projects/dotfiles
+    git clone https://github.com/craighurley/dotfiles.git ~/Projects/dotfiles1
     ```
+
+    Note: after you setup your SSH keys, consider updating the `origin` to `git@github.com:craighurley/dotfiles.git`.
 
 1. Install homebrew by running the following command:
 
