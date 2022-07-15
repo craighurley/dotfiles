@@ -15,8 +15,6 @@ APPS=(
     411643860   # DaisyDisk
     425424353   # The Unarchiver
     441258766   # Magnet
-    485812721   # TweetDeck
-    506189836   # Harvest
     803453959   # Slack
     865500966   # feedly
     904280696   # Things3
@@ -25,6 +23,7 @@ APPS=(
 # Applications not needed immediately
 #824171161   # Affinity Designer
 #824183456   # Affinity Photo
+#506189836   # Harvest
 #775737590   # iA Writer
 #405399194   # Kindle
 
