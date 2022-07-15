@@ -19,7 +19,7 @@ A collection of scripts to bootstrap a clean install of macOS.
 1. If this is an Apple silicon machine, install Rosetta:
 
     ```sh
-    softwareupdate --install-rosetta
+    softwareupdate --install-rosetta --agree-to-license
     ```
 
 1. Clone this repository by running the following command:
