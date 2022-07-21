@@ -13,8 +13,10 @@ brew upgrade
 brew install    age \
                 aspell \
                 bash \
-                dog \
+                cirruslabs/cli/cirrus \
+                cirruslabs/cli/tart \
                 direnv \
+                dog \
                 git \
                 git-secrets \
                 hurl \
@@ -54,7 +56,6 @@ brew install    age \
 # hexyl
 # iperf3
 # iproute2mac
-# jq
 # jsonpp
 # moreutils
 # parallel
