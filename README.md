@@ -103,7 +103,6 @@ A collection of scripts to bootstrap a clean install of macOS.
     - https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
     - https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-working-with-install-plugin.html
     - https://www.terraform.io/downloads.html
-    - https://github.com/go-task/task/releases
     - https://github.com/awslabs/aws-cloudformation-template-formatter/releases/
     - https://github.com/hashicorp/go-getter/releases/
     - https://taskfalcon.org/index.html
