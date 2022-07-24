@@ -50,10 +50,10 @@ if [[ -f ~/.bash_prompt ]] ; then
     source ~/.bash_prompt
 fi
 
-# ruby env
-if [[ -f $(brew --prefix)/bin/rbenv ]] ; then
-    eval "$(rbenv init -)"
-fi
+# # ruby env
+# if [[ -f $(brew --prefix)/bin/rbenv ]] ; then
+#     eval "$(rbenv init -)"
+# fi
 
 # python env
 if [[ -f $(brew --prefix)/bin/pyenv ]] ; then
