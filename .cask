@@ -16,10 +16,12 @@ brew tap homebrew/cask-fonts
 brew install --cask appcleaner
 brew install --cask authy
 brew install --cask firefox --language=en-GB
-brew install --cask google-chrome
 brew install --cask iterm2
 brew install --cask keepassxc
 brew install --cask visual-studio-code
+
+# install unsigned applications
+HOMEBREW_CASK_OPTS="" brew install --cask google-chrome
 
 # applications that are not immediately needed
 # brew install --cask 1password
