@@ -19,6 +19,7 @@ brew install    age \
                 dog \
                 git \
                 git-secrets \
+                go-task/tap/go-task \
                 hurl \
                 jq \
                 libyaml \
