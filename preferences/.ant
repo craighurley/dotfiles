@@ -5,12 +5,13 @@
 ###############################################################################
 
 _ant=$(type -P ant)
-_antcontribpath=$(brew --prefix)/opt/ant-contrib/share/ant
-_antcontribjar=$(ls "$_antcontribpath")
-_antcontrib=$_antcontribpath/$_antcontribjar
 
 # check for ant
 if [[ -f "$_ant" ]] ; then
+    _antcontribpath=$(brew --prefix)/opt/ant-contrib/share/ant
+    _antcontribjar=$(ls "$_antcontribpath")
+    _antcontrib=$_antcontribpath/$_antcontribjar
+
     # check if antcontrib exists
     if [[ -f "$_antcontrib" ]] ; then
         # get the ant lib dir
