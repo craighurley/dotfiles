@@ -26,7 +26,7 @@ A collection of scripts to bootstrap a clean install of macOS.
 
     ```sh
     mkdir ~/Projects
-    git clone https://github.com/craighurley/dotfiles.git ~/Projects/dotfiles1
+    git clone https://github.com/craighurley/dotfiles.git ~/Projects/dotfiles
     ```
 
     Note: after you setup your SSH keys, consider updating the `origin` to `git@github.com:craighurley/dotfiles.git`.
