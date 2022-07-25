@@ -5,6 +5,7 @@ echo "$(basename "$0") starting."
 
 # docker
 if [[ -f $(command -v docker) ]] ; then
+    echo "Pulling docker images"
     # base containers
     docker pull alpine:3.16
     docker pull node:lts-alpine3.16
@@ -30,6 +31,7 @@ fi
 
 # tart
 if [[ -f $(command -v tart) ]] ; then
+    echo "Pulling tart images"
     tart clone ghcr.io/cirruslabs/macos-monterey-base:latest monterey-base
 fi
 
