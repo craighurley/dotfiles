@@ -45,6 +45,7 @@ HOMEBREW_CASK_OPTS="" brew install --cask google-chrome
 # brew install --cask virtualbox
 # brew install --cask virtualbox-extension-pack
 # brew install --cask wireshark
+# brew install --cask zoom
 
 # install fonts
 brew install --cask font-hasklig
