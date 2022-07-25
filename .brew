@@ -34,7 +34,6 @@ brew install    age \
                 rename \
                 saml2aws \
                 shellcheck \
-                sqlite3 \
                 tmux \
                 tree \
                 vim \
@@ -73,13 +72,13 @@ brew install    coreutils \
 
 # install completion files
 brew install    bash-completion \
-                bundler-completion \
                 gem-completion \
                 pip-completion \
-                ruby-completion \
                 tmuxinator-completion
 
 # completion files not needed immediately
+# brew install bundler-completion
+# brew install ruby-completion
 # brew install vagrant-completion
 
 # cleanup unneeded files
