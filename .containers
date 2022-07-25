@@ -8,9 +8,10 @@ if [[ -f $(command -v docker) ]] ; then
     echo "Pulling docker images"
     # base containers
     docker pull alpine:3.16
+    docker pull golang:1-alpine3.16
     docker pull node:lts-alpine3.16
     docker pull python:3.9-alpine3.16
-    docker pull golang:1-alpine3.16
+    docker pull ruby:3-alpine3.16
     docker pull amazonlinux:2
     # docker pull centos:8
     # docker pull openjdk:13-alpine
