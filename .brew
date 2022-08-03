@@ -36,6 +36,7 @@ brew install    age \
                 shellcheck \
                 tmux \
                 tree \
+                turbot/tap/steampipe \
                 vim \
                 watch \
                 wget \

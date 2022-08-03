@@ -55,3 +55,7 @@ fi
 # golang
 # avoid issues with m1/rosetta
 #export GODEBUG=asyncpreemptoff=1
+
+# steampipe
+export STEAMPIPE_TELEMETRY=none
+export STEAMPIPE_UPDATE_CHECK=false
