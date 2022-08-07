@@ -13,6 +13,7 @@ if [[ -f $(command -v docker) ]] ; then
     docker pull python:3.9-alpine3.16
     docker pull ruby:3-alpine3.16
     docker pull amazonlinux:2
+    docker pull rockylinux:9
     # docker pull centos:8
     # docker pull openjdk:13-alpine
 
