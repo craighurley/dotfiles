@@ -120,18 +120,20 @@ function upgrade() {
 
     if [[ $(command -v pip) ]] ; then
         echo -e "\n${YELLOW}>>> Upgrading pip...${RESET}"
+        pip install -U pip
         pip list --outdated | awk 'NR>2' | cut -d' ' -f1 | xargs pip install --upgrade
     fi
 
-    if [[ $(command -v gem) ]] ; then
-        echo -e "\n${YELLOW}>>> Upgrading gems...${RESET}"
-        gem update `gem outdated | cut -d ' ' -f 1`
-    fi
+    # if [[ $(command -v gem) ]] ; then
+    #     echo -e "\n${YELLOW}>>> Upgrading gems...${RESET}"
+    #     # shellcheck disable=SC2046
+    #     gem update $(gem outdated | cut -d ' ' -f 1)
+    # fi
 
-    if [[ $(command -v vagrant) ]] ; then
-        echo -e "\n${YELLOW}>>> Upgrading vagrant plugins...${RESET}"
-        vagrant plugin update
-    fi
+    # if [[ $(command -v vagrant) ]] ; then
+    #     echo -e "\n${YELLOW}>>> Upgrading vagrant plugins...${RESET}"
+    #     vagrant plugin update
+    # fi
 
     if [[ $(command -v mas) ]] ; then
         echo -e "\n${YELLOW}>>> Outdated apps from App Store...${RESET}"
