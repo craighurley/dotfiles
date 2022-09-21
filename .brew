@@ -20,6 +20,7 @@ brew install    age \
                 git \
                 git-secrets \
                 go-task/tap/go-task \
+                hashicorp/tap/packer \
                 hurl \
                 jq \
                 libyaml \
