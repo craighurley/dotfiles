@@ -22,6 +22,7 @@ APPS=(
 )
 
 # Applications not needed immediately
+#1295203466  # Microsoft Remote Desktop
 #405399194   # Kindle
 #506189836   # Harvest
 #775737590   # iA Writer
