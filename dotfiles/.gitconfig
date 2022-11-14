@@ -74,29 +74,29 @@
 
 [alias]
     # logging
-    l = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad %Creset%s %C(blue)%an <%ae>\" --date=auto:human --no-merges -${1:-15}; }; f"
-    lm = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad %Creset%s %C(blue)%an\" --date=auto:human --merges -${1:-15}; }; f"
-    la = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%C(yellow)%d %Creset%s %C(blue)%an <%ae>\" --date=auto:human -${1:-15}; }; f"
-    lc = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad %C(blue)%an <%ae> %Creset%B\" --date=auto:human --no-merges -${1:-15}; }; f"
+    l = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad %Creset%s %C(blue)%an <%ae>\" --date=auto:local --no-merges -${1:-15}; }; f"
+    lm = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad %Creset%s %C(blue)%an\" --date=auto:local --merges -${1:-15}; }; f"
+    la = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%C(yellow)%d %Creset%s %C(blue)%an <%ae>\" --date=auto:local -${1:-15}; }; f"
+    lc = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad %C(blue)%an <%ae> %Creset%B\" --date=auto:local --no-merges -${1:-15}; }; f"
     # show with pretty print
-    shop = "!f() { git show --pretty=format:\"%Cred%h %Cgreen%ad %Creset%s %C(blue)%an <%ae>\" --date=auto:human ${1}; }; f"
+    shop = "!f() { git show --pretty=format:\"%Cred%h %Cgreen%ad %Creset%s %C(blue)%an <%ae>\" --date=auto:local ${1}; }; f"
     # diff
-    ld = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad %Creset%s %C(blue)%an <%ae>\" --date=auto:human --no-merges -p -${1:-15}; }; f"
+    ld = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad %Creset%s %C(blue)%an <%ae>\" --date=auto:local --no-merges -p -${1:-15}; }; f"
     # what files changed
-    lf = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%C(yellow)%d %Creset%s %C(blue)%an\" --date=auto:human --no-merges --decorate --numstat -${1:-15}; }; f"
+    lf = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%C(yellow)%d %Creset%s %C(blue)%an\" --date=auto:local --no-merges --decorate --numstat -${1:-15}; }; f"
     # graph everything to the current commit
-    lg = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%C(yellow)%d %Creset%s %C(blue)%an\" --date=auto:human --graph -${1:-15}; }; f"
+    lg = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%C(yellow)%d %Creset%s %C(blue)%an\" --date=auto:local --graph -${1:-15}; }; f"
     # graph across all branches to the most recent
-    lga = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%C(yellow)%d %Creset%s %C(blue)%an\" --date=auto:human --graph --all --topo-order -${1:-15}; }; f"
+    lga = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%C(yellow)%d %Creset%s %C(blue)%an\" --date=auto:local --graph --all --topo-order -${1:-15}; }; f"
     # focus log on specific user
-    lw = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%C(yellow)%d %Creset%s %C(blue)%an\" --date=auto:human --author=${1:-Craig}; }; f"
+    lw = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%C(yellow)%d %Creset%s %C(blue)%an\" --date=auto:local --author=${1:-Craig}; }; f"
     # search history for string
-    searchfor = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%C(yellow)%d %Creset%s %C(blue)%an <%ae>\" --date=auto:human -p --source --all -S ${1}; }; f"
-    searchforr = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%C(yellow)%d %Creset%s %C(blue)%an <%ae>\" --date=auto:human --reverse -p --source --all -S ${1}; }; f"
+    searchfor = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%C(yellow)%d %Creset%s %C(blue)%an <%ae>\" --date=auto:local -p --source --all -S ${1}; }; f"
+    searchforr = "!f() { git log --pretty=format:\"%Cred%h %Cgreen%ad%C(yellow)%d %Creset%s %C(blue)%an <%ae>\" --date=auto:local --reverse -p --source --all -S ${1}; }; f"
     # short log (good for summarising changes)
     sl = "!f() { git shortlog --no-merges -${1:-15}; }; f"
     # reflog for current branch (useful for getting the parent commit)
-    rl = "!f() { git reflog show $(git rev-parse --abbrev-ref HEAD) --pretty=format:\"%Cred%h %Cgreen%cd%C(yellow)%d %Creset%gs\" --date=auto:human; }; f"
+    rl = "!f() { git reflog show $(git rev-parse --abbrev-ref HEAD) --pretty=format:\"%Cred%h %Cgreen%cd%C(yellow)%d %Creset%gs\" --date=auto:local; }; f"
     who = blame
 
     # list all files
