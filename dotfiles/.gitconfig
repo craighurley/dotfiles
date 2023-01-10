@@ -10,6 +10,14 @@
 # [user]
 # name and email should be set in ~/.gitconfig.custom
 
+[receive]
+    advertisePushOptions = true
+[gc]
+    writeCommitGraph = true
+
+[url "git@github.com:"]
+    insteadOf = https://github.com/
+
 [commit]
     # template = ~/.gitmessage
     gpgsign = false
@@ -158,7 +166,3 @@
 
 [include]
     path = ~/.gitconfig.custom
-[receive]
-	advertisePushOptions = true
-[gc]
-	writeCommitGraph = true
