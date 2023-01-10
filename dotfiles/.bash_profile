@@ -84,3 +84,5 @@ fi
 # if [[ -d "$HOME/.okta/bin" && ":$PATH:" != *":$HOME/.okta/bin:"* ]]; then
 #     PATH="$PATH:$HOME/.okta/bin"
 # fi
+
+source /Users/hurley/.docker/init-bash.sh || true # Added by Docker Desktop
