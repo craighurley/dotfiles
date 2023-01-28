@@ -15,15 +15,15 @@ fi
 # jmeter
 [[ -d "$HOME/Applications/apache-jmeter/bin" ]] && PATH="$PATH:$HOME/Applications/apache-jmeter/bin"
 
-# Path to git diff utility.  Add the following to ~/.gitconfig - TODO: remove
+# Path to git diff utility.  Add the following to ~/.gitconfig
 # [pager]
 #     log = diff-highlight | less
 #     show = diff-highlight | less
 #     diff = diff-highlight | less
 [[ -d $(brew --prefix)/opt/git/share/git-core/contrib/diff-highlight ]] && PATH="$PATH:$(brew --prefix)/opt/git/share/git-core/contrib/diff-highlight"
 
-# openssl: before default $PATH
-[[ -d $(brew --prefix)/opt/openssl/bin ]] && PATH="$(brew --prefix)/opt/openssl/bin:$PATH"
+# # openssl: before default $PATH
+# [[ -d $(brew --prefix)/opt/openssl/bin ]] && PATH="$(brew --prefix)/opt/openssl/bin:$PATH"
 
 # gnu: before default $PATH
 [[ -d $(brew --prefix)/opt/gnu-sed/libexec/gnubin ]] && PATH="$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$PATH"

@@ -32,11 +32,11 @@ if [[ -d $HOME/Applications/Oracle/instaclient ]] ; then
     export DYLD_LIBRARY_PATH=$HOME/Applications/Oracle/instaclient
 fi
 
-# openssl
-if [[ -d $(brew --prefix)/opt/openssl/bin ]] ; then
-    export LDFLAGS="-L$(brew --prefix)/opt/openssl/lib"
-    export CPPFLAGS="-I$(brew --prefix)/opt/openssl/include"
-fi
+# # openssl
+# if [[ -d $(brew --prefix)/opt/openssl/bin ]] ; then
+#     export LDFLAGS="-L$(brew --prefix)/opt/openssl/lib"
+#     export CPPFLAGS="-I$(brew --prefix)/opt/openssl/include"
+# fi
 
 # gpg
 export GPG_TTY=$(tty)

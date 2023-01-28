@@ -17,17 +17,14 @@ brew install    age \
                 cirruslabs/cli/tart \
                 direnv \
                 dog \
-                git \
                 git-secrets \
                 go-task/tap/go-task \
                 hashicorp/tap/packer \
                 hurl \
                 jq \
-                libyaml \
                 mas \
                 minisign \
                 modd \
-                openssl \
                 pstree \
                 pyenv \
                 pyenv-virtualenv \
@@ -35,15 +32,12 @@ brew install    age \
                 rename \
                 saml2aws \
                 shellcheck \
-                tmux \
                 tree \
                 turbot/tap/steampipe \
-                vim \
                 watch \
                 wget \
                 xz \
-                yq \
-                zlib
+                yq
 
 # applications that are not immediately needed
 # ack
@@ -63,6 +57,7 @@ brew install    age \
 # parallel
 # rpm
 # tcptraceroute
+# tmux
 
 # issues with installer
 # unrar
@@ -73,15 +68,15 @@ brew install    coreutils \
                 gnu-tar
 
 # install completion files
-brew install    bash-completion \
-                gem-completion \
+brew install    bash-completion@2 \
                 pip-completion \
-                tmuxinator-completion
 
 # completion files not needed immediately
-# brew install bundler-completion
-# brew install ruby-completion
 # brew install vagrant-completion
+# brew install tmuxinator-completion
+# brew install ruby-completion
+# brew install gem-completion
+# brew install bundler-completion
 
 # cleanup unneeded files
 brew cleanup
