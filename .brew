@@ -17,6 +17,7 @@ brew install    age \
                 cirruslabs/cli/tart \
                 direnv \
                 dog \
+                git \
                 git-secrets \
                 go-task/tap/go-task \
                 hashicorp/tap/packer \
@@ -68,7 +69,7 @@ brew install    coreutils \
                 gnu-tar
 
 # install completion files
-brew install    bash-completion@2 \
+brew install    bash-completion \
                 pip-completion \
 
 # completion files not needed immediately
