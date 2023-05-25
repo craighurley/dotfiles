@@ -16,8 +16,8 @@ brew install    age \
                 cirruslabs/cli/cirrus \
                 cirruslabs/cli/tart \
                 direnv \
+                diffr \
                 dog \
-                git \
                 git-secrets \
                 go-task/tap/go-task \
                 hashicorp/tap/packer \

@@ -2,10 +2,13 @@
     editor = vim
     excludesfile = ~/.gitignore_global
     attributesfile = ~/.gitattributes
-    pager = cat
+    pager = diffr | less -R
     abbrev = 7
 	quotePath = false
 	commitGraph = true
+
+[interactive]
+    diffFilter = diffr
 
 # [user]
 # name and email should be set in ~/.gitconfig.custom
@@ -22,10 +25,10 @@
     # template = ~/.gitmessage
     gpgsign = false
 
-[pager]
-    log = diff-highlight | less -+S
-    show = diff-highlight | less -+S
-    diff = diff-highlight | less -+S
+# [pager]
+#     log = diff-highlight | less -+S
+#     show = diff-highlight | less -+S
+#     diff = diff-highlight | less -+S
 
 [status]
     showUntrackedFiles = all

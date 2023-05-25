@@ -20,7 +20,7 @@ fi
 #     log = diff-highlight | less
 #     show = diff-highlight | less
 #     diff = diff-highlight | less
-[[ -d $(brew --prefix)/opt/git/share/git-core/contrib/diff-highlight ]] && PATH="$PATH:$(brew --prefix)/opt/git/share/git-core/contrib/diff-highlight"
+# [[ -d $(brew --prefix)/opt/git/share/git-core/contrib/diff-highlight ]] && PATH="$PATH:$(brew --prefix)/opt/git/share/git-core/contrib/diff-highlight"
 
 # # openssl: before default $PATH
 # [[ -d $(brew --prefix)/opt/openssl/bin ]] && PATH="$(brew --prefix)/opt/openssl/bin:$PATH"
