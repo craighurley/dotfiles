@@ -26,7 +26,7 @@ fi
 # [[ -d $(brew --prefix)/opt/openssl/bin ]] && PATH="$(brew --prefix)/opt/openssl/bin:$PATH"
 
 # gnu: before default $PATH
-[[ -d $(brew --prefix)/opt/gnu-sed/libexec/gnubin ]] && PATH="$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$PATH"
-[[ -d $(brew --prefix)/opt/gnu-tar/libexec/gnubin ]] && PATH="$(brew --prefix)/opt/gnu-tar/libexec/gnubin:$PATH"
+#[[ -d $(brew --prefix)/opt/gnu-sed/libexec/gnubin ]] && PATH="$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$PATH"
+#[[ -d $(brew --prefix)/opt/gnu-tar/libexec/gnubin ]] && PATH="$(brew --prefix)/opt/gnu-tar/libexec/gnubin:$PATH"
 
 export PATH
