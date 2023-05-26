@@ -1,3 +1,15 @@
+pathaddstart() {
+    if [ -d "$1" ] && [[ ":$PATH:" != *":$1:"* ]]; then
+        PATH="$1${PATH:+":$PATH"}"
+    fi
+}
+
+pathaddend() {
+    if [ -d "$1" ] && [[ ":$PATH:" != *":$1:"* ]]; then
+        PATH="${PATH:+"$PATH:"}$1"
+    fi
+}
+
 # Add brew paths and exports
 if [[ -d "/opt/homebrew/bin/" ]] ; then
     eval "$(/opt/homebrew/bin/brew shellenv)"
@@ -6,27 +18,27 @@ elif [[ -d "/usr/local/bin/" ]] ; then
 fi
 
 # custom scripts and binaries
-[[ -d "$HOME/.scripts" ]] && PATH="$PATH:$HOME/.scripts"
-[[ -d "$HOME/bin" ]] && PATH="$PATH:$HOME/bin"
+pathaddend "$HOME/.scripts"
+pathaddend "$HOME/bin"
 
 # oracle sqlplus
-[[ -d "$HOME/Applications/Oracle/instaclient" ]] && PATH="$PATH:$HOME/Applications/Oracle/instaclient"
+pathaddend "$HOME/Applications/Oracle/instaclient"
 
 # jmeter
-[[ -d "$HOME/Applications/apache-jmeter/bin" ]] && PATH="$PATH:$HOME/Applications/apache-jmeter/bin"
+pathaddend "$PATH:$HOME/Applications/apache-jmeter/bin"
 
 # Path to git diff utility.  Add the following to ~/.gitconfig
 # [pager]
 #     log = diff-highlight | less
 #     show = diff-highlight | less
 #     diff = diff-highlight | less
-# [[ -d $(brew --prefix)/opt/git/share/git-core/contrib/diff-highlight ]] && PATH="$PATH:$(brew --prefix)/opt/git/share/git-core/contrib/diff-highlight"
+# pathaddend "$PATH:$(brew --prefix)/opt/git/share/git-core/contrib/diff-highlight"
 
 # # openssl: before default $PATH
-# [[ -d $(brew --prefix)/opt/openssl/bin ]] && PATH="$(brew --prefix)/opt/openssl/bin:$PATH"
+# pathaddstart "$(brew --prefix)/opt/openssl/bin"
 
 # gnu: before default $PATH
-#[[ -d $(brew --prefix)/opt/gnu-sed/libexec/gnubin ]] && PATH="$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$PATH"
-#[[ -d $(brew --prefix)/opt/gnu-tar/libexec/gnubin ]] && PATH="$(brew --prefix)/opt/gnu-tar/libexec/gnubin:$PATH"
+# pathaddstart "$(brew --prefix)/opt/gnu-sed/libexec/gnubin"
+# pathaddstart "$(brew --prefix)/opt/gnu-tar/libexec/gnubin"
 
 export PATH
