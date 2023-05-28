@@ -10,7 +10,8 @@ sudo -v
 brew upgrade
 
 # install applications
-brew install    age \
+brew install    ack \
+                age \
                 aspell \
                 bash \
                 cirruslabs/cli/cirrus \
@@ -20,7 +21,6 @@ brew install    age \
                 dog \
                 git-secrets \
                 go-task/tap/go-task \
-                hashicorp/tap/packer \
                 hurl \
                 jq \
                 mas \
@@ -34,22 +34,17 @@ brew install    age \
                 saml2aws \
                 shellcheck \
                 tree \
-                turbot/tap/steampipe \
                 watch \
                 wget \
                 xz \
                 yq
 
 # applications that are not immediately needed
-# ack
-# ant
-# ant-contrib
 # cookiecutter
 # csvkit
 # entr
 # geckodriver
-# gradle
-# gradle-completion
+# hashicorp/tap/packer
 # hexyl
 # iperf3
 # iproute2mac
@@ -59,6 +54,7 @@ brew install    age \
 # rpm
 # tcptraceroute
 # tmux
+# turbot/tap/steampipe
 
 # issues with installer
 # unrar
