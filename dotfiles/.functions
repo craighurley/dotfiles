@@ -1,3 +1,17 @@
+# Check if path is already in PATH, if not, add it to the start of PATH
+pathaddstart() {
+    if [ -d "$1" ] && [[ ":$PATH:" != *":$1:"* ]]; then
+        PATH="$1${PATH:+":$PATH"}"
+    fi
+}
+
+# Check if path is already in PATH, if not, add it to the end of PATH
+pathaddend() {
+    if [ -d "$1" ] && [[ ":$PATH:" != *":$1:"* ]]; then
+        PATH="${PATH:+"$PATH:"}$1"
+    fi
+}
+
 # Cleanup
 function dsclean() {
     read -r -p "Delete all .DS_Stores in this directory and all subdirectories? (y/n) " -n 1
