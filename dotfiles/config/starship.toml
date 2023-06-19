@@ -1,0 +1,74 @@
+add_newline = true
+
+format = """
+$time\
+$shell\
+$git_branch\
+$git_commit\
+$git_state\
+$git_status\
+$python\
+$terraform\
+$aws\
+$directory\
+$line_break\
+$character"""
+
+[time]
+disabled = true
+time_format = '%T'
+style = "bright-black"
+format = "[$time]($style)|"
+
+[shell]
+disabled = false
+bash_indicator = 'b'
+zsh_indicator = 'z'
+unknown_indicator = '?'
+style = 'cyan bold'
+format = '[$indicator]($style)|'
+
+[git_branch]
+symbol = ''
+ignore_branches = []
+style = 'green'
+format = '[${symbol}$branch(:$remote_branch)]($style) '
+
+[git_commit]
+style = 'green'
+
+[git_status]
+disabled = false
+deleted = 'x'
+conflicted = '[⚑](bold red)'
+up_to_date = '[=](white)'
+style = 'red'
+format = '[$all_status$ahead_behind]($style)|'
+
+[python]
+disabled = false
+symbol = ''
+style = 'yellow'
+format = '[${symbol}($virtualenv)]($style)|'
+
+[aws]
+disabled = false
+symbol = ''
+style = 'red'
+format = '[${symbol}($profile )(${region})]($style)|'
+
+[directory]
+disabled = false
+read_only = ' 🔒'
+truncation_length = 0
+truncation_symbol = ''
+truncate_to_repo = false
+style = 'white'
+format= ' [$path]($style)[$read_only]($read_only_style)'
+
+[line_break]
+disabled = false
+
+[character]
+success_symbol = '[\$](white)'
+error_symbol = '[\$](bold red)'
