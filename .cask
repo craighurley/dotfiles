@@ -20,6 +20,7 @@ brew install --cask docker
 brew install --cask firefox --language=en-GB
 brew install --cask iterm2
 brew install --cask microsoft-teams
+brew install --cask remarkable
 brew install --cask visual-studio-code
 brew install --cask zoom
 

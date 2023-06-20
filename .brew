@@ -33,6 +33,7 @@ brew install    ack \
                 rename \
                 saml2aws \
                 shellcheck \
+                stow \
                 tree \
                 watch \
                 wget \

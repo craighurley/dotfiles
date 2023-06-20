@@ -7,34 +7,21 @@ echo "$(basename "$0") starting."
 if [[ -f $(command -v docker) ]] ; then
     echo "Pulling docker images"
     # base containers
-    docker pull alpine:3.16
-    docker pull golang:1-alpine3.16
-    docker pull node:lts-alpine3.16
-    docker pull python:3.9-alpine3.16
-    docker pull ruby:3-alpine3.16
-    docker pull amazonlinux:2
-    docker pull rockylinux:9
-    # docker pull centos:8
-    # docker pull openjdk:13-alpine
+    docker pull alpine:3.18
+    docker pull golang:1-alpine3.18
+    docker pull node:lts-alpine3.18
+    docker pull python:3.10-alpine3.18
 
     # personal containers
     docker pull craighurley/aws-mfa
     docker pull craighurley/aws-org-formation
     docker pull craighurley/sceptre
-    # docker pull craighurley/rsyslog
-    # docker pull craighurley/docker-weechat
-    # docker pull craighurley/docker-znc
-
-    # tools containers
-    # docker pull docker.pkg.github.com/disneystreaming/ssm-helpers/ssm-run
-    # docker pull docker.pkg.github.com/disneystreaming/ssm-helpers/ssm-session
-    # docker pull minlag/mermaid-cli
 fi
 
 # tart
 if [[ -f $(command -v tart) ]] ; then
     echo "Pulling tart images"
-    tart clone ghcr.io/cirruslabs/macos-monterey-base:latest monterey-base
+    tart pull ghcr.io/cirruslabs/macos-ventura-base:latest
 fi
 
 # Finished
