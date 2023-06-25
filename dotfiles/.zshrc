@@ -7,7 +7,7 @@ source ~/.functions
 source ~/.path
 source ~/.exports
 source ~/.aliases
-source ~/.extra
+[ -f "$HOME/.extra" ] && source "$HOME/.extra"
 
 # autocomplete and correct case
 autoload -Uz compinit && compinit
