@@ -15,6 +15,9 @@ autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 zstyle ':completion:*' insert-tab false
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+# zstyle ':completion:*' list-dirs-first true
+# zstyle ':completion:*:matches' group 'yes'
+# zstyle ':completion:*' group-name ''
 
 #
 # Options
@@ -36,6 +39,8 @@ setopt INC_APPEND_HISTORY
 #
 # Bindings
 #
+bindkey -e
+
 # Use already typed to search history
 bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward
