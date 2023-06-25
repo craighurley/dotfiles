@@ -32,18 +32,25 @@ format = '[$indicator]($style)|'
 symbol = ''
 ignore_branches = []
 style = 'green'
-format = '[${symbol}$branch(:$remote_branch)]($style) '
+format = '[${symbol}$branch(:$remote_branch)]($style)'
 
 [git_commit]
-style = 'green'
+style = 'red'
+format = '[$hash$tag]($style)'
+
+[git_state]
+style = 'white'
+format = ' [$state( $progress_current/$progress_total)]($style)'
 
 [git_status]
 disabled = false
-deleted = 'x'
 conflicted = '[⚑](bold red)'
+deleted = 'x'
+modified = '*'
+untracked = '%'
 up_to_date = '[=](white)'
 style = 'red'
-format = '[$all_status$ahead_behind]($style)|'
+format = ' [$all_status$ahead_behind]($style)|'
 
 [python]
 disabled = false
