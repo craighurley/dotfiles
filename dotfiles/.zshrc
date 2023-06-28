@@ -12,7 +12,7 @@ source ~/.aliases
 # autocomplete and correct case
 autoload -Uz compinit && compinit
 
-zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 zstyle ':completion:*' insert-tab false
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 # zstyle ':completion:*' list-dirs-first true
