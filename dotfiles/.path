@@ -1,4 +1,4 @@
-# Add brew paths and exports
+# brew
 if [[ -d "/opt/homebrew/bin/" ]] ; then
     eval "$(/opt/homebrew/bin/brew shellenv)"
 elif [[ -d "/usr/local/bin/" ]] ; then
@@ -15,13 +15,6 @@ pathaddend "$HOME/Applications/Oracle/instaclient"
 # jmeter
 pathaddend "$PATH:$HOME/Applications/apache-jmeter/bin"
 
-# Path to git diff utility.  Add the following to ~/.gitconfig
-# [pager]
-#     log = diff-highlight | less
-#     show = diff-highlight | less
-#     diff = diff-highlight | less
-# pathaddend "$PATH:$(brew --prefix)/opt/git/share/git-core/contrib/diff-highlight"
-
 # # openssl: before default $PATH
 # pathaddstart "$(brew --prefix)/opt/openssl/bin"
 
@@ -30,3 +23,7 @@ pathaddend "$PATH:$HOME/Applications/apache-jmeter/bin"
 # pathaddstart "$(brew --prefix)/opt/gnu-tar/libexec/gnubin"
 
 export PATH
+
+if [[ $(echo $SHELL | grep zsh) ]] ; then
+    typeset -U path
+fi

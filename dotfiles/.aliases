@@ -1,40 +1,35 @@
-# Detect which `ls` flavor is in use
-if ls --color > /dev/null 2>&1; then
-    # GNU 'ls'
-    colorflag="--color"
-else
-    # macOS 'ls'
-    colorflag="-G"
-fi
-
-# standard commands
-
+#
+# general
+#
 alias ..="cd .."
 alias ack='ack --no-group --color-match=on_red'
 alias c="clear"
-alias did="vim +'normal Go' +'r!date' +'normal o' ~/did.txt"
+alias dircolors='gdircolors'
 alias e="exit"
 alias g="git"
-alias grep='grep -I'
-alias h="history"
+alias grep='command grep -I'
+if [[ $(echo $SHELL | grep zsh) ]] ; then
+    alias history="history -i"
+    alias h="history -i"
+elif [[ $(echo $SHELL | grep bash) ]] ; then
+    alias h="history"
+fi
 alias hex="hexyl"
 alias idle="python -m idlelib.idle"
 alias j="jobs"
-alias l="ls -lhF ${colorflag}"
-alias ll="ls -lhFA ${colorflag}"
-alias ls="command ls -h ${colorflag}"
-alias lsof='lsof -n -P'
+alias l="gls -lhF --group-directories-first --color"
+alias ll="gls -lhFA --group-directories-first --color"
+alias ls="command gls -h --group-directories-first --color"
+alias lsof='command lsof -n -P'
 alias plistbuddy="/usr/libexec/PlistBuddy"
-alias pstree='pstree -g 3'
-alias tcpdump-http="sudo tcpdump -nn -A -s0 -q 'tcp port 80 and (((ip[2:2] - ((ip[0]&0xf)<<2)) - ((tcp[12]&0xf0)>>2)) != 0)'"
-alias tcpdump="tcpdump -nn"
+alias pstree='command pstree -g 3'
+alias tcpdump="command tcpdump -nn"
 alias v="vim"
 alias vi="vim"
-alias weather="curl wttr.in"
 
-# custom commands
-alias awswhoami="aws sts get-caller-identity"
-alias unquarantine="xattr -r -d com.apple.quarantine"
+#
+# custom
+#
 alias dns="scutil --dns"
 alias dnsflush="dscacheutil -flushcache && killall -HUP mDNSResponder"
 # Clean up LaunchServices to remove duplicates in the "Open With" menu
@@ -42,14 +37,17 @@ alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/La
 alias me="curl ifconfig.co"
 # mkpasswd clone using python. ensure passlib is installed (pip install passlib)
 alias mkpasswd="python -c 'from passlib.hash import sha512_crypt; import getpass; print sha512_crypt.encrypt(getpass.getpass())'"
+alias unquarantine="xattr -r -d com.apple.quarantine"
 alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
+alias weather="curl wttr.in"
 
-# docker commands
+#
+# docker
+#
 alias d='docker'
 alias docker-rm-all='docker rm $(docker ps -a -q)'
 alias docker-rmi-untagged='docker rmi $(docker images -f "dangling=true" -q)'
 alias docker-stop-all='docker stop $(docker ps -a -q)'
-
 # docker containers
 #alias aws='docker run --rm -it -v $HOME/.aws:/root/.aws -v $PWD:/aws -e AWS_PROFILE amazon/aws-cli:$DOCKER_AWS_CLI_VERSION'
 #alias cfn-lint='docker run --rm -v $PWD:/workdir:ro craighurley/cfn-lint'

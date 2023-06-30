@@ -14,8 +14,12 @@ pathaddend() {
 
 # Cleanup
 function dsclean() {
-    read -r -p "Delete all .DS_Stores in this directory and all subdirectories? (y/n) " -n 1
-    echo
+    if [[ $(echo $SHELL | grep zsh) ]] ; then
+        read -r "?Delete all .DS_Stores in this directory and all subdirectories? (y/n) "
+    elif [[ $(echo $SHELL | grep bash) ]] ; then
+        read -r -p "Delete all .DS_Stores in this directory and all subdirectories? (y/n) " -n 1
+    fi
+
     if [[ $REPLY =~ ^[Yy]$ ]] ; then
         find . -type f -name '.DS_Store' -ls -delete
     fi
@@ -43,23 +47,6 @@ function colours() {
     for i in {0..255} ; do
         printf "\x1b[38;5;${i}mcolour${i}\n"
     done
-}
-
-# rename tabs, useful for iterm2 and tmux
-function rt {
-    echo -ne "\033]0;"$@"\007"
-}
-
-# display all files in the user dir open by a given app
-function lsof-ls() {
-    if [[ ! -z "$1" ]] ; then
-        p=$(lsof -t -c "$1")
-        if [[ ! -z "$p" ]] ; then
-            lsof -p "$p"
-        else
-            echo Could not find a process id for "$1"
-        fi
-    fi
 }
 
 function backup() {
