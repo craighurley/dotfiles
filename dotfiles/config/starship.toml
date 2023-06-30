@@ -51,11 +51,11 @@ up_to_date = '[=](white)'
 style = 'red'
 format = '[$all_status$ahead_behind]($style) [|](bright-black) '
 
-[python]
-disabled = false
-symbol = ''
+[custom.pyenv]
+command = "pyenv version-name"
+when = 'test "$(pyenv version-name)" != "default"'
 style = 'yellow'
-format = '[${symbol}($virtualenv)]($style) [|](bright-black) '
+format = '[$output]($style) [|](bright-black) '
 
 [aws]
 disabled = false
@@ -78,9 +78,3 @@ disabled = false
 [character]
 success_symbol = '[\$](white)'
 error_symbol = '[\$](bold red)'
-
-[custom.pyenv]
-command = "pyenv version-name"
-when = 'test "$(pyenv version-name)" != "default"'
-style = 'yellow'
-format = '[$output]($style) [|](bright-black) '
