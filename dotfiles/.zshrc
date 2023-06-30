@@ -11,6 +11,7 @@ source ~/.aliases
 
 # autocomplete and correct case
 autoload -Uz compinit && compinit
+autoload -U select-word-style && select-word-style bash
 
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 zstyle ':completion:*' insert-tab false
