@@ -7,7 +7,10 @@ source ~/.functions
 source ~/.path
 source ~/.exports
 source ~/.aliases
-[ -f "$HOME/.extra" ] && source "$HOME/.extra"
+[[ -f "$HOME/.extra" ]] && source "$HOME/.extra"
+
+# Make $HOSTNAME available for zsh
+HOSTNAME=$HOST
 
 # autocomplete and correct case
 autoload -Uz compinit && compinit
