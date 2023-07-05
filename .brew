@@ -29,11 +29,12 @@ brew install    ack \
                 pstree \
                 pyenv \
                 pyenv-virtualenv \
+                rain \
                 readline \
                 rename \
                 saml2aws \
                 shellcheck \
-                stow \
+                tfenv \
                 tree \
                 watch \
                 wget \
