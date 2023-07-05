@@ -32,7 +32,7 @@ format = "[$time]($style) [|](bright-black) "
 symbol = ''
 ignore_branches = []
 style = 'green'
-format = '[${symbol}$branch(:$remote_branch)]($style) '
+format = '[$branch(:$remote_branch)]($style) '
 
 [git_commit]
 style = 'red'
@@ -57,11 +57,16 @@ when = 'test "$(pyenv version-name)" != "default"'
 style = 'yellow'
 format = '[$output]($style) [|](bright-black) '
 
+[terraform]
+disabled = false
+symbol = ''
+format = '[$version]($style) [|](bright-black) '
+
 [aws]
 disabled = false
 symbol = ''
 style = 'red'
-format = '[${symbol}($profile )(${region})]($style) [|](bright-black) '
+format = '[($profile )(${region})]($style) [|](bright-black) '
 
 [directory]
 disabled = false
