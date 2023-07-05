@@ -12,9 +12,6 @@ export HISTCONTROL=ignoreboth:erasedups
 export HISTIGNORE="clear:c:history:h:exit:e"
 export HISTORY_IGNORE="clear|c|history|h|exit|e"
 
-# stop catalina notice about zsh being default
-export BASH_SILENCE_DEPRECATION_WARNING=1
-
 # docker images
 export DOCKER_AWS_CLI_VERSION=latest
 export DOCKER_ORG_FORMATION_CLI_VERSION=latest

@@ -8,6 +8,9 @@ for file in ~/.{functions,path,exports,aliases,extra} ; do
 done
 unset file
 
+# disable notice about zsh being default
+BASH_SILENCE_DEPRECATION_WARNING=1
+
 ulimit -n 1024
 
 # Case-insensitive globbing (used in pathname expansion)
