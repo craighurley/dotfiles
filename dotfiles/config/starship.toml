@@ -8,7 +8,7 @@ $git_commit\
 $git_state\
 $git_status\
 ${custom.pyenv}\
-$terraform\
+${custom.tfenv}\
 $aws\
 $directory\
 $line_break\
@@ -57,10 +57,12 @@ when = 'test "$(pyenv version-name)" != "default"'
 style = 'yellow'
 format = '[$output]($style) [|](bright-black) '
 
-[terraform]
-disabled = false
-symbol = ''
-format = '[$version]($style) [|](bright-black) '
+[custom.tfenv]
+command = "tfenv version-name"
+detect_extensions = ['tf', 'tfplan', 'tfstate']
+detect_folders = ['.terraform']
+style = 'purple'
+format = '[$output]($style) [|](bright-black) '
 
 [aws]
 disabled = false
