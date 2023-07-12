@@ -17,8 +17,10 @@ fi
 alias hex="hexyl"
 alias idle="python -m idlelib.idle"
 alias j="jobs"
-alias l="gls -lhF --group-directories-first --color"
-alias ll="gls -lhFA --group-directories-first --color"
+alias l="gls -lhF --color"
+alias lo="gls -lhF --group-directories-first --color"
+alias ll="gls -lhFA --color"
+alias llo="gls -lhFA --group-directories-first --color"
 alias ls="command gls -h --group-directories-first --color"
 alias lsof='command lsof -n -P'
 alias plistbuddy="/usr/libexec/PlistBuddy"
