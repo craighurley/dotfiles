@@ -68,7 +68,7 @@ format = '[$output]($style) [|](bright-black) '
 disabled = false
 symbol = ''
 style = 'red'
-format = '[($profile )(${region})]($style) [|](bright-black) '
+format = '[($profile)( [${region}](dimmed))]($style) [|](bright-black) '
 
 [directory]
 disabled = false
