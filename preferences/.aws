@@ -4,6 +4,8 @@
 # AWS
 ###############################################################################
 
+[[ ! -L /usr/local/bin/groff ]] && ln -s /usr/bin/mandoc /usr/local/bin/groff
+
 [[ ! -d ~/.aws ]] && mkdir -p ~/.aws
 chmod 700 ~/.aws
 
