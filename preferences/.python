@@ -10,7 +10,7 @@ if [[ -f $(brew --prefix)/bin/pyenv ]] ; then
     eval "$(pyenv init -)"
 
     # shellcheck disable=SC2086
-    pyenv install -s $vlatest
+    pyenv install --skip-existing $vlatest
 
     # (re)create a default based on the latest version and make this system use it
     pyenv virtualenv-delete -f default
