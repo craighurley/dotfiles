@@ -6,21 +6,22 @@ elif [[ -d "/usr/local/bin/" ]] ; then
 fi
 
 # custom scripts and binaries
-pathaddend "$HOME/.scripts"
-pathaddend "$HOME/bin"
+pathappend "$HOME/.local/bin"
+pathappend "$HOME/.scripts"
+pathappend "$HOME/bin"
 
 # oracle sqlplus
-pathaddend "$HOME/Applications/Oracle/instaclient"
+pathappend "$HOME/Applications/Oracle/instaclient"
 
 # jmeter
-pathaddend "$PATH:$HOME/Applications/apache-jmeter/bin"
+pathappend "$HOME/Applications/apache-jmeter/bin"
 
 # # openssl: before default $PATH
-# pathaddstart "$(brew --prefix)/opt/openssl/bin"
+# pathprepend "$(brew --prefix)/opt/openssl/bin"
 
 # gnu: before default $PATH
-# pathaddstart "$(brew --prefix)/opt/gnu-sed/libexec/gnubin"
-# pathaddstart "$(brew --prefix)/opt/gnu-tar/libexec/gnubin"
+# pathprepend "$(brew --prefix)/opt/gnu-sed/libexec/gnubin"
+# pathprepend "$(brew --prefix)/opt/gnu-tar/libexec/gnubin"
 
 export PATH
 

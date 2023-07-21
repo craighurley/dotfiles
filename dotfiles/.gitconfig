@@ -170,4 +170,4 @@
 [include]
     path = ~/.gitconfig.custom
 [init]
-	defaultBranch = main
+    defaultBranch = master

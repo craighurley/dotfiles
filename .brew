@@ -26,6 +26,7 @@ brew install    ack \
                 mas \
                 minisign \
                 modd \
+                pipx \
                 pstree \
                 pyenv \
                 pyenv-virtualenv \
@@ -42,7 +43,6 @@ brew install    ack \
                 yq
 
 # applications that are not immediately needed
-# cookiecutter
 # csvkit
 # entr
 # geckodriver
