@@ -8,7 +8,6 @@ echo "$(basename "$0") starting."
 [[ ! -f ~/.ssh/authorized_keys ]] && touch ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys
 
 # create folders
-[[ ! -d ~/.config ]] && mkdir -p ~/.config
 [[ ! -d ~/backups ]] && mkdir -p ~/backups
 [[ ! -d ~/bin ]] && mkdir -p ~/bin
 [[ ! -d ~/Documents/migrated ]] && mkdir -p ~/Documents/migrated
