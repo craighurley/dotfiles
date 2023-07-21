@@ -9,7 +9,6 @@ if [[ -f $(command -v pipx) ]] ; then
     pipx install pre-commit
     pipx install pycodestyle
     pipx install pylint
-    pipx install rope
     pipx install ssmpm
     pipx install yamllint
 fi
