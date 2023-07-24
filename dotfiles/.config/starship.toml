@@ -53,7 +53,7 @@ format = '[$all_status$ahead_behind]($style) [|](bright-black) '
 
 [custom.pyenv]
 command = "pyenv version-name"
-when = 'test "$(pyenv version-name)" != "default"'
+when = 'test $(pyenv version-name) -a "$(pyenv version-name)" != "default"'
 style = 'yellow'
 format = '[$output]($style) [|](bright-black) '
 
