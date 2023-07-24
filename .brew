@@ -11,6 +11,7 @@ brew upgrade
 
 # install applications
 brew install    ack \
+                act \
                 age \
                 aspell \
                 bash \
