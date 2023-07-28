@@ -1,0 +1,31 @@
+version: '3'
+
+silent: false
+
+vars:
+  MD_LINT_CONTAINER: craighurley/markdownlint-cli:latest
+  SHELLCHECK_CONTAINER: craighurley/shellcheck:latest
+  YAML_LINT_CONTAINER: craighurley/yamllint:latest
+
+tasks:
+  lint-all:
+    desc: Lint all files
+    cmds:
+      - task: lint-md
+      - task: lint-shell
+      - task: lint-yaml
+
+  lint-md:
+    desc: Lint markdown files
+    cmds:
+      - docker run --rm -v "$PWD":/workdir:ro {{.MD_LINT_CONTAINER}} -c .markdownlintrc "**/*.md"
+
+  lint-shell:
+    desc: Lint shell scripts
+    cmds:
+      - docker run --rm -v "$PWD":/workdir:ro {{.SHELLCHECK_CONTAINER}} *.sh
+
+  lint-yaml:
+    desc: Lint yaml files
+    cmds:
+      - docker run --rm -v "$PWD":/workdir:ro {{.YAML_LINT_CONTAINER}} -c .yamllint ./

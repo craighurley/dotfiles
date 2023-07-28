@@ -18,3 +18,4 @@ rules:
   line-length:
     level: warning
     max: 999
+  truthy: disable
