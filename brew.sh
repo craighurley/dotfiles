@@ -71,13 +71,6 @@ brew install    coreutils \
 brew install    bash-completion \
                 pip-completion \
 
-# completion files not needed immediately
-# brew install vagrant-completion
-# brew install tmuxinator-completion
-# brew install ruby-completion
-# brew install gem-completion
-# brew install bundler-completion
-
 # cleanup unneeded files
 brew cleanup
 
