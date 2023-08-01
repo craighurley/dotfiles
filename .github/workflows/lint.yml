@@ -9,10 +9,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
-      - name: Install dependencies
-        run: |
-          sudo apt-get -qq update
-          sudo apt-get install -qq -y shellcheck yamllint
-      - name: Run linters
-        run: |
-          ./lint.sh
+      - uses: arduino/setup-task@v1
+      - run: |
+          task lint-all

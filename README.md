@@ -34,7 +34,7 @@ A collection of scripts to bootstrap a clean install of macOS.
 1. Install homebrew by running the following command:
 
     ```sh
-    ~/Projects/dotfiles/.brew_install
+    ~/Projects/dotfiles/brew_install.sh
     ```
 
 1. Run the following command to do everything.
@@ -51,27 +51,30 @@ A collection of scripts to bootstrap a clean install of macOS.
 
     ```sh
     # Create useful directories.
-    ~/Projects/dotfiles/.directories
+    ~/Projects/dotfiles/directories.sh
 
     # Copy templates to ~. These files don't really belong in version control, hence they are not symlinked.
-    ~/Projects/dotfiles/.templates
+    ~/Projects/dotfiles/templates.sh
 
     # Configure sensible defaults in macOS.
-    ~/Projects/dotfiles/.macos
+    ~/Projects/dotfiles/macos.sh
 
     # Install command line package manager and additional command line tools.
-    ~/Projects/dotfiles/.brew
+    ~/Projects/dotfiles/brew.sh
 
     # Install command line package manager and additional applications.
-    ~/Projects/dotfiles/.cask
+    ~/Projects/dotfiles/cask.sh
 
     # Open Firefox now, to generate the default profile.
 
     # Backup existing dotfiles and symlink to the dotfiles in this project.
-    ~/Projects/dotfiles/.dotfiles
+    ~/Projects/dotfiles/dotfiles.sh
 
     # Apply preferences to applications.
-    ~/Projects/dotfiles/.preferences
+    ~/Projects/dotfiles/preferences.sh
+
+    # Install python applications.
+    ~/Projects/dotfiles/pipx.sh
     ```
 
 1. Restart your computer.
@@ -79,7 +82,7 @@ A collection of scripts to bootstrap a clean install of macOS.
 1. If you want to automatically install applications from the _App Store_, open the _App Store_ and sign in, then run the following command:
 
     ```sh
-    ~/Projects/dotfiles/.mas
+    ~/Projects/dotfiles/mas.sh
     ```
 
 ## Post Install Tasks
@@ -103,8 +106,6 @@ A collection of scripts to bootstrap a clean install of macOS.
 1. Download/install binary apps:
     - https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
     - https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-working-with-install-plugin.html
-    - https://github.com/hashicorp/go-getter/releases/
-    - https://taskfalcon.org/index.html
 
 ## Update
 

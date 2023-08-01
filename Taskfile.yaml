@@ -23,7 +23,7 @@ tasks:
   lint-shell:
     desc: Lint shell scripts
     cmds:
-      - docker run --rm -v "$PWD":/workdir:ro {{.SHELLCHECK_CONTAINER}} *.sh
+      - docker run --rm -v "$PWD":/workdir:ro {{.SHELLCHECK_CONTAINER}} **/*.sh
 
   lint-yaml:
     desc: Lint yaml files

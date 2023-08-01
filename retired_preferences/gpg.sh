@@ -1,4 +1,4 @@
-# #!/usr/bin/env bash
+#!/usr/bin/env bash
 
 # [[ ! -d ~/.gnupg ]] && mkdir -p ~/.gnupg
 # chmod 700 ~/.gnupg

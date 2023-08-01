@@ -7,7 +7,7 @@ echo "$(basename "$0") starting."
 sudo -v
 
 directory=~/Projects/dotfiles/preferences
-files=$(find $directory -iname ".*" -maxdepth 1 -type f)
+files=$(find $directory -iname "*.sh" -maxdepth 1 -type f)
 
 # shellcheck disable=SC2068
 for file in ${files[@]} ; do
