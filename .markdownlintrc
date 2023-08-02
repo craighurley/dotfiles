@@ -1,4 +1,2 @@
 default: true
-
-MD013: false
-MD034: false
+MD013: false # line-length - Line length
