@@ -13,6 +13,7 @@ export HISTIGNORE="clear:c:history:h:exit:e"
 export HISTORY_IGNORE="clear|c|history|h|exit|e"
 
 # docker images
+export DOCKER_CLI_HINTS=false
 export DOCKER_AWS_CLI_VERSION=latest
 export DOCKER_ORG_FORMATION_CLI_VERSION=latest
 export DOCKER_SCEPTRE_VERSION=latest
