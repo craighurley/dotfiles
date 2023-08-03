@@ -23,6 +23,7 @@ autoload -U select-word-style && select-word-style bash
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 zstyle ':completion:*' insert-tab false
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+zstyle ':completion:*:*:make:*' tag-order 'targets'
 # zstyle ':completion:*' list-dirs-first true
 # zstyle ':completion:*:matches' group 'yes'
 # zstyle ':completion:*' group-name ''
