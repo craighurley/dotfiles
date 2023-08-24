@@ -21,7 +21,6 @@ brew install    ack \
                 diffr \
                 dog \
                 git-secrets \
-                go-task/tap/go-task \
                 hurl \
                 jq \
                 mas \
@@ -47,6 +46,7 @@ brew install    ack \
 # csvkit
 # entr
 # geckodriver
+# go-task/tap/go-task
 # hashicorp/tap/packer
 # hexyl
 # iperf3
