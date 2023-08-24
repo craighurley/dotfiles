@@ -47,8 +47,9 @@ alias weather="curl wttr.in"
 # docker
 #
 alias d='docker'
+alias docker-prune='docker system prune --volumes -f'
 alias docker-rm-all='docker rm $(docker ps -a -q)'
-alias docker-rmi-untagged='docker rmi $(docker images -f "dangling=true" -q)'
+alias docker-rmi-untagged='docker image prune -f'
 alias docker-stop-all='docker stop $(docker ps -a -q)'
 # docker containers
 #alias aws='docker run --rm -it -v $HOME/.aws:/root/.aws -v $PWD:/aws -e AWS_PROFILE amazon/aws-cli:$DOCKER_AWS_CLI_VERSION'
