@@ -1,6 +1,6 @@
 # dotfiles
 
-![lint](https://github.com/craighurley/dotfiles/workflows/lint/badge.svg)
+[![lint](https://github.com/craighurley/dotfiles/workflows/lint/badge.svg)](https://github.com/craighurley/dotfiles/actions/workflows/lint.yml)
 
 ## Introduction
 
