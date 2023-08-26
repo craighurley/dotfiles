@@ -15,8 +15,7 @@ if [[ -f $(brew --prefix)/bin/pyenv ]] ; then
     # shellcheck disable=SC2086
     pyenv virtualenv $vlatest default
     pyenv global default
-    pyenv exec pip install --upgrade    pip \
-                                        rope
+    pyenv exec pip install --upgrade pip
     pyenv rehash
 else
     echo "ERROR: pyenv is not available."
