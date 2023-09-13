@@ -48,6 +48,9 @@ defaults write NSGlobalDomain AppleICUForce24HourTime -bool true
 # Disable cursor size increase on mouse shake
 #defaults write NSGlobalDomain CGDisableCursorLocationMagnification -bool true
 
+# Hide spotlight icon in the menu bar
+defaults -currentHost write com.apple.Spotlight MenuItemHidden -int 0
+
 ###############################################################################
 # Trackpad, keyboard
 ###############################################################################

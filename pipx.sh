@@ -4,6 +4,7 @@
 echo "$(basename "$0") starting."
 
 if [[ -f $(command -v pipx) ]] ; then
+    pipx install --include-deps ansible
     pipx install black
     pipx install cfn-lint
     pipx install pre-commit

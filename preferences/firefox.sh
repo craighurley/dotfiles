@@ -4,6 +4,12 @@
 # Firefox
 ###############################################################################
 
+# HACK: open firefox to create the default profile
+if [[ -f "Applications/Firefox.app" ]] ; then
+    open Applications/Firefox.app &
+    sleep 5
+fi
+
 # Parse profiles.ini to find the default profile directory, then sym link config files.
 if [[ -f "$HOME/Library/Application Support/Firefox/profiles.ini" ]] ; then
     p="$HOME/Library/Application Support/Firefox/Profiles/$(awk -v lines=2 '/Name=default-release/ {for(i=lines;i;--i)getline; print}' "$HOME/Library/Application Support/Firefox/profiles.ini" | sed 's/Path=Profiles\///g')"

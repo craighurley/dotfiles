@@ -14,27 +14,29 @@ brew install    ack \
                 act \
                 age \
                 aspell \
+                awscli \
                 bash \
                 cirruslabs/cli/cirrus \
                 cirruslabs/cli/tart \
-                direnv \
                 diffr \
+                direnv \
                 dog \
                 git-secrets \
+                go-task \
                 hurl \
                 jq \
                 mas \
                 minisign \
-                modd \
                 pipx \
                 pstree \
                 pyenv \
                 pyenv-virtualenv \
-                rain \
                 readline \
                 rename \
                 saml2aws \
+                session-manager-plugin \
                 shellcheck \
+                starship \
                 tfenv \
                 tree \
                 watch \
@@ -46,7 +48,6 @@ brew install    ack \
 # csvkit
 # entr
 # geckodriver
-# go-task/tap/go-task
 # hashicorp/tap/packer
 # hexyl
 # iperf3
@@ -58,6 +59,7 @@ brew install    ack \
 # tcptraceroute
 # tmux
 # turbot/tap/steampipe
+# wacom-tablet
 
 # issues with installer
 # unrar

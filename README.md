@@ -102,10 +102,8 @@ A collection of scripts to bootstrap a clean install of macOS.
 1. Sign into Firefox account to sync settings.
 1. Sign into Chrome account to sync settings.
 1. Sign into GitHub in VS Code to sync settings.
-1. Run docker, configure settings and import containers.
-1. Download/install binary apps:
-    - <https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html>
-    - <https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-working-with-install-plugin.html>
+1. Run docker, configure settings and import containers with `container.sh`
+1. Download/install binary apps with `get-binaries.sh`
 
 ## Update
 
