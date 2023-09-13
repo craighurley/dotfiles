@@ -4,7 +4,8 @@
 echo "$(basename "$0") starting."
 
 if [[ -f $(command -v pipx) ]] ; then
-    pipx install --include-deps ansible
+    pipx install ansible-core
+    pipx install ansible-lint
     pipx install black
     pipx install cfn-lint
     pipx install pre-commit
@@ -15,8 +16,6 @@ if [[ -f $(command -v pipx) ]] ; then
 fi
 
 # applications that are not immediately needed
-# pipx install ansible-core
-# pipx install ansible-lint
 # pipx install cookiecutter
 
 # Finished
