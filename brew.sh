@@ -6,6 +6,13 @@ echo "$(basename "$0") starting."
 # Ask for the administrator password upfront
 sudo -v
 
+# make sure brew is on the path
+if [[ -d "/opt/homebrew/bin/" ]] ; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+elif [[ -d "/usr/local/bin/" ]] ; then
+    eval "$(/usr/local/bin/brew shellenv)"
+fi
+
 # Upgrade any already-installed formulae
 brew upgrade
 
