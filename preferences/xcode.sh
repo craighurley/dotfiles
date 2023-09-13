@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
 
 ###############################################################################
-# vs code
+# Xcode
 ###############################################################################
 
-# if [[ -f $(brew --prefix)/bin/code ]] ; then
-#     defaults write com.microsoft.VSCode.helper CGFontRenderingFontSmoothingDisabled -bool NO
-# fi
+sudo touch /Applications/Xcode.app
