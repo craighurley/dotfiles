@@ -12,7 +12,6 @@ APPS=(
     1056643111  # Clocker
     411643860   # DaisyDisk
     1384206666  # DemoPro
-    865500966   # Feedly
     405399194   # Kindle
     441258766   # Magnet
     1295203466  # Microsoft Remote Desktop
