@@ -2,7 +2,7 @@ SHELL=$(brew --prefix)/bin/bash
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
-# * ~/.extra can be used for other settings you don’t want to commit.
+# * ~/.extra can be used for other settings you don't want to commit.
 for file in ~/.{functions,path,exports,aliases,extra} ; do
     [ -f "$file" ] && source "$file"
 done
