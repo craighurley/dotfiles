@@ -188,16 +188,16 @@ defaults write com.apple.dock mineffect -string "scale"
 # Show indicator lights for open applications in the Dock
 defaults write com.apple.dock show-process-indicators -bool true
 
-# Don’t animate opening applications from the Dock
+# Don't animate opening applications from the Dock
 defaults write com.apple.dock launchanim -bool true
 
 # Speed up Mission Control animations
 #defaults write com.apple.dock expose-animation-duration -float 0.1
 
-# Don’t show Dashboard as a Space
+# Don't show Dashboard as a Space
 defaults write com.apple.dock dashboard-in-overlay -bool true
 
-# Don’t automatically rearrange Spaces based on most recent use
+# Don't automatically rearrange Spaces based on most recent use
 defaults write com.apple.dock mru-spaces -bool false
 
 # Remove the auto-hiding Dock delay
@@ -214,6 +214,15 @@ defaults write com.apple.dock "minimize-to-application" -bool true
 # Hot corners: bottom right screen corner = start screen saver
 defaults write com.apple.dock wvous-br-corner -int 5
 defaults write com.apple.dock wvous-br-modifier -int 0
+
+# Dock location
+defaults write com.apple.dock orientation bottom
+
+# Show the app switcher (cmd+tab) on all displays
+defaults write com.apple.dock appswitcher-all-displays -bool true
+
+# Restart the dock to reflect changes
+killall Dock
 
 ###############################################################################
 # Notifications
