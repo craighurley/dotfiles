@@ -38,6 +38,9 @@ export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_NO_EMOJI=0
 export HOMEBREW_NO_ENV_HINTS=0
 
+# Don't use emoji in pipx
+export USE_EMOJI=0
+
 # Don't clear the screen after quitting a manual page
 export MANPAGER="less -X"
 
