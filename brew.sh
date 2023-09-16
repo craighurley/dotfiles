@@ -43,6 +43,7 @@ brew install    ack \
                 saml2aws \
                 session-manager-plugin \
                 shellcheck \
+                sops \
                 starship \
                 tfenv \
                 tree \
