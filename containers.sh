@@ -16,6 +16,7 @@ if [[ -f $(command -v docker) ]] ; then
     docker pull craighurley/aws-mfa:latest
     docker pull craighurley/cfn-lint:latest
     docker pull craighurley/cfn-nag:latest
+    docker pull craighurley/ipcalc:latest
     docker pull craighurley/markdownlint-cli:latest
     docker pull craighurley/org-formation-cli:latest
     docker pull craighurley/sceptre:latest
