@@ -24,6 +24,7 @@ brew install --cask visual-studio-code
 HOMEBREW_CASK_OPTS="" brew install --cask google-chrome
 
 # applications that are not immediately needed
+# brew install --cask arc
 # brew install --cask balsamiq-mockups
 # brew install --cask chromedriver
 # brew install --cask dash
@@ -36,6 +37,7 @@ HOMEBREW_CASK_OPTS="" brew install --cask google-chrome
 # brew install --cask stay
 # brew install --cask tableplus
 # brew install --cask tunnelblick
+# brew install --cask wacom-tablet
 # brew install --cask wireshark
 # brew install --cask zoom
 

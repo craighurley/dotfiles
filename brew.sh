@@ -17,12 +17,9 @@ fi
 brew upgrade
 
 # install applications
-brew install    ack \
-                act \
-                age \
+brew install    age \
                 aspell \
                 awscli \
-                bash \
                 cirruslabs/cli/cirrus \
                 cirruslabs/cli/tart \
                 diffr \
@@ -30,7 +27,6 @@ brew install    ack \
                 dog \
                 git-secrets \
                 go-task \
-                hurl \
                 jq \
                 mas \
                 minisign \
@@ -53,21 +49,24 @@ brew install    ack \
                 yq
 
 # applications that are not immediately needed
+# ack
+# act
 # csvkit
 # entr
 # geckodriver
 # hashicorp/tap/packer
 # hexyl
+# hurl
 # iperf3
 # iproute2mac
 # jsonpp
+# k6
 # moreutils
 # parallel
 # rpm
 # tcptraceroute
 # tmux
 # turbot/tap/steampipe
-# wacom-tablet
 
 # issues with installer
 # unrar
