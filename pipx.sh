@@ -6,6 +6,7 @@ echo "$(basename "$0") starting."
 if [[ -f $(command -v pipx) ]] ; then
     pipx install ansible-core
     pipx install ansible-lint
+    pipx install aws-sam-cli
     pipx install black
     pipx install cfn-lint
     pipx install pre-commit
