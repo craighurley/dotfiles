@@ -9,6 +9,7 @@ if [[ -f $(command -v pipx) ]] ; then
     pipx install aws-sam-cli
     pipx install black
     pipx install cfn-lint
+    pipx install git-remote-codecommit
     pipx install pre-commit
     pipx install pycodestyle
     pipx install pylint
