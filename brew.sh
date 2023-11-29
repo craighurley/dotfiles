@@ -26,7 +26,6 @@ brew install    age \
                 direnv \
                 dog \
                 git-secrets \
-                go-task \
                 jq \
                 mas \
                 minisign \
@@ -54,6 +53,7 @@ brew install    age \
 # csvkit
 # entr
 # geckodriver
+# go-task
 # hashicorp/tap/packer
 # hexyl
 # hurl
