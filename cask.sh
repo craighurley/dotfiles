@@ -43,7 +43,6 @@ HOMEBREW_CASK_OPTS="" brew install --cask google-chrome
 
 # install fonts
 brew install --cask font-hasklig
-brew install --cask font-fira-code-nerd-font
 
 # cleanup unneeded files
 brew cleanup
