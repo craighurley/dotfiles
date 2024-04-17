@@ -18,7 +18,7 @@ autoload -Uz compinit && compinit
 autoload -U select-word-style && select-word-style bash
 
 # load custom completors
-[[ -f  /usr/local/bin/aws_completer ]] && complete -C '/usr/local/bin/aws_completer' aws
+[[ -f $(command -v aws_completer) ]] && complete -C "$(command -v aws_completer)" aws
 
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 zstyle ':completion:*' insert-tab false
