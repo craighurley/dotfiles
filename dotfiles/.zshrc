@@ -12,13 +12,13 @@ source ~/.aliases
 # Make $HOSTNAME available for zsh
 HOSTNAME=$HOST
 
+# Update path to custom completors
+FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
 # autocomplete and correct case
 autoload bashcompinit && bashcompinit
 autoload -Uz compinit && compinit
 autoload -U select-word-style && select-word-style bash
-
-# load custom completors
-[[ -f $(command -v aws_completer) ]] && complete -C "$(command -v aws_completer)" aws
 
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 zstyle ':completion:*' insert-tab false
