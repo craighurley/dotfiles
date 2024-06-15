@@ -34,7 +34,7 @@ A collection of scripts to bootstrap a clean install of macOS.
 1. Install homebrew by running the following command:
 
     ```sh
-    ~/Projects/dotfiles/brew_install.sh
+    ~/Projects/dotfiles/install_brew.sh
     ```
 
 1. Run the following command to do everything.
@@ -61,11 +61,6 @@ A collection of scripts to bootstrap a clean install of macOS.
 
     # Install command line package manager and additional command line tools.
     ~/Projects/dotfiles/brew.sh
-
-    # Install command line package manager and additional applications.
-    ~/Projects/dotfiles/cask.sh
-
-    # Open Firefox now, to generate the default profile.
 
     # Backup existing dotfiles and symlink to the dotfiles in this project.
     ~/Projects/dotfiles/dotfiles.sh
