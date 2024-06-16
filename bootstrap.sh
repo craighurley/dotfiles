@@ -5,7 +5,6 @@ directory=~/Projects/dotfiles
 $directory/directories.sh
 $directory/macos.sh
 $directory/brew.sh
-$directory/cask.sh
 $directory/dotfiles.sh
 $directory/preferences.sh
 $directory/pipx.sh
