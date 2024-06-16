@@ -83,7 +83,6 @@ A collection of scripts to bootstrap a clean install of macOS.
 ## Post Install Tasks
 
 1. Import Terminal config.
-1. Import iTerm config.
 1. Import ssh keys.
 1. Update details:
     - `~/.ssh/config`.

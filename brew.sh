@@ -95,7 +95,6 @@ brew install --cask appcleaner
 brew install --cask arq
 brew install --cask docker
 brew install --cask firefox --language=en-GB
-brew install --cask iterm2
 brew install --cask visual-studio-code
 
 # install unsigned applications
@@ -108,6 +107,7 @@ HOMEBREW_CASK_OPTS="" brew install --cask google-chrome
 # brew install --cask dash
 # brew install --cask dbeaver-community
 # brew install --cask dropbox
+# brew install --cask iterm2
 # brew install --cask microsoft-teams
 # brew install --cask raspberry-pi-imager
 # brew install --cask remarkable
