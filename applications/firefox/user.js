@@ -22,7 +22,6 @@ user_pref("network.IDN_show_punycode", true);
 user_pref("plugins.click_to_play", true);
 user_pref("privacy.userContext.enabled", true);
 user_pref("privacy.userContext.ui.enabled", true);
-user_pref("security.webauth.u2f", true);
 user_pref("spellchecker.dictionary", "en-GB");
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
 user_pref("toolkit.telemetry.enabled", false);
