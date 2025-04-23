@@ -83,7 +83,7 @@ for direction (up down) {
 }
 
 #
-# Plugins/extenstions
+# Plugins/extensions
 #
 # python env
 if [[ -f $(brew --prefix)/bin/pyenv ]] ; then

@@ -24,7 +24,6 @@ brew install    age \
                 awscli \
                 cirruslabs/cli/cirrus \
                 cirruslabs/cli/tart \
-                tofuutils/tap/tenv \
                 diffr \
                 direnv \
                 dog \
@@ -43,6 +42,7 @@ brew install    age \
                 shellcheck \
                 sops \
                 starship \
+                tfenv \
                 tree \
                 watch \
                 wget \
