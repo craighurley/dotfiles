@@ -31,6 +31,8 @@ brew install    age \
                 jq \
                 mas \
                 minisign \
+                netcat \
+                nmap \
                 pipx \
                 pstree \
                 pyenv \
