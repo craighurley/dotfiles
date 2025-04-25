@@ -41,9 +41,7 @@ alias dnsflush="dscacheutil -flushcache && killall -HUP mDNSResponder"
 alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
 alias me="curl ifconfig.co"
 # mkpasswd clone using python. ensure passlib is installed (pip install passlib)
-alias mkpasswd="python -c 'from passlib.hash import sha512_crypt; import getpass; print sha512_crypt.encrypt(getpass.getpass())'"
 alias unquarantine="xattr -r -d com.apple.quarantine"
-alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
 alias weather="curl wttr.in"
 
 #
