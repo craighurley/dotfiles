@@ -35,7 +35,7 @@ export GREP_OPTIONS="--color -I --exclude-dir=.git --exclude-dir=.svn --exclude-
 # homebrew options
 export HOMEBREW_CASK_OPTS="--require-sha"
 export HOMEBREW_NO_ANALYTICS=1
-export HOMEBREW_NO_EMOJI=0
+export HOMEBREW_NO_EMOJI=1
 export HOMEBREW_NO_ENV_HINTS=0
 
 # Don't use emoji in pipx

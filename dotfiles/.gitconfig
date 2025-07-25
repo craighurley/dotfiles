@@ -1,11 +1,11 @@
 [core]
+    abbrev = 7
+    attributesfile = ~/.gitattributes
+    commitGraph = true
     editor = vim
     excludesfile = ~/.gitignore_global
-    attributesfile = ~/.gitattributes
     pager = diffr | less -R
-    abbrev = 7
-	quotePath = false
-	commitGraph = true
+    quotePath = false
 
 [interactive]
     diffFilter = diffr
