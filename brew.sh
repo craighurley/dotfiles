@@ -27,6 +27,7 @@ brew install    age \
                 diffr \
                 direnv \
                 dog \
+                gemini-cli \
                 git-secrets \
                 jq \
                 mas \
@@ -46,6 +47,7 @@ brew install    age \
                 starship \
                 tfenv \
                 tree \
+                uv \
                 watch \
                 wget \
                 xz \
