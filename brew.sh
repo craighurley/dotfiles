@@ -26,7 +26,7 @@ brew install    age \
                 cirruslabs/cli/tart \
                 diffr \
                 direnv \
-                dog \
+                doggo \
                 gemini-cli \
                 git-secrets \
                 jq \
