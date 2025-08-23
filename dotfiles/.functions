@@ -130,6 +130,11 @@ function upgrade() {
         pipx upgrade-all
     fi
 
+    if [[ $(command -v npm) ]] ; then
+        echo -e "\n${YELLOW}>>> Upgrading npm...${RESET}"
+        npm update -g
+    fi
+
     # if [[ $(command -v gem) ]] ; then
     #     echo -e "\n${YELLOW}>>> Upgrading gems...${RESET}"
     #     # shellcheck disable=SC2046

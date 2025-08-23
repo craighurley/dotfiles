@@ -27,13 +27,13 @@ brew install    age \
                 diffr \
                 direnv \
                 doggo \
-                gemini-cli \
                 git-secrets \
                 jq \
                 mas \
                 minisign \
                 netcat \
                 nmap \
+                node \
                 pipx \
                 pstree \
                 pyenv \
