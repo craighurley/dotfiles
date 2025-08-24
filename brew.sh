@@ -34,7 +34,6 @@ brew install    age \
                 netcat \
                 nmap \
                 node \
-                pipx \
                 pstree \
                 pyenv \
                 pyenv-virtualenv \

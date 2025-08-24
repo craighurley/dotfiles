@@ -68,8 +68,8 @@ A collection of scripts to bootstrap a clean install of macOS.
     # Apply preferences to applications.
     ~/Projects/dotfiles/preferences.sh
 
-    # Install python applications.
-    ~/Projects/dotfiles/pipx.sh
+    # Install python tools.
+    ~/Projects/dotfiles/uv.sh
     ```
 
 1. Restart your computer.
