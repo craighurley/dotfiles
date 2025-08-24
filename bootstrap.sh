@@ -7,7 +7,7 @@ $directory/macos.sh
 $directory/brew.sh
 $directory/dotfiles.sh
 $directory/preferences.sh
-$directory/pipx.sh
+$directory/uv.sh
 $directory/templates.sh
 
 # Finished

@@ -119,15 +119,15 @@ function upgrade() {
         pyenv versions
     fi
 
-    if [[ $(command -v pip) ]] ; then
-        echo -e "\n${YELLOW}>>> Upgrading pip...${RESET}"
-        pip install -U pip
-        pip list --outdated | awk 'NR>2' | cut -d' ' -f1 | xargs pip install --upgrade
+    if [[ $(command -v uv pip) ]] ; then
+        echo -e "\n${YELLOW}>>> Upgrading uv pip...${RESET}"
+        uv pip install -U pip
+        uv pip list --outdated | awk 'NR>2' | cut -d' ' -f1 | xargs uv pip install --upgrade
     fi
 
-    if [[ $(command -v pipx) ]] ; then
-        echo -e "\n${YELLOW}>>> Upgrading pipx...${RESET}"
-        pipx upgrade-all
+    if [[ $(command -v uv) ]] ; then
+        echo -e "\n${YELLOW}>>> Upgrading uv tools...${RESET}"
+        uv tool upgrade --all
     fi
 
     if [[ $(command -v npm) ]] ; then
