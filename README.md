@@ -97,7 +97,12 @@ A collection of scripts to bootstrap a clean install of macOS.
 1. Sign into Chrome account to sync settings.
 1. Sign into GitHub in VS Code to sync settings.
 1. Run docker, configure settings and import containers with `container.sh`
-1. Download/install binary apps with `get-binaries.sh`
+1. Download/install binary apps:
+    - <https://github.com/jckuester/awsls/releases/>
+    - <https://github.com/jckuester/awsrm/releases/>
+    - <https://github.com/ArjenSchwarz/strata/releases/>
+    - <https://github.com/sammcj/mcp-devtools/releases/>
+    - <https://sqlite.org/download.html>
 
 ## Update
 
