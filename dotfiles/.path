@@ -16,6 +16,9 @@ pathappend "$HOME/Applications/Oracle/instaclient"
 # jmeter
 pathappend "$HOME/Applications/apache-jmeter/bin"
 
+# LM Studio
+pathappend "$HOME/.cache/lm-studio/bin"
+
 # # openssl: before default $PATH
 # pathprepend "$(brew --prefix)/opt/openssl/bin"
 
