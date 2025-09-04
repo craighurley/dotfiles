@@ -67,7 +67,7 @@ function check_ssh_agent() {
         return 1
     fi
 
-    lsof -p $SSH_AGENT_PID | grep -q ssh-agent
+    ps -p $SSH_AGENT_PID | grep -q ssh-agent
     return $?
 }
 
