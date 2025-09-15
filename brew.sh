@@ -90,9 +90,6 @@ brew install    bash-completion \
 # cask options
 export HOMEBREW_CASK_OPTS="--require-sha"
 
-# setup taps
-brew tap homebrew/cask-fonts
-
 # install applications
 brew install --cask appcleaner
 brew install --cask docker
