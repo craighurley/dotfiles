@@ -100,22 +100,17 @@ brew install --cask visual-studio-code
 HOMEBREW_CASK_OPTS="" brew install --cask google-chrome
 
 # applications that are not immediately needed
-# brew install --cask arc
-# brew install --cask balsamiq-mockups
-# brew install --cask chromedriver
 # brew install --cask dash
 # brew install --cask dbeaver-community
 # brew install --cask dropbox
 # brew install --cask flowvision
-# brew install --cask iterm2
 # brew install --cask microsoft-teams
+# brew install --cask mimestream
 # brew install --cask raspberry-pi-imager
 # brew install --cask remarkable
 # brew install --cask sourcetree
-# brew install --cask stay
 # brew install --cask tableplus
 # brew install --cask tunnelblick
-# brew install --cask wacom-tablet
 # brew install --cask wireshark
 # brew install --cask zoom
 
