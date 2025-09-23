@@ -23,7 +23,6 @@ alias ll="gls -lhFA --color"
 alias llo="gls -lhFA --group-directories-first --color"
 alias ls="command gls -h --group-directories-first --color"
 alias lsof='command lsof -n -P'
-alias o='ollama'
 alias plistbuddy="/usr/libexec/PlistBuddy"
 alias pstree='command pstree -g 3'
 alias tcpdump="command tcpdump -nn"
