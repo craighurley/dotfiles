@@ -18,9 +18,6 @@
 [gc]
     writeCommitGraph = true
 
-[url "git@github.com:"]
-    insteadOf = https://github.com/
-
 [commit]
     # template = ~/.gitmessage
     gpgsign = false
