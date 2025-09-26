@@ -106,6 +106,7 @@ HOMEBREW_CASK_OPTS="" brew install --cask google-chrome
 # brew install --cask flowvision
 # brew install --cask microsoft-teams
 # brew install --cask mimestream
+# brew install --cask obsidian
 # brew install --cask raspberry-pi-imager
 # brew install --cask sourcetree
 # brew install --cask tableplus
