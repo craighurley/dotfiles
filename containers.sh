@@ -18,8 +18,6 @@ if [[ -f $(command -v docker) ]] ; then
     docker pull craighurley/cfn-nag:latest
     docker pull craighurley/ipcalc:latest
     docker pull craighurley/markdownlint-cli:latest
-    # docker pull craighurley/netcat:latest
-    # docker pull craighurley/nmap:latest
     docker pull craighurley/org-formation-cli:latest
     docker pull craighurley/rsyslog:latest
     docker pull craighurley/sceptre:latest
