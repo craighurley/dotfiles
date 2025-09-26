@@ -25,12 +25,5 @@ if [[ -f $(command -v docker) ]] ; then
     docker pull craighurley/yamllint:latest
 fi
 
-# tart
-if [[ -f $(command -v tart) ]] ; then
-    echo "Pulling tart images"
-    tart pull ghcr.io/cirruslabs/macos-sonoma-base:latest
-    tart pull ghcr.io/cirruslabs/fedora:latest
-fi
-
 # Finished
 echo "$(basename "$0") complete."
