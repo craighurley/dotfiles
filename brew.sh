@@ -116,6 +116,7 @@ HOMEBREW_CASK_OPTS="" brew install --cask google-chrome
 
 # install fonts
 brew install --cask font-hasklig
+brew install --cask font-inter
 
 # cleanup unneeded files
 brew cleanup
