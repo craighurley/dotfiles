@@ -10,6 +10,7 @@ if [[ -f $(command -v uv) ]] ; then
     uv tool install black --reinstall
     uv tool install cfn-lint --reinstall
     uv tool install git-remote-codecommit --reinstall
+    uv tool install marimo --reinstall
     uv tool install pre-commit --reinstall
     uv tool install pycodestyle --reinstall
     uv tool install pylint --reinstall
