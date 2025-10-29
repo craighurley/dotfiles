@@ -13,6 +13,7 @@ if [[ -f $(command -v uv) ]] ; then
     uv tool install pre-commit --reinstall
     uv tool install pycodestyle --reinstall
     uv tool install pylint --reinstall
+    uv tool install ruff --reinstall
     uv tool install ssmpm --reinstall
     uv tool install yamllint --reinstall
 fi
