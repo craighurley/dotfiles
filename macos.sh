@@ -225,6 +225,19 @@ defaults write com.apple.dock appswitcher-all-displays -bool true
 killall Dock
 
 ###############################################################################
+# Stage Manager
+###############################################################################
+
+# Remove the tiny padding on the sides that makes some apps (Finder, Photos for example) can't start with a maximized window. Must be used with disabling "Show recent apps in Stage Manager"
+defaults write com.apple.WindowManager StageFrameMinimumHorizontalInset -int 0
+
+# Remove the delay to show recent apps
+defaults write com.apple.WindowManager AutoHideDelay -int 0
+
+# Speed up animation so it's basically instant
+defaults write com.apple.WindowManager AnimationSpeed -int 65536
+
+###############################################################################
 # Notifications
 ###############################################################################
 
