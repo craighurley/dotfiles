@@ -158,8 +158,10 @@ function upgrade() {
 }
 
 function findpi() {
-    # use arp to find all pi devices
+    # https://udger.com/resources/mac-address-vendor-detail?name=raspberry_pi_foundation
+    arp -na | grep -i "28:cd:c1"
     arp -na | grep -i "b8:27:eb"
-    # If this doesn't work and you are using the latest Raspberry Pi 4, instead run:
+    arp -na | grep -i "d8:3a:dd"
     arp -na | grep -i "dc:a6:32"
+    arp -na | grep -i "e4:5f:01"
 }
