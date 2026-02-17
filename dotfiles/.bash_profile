@@ -57,6 +57,11 @@ if [[ -f $(command -v direnv) ]] ; then
     eval "$(direnv hook bash)"
 fi
 
+# ruff completion
+if [[ -f $(command -v direnv) ]] ; then
+    eval "$(ruff generate-shell-completion bash)"
+fi
+
 #
 # Launch or use existing ssh-agent
 #

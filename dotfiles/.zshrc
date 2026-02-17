@@ -100,6 +100,10 @@ if [[ -f $(command -v direnv) ]] ; then
     eval "$(direnv hook zsh)"
 fi
 
+# ruff completion
+if [[ -f $(command -v direnv) ]] ; then
+    eval "$(ruff generate-shell-completion zsh)"
+fi
 #
 # Launch or use existing ssh-agent
 #
