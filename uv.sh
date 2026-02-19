@@ -8,6 +8,7 @@ if [[ -f $(command -v uv) ]] ; then
     uv tool install ansible-lint --reinstall
     uv tool install aws-sam-cli --reinstall
     uv tool install cfn-lint --reinstall
+    uv tool install filemapper --reinstall
     uv tool install git-remote-codecommit --reinstall
     uv tool install marimo --reinstall
     uv tool install pre-commit --reinstall
