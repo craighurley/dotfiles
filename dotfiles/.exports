@@ -24,10 +24,11 @@ export EDITOR=vim
 # golang
 # avoid issues with m1/rosetta
 #export GODEBUG=asyncpreemptoff=1
+export GOPATH=$HOME/go
 
-# gpg
-export GPG_TTY=$(tty)
-export GPG_AGENT_INFO=$HOME/.gnupg/S.gpg-agent
+# # gpg
+# export GPG_TTY=$(tty)
+# export GPG_AGENT_INFO=$HOME/.gnupg/S.gpg-agent
 
 # grep defaults
 export GREP_OPTIONS="--color -I --exclude-dir=.git --exclude-dir=.svn --exclude-dir=.metadata --exclude=.DS_Store"
@@ -47,10 +48,10 @@ export MANPAGER="less -X"
 #     export CPPFLAGS="-I$(brew --prefix)/opt/openssl/include"
 # fi
 
-# sqldeveloper
-if [[ -d $HOME/Applications/Oracle/instaclient ]] ; then
-    export DYLD_LIBRARY_PATH=$HOME/Applications/Oracle/instaclient
-fi
+# # sqldeveloper
+# if [[ -d $HOME/Applications/Oracle/instaclient ]] ; then
+#     export DYLD_LIBRARY_PATH=$HOME/Applications/Oracle/instaclient
+# fi
 
 # python
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1

@@ -11,14 +11,14 @@ pathappend "$HOME/.scripts"
 pathappend "$HOME/bin"
 pathappend "$HOME/go/bin"
 
-# oracle sqlplus
-pathappend "$HOME/Applications/Oracle/instaclient"
+# # oracle sqlplus
+# pathappend "$HOME/Applications/Oracle/instaclient"
 
-# jmeter
-pathappend "$HOME/Applications/apache-jmeter/bin"
+# # jmeter
+# pathappend "$HOME/Applications/apache-jmeter/bin"
 
-# LM Studio
-pathappend "$HOME/.cache/lm-studio/bin"
+# # LM Studio
+# pathappend "$HOME/.cache/lm-studio/bin"
 
 # # openssl: before default $PATH
 # pathprepend "$(brew --prefix)/opt/openssl/bin"
