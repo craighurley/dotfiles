@@ -28,6 +28,7 @@ brew install    age \
                 direnv \
                 doggo \
                 git-secrets \
+                golang \
                 jq \
                 mas \
                 minisign \
