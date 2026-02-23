@@ -27,6 +27,9 @@ indent_size = 4
 [*.tf]
 indent_size = 2
 
+[*.md]
+indent_size = 4
+
 [Makefile]
 indent_style = tab
 
