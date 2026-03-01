@@ -10,6 +10,8 @@ npm install -g npm
 # npm install -g --omit=dev @google/gemini-cli
 # npm install -g --omit=dev cline
 npm install -g --omit=dev markdownlint-cli
+npm install -g --omit=dev pyright
+npm install -g --omit=dev typescript-language-server typescript
 
 # Finished
 echo "$(basename "$0") complete."
