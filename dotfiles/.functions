@@ -114,10 +114,10 @@ function upgrade() {
         brew cleanup --prune-prefix
     fi
 
-    if [[ $(command -v pyenv) ]] ; then
-        echo -e "\n${YELLOW}>>> pyenv versions...${RESET}"
-        pyenv versions
-    fi
+    # if [[ $(command -v pyenv) ]] ; then
+    #     echo -e "\n${YELLOW}>>> pyenv versions...${RESET}"
+    #     pyenv versions
+    # fi
 
     if [[ $(command -v uv pip) ]] ; then
         echo -e "\n${YELLOW}>>> Upgrading uv pip...${RESET}"

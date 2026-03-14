@@ -53,8 +53,8 @@ export MANPAGER="less -X"
 #     export DYLD_LIBRARY_PATH=$HOME/Applications/Oracle/instaclient
 # fi
 
-# python
-export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+## python
+#export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 
 # steampipe
 export STEAMPIPE_TELEMETRY=none

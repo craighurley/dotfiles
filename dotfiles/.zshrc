@@ -85,15 +85,16 @@ for direction (up down) {
 #
 # Plugins/extensions
 #
-# python env
-if [[ -f $(brew --prefix)/bin/pyenv ]] ; then
-    eval "$(pyenv init --path)"
-    eval "$(pyenv init -)"
-fi
 
-if [[ -f $(command -v pyenv-virtualenv-init) ]] ; then
-    eval "$(pyenv virtualenv-init -)"
-fi
+# # python env
+# if [[ -f $(brew --prefix)/bin/pyenv ]] ; then
+#     eval "$(pyenv init --path)"
+#     eval "$(pyenv init -)"
+# fi
+
+# if [[ -f $(command -v pyenv-virtualenv-init) ]] ; then
+#     eval "$(pyenv virtualenv-init -)"
+# fi
 
 # direnv
 if [[ -f $(command -v direnv) ]] ; then

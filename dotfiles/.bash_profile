@@ -42,15 +42,15 @@ if [[ -f $(command -v aws_completer) ]] ; then
     complete -C "$(command -v aws_completer)" aws
 fi
 
-# python env
-if [[ -f $(brew --prefix)/bin/pyenv ]] ; then
-    eval "$(pyenv init --path)"
-    eval "$(pyenv init -)"
-fi
+# # python env
+# if [[ -f $(brew --prefix)/bin/pyenv ]] ; then
+#     eval "$(pyenv init --path)"
+#     eval "$(pyenv init -)"
+# fi
 
-if [[ -f $(command -v pyenv-virtualenv-init) ]] ; then
-    eval "$(pyenv virtualenv-init -)"
-fi
+# if [[ -f $(command -v pyenv-virtualenv-init) ]] ; then
+#     eval "$(pyenv virtualenv-init -)"
+# fi
 
 # enable direnv
 if [[ -f $(command -v direnv) ]] ; then
