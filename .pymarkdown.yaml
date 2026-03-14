@@ -1,0 +1,14 @@
+system:
+  exclude_path: "temp/,tmp/"
+extensions:
+  markdown-tables:
+    enabled: true
+plugins:
+  md007:
+    enabled: false
+  md013:
+    enabled: false
+  md024:
+    enabled: false
+  md040:
+    enabled: false

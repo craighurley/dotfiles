@@ -2,43 +2,21 @@
 
 .DEFAULT_GOAL := help
 
-MD_LINT_CONTAINER := craighurley/markdownlint-cli:latest
-SHELLCHECK_CONTAINER := craighurley/shellcheck:latest
-YAML_LINT_CONTAINER := craighurley/yamllint:latest
-
-TARGET_MAX_CHAR_NUM := 20
-
-## Print this help
-help:
+help: ## Print this help
 	@echo 'Usage:'
 	@echo '  make <target>'
 	@echo ''
 	@echo 'Targets:'
-	@awk '/(^[a-zA-Z\-\.\_0-9]+:)|(^###[a-zA-Z]+)/ { \
-		header = match($$1, /^###(.*)/); \
-		if (header) { \
-			title = substr($$1, 4, length($$1)); \
-			printf "%s\n", title; \
-		} \
-		helpMessage = match(lastLine, /^## (.*)/); \
-		if (helpMessage) { \
-			helpCommand = substr($$1, 0, index($$1, ":")-1); \
-			helpMessage = substr(lastLine, RSTART + 3, RLENGTH); \
-			printf "  %-$(TARGET_MAX_CHAR_NUM)s %s\n", helpCommand, helpMessage; \
-		} \
-	} \
-	{ lastLine = $$0 }' $(MAKEFILE_LIST)
+	@grep -E '^[a-zA-Z_-]+:.*##' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*##"}; {printf "  %-10s %s\n", $$1, $$2}'
 .PHONY: help
 
-## Clean
-clean:
+clean: ## Clean
 	@echo $@
 .PHONY: clean
 
-## Run linters
-lint:
+lint: ## Run linters
 	@echo $@
-	docker run --rm -v "$$PWD":/workdir:ro $(MD_LINT_CONTAINER) -c .markdownlintrc "**/*.md"
-	docker run --rm -v "$$PWD":/workdir:ro $(SHELLCHECK_CONTAINER) **/*.sh
-	docker run --rm -v "$$PWD":/workdir:ro $(YAML_LINT_CONTAINER) -c .yamllint ./
+	uvx --from shellcheck-py shellcheck **/*.sh
+	uvx pymarkdownlnt scan "**/*.md"
+	uvx yamllint -c .yamllint ./
 .PHONY: lint

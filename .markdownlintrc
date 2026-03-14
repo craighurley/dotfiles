@@ -1,4 +1,0 @@
-default: true
-MD007:
-    indent: 4   # ul-indent
-MD013: false # line-length - Line length
