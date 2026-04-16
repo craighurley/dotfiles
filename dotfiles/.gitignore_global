@@ -2,7 +2,6 @@
 .envrc
 .idea/
 .python-version
-.pre-commit-config.yaml
 .svn
 .vscode/
 *.log

@@ -24,12 +24,14 @@ brew install    age \
                 awscli \
                 cirruslabs/cli/cirrus \
                 cirruslabs/cli/tart \
+                commitlint \
                 diffr \
                 direnv \
                 doggo \
-                git-secrets \
+                gitleaks \
                 golang \
                 jq \
+                lefthook \
                 mas \
                 minisign \
                 netcat \
