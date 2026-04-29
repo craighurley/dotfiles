@@ -28,7 +28,9 @@ brew install    age \
                 diffr \
                 direnv \
                 doggo \
+                gh \
                 gitleaks \
+                glab \
                 golang \
                 jq \
                 lefthook \
