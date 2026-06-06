@@ -15,7 +15,7 @@ trim_trailing_whitespace = false
 [*.{yaml,yml,yaml.j2}]
 indent_size = 2
 
-[*.{json,json.j2,template,code-snippets}]
+[*.{js,json,json.j2,template,code-snippets}]
 indent_size = 2
 
 [{*.rb,Vagrantfile}]
@@ -28,7 +28,7 @@ indent_size = 4
 indent_size = 2
 
 [*.md]
-indent_size = 4
+indent_size = 2
 
 [Makefile]
 indent_style = tab
