@@ -27,6 +27,7 @@ brew install    age \
                 commitlint \
                 diffr \
                 direnv \
+                docker/tap/sbx \
                 doggo \
                 gh \
                 gitleaks \
@@ -42,6 +43,7 @@ brew install    age \
                 pstree \
                 pyenv \
                 pyenv-virtualenv \
+                playwright-cli \
                 readline \
                 rename \
                 saml2aws \

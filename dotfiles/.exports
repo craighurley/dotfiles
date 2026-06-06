@@ -67,6 +67,9 @@ export STEAMPIPE_UPDATE_CHECK=false
 # terraform
 export TFENV_AUTO_INSTALL=false
 
+# docker sandbox
+export SBX_NO_TELEMETRY=1
+
 # Custom LS_COLORS for vscode terminal
 if [[ "$TERM_PROGRAM" = "vscode" ]] ; then
     # Customised one-dark LS_COLORS.  Default generated with: vivid generate one-dark
