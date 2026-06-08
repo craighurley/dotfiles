@@ -3,7 +3,37 @@ min_version: 2.1.6
 pre-commit:
   parallel: true
   jobs:
-    - name: lint
-      run: make lint
+    - name: shellcheck
+      run: uvx --from shellcheck-py shellcheck '{staged_files}'
+      glob: "*.sh"
+    - name: markdown-lint
+      run: uvx pymarkdownlnt scan '{staged_files}'
+      glob: "*.md"
+    - name: yamllint
+      run: uvx yamllint -c .yamllint '{staged_files}'
+      glob:
+        - "*.yml"
+        - "*.yaml"
+    - name: trailing-newline
+      run: |
+        errors=0
+        for f in {staged_files}; do
+          [ -f "$f" ] && [ -s "$f" ] || continue
+          file --mime-type "$f" | grep -q 'text/' || continue
+          last=$(tail -c1 "$f"; echo x)
+          last=${last%x}
+          if [ "$last" != $'\n' ]; then
+            echo "$f: missing trailing newline"
+            errors=1
+          else
+            last2=$(tail -c2 "$f"; echo x)
+            last2=${last2%x}
+            if [ "$last2" = $'\n\n' ]; then
+              echo "$f: multiple trailing newlines"
+              errors=1
+            fi
+          fi
+        done
+        exit $errors
     - name: gitleaks
       run: gitleaks git --pre-commit --staged
