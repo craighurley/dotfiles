@@ -13,6 +13,7 @@ npm install -g --omit=dev markdownlint-cli
 npm install -g --omit=dev @openai/codex
 npm install -g --omit=dev pyright
 npm install -g --omit=dev typescript-language-server typescript
+npm install -g --omit=dev conventional-changelog
 
 # Finished
 echo "$(basename "$0") complete."
