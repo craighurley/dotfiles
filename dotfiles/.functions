@@ -165,3 +165,34 @@ function upgrade() {
 #     arp -na | grep -i "dc:a6:32"
 #     arp -na | grep -i "e4:5f:01"
 # }
+
+function git-sync() {
+    ROOT_DIR="${1:-.}"
+
+    for dir in "$ROOT_DIR"/*/; do
+        [[ -d "$dir/.git" ]] || continue
+
+        repo="$(basename "$dir")"
+        echo "==> $repo"
+
+        if ! git -C "$dir" fetch 2>&1; then
+            echo "    fetch failed, skipping"
+            continue
+        fi
+
+        uncommitted=$(git -C "$dir" status --porcelain)
+        unpushed=$(git -C "$dir" log --oneline @{u}..HEAD 2>/dev/null || true)
+        incoming=$(git -C "$dir" log --oneline HEAD..@{u} 2>/dev/null || true)
+
+        if [[ -z "$incoming" ]]; then
+            echo "    up to date"
+        elif [[ -n "$uncommitted" ]]; then
+            echo "    skipping pull: uncommitted changes"
+        elif [[ -n "$unpushed" ]]; then
+            echo "    skipping pull: unpushed commits"
+        else
+            git -C "$dir" pull --quiet
+            echo "    pulled"
+        fi
+    done
+}
