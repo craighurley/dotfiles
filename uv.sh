@@ -7,19 +7,19 @@ if [[ -f $(command -v uv) ]] ; then
     uv tool install ansible-core --reinstall
     uv tool install ansible-lint --reinstall
     uv tool install aws-sam-cli --reinstall
-    uv tool install cfn-lint --reinstall
-    uv tool install filemapper --reinstall
     uv tool install git-remote-codecommit --reinstall
-    uv tool install marimo --reinstall
     uv tool install pycodestyle --reinstall
     uv tool install pymarkdownlnt --reinstall
     uv tool install ruff --reinstall
-    uv tool install ssmpm --reinstall
     uv tool install yamllint --reinstall
 fi
 
 # applications that are not immediately needed
+# uv tool install cfn-lint --reinstall
 # uv tool install cookiecutter
+# uv tool install filemapper --reinstall
+# uv tool install marimo --reinstall
+# uv tool install ssmpm --reinstall
 
 # Finished
 echo "$(basename "$0") complete."

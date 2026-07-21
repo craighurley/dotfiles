@@ -5,7 +5,6 @@ echo "$(basename "$0") starting."
 
 # Install/update
 go install github.com/sammcj/mcp-devtools@HEAD
-go install github.com/sammcj/run_silent@HEAD
 go install golang.org/x/tools/gopls@latest
 
 # Finished

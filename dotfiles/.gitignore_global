@@ -38,5 +38,8 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+# AI
+.memsearch/
+
 # overrides
 !.gitkeep
