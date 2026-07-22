@@ -16,12 +16,6 @@ A collection of scripts to bootstrap a clean install of macOS.
     xcode-select --install
     ```
 
-1. If this is an Apple silicon machine, install Rosetta:
-
-    ```sh
-    softwareupdate --install-rosetta --agree-to-license
-    ```
-
 1. Clone this repository by running the following command:
 
     ```sh
@@ -70,6 +64,15 @@ A collection of scripts to bootstrap a clean install of macOS.
 
     # Install python tools.
     ~/Projects/dotfiles/uv.sh
+
+    # Install node tools.
+    ~/Projects/dotfiles/node.sh
+
+    # Install go tools.
+    ~/Projects/dotfiles/go.sh
+
+    # Create template files.
+    ~/Projects/dotfiles/templates.sh
     ```
 
 1. Restart your computer.
@@ -101,7 +104,6 @@ A collection of scripts to bootstrap a clean install of macOS.
     - <https://github.com/jckuester/awsls/releases/>
     - <https://github.com/jckuester/awsrm/releases/>
     - <https://github.com/ArjenSchwarz/strata/releases/>
-    - <https://github.com/sammcj/mcp-devtools/releases/>
     - <https://sqlite.org/download.html>
 
 ## Update

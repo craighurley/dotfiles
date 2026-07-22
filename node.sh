@@ -11,6 +11,7 @@ npm install -g --omit=dev @openai/codex
 npm install -g --omit=dev claude-task-viewer
 npm install -g --omit=dev conventional-changelog
 npm install -g --omit=dev markdownlint-cli
+npm install -g --omit=dev prettier
 npm install -g --omit=dev pyright
 npm install -g --omit=dev typescript-language-server typescript
 

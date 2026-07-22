@@ -18,17 +18,16 @@ brew upgrade
 
 # brew apps
 
+# trusts
+brew trust docker/tap
+
 # install applications
-brew install    age \
-                aspell \
+brew install    aspell \
                 awscli \
-                cirruslabs/cli/cirrus \
-                cirruslabs/cli/tart \
                 commitlint \
                 diffr \
                 direnv \
                 docker/tap/sbx \
-                doggo \
                 gh \
                 gitleaks \
                 glab \
@@ -36,20 +35,14 @@ brew install    age \
                 jq \
                 lefthook \
                 mas \
-                minisign \
-                netcat \
-                nmap \
                 node \
                 pstree \
                 pyenv \
                 pyenv-virtualenv \
-                playwright-cli \
                 readline \
                 rename \
-                saml2aws \
                 session-manager-plugin \
                 shellcheck \
-                sops \
                 starship \
                 tfenv \
                 tree \
@@ -62,7 +55,11 @@ brew install    age \
 # applications that are not immediately needed
 # ack
 # act
+# age
+# cirruslabs/cli/cirrus
+# cirruslabs/cli/tart
 # csvkit
+# doggo
 # entr
 # geckodriver
 # go-task
@@ -73,9 +70,15 @@ brew install    age \
 # iproute2mac
 # jsonpp
 # k6
+# minisign
 # moreutils
+# netcat
+# nmap
 # parallel
+# playwright-cli
 # rpm
+# saml2aws
+# sops
 # tcptraceroute
 # tmux
 # turbot/tap/steampipe

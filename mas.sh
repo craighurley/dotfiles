@@ -12,11 +12,9 @@ APPS=(
     1538761576  # Authenticator
     1056643111  # Clocker
     411643860   # DaisyDisk
-    1384206666  # DemoPro
     302584613   # Kindle
     1661733229  # LocalSend
     441258766   # Magnet
-    1295203466  # Microsoft Remote Desktop
     1289197285  # MindNode
     490179405   # Okta Verify
     1289583905  # Pixelmator Pro
@@ -30,8 +28,7 @@ APPS=(
     904280696   # Things3
     1278508951  # Trello
     1554515538  # TRex (OCR)
-    1147396723  # WhatsApp
-    1295203466  # Windows App
+    310633997   # WhatsApp
     1495643653  # WorkingHours
 )
 
@@ -39,7 +36,6 @@ APPS=(
 #1451544217  # Adobe Lightroom
 #824171161   # Affinity Designer
 #824183456   # Affinity Photo
-#1444383602  # GoodNotes
 #1464122853  # NextDNS
 #1295203466  # Windows App
 #497799835   # Xcode

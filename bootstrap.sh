@@ -8,6 +8,8 @@ $directory/brew.sh
 $directory/dotfiles.sh
 $directory/preferences.sh
 $directory/uv.sh
+$directory/node.sh
+$directory/go.sh
 $directory/templates.sh
 
 # Finished
