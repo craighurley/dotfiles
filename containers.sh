@@ -10,14 +10,14 @@ if [[ -f $(command -v docker) ]] ; then
     docker pull alpine
     docker pull golang:1-alpine
     docker pull node:lts-alpine
-    docker pull python:3.14-alpine
+    docker pull python:3-alpine
 
     # personal containers
     docker pull craighurley/aws-mfa:latest
     docker pull craighurley/ipcalc:latest
-    docker pull craighurley/org-formation-cli:latest
-    docker pull craighurley/rsyslog:latest
-    docker pull craighurley/sceptre:latest
+    # docker pull craighurley/org-formation-cli:latest
+    # docker pull craighurley/rsyslog:latest
+    # docker pull craighurley/sceptre:latest
 fi
 
 # Finished
