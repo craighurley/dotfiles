@@ -41,6 +41,7 @@ brew install    aspell \
                 pyenv-virtualenv \
                 readline \
                 rename \
+                ripgrep \
                 session-manager-plugin \
                 shellcheck \
                 starship \
