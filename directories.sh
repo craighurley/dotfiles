@@ -32,8 +32,5 @@ echo "$(basename "$0") starting."
 [[ ! -d ~/Projects/work ]] && mkdir -p ~/Projects/work
 [[ ! -d ~/tmp ]] && mkdir -p ~/tmp
 
-# create a symlink to the scripts folder:
-ln -s ~/Projects/scripts ~/.scripts
-
 # Finished
 echo "$(basename "$0") complete."
