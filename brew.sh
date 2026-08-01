@@ -20,6 +20,7 @@ brew upgrade
 
 # trusts
 brew trust docker/tap
+brew trust --formula openai/tools/softnet
 
 # install applications
 brew install    aspell \
@@ -58,7 +59,7 @@ brew install    aspell \
 # act
 # age
 # cirruslabs/cli/cirrus
-# cirruslabs/cli/tart
+# openai/tools/tart
 # csvkit
 # doggo
 # entr
@@ -119,6 +120,7 @@ HOMEBREW_CASK_OPTS="" brew install --cask google-chrome
 # brew install --cask mimestream
 # brew install --cask obsidian
 # brew install --cask raspberry-pi-imager
+# brew install --cask sol
 # brew install --cask sourcetree
 # brew install --cask tableplus
 # brew install --cask tunnelblick
