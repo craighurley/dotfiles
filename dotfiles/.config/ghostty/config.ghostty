@@ -1,0 +1,11 @@
+theme = Dark+
+
+# typography
+font-family = "Hasklig"
+font-thicken = true
+font-thicken-strength = 1
+
+# aesthetics
+background-opacity = 0.85
+background-blur = 10
+background = #000000
