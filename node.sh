@@ -7,6 +7,7 @@ echo "$(basename "$0") starting."
 npm install -g npm
 
 # Install node packages
+npm install -g --omit=dev @firecrawl/anydoc
 npm install -g --omit=dev @openai/codex
 npm install -g --omit=dev claude-task-viewer
 npm install -g --omit=dev conventional-changelog
