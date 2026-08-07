@@ -106,7 +106,6 @@ export HOMEBREW_CASK_OPTS="--require-sha"
 brew install --cask appcleaner
 brew install --cask docker
 brew install --cask firefox --language=en-GB
-brew install --cask ghostty
 brew install --cask visual-studio-code
 
 # install unsigned applications
@@ -131,7 +130,6 @@ HOMEBREW_CASK_OPTS="" brew install --cask google-chrome
 # install fonts
 brew install --cask font-hasklig
 brew install --cask font-inter
-HOMEBREW_CASK_OPTS="" brew install --cask font-ubuntu-mono font-ubuntu-mono-nerd-font
 
 # cleanup unneeded files
 brew cleanup

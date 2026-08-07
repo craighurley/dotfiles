@@ -1,13 +1,11 @@
 theme = Dark+
 
 # typography
-font-family = "Ubuntu Mono"
-font-size = 16
+font-family = "Hasklig"
 font-thicken = true
 font-thicken-strength = 1
-adjust-cell-height = 5%
 
 # aesthetics
-#background-opacity = 0.85
-#background-blur = 10
+background-opacity = 0.85
+background-blur = 10
 background = #000000
