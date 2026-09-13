@@ -38,6 +38,7 @@ export HOMEBREW_CASK_OPTS="--require-sha"
 export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_NO_EMOJI=1
 export HOMEBREW_NO_ENV_HINTS=1
+export HOMEBREW_NO_UPGRADE_AUTO_UPDATES_CASKS=1
 
 # Don't clear the screen after quitting a manual page
 export MANPAGER="less -X"
