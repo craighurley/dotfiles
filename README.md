@@ -12,99 +12,102 @@ A collection of scripts to bootstrap a clean install of macOS.
 
 1. Install xcode command line tools:
 
-    ```sh
-    xcode-select --install
-    ```
+   ```sh
+   xcode-select --install
+   ```
 
 1. Clone this repository by running the following command:
 
-    ```sh
-    mkdir ~/Projects
-    git clone https://github.com/craighurley/dotfiles.git ~/Projects/dotfiles
-    ```
+   ```sh
+   mkdir ~/Projects
+   git clone https://github.com/craighurley/dotfiles.git ~/Projects/dotfiles
+   ```
 
-    Note: after you setup your SSH keys, consider updating the `origin` to `git@github.com:craighurley/dotfiles.git`.
+   Note: after you setup your SSH keys, consider updating the `origin` to
+   `git@github.com:craighurley/dotfiles.git`.
 
 1. Install homebrew by running the following command:
 
-    ```sh
-    ~/Projects/dotfiles/install_brew.sh
-    ```
+   ```sh
+   ~/Projects/dotfiles/install_brew.sh
+   ```
 
 1. Run the following command to do everything.
 
-    ```sh
-    ~/Projects/dotfiles/bootstrap.sh
-    ```
+   ```sh
+   ~/Projects/dotfiles/bootstrap.sh
+   ```
 
-    Notes:
+   Notes:
 
-    - you will be prompted for your password a number of times during script execution.
+   - you will be prompted for your password a number of times during script
+     execution.
 
-    Essentially, `bootstrap.sh` executes the following commands:
+   Essentially, `bootstrap.sh` executes the following commands:
 
-    ```sh
-    # Create useful directories.
-    ~/Projects/dotfiles/directories.sh
+   ```sh
+   # Create useful directories.
+   ~/Projects/dotfiles/directories.sh
 
-    # Copy templates to ~. These files don't really belong in version control, hence they are not symlinked.
-    ~/Projects/dotfiles/templates.sh
+   # Copy templates to ~. These files don't really belong in version control, hence they are not symlinked.
+   ~/Projects/dotfiles/templates.sh
 
-    # Configure sensible defaults in macOS.
-    ~/Projects/dotfiles/macos.sh
+   # Configure sensible defaults in macOS.
+   ~/Projects/dotfiles/macos.sh
 
-    # Install command line package manager and additional command line tools.
-    ~/Projects/dotfiles/brew.sh
+   # Install command line package manager and additional command line tools.
+   ~/Projects/dotfiles/brew.sh
 
-    # Backup existing dotfiles and symlink to the dotfiles in this project.
-    ~/Projects/dotfiles/dotfiles.sh
+   # Backup existing dotfiles and symlink to the dotfiles in this project.
+   ~/Projects/dotfiles/dotfiles.sh
 
-    # Apply preferences to applications.
-    ~/Projects/dotfiles/preferences.sh
+   # Apply preferences to applications.
+   ~/Projects/dotfiles/preferences.sh
 
-    # Install python tools.
-    ~/Projects/dotfiles/uv.sh
+   # Install python tools.
+   ~/Projects/dotfiles/uv.sh
 
-    # Install node tools.
-    ~/Projects/dotfiles/node.sh
+   # Install node tools.
+   ~/Projects/dotfiles/node.sh
 
-    # Install go tools.
-    ~/Projects/dotfiles/go.sh
+   # Install go tools.
+   ~/Projects/dotfiles/go.sh
 
-    # Create template files.
-    ~/Projects/dotfiles/templates.sh
-    ```
+   # Create template files.
+   ~/Projects/dotfiles/templates.sh
+   ```
 
 1. Restart your computer.
 
-1. If you want to automatically install applications from the _App Store_, open the _App Store_ and sign in, then run the following command:
+1. If you want to automatically install applications from the _App Store_, open
+   the _App Store_ and sign in, then run the following command:
 
-    ```sh
-    ~/Projects/dotfiles/mas.sh
-    ```
+   ```sh
+   ~/Projects/dotfiles/mas.sh
+   ```
 
 ## Post Install Tasks
 
 1. Import Terminal config.
 1. Import ssh keys.
 1. Update details:
-    - `~/.ssh/config`.
-    - `~/.ssh/authorized_keys`.
-    - `~/.gitconfig.custom` and any additional custom configurations.
-    - `~/.extra`.
-    - `~/.pypirc`.
-    - `~/.aws/config`.
-    - `~/.aws/credentials`.
-    - `~/.saml2aws`.
+   - `~/.ssh/config`.
+   - `~/.ssh/authorized_keys`.
+   - `~/.gitconfig.custom` and any additional custom configurations.
+   - `~/.extra`.
+   - `~/.pypirc`.
+   - `~/.aws/config`.
+   - `~/.aws/credentials`.
+   - `~/.saml2aws`.
 1. Sign into Firefox account to sync settings.
 1. Sign into Chrome account to sync settings.
 1. Sign into GitHub in VS Code to sync settings.
 1. Run docker, configure settings and import containers with `container.sh`
 1. Download/install binary apps:
-    - <https://github.com/jckuester/awsls/releases/>
-    - <https://github.com/jckuester/awsrm/releases/>
-    - <https://github.com/ArjenSchwarz/strata/releases/>
-    - <https://sqlite.org/download.html>
+   - <https://github.com/jckuester/awsls/releases/>
+   - <https://github.com/jckuester/awsrm/releases/>
+   - <https://github.com/ArjenSchwarz/strata/releases/>
+   - <https://sqlite.org/download.html>
 
 ## Update
 
@@ -117,4 +120,5 @@ git pull origin master
 
 ## Feedback
 
-Suggestions/improvements [welcome](https://github.com/craighurley/dotfiles/issues)!
+Suggestions/improvements
+[welcome](https://github.com/craighurley/dotfiles/issues)!
