@@ -1,4 +1,20 @@
-/* Tabs/Tab Bar height */
+/* Tabb height */
 :root {
-    --tab-min-height: 22px !important;
+  --tab-min-height: 25px !important;
+}
+
+/* Hide the default container line */
+.tab-context-line {
+  display: none !important;
+}
+
+/* Dot to the left of tab using the container colour */
+.tabbrowser-tab[usercontextid] .tab-content::before {
+  content: "";
+  flex-shrink: 0;
+  width: 6px;
+  height: 6px;
+  margin-inline-end: 6px;
+  border-radius: 50%;
+  background-color: var(--identity-tab-color);
 }
