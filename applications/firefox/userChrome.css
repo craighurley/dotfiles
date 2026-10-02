@@ -1,6 +1,6 @@
 /* Tabb height */
 :root {
-  --tab-min-height: 25px !important;
+  --tab-min-height: 28px !important;
 }
 
 /* Hide the default container line */
@@ -8,13 +8,18 @@
   display: none !important;
 }
 
-/* Dot to the left of tab using the container colour */
-.tabbrowser-tab[usercontextid] .tab-content::before {
+/* Dot to the right of tab using the container colour */
+.tabbrowser-tab[usercontextid] .tab-content::after {
   content: "";
   flex-shrink: 0;
   width: 6px;
   height: 6px;
-  margin-inline-end: 6px;
+  margin-inline-start: 6px;
   border-radius: 50%;
   background-color: var(--identity-tab-color);
+}
+
+/* Keep the close button after the dot so it stays at the tab edge */
+.tabbrowser-tab[usercontextid] .tab-close-button {
+  order: 1;
 }
