@@ -5,6 +5,7 @@ user_pref("browser.newtab.url", "https://www.google.com");
 user_pref("browser.sessionstore.warnOnQuit", true);
 user_pref("browser.showQuitWarning", true);
 user_pref("browser.tabs.groups.enabled", "false");
+user_pref("browser.tabs.hoverPreview.showThumbnails", false);
 user_pref("browser.tabs.tabClipWidth", 1);
 user_pref("browser.urlbar.openViewOnFocus", false);
 user_pref("browser.warnOnQuit", true);
